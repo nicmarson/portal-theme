@@ -1,0 +1,138 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Brand colors
+// -------------------------
+$brand:							#0881C2;
+$brandDarker:					darken($brand, 25%);
+$accent:						#599ABD;
+$accentDark:					darken($accent, 15%);
+$accentDarker:					darken($accent, 30%);
+$accentDarkest:					darken($accent, 40%);
+$accentLight:					lighten($accent, 15%);
+$accentLighter:					lighten($accent, 30%);
+$accentLightest:				lighten($accent, 41%);
+$altHeadingColor:				#8599a8;
+
+
+// Scaffolding
+// -------------------------
+$bodyTopColor:					$accentLighter;
+
+
+// Typography
+// -------------------------
+$sansFontFamily:				"ProximaNova-Regular", Verdana, sans-serif;
+$sansFontFamilyIt:				"ProximaNova-RegularIt", Verdana, sans-serif;
+$sansFontFamilyLight:			"ProximaNova-Light", Verdana, sans-serif;
+$sansFontFamilyLightIt:			"ProximaNova-LightIt", Verdana, sans-serif;
+$sansFontFamilySemibold:		"ProximaNova-Semibold", "Arial Black", sans-serif;
+$sansFontFamilySemiboldIt:		"ProximaNova-SemiboldIt", "Arial Black", sans-serif;
+$sansFontFamilyBold:			"ProximaNova-Bold", "Arial Black", Verdana, sans-serif;
+$sansFontFamilyBoldIt:			"ProximaNova-BoldIt", "Arial Black", sans-serif;
+$sansFontFamilyCond:			"ProximaNovaCond-Regular", Verdana, sans-serif;
+$sansFontFamilyCondSemibold:	"ProximaNovaCond-Semibold", Verdana, sans-serif;
+
+
+// Article
+// -------------------------
+$articleBackground:				lighten($accent, 38%);
+$articleBackgroundBottom:		lighten($articleBackground, 8%);
+$contentBorder:					lighten($bodyTopColor, 8%);
+$asideHeadingBackground:		#F0F6F9;
+$asideHeadingBorder:			#E5EFF5;
+$asideHeadingColor:				#7D99A8;
+$bulletBackground:				$orange;
+$blockquoteBackground:			$accentLightest;
+$blockquoteBorder:				$accentLighter;
+
+
+// Custom variables
+// -------------------------
+$bulletBackground:      			lighten($orange, 12%);
+$listIndent:						$baseLineHeight;
+
+
+// Scaffolding
+// -------------------------
+$footerBackground:				$accent url("../img/regence-footer-bg.png");
+
+
+// Personalization Widget
+// -------------------------
+$personalizeBackground:			#8FCCE7;
+$personalizeBackgroundBottom:	darken($personalizeBackground, 8%);
+$personalizeInput:				#4D9EC0;
+$personalizeInputHover:			darken($personalizeInput,4%);
+$personalizeInputActive:		darken($personalizeInput,8%);
+
+
+// Navbar
+// -------------------------
+$navbarCollapseWidth:             979px;
+$navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
+
+$navbarHeight:                    40px;
+$navbarBackgroundHighlight:       #ffffff;
+$navbarBackground:                darken($navbarBackgroundHighlight, 5%);
+$navbarBorder:                    darken($navbarBackground, 12%);
+
+$navbarText:                      $grayDark;
+$navbarLinkColor:                 $grayDark;
+$navbarLinkColorHover:            $black;
+$navbarLinkColorActive:           $grayDarker;
+$navbarLinkBackgroundHover:       transparent;
+$navbarLinkBackgroundActive:      darken($navbarBackground, 5%);
+
+$navbarBrandColor:                $navbarLinkColor;
+
+// Inverted navbar
+$navbarInverseBackground:                darken($gray, 6%);
+$navbarInverseBackgroundHighlight:       $gray;
+$navbarInverseBorder:                    $navbarInverseBackground;
+
+$navbarInverseText:                      $white;
+$navbarInverseLinkColor:                 $navbarInverseText;
+$navbarInverseLinkColorHover:            $white;
+$navbarInverseLinkColorActive:           $navbarInverseLinkColorHover;
+$navbarInverseLinkBackgroundHover:       $navbarInverseBackground;
+$navbarInverseLinkBackgroundActive:      darken($navbarInverseBackground, 6%);
+
+$navbarInverseSearchBackground:          lighten($navbarInverseBackground, 25%);
+$navbarInverseSearchBackgroundFocus:     $white;
+$navbarInverseSearchBorder:              $navbarInverseBackground;
+$navbarInverseSearchPlaceholderColor:    #ccc;
+
+$navbarInverseBrandColor:                $navbarInverseLinkColor;
+
+
+// Nav Inverted
+// -------------------------
+$navInvertedText:				$white;
+$navInvertedLinkColor:			$white;
+$navInvertedLinkColorHover:		lighten($orange, 40%);
+$navInvertedLinkColorActive:	lighten($orange, 20%);
+
+
+// Nav - Primary
+// -------------------------
+$navPrimaryBackground:			$accentLight;
+$navPrimaryBackgroundHover:		darken($navPrimaryBackground, 6%);
+$navPrimaryBackgroundActive:	darken($navPrimaryBackground, 10%);
+$navPrimaryBorder:				$accentLight;
+$navPrimaryBoxShadow:			rgba(255,255,255,.2);
+$navPrimaryLinkColor:			$white;
+$navSecondaryLinkColor:			darken($accent, 30%);
+$navSecondaryhrBorder:			lighten($accent, 22%);
+
+
+// Nav - Secondary
+// -------------------------
+$navSecondaryBackground:		#DDE9EF;
+$navSecondaryBottomBackground:	lighten($navSecondaryBackground, 10%);
+$navSecondaryTitleColor:		darken($accent, 5%);
+$navSecondaryLink:				darken($accent, 25%);
+$navSecondaryLinkHover:			darken($accent, 15%);
+$navSecondaryhrBorder:			darken($navSecondaryBackground, 10%);

@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    $BRIDGESPAN
+    $COLOR_SCHEME
+\*------------------------------------*/
+
+// Variables
+@import "variables/bridgespan";
+
+
+// --------------------------------------
+// Bridgespan only theme styles
+// --------------------------------------
+
+.bridge {
+
+  // Themes
+  // --------------------------------------
+  .asuris-only,
+  .regence-only {
+    display: none;
+  }
+
+  // Import theme styles
+  // --------------------------------------
+  @import "shared/general";
+}
+
+
+// Responsive: Tablet to large desktops
+// --------------------------------------
+@media (min-width: 768px) {
+
+  .bridge {
+    @import "shared/768px-min";
+  }
+}
+
+
+// Responsive: Tablet to desktop
+// --------------------------------------
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .bridge {
+    @import "shared/768px-979px";
+  }
+}

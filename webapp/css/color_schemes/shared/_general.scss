@@ -1,0 +1,307 @@
+/*------------------------------------*\
+    $THEME
+\*------------------------------------*/
+
+
+// Headings
+// --------------------------------------
+h1,
+h2,
+h3 {
+  font-family: @sansFontFamilyLight; // Regular, bold, semi-bold look terrible on Windows
+  text-shadow: 0 0 1px rgba(0,0,0,.1); // Helps text rendering on Windows
+}
+
+
+// Lists
+// --------------------------------------
+ul.bulleted li {
+  margin: @baseLineHeight / 2 0;
+}
+ul.bulleted > li {
+  list-style: square;
+}
+.generatedcontent {
+
+  ul.bulleted > li {
+    list-style: none;
+    position: relative;
+  }
+  ul.bulleted > li:before {
+    background: @bulletBackground;
+    .border-radius(2px);
+    content: "";
+    height: 8px;
+    left: -(@listIndent);
+    position: absolute;
+    top: @baseFontSize / 2;
+    width: 8px;
+  }
+}
+
+
+// Modal
+// --------------------------------------
+.modal-header {
+
+  h3 {
+    color: @brand;
+  }
+}
+
+
+// Navigation
+// INVERTED COLORS
+// ---------------
+.nav-inverted > li > a {
+  color: @navInvertedLinkColor;
+
+  &:hover {
+    background: rgba(0,0,0,.16);
+  }
+  &:active {
+    color: @navInvertedLinkColorActive;
+  }
+}
+
+
+// Inverted navbar
+// -------------------------
+.navbar-inverse {
+
+  .navbar-inner {
+    #gradient > .vertical(@navbarInverseBackgroundHighlight, @navbarInverseBackground);
+    border-color: @navbarInverseBorder;
+  }
+
+  .brand,
+  .nav > li > a {
+    color: @navbarInverseLinkColor;
+    &:hover,
+    &:focus {
+      color: @navbarInverseLinkColorHover;
+    }
+  }
+
+  .brand {
+    color: @navbarInverseBrandColor;
+  }
+
+  .navbar-text {
+    color: @navbarInverseText;
+  }
+
+  .nav > li > a:focus,
+  .nav > li > a:hover {
+    background-color: @navbarInverseLinkBackgroundHover;
+    color: @navbarInverseLinkColorHover;
+  }
+
+  .nav .active > a,
+  .nav .active > a:hover,
+  .nav .active > a:focus {
+    color: @navbarInverseLinkColorActive;
+    background-color: @navbarInverseLinkBackgroundActive;
+  }
+
+  // Inline text links
+  .navbar-link {
+    color: @navbarInverseLinkColor;
+    &:hover,
+    &:focus {
+      color: @navbarInverseLinkColorHover;
+    }
+  }
+  
+  // Dropdowns
+  .nav li.dropdown.open > .dropdown-toggle,
+  .nav li.dropdown.active > .dropdown-toggle,
+  .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: @navbarInverseLinkBackgroundActive;
+    color: @navbarInverseLinkColorActive;
+  }
+  .nav li.dropdown > a:hover .caret,
+  .nav li.dropdown > a:focus .caret {
+    border-top-color: @navbarInverseLinkColorActive;
+    border-bottom-color: @navbarInverseLinkColorActive;
+  }
+  .nav li.dropdown > .dropdown-toggle .caret {
+    border-top-color: @navbarInverseLinkColor;
+    border-bottom-color: @navbarInverseLinkColor;
+  }
+  .nav li.dropdown.open > .dropdown-toggle .caret,
+  .nav li.dropdown.active > .dropdown-toggle .caret,
+  .nav li.dropdown.open.active > .dropdown-toggle .caret {
+    border-top-color: @navbarInverseLinkColorActive;
+    border-bottom-color: @navbarInverseLinkColorActive;
+  }
+}
+
+
+// Nav Information
+// Utility navigation near the footer
+// --------------------------------------
+.nav-information {
+  margin-top: (@gridGutterWidth*2);
+  padding: @gridGutterWidth 0 0;
+
+  .collapse {
+    border-bottom: 1px solid @navSecondaryhrBorder;
+
+    &.in {
+      border-top: 1px solid @navSecondaryhrBorder;
+    }
+  }
+  .nav.unstyled {
+    font-size: 12px;
+
+    li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: @navSecondaryLink;
+
+      &:hover {
+        color: @navSecondaryLinkHover;
+        text-decoration: underline;
+      }
+    }
+  }
+  .nav-pills {
+    margin-bottom: 5px;
+
+    a {
+      color: @navSecondaryTitleColor;
+      font-family: @sansFontFamily;
+      font-size: 16px;
+
+      &:hover {
+        background: @white;
+      }
+    }
+  }
+  .title {
+    color: @navSecondaryTitleColor;
+    font: 16px @sansFontFamily;
+  }
+}
+
+
+// Article sidebar
+// --------------------------------------
+.article .sidebar {
+    
+  h3 {
+    background: @asideHeadingBackground;
+    border-bottom: 1px solid @asideHeadingBorder;
+    border-top: 1px solid @asideHeadingBorder;
+    color: @asideHeadingColor;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 8px 15px;
+  }
+  .content {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+  }
+  .nav > li > a {
+    color: @textColor;
+
+    &:hover {
+      background: @white;
+      color: @linkColorHover;
+      text-decoration: underline;
+    }
+  }
+  .nav > .active > a,
+  .nav > .active > a:hover {
+    background: none;
+    color: @linkColorHover;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
+}
+
+// Article left sidebar
+// --------------------------------------
+.article-left-sidebar .sidebar {
+
+  .nav > li > a {
+    color: @grayLight;
+    font: 24px @sansFontFamilyLight;
+    line-height: 24px;
+    padding: 12px 15px;
+
+    &:hover {
+      color: @accent;
+      text-decoration: none;
+    }
+  }
+  .nav > .active > a,
+  .nav > .active > a:hover {
+    color: @accent;
+  }
+}
+
+
+// Top
+// --------------------------------------
+#top {
+
+  .nav li > a {
+
+    [class^="glyph-"] {
+      color: @brand;
+    }
+    .caret {
+      border-top-color: @brand;
+    }
+  }
+}
+
+
+// Bottom
+// --------------------------------------
+#bottom {
+
+  p,
+  .nav > li > a {
+    font-family: @sansFontFamily;
+  }
+}
+
+
+// Hero
+// --------------------------------------
+.hero-unit {
+
+  .hero-inner-title {
+    font: @sansFontFamilyLight;
+
+    small {
+      font: 18px @sansFontFamily;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+// Inverted hero unit
+// --------------------------------------
+.hero-inverted {
+  background-color: @brand;
+
+  .hero-inner-title {
+
+    small {
+      font-family: @sansFontFamily;
+    }
+  }
+}
+
+
+// Google Map
+// --------------------------------------
+#map_sidebar, #map_canvas {
+  font-family: @sansFontFamily;
+}
