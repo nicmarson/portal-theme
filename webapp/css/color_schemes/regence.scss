@@ -25,6 +25,16 @@
 }
 
 
+// Desktops and larger
+// --------------------------------------
+@media (min-width: 980px) {
+
+  .regence {
+    @import "shared/980px-min";
+  }
+}
+
+
 // Responsive: Tablet to large desktops
 // --------------------------------------
 @media (min-width: 768px) {

@@ -3,36 +3,6 @@
 // --------------------------------------------------
 
 
-// Breadcrumb
-.breadcrumb {
-  padding: 8px 0;
-  margin: $baseLineHeight 0 0;
-  background-color: transparent;
-
-  > li .divider,
-  > .active {
-    color: $gray;
-  }
-}
-
-// Active state
-.nav-inverted.nav-pills > .active > a,
-.nav-inverted.nav-pills > .active > a:hover {
-  color: $linkColor;
-  background-color: $white;
-}
-
-
-// Navigation
-#nav {
-  font-size: 16px;
-
-  .nav > li > a {
-    font-weight: 700;
-  }
-}
-
-
 // TREEVIEW
 // ------------
 /* http://acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript/ */

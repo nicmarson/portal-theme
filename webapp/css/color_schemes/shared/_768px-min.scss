@@ -22,18 +22,23 @@
   .sidebar {
     border-right: 1px solid $contentBorder;
   }
+
   .landing-content {
     border: none;
   }
+
   .span8 .main-content {
     margin-left: -4.5%;
   }
+
   .span9 .main-content {
     margin-left: -4%;
   }
+
   .sidebar .nav {
     text-align: right;
   }
+  
   .sidebar .nav > li > a {
     padding: 6px 10px;
   }
@@ -47,4 +52,10 @@
   .media-heading {
     color: $brand;
   }
+}
+
+// Nav Shopping
+#top .nav .nav-shopping > a {
+  padding-left: 60px;
+  padding-right: 45px;
 }

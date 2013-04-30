@@ -4,7 +4,7 @@
 \*------------------------------------*/
 
 // Variables
-@import "variables/bridge";
+@import "variables/bridge"; // Load bridgespan colors and styles
 
 
 // --------------------------------------
@@ -12,6 +12,18 @@
 // --------------------------------------
 
 .bridge {
+
+  .color-brand {
+    color: $brand;
+  }
+
+  .color-accent {
+    color: $accent;
+  }
+  
+  .color-altHeading {
+    color: $altHeadingColor;
+  }
 
   // Themes
   // --------------------------------------
@@ -23,6 +35,16 @@
   // Import theme styles
   // --------------------------------------
   @import "shared/general";
+}
+
+
+// Desktops and larger
+// --------------------------------------
+@media (min-width: 980px) {
+
+  .bridge {
+    @import "shared/980px-min";
+  }
 }
 
 

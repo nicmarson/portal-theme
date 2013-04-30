@@ -6,16 +6,17 @@
 
 
 #bottom {
-  font-size: 13px;
   padding: $gridGutterWidth 0 $gridColumnWidth;
   text-align: center;
 
   ul {
     margin: 0;
   }
+
   .container {
     position: relative;
   }
+
   .icon-feedback {
     border: 1px solid $white;
     display: block;
@@ -36,6 +37,7 @@
       top: 1px;
       width: 1px;
     }
+
     i {
       background: $white;
       display: block;
@@ -46,6 +48,7 @@
       width: 7px;
     }
   }
+
   p,
   .nav > li > a {
     line-height: 14px;
@@ -53,25 +56,5 @@
     margin-top: 6px;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-}
-#footer + .row-fluid {
-  border-top: 1px solid #FFF;
-}
-
-
-
-/* Desktops
-------------------------- */
-@media (min-width: 768px) {
-
-  #bottom {
-
-    p {
-      text-align: left;
-    }
-    ul {
-      text-align: right;
-    }
   }
 }

@@ -1,63 +1,30 @@
 /*------------------------------------*\
     $CUSTOM
     $TOP
-    $HEADER
+    $top
 \*------------------------------------*/
 
 
 #top {
-  background: $white;
-  border-bottom: 1px solid $headerLinkBorder;
-  color: $headerText;
-  min-height: $headerHeight;
   text-align: right;
 
   .nav {
     margin: 0;
 
-    li {
-
-      > a {
-        color: $headerLinkColor;
-        text-decoration: none;
-        @include transition(background-color .3s ease-in-out);
-        
-        small {        
-          color: $grayLight;
-        }
-        &:hover {
-          background-color: $headerLinkBackground;
-          color: $headerLinkColorHover;
-          text-decoration: none;
-
-          small,
-          [class^="glyph-"] {
-            color: $headerLinkColorHover;
-          }
-          .caret {
-            border-top-color: $white;
-          }
-        }
-      }
-    }    
-    .active > a {
-      background-color: $headerLinkBackground;
-      color: $white;
+    li > a {
       text-decoration: none;
-      
-      small,
-      [class^="glyph-"] {
-        color: $white;
-      }
-      .caret {
-        border-top-color: $white;
+      @include transition(background-color .3s ease-in-out);
+
+      &:hover {
+        text-decoration: none;
       }
     }
-    .active > a:hover,
-    .active > a:focus {
-      background-color: darken($headerLinkBackground, 4%);
+
+    .active > a {
+      text-decoration: none;
     }
   }
+
   .container {
     padding: 0;
     position: relative;
@@ -80,38 +47,29 @@
   }
 
 
-  // Nav Login 
+  // Nav Login
   .nav .nav-login {
     float: right;
-
-    a {
-      border-left: 1px solid $headerLinkBorder;
-      line-height: 30px;
-      padding: 25px 20px;
-    }
   }
 
 
-  // Nav Search  
+  // Nav Search
   .nav .nav-search {
     float: right;
     width: 49.9999%;
 
-    form {
-      border-top: 1px solid $headerLinkBorder;
-      margin: 0;
-      padding: 25px 15px 25px 5px;
-      position: relative;
-    }
     button {
       border: none;
       position: absolute;
-      right: 30px;
-      top: 25px;
 
       &:hover {
         text-decoration: none;
       }
+    }
+
+    form {
+      margin: 0;
+      position: relative;
     }
   }
 
@@ -124,57 +82,28 @@
     width: 49.9999%;
 
     > a {
-      border-right: 1px solid $headerLinkBorder;
-      border-top: 1px solid $headerLinkBorder;
       display: block;
-      height: 30px;
-      padding: 25px 15px;
       position: relative;
     }
-    a:hover .caret,
-    .active > a .caret {
-      border-color: $white rgba(255,255,255,0) rgba(255,255,255,0);
-    }
+
     .active > a {
-      background-color: $headerLinkBackground;
-      color: $white;
       text-decoration: none;
-      
-      small,
-      [class^="glyph-"] {
-        color: $white;
-      }
     }
-    .active > a:hover,
-    .active > a:focus {
-      background-color: darken($headerLinkBackground, 4%);
-    }
+
     .caret {
-      border-top-width: 8px;
-      border-right-width: 8px;
-      border-left-width:  8px;
       display: block;
-      margin-top: 16px;
       position: absolute;
-      right: 15px;
-      top: 22px;
     }
+
     .glyph-users {
-      font-size: 26px;
-      left: 16px;
-      height: 40px;
-      line-height: 30px;
       position: absolute;
-      top: 22px;
     }
+
     .shopping-label {
       display: block;
-      font-size: 16px;
-      line-height: 16px;
 
       small {
         display: block;
-        font-size: 13px;
       }
     }
   }
@@ -184,6 +113,7 @@
   display: block;
   position: relative;
 }
+
 .brand-logo {
   background: url("images/identity/identity.png") no-repeat;
   display: block;
@@ -192,6 +122,7 @@
   position: relative;
   *width: 250px;
 }
+
 .brand-region {
   bottom: 0;
   color: $grayLight;
@@ -203,36 +134,43 @@
   position: absolute;
   white-space: nowrap;
 }
+
 .logo-asuris {
   // Height 45px
   padding-bottom: 23px;
   padding-top: 12px;
 }
+
 .logo-myasuris {
   // Height 33px
   padding-bottom: 25px;
   padding-top: 22px;
 }
+
 .logo-bridge {
   // Height 32px
   padding-bottom: 24px;
   padding-top: 24px;
 }
+
 .logo-myregence {
   // Height 50px
   padding-bottom: 20px;
   padding-top: 10px;
 }
+
 .logo-regence-s,
 .logo-regence-cs {
   // Height 33px
   padding-bottom: 18px;
   padding-top: 19px;
 }
+
 .logo-regence-s .brand-region {
   display: block;
   left: 36px;
 }
+
 .logo-regence-cs .brand-region {
   display: block;
   left: 70px;
@@ -245,26 +183,31 @@
   height: 45px;
   width: 148px;
 }
+
 .logo-myasuris .brand-logo {
   background-position: 0 -400px;
   height: 33px;
   width: 176px;
 }
+
 .logo-bridge .brand-logo {
   background-position: 0 -500px;
   height: 32px;
   width: 184px;
 }
+
 .logo-myregence .brand-logo {
   background-position: 0 -200px;
   height: 50px;
   width: 250px;
 }
+
 .logo-regence-cs .brand-logo {
   background-position: 0 0;
   height: 33px;
   width: 180px;
 }
+
 .logo-regence-s .brand-logo {
   background-position: 0 -100px;
   height: 33px;
@@ -289,22 +232,27 @@
     background: url("images/identity/regence-cs.svg") no-repeat 0 0;
     background-size: 178px auto;
   }
+
   .logo-regence-s .brand-logo {
     background: url("images/identity/regence-s.svg") no-repeat 0 0;
     background-size: 143px auto;
   }
+
   .logo-myregence .brand-logo {
     background: url("images/identity/myregence.svg") no-repeat 0 0;
     background-size: 250px auto;
   }
+
   .logo-asuris .brand-logo {
     background: url("images/identity/asuris.svg") no-repeat 0 0;
     background-size: 148px auto;
   }
+
   .logo-myasuris .brand-logo {
     background: url("images/identity/myasuris.svg") no-repeat 0 0;
     background-size: 176px auto;
   }
+  
   .logo-bridge .brand-logo {
     background: url("images/identity/bridgespan.svg") no-repeat 0 0;
     background-size: 184px auto;

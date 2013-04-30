@@ -2,21 +2,6 @@
 // Custom typography
 // --------------------------------------------------
 
-// Links
-// -------------------------
-
-a {
-  color: $linkColor;
-}
-a:hover,
-a:focus {
-  color: $linkColorHover;
-}
-a:active {
-  background-color: $linkColorHover;
-  color: #FFF;
-}
-
 
 // Headings
 // -------------------------
@@ -73,18 +58,12 @@ ol {
   color: $black;
 }
 
+
 // Buttons
 // -------------------------
 .btn-link {
   padding-left: 0;
   padding-right: 0;
-
-  .caret {
-    border-top-color: $linkColor;
-  }
-  &:hover .caret {
-    border-top-color: $linkColorHover;
-  }
 }
 .btn small {
   display: block;
