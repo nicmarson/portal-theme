@@ -185,7 +185,7 @@
   position: relative;
 }
 .brand-logo {
-  background: url("../img/identity/identity.png") no-repeat;
+  background: url("images/identity/identity.png") no-repeat;
   display: block;
   max-width: 250px;
   min-width: 143px;
@@ -276,7 +276,7 @@
 @media all and (-webkit-min-device-pixel-ratio : 1.5) {
 
   .backgroundsize .brand-logo {
-    background-image: url("../img/identity/identity$2x.png");
+    background-image: url("images/identity/identity$2x.png");
     background-size: 250px auto; /* Actual width is 450px */
   }
 }
@@ -286,27 +286,27 @@
 .svg.backgroundsize {
 
   .logo-regence-cs .brand-logo {
-    background: url("../img/identity/regence-cs.svg") no-repeat 0 0;
+    background: url("images/identity/regence-cs.svg") no-repeat 0 0;
     background-size: 178px auto;
   }
   .logo-regence-s .brand-logo {
-    background: url("../img/identity/regence-s.svg") no-repeat 0 0;
+    background: url("images/identity/regence-s.svg") no-repeat 0 0;
     background-size: 143px auto;
   }
   .logo-myregence .brand-logo {
-    background: url("../img/identity/myregence.svg") no-repeat 0 0;
+    background: url("images/identity/myregence.svg") no-repeat 0 0;
     background-size: 250px auto;
   }
   .logo-asuris .brand-logo {
-    background: url("../img/identity/asuris.svg") no-repeat 0 0;
+    background: url("images/identity/asuris.svg") no-repeat 0 0;
     background-size: 148px auto;
   }
   .logo-myasuris .brand-logo {
-    background: url("../img/identity/myasuris.svg") no-repeat 0 0;
+    background: url("images/identity/myasuris.svg") no-repeat 0 0;
     background-size: 176px auto;
   }
   .logo-bridge .brand-logo {
-    background: url("../img/identity/bridgespan.svg") no-repeat 0 0;
+    background: url("images/identity/bridgespan.svg") no-repeat 0 0;
     background-size: 184px auto;
   }
 }

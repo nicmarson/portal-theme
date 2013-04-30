@@ -10,7 +10,7 @@
 .nav-network {
 
   li > a {
-    font-family: @sansFontFamily;
+    font-family: $sansFontFamily;
   }
 }
 
@@ -20,7 +20,7 @@
 .article-left-sidebar {
 
   .sidebar {
-    border-right: 1px solid @contentBorder;
+    border-right: 1px solid $contentBorder;
   }
   .landing-content {
     border: none;
@@ -45,6 +45,6 @@
 .hero-media {
 
   .media-heading {
-    color: @brand;
+    color: $brand;
   }
 }

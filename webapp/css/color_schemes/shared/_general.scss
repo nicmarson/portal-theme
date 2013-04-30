@@ -8,7 +8,7 @@
 h1,
 h2,
 h3 {
-  font-family: @sansFontFamilyLight; // Regular, bold, semi-bold look terrible on Windows
+  font-family: $sansFontFamilyLight; // Regular, bold, semi-bold look terrible on Windows
   text-shadow: 0 0 1px rgba(0,0,0,.1); // Helps text rendering on Windows
 }
 
@@ -16,7 +16,7 @@ h3 {
 // Lists
 // --------------------------------------
 ul.bulleted li {
-  margin: @baseLineHeight / 2 0;
+  margin: $baseLineHeight / 2 0;
 }
 ul.bulleted > li {
   list-style: square;
@@ -28,13 +28,13 @@ ul.bulleted > li {
     position: relative;
   }
   ul.bulleted > li:before {
-    background: @bulletBackground;
-    .border-radius(2px);
+    background: $bulletBackground;
+    @include border-radius(2px);
     content: "";
     height: 8px;
-    left: -(@listIndent);
+    left: -($listIndent);
     position: absolute;
-    top: @baseFontSize / 2;
+    top: $baseFontSize / 2;
     width: 8px;
   }
 }
@@ -45,7 +45,7 @@ ul.bulleted > li {
 .modal-header {
 
   h3 {
-    color: @brand;
+    color: $brand;
   }
 }
 
@@ -54,13 +54,13 @@ ul.bulleted > li {
 // INVERTED COLORS
 // ---------------
 .nav-inverted > li > a {
-  color: @navInvertedLinkColor;
+  color: $navInvertedLinkColor;
 
   &:hover {
     background: rgba(0,0,0,.16);
   }
   &:active {
-    color: @navInvertedLinkColorActive;
+    color: $navInvertedLinkColorActive;
   }
 }
 
@@ -70,46 +70,46 @@ ul.bulleted > li {
 .navbar-inverse {
 
   .navbar-inner {
-    #gradient > .vertical(@navbarInverseBackgroundHighlight, @navbarInverseBackground);
-    border-color: @navbarInverseBorder;
+    @include gradient-vertical($navbarInverseBackgroundHighlight, $navbarInverseBackground);
+    border-color: $navbarInverseBorder;
   }
 
   .brand,
   .nav > li > a {
-    color: @navbarInverseLinkColor;
+    color: $navbarInverseLinkColor;
     &:hover,
     &:focus {
-      color: @navbarInverseLinkColorHover;
+      color: $navbarInverseLinkColorHover;
     }
   }
 
   .brand {
-    color: @navbarInverseBrandColor;
+    color: $navbarInverseBrandColor;
   }
 
   .navbar-text {
-    color: @navbarInverseText;
+    color: $navbarInverseText;
   }
 
   .nav > li > a:focus,
   .nav > li > a:hover {
-    background-color: @navbarInverseLinkBackgroundHover;
-    color: @navbarInverseLinkColorHover;
+    background-color: $navbarInverseLinkBackgroundHover;
+    color: $navbarInverseLinkColorHover;
   }
 
   .nav .active > a,
   .nav .active > a:hover,
   .nav .active > a:focus {
-    color: @navbarInverseLinkColorActive;
-    background-color: @navbarInverseLinkBackgroundActive;
+    color: $navbarInverseLinkColorActive;
+    background-color: $navbarInverseLinkBackgroundActive;
   }
 
   // Inline text links
   .navbar-link {
-    color: @navbarInverseLinkColor;
+    color: $navbarInverseLinkColor;
     &:hover,
     &:focus {
-      color: @navbarInverseLinkColorHover;
+      color: $navbarInverseLinkColorHover;
     }
   }
   
@@ -117,23 +117,23 @@ ul.bulleted > li {
   .nav li.dropdown.open > .dropdown-toggle,
   .nav li.dropdown.active > .dropdown-toggle,
   .nav li.dropdown.open.active > .dropdown-toggle {
-    background-color: @navbarInverseLinkBackgroundActive;
-    color: @navbarInverseLinkColorActive;
+    background-color: $navbarInverseLinkBackgroundActive;
+    color: $navbarInverseLinkColorActive;
   }
   .nav li.dropdown > a:hover .caret,
   .nav li.dropdown > a:focus .caret {
-    border-top-color: @navbarInverseLinkColorActive;
-    border-bottom-color: @navbarInverseLinkColorActive;
+    border-top-color: $navbarInverseLinkColorActive;
+    border-bottom-color: $navbarInverseLinkColorActive;
   }
   .nav li.dropdown > .dropdown-toggle .caret {
-    border-top-color: @navbarInverseLinkColor;
-    border-bottom-color: @navbarInverseLinkColor;
+    border-top-color: $navbarInverseLinkColor;
+    border-bottom-color: $navbarInverseLinkColor;
   }
   .nav li.dropdown.open > .dropdown-toggle .caret,
   .nav li.dropdown.active > .dropdown-toggle .caret,
   .nav li.dropdown.open.active > .dropdown-toggle .caret {
-    border-top-color: @navbarInverseLinkColorActive;
-    border-bottom-color: @navbarInverseLinkColorActive;
+    border-top-color: $navbarInverseLinkColorActive;
+    border-bottom-color: $navbarInverseLinkColorActive;
   }
 }
 
@@ -142,14 +142,14 @@ ul.bulleted > li {
 // Utility navigation near the footer
 // --------------------------------------
 .nav-information {
-  margin-top: (@gridGutterWidth*2);
-  padding: @gridGutterWidth 0 0;
+  margin-top: ($gridGutterWidth*2);
+  padding: $gridGutterWidth 0 0;
 
   .collapse {
-    border-bottom: 1px solid @navSecondaryhrBorder;
+    border-bottom: 1px solid $navSecondaryhrBorder;
 
     &.in {
-      border-top: 1px solid @navSecondaryhrBorder;
+      border-top: 1px solid $navSecondaryhrBorder;
     }
   }
   .nav.unstyled {
@@ -159,10 +159,10 @@ ul.bulleted > li {
       margin-bottom: 6px;
     }
     a {
-      color: @navSecondaryLink;
+      color: $navSecondaryLink;
 
       &:hover {
-        color: @navSecondaryLinkHover;
+        color: $navSecondaryLinkHover;
         text-decoration: underline;
       }
     }
@@ -171,18 +171,18 @@ ul.bulleted > li {
     margin-bottom: 5px;
 
     a {
-      color: @navSecondaryTitleColor;
-      font-family: @sansFontFamily;
+      color: $navSecondaryTitleColor;
+      font-family: $sansFontFamily;
       font-size: 16px;
 
       &:hover {
-        background: @white;
+        background: $white;
       }
     }
   }
   .title {
-    color: @navSecondaryTitleColor;
-    font: 16px @sansFontFamily;
+    color: $navSecondaryTitleColor;
+    font: 16px $sansFontFamily;
   }
 }
 
@@ -192,10 +192,10 @@ ul.bulleted > li {
 .article .sidebar {
     
   h3 {
-    background: @asideHeadingBackground;
-    border-bottom: 1px solid @asideHeadingBorder;
-    border-top: 1px solid @asideHeadingBorder;
-    color: @asideHeadingColor;
+    background: $asideHeadingBackground;
+    border-bottom: 1px solid $asideHeadingBorder;
+    border-top: 1px solid $asideHeadingBorder;
+    color: $asideHeadingColor;
     font-size: 24px;
     line-height: 28px;
     padding: 8px 15px;
@@ -206,18 +206,18 @@ ul.bulleted > li {
     padding: 10px 15px;
   }
   .nav > li > a {
-    color: @textColor;
+    color: $textColor;
 
     &:hover {
-      background: @white;
-      color: @linkColorHover;
+      background: $white;
+      color: $linkColorHover;
       text-decoration: underline;
     }
   }
   .nav > .active > a,
   .nav > .active > a:hover {
     background: none;
-    color: @linkColorHover;
+    color: $linkColorHover;
     text-shadow: 0 1px 0 rgba(255,255,255,.5);
   }
 }
@@ -227,19 +227,19 @@ ul.bulleted > li {
 .article-left-sidebar .sidebar {
 
   .nav > li > a {
-    color: @grayLight;
-    font: 24px @sansFontFamilyLight;
+    color: $grayLight;
+    font: 24px $sansFontFamilyLight;
     line-height: 24px;
     padding: 12px 15px;
 
     &:hover {
-      color: @accent;
+      color: $accent;
       text-decoration: none;
     }
   }
   .nav > .active > a,
   .nav > .active > a:hover {
-    color: @accent;
+    color: $accent;
   }
 }
 
@@ -251,10 +251,10 @@ ul.bulleted > li {
   .nav li > a {
 
     [class^="glyph-"] {
-      color: @brand;
+      color: $brand;
     }
     .caret {
-      border-top-color: @brand;
+      border-top-color: $brand;
     }
   }
 }
@@ -266,7 +266,7 @@ ul.bulleted > li {
 
   p,
   .nav > li > a {
-    font-family: @sansFontFamily;
+    font-family: $sansFontFamily;
   }
 }
 
@@ -276,10 +276,10 @@ ul.bulleted > li {
 .hero-unit {
 
   .hero-inner-title {
-    font: @sansFontFamilyLight;
+    font: $sansFontFamilyLight;
 
     small {
-      font: 18px @sansFontFamily;
+      font: 18px $sansFontFamily;
       text-transform: uppercase;
     }
   }
@@ -289,12 +289,12 @@ ul.bulleted > li {
 // Inverted hero unit
 // --------------------------------------
 .hero-inverted {
-  background-color: @brand;
+  background-color: $brand;
 
   .hero-inner-title {
 
     small {
-      font-family: @sansFontFamily;
+      font-family: $sansFontFamily;
     }
   }
 }
@@ -303,5 +303,5 @@ ul.bulleted > li {
 // Google Map
 // --------------------------------------
 #map_sidebar, #map_canvas {
-  font-family: @sansFontFamily;
+  font-family: $sansFontFamily;
 }
