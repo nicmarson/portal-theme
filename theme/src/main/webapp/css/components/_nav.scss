@@ -3,8 +3,67 @@
 // --------------------------------------------------
 
 
+// MAIN
+// ----------------
+.nav-main {
+  display: block;
+  width: 100%;
+
+  ul {
+    display: table;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    li {
+      display: table-cell;
+
+      a {
+        @include border-radius(5px);
+        @include box-shadow("0 1px 5px rgba(0, 0, 0, 0.1)");
+        display: block;
+        font-family: "ProximaNova-Regular", Verdana, sans-serif;
+        font-size: 16px;
+        height: 120px;
+        line-height: 120px;
+        margin: 0 10px;
+        text-align: center;
+        @include transition(all 0.2s ease-in-out 0s);
+
+        &:hover {
+          @include box-shadow("0 1px 5px rgba(0, 0, 0, 0.5)");
+        }
+      }
+      span {
+        display: inline-block;
+        line-height: normal;
+        vertical-align: middle;
+
+        img {
+          display: block;
+          margin: 0 auto 7px;
+        }
+      }
+
+      &.nav-4-items {
+        width: 25%;
+      }
+
+      &.nav-5-items {
+        width: 20%;
+      }
+
+      &.nav-6-items {
+        width: 16.667%;
+      }
+    }
+  }
+}
+
+
 // TREEVIEW
-// ------------
+// ----------------
 /* http://acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript/ */
 .nav-treeview {
   -moz-user-select: none;
