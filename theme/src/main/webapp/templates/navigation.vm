@@ -1,0 +1,14 @@
+<nav class="nav-main" id="navigation">
+	<ul>
+		#foreach ($nav_item in $nav_items)
+			<li class="nav-item nav-$nav_items.size()-items">
+				<a href="$nav_item.getURL()" $nav_item.getTarget()>
+					<span>
+						$nav_item.icon()
+						$nav_item.getName()
+					</span>
+				</a>
+			</li>
+		#end
+	</ul>
+</nav>

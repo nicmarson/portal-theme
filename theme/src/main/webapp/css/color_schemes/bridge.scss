@@ -1,0 +1,68 @@
+/*------------------------------------*\
+    $BRIDGESPAN
+    $COLOR_SCHEME
+\*------------------------------------*/
+
+// Variables
+@import "variables/bridge"; // Load bridgespan colors and styles
+
+
+// --------------------------------------
+// Bridgespan only theme styles
+// --------------------------------------
+
+.bridge {
+
+  .color-brand {
+    color: $brand;
+  }
+
+  .color-accent {
+    color: $accent;
+  }
+  
+  .color-altHeading {
+    color: $altHeadingColor;
+  }
+
+  // Themes
+  // --------------------------------------
+  .asuris-only,
+  .regence-only {
+    display: none;
+  }
+
+  // Import theme styles
+  // --------------------------------------
+  @import "shared/general";
+}
+
+
+// Desktops and larger
+// --------------------------------------
+@media (min-width: 980px) {
+
+  .bridge {
+    @import "shared/980px-min";
+  }
+}
+
+
+// Responsive: Tablet to large desktops
+// --------------------------------------
+@media (min-width: 768px) {
+
+  .bridge {
+    @import "shared/768px-min";
+  }
+}
+
+
+// Responsive: Tablet to desktop
+// --------------------------------------
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .bridge {
+    @import "shared/768px-979px";
+  }
+}

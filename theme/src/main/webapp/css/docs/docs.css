@@ -1,0 +1,1165 @@
+/*!
+ * Docs - Styleguide Styles
+ *
+ * Author - Nic Marson
+ * Date - 3/6/2013
+ * Version - 1.0
+ *
+ * Styles for the Regence portal
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*------------------------------------*\
+    $CUSTOM
+    $LANDING
+\*------------------------------------*/
+@font-face {
+  font-family: 'docGlyphs';
+  src: url('../fonts/docs/icomoon.eot');
+  src: url('../fonts/docs/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/docs/icomoon.woff') format('woff'), url('../fonts/docs/icomoon.ttf') format('truetype'), url('../fonts/docs/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/*[data-icon]:before {
+  font-family: 'docGlyphs';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}*/
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.docGlyph-quill,
+.docGlyph-book,
+.docGlyph-meter,
+.docGlyph-new-tab,
+.docGlyph-embed,
+.docGlyph-cloud,
+.docGlyph-fire,
+.docGlyph-rocket,
+.docGlyph-binoculars,
+.docGlyph-busy,
+.docGlyph-screen,
+.docGlyph-laptop,
+.docGlyph-mobile,
+.docGlyph-tablet,
+.docGlyph-tv,
+.docGlyph-bullhorn,
+.docGlyph-podcast,
+.docGlyph-home {
+  font-family: 'docGlyphs';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.docGlyph-quill:before {
+  content: "\e000";
+}
+.docGlyph-book:before {
+  content: "\e001";
+}
+.docGlyph-meter:before {
+  content: "\e002";
+}
+.docGlyph-new-tab:before {
+  content: "\e003";
+}
+.docGlyph-embed:before {
+  content: "\e004";
+}
+.docGlyph-cloud:before {
+  content: "\e005";
+}
+.docGlyph-fire:before {
+  content: "\e006";
+}
+.docGlyph-rocket:before {
+  content: "\e007";
+}
+.docGlyph-binoculars:before {
+  content: "\e008";
+}
+.docGlyph-busy:before {
+  content: "\e009";
+}
+.docGlyph-screen:before {
+  content: "\e00a";
+}
+.docGlyph-laptop:before {
+  content: "\e00b";
+}
+.docGlyph-mobile:before {
+  content: "\e00c";
+}
+.docGlyph-tablet:before {
+  content: "\e00d";
+}
+.docGlyph-tv:before {
+  content: "\e00e";
+}
+.docGlyph-bullhorn:before {
+  content: "\e00f";
+}
+.docGlyph-podcast:before {
+  content: "\e010";
+}
+.docGlyph-home:before {
+  content: "\e011";
+}
+.btn-landing {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 1px 1px 0 #FFF, 4px 4px 0 rgba(0,0,0, .2);
+  -moz-box-shadow: 1px 1px 0 #FFF, 4px 4px 0 rgba(0,0,0, .2);
+  box-shadow: 1px 1px 0 #FFF, 4px 4px 0 rgba(0,0,0, .2);
+  color: #FFF;
+  font: 2rem/1 "ProximaNova-Regular", Verdana, sans-serif;
+  padding: 30px 15px;
+}
+.btn-landing:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn-landing h2,
+.btn-landing h3 {
+  color: #FFF;
+  font-family: "ProximaNova-Semibold", "Arial Black", sans-serif;
+}
+.btn-landing h2 small,
+.btn-landing h3 small {
+  color: #FFF;
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+}
+.btn-landing [class*="docGlyph"] {
+  font-size: 3rem;
+  line-height: 1;
+}
+.landing-intro {
+  height: 400px;
+  text-align: center;
+}
+.landing-intro .caption-intro {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 70px;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+}
+.landing-intro .caption-intro h1 {
+  font-family: "ProximaNova-Bold", "Arial Black", Verdana, sans-serif;
+  text-shadow: 1px 1px 0 #ffffff, 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.landing-intro .caption-intro p {
+  text-shadow: 1px 1px 0 #fff;
+}
+.landing-intro .caption-intro .btn {
+  text-align: left;
+  padding: 20px 30px 20px 100px;
+  -webkit-animation: fadeInLeftBig 2s;
+  -moz-animation: fadeInLeftBig 2s;
+  animation: fadeInLeftBig 2s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  animation-delay: .2s;
+}
+.landing-intro .caption-intro .btn h2 {
+  margin: 0;
+}
+.landing-intro .caption-intro .btn [class*="docGlyph"] {
+  float: left;
+  font-size: 2.25rem;
+  margin-left: -4.25rem;
+}
+.landing-buttons {
+  padding-top: 20px;
+  text-align: center;
+}
+.caption-javascript .btn-landing [class*="docGlyph"] {
+  font-size: 81px;
+  line-height: 54px;
+  vertical-align: bottom;
+}
+.landing-content {
+  color: #5a5a5a;
+  padding-top: 50px;
+  text-align: center;
+}
+.landing-content h2 {
+  margin-bottom: 5px;
+}
+.landing-content .byline {
+  margin-bottom: 40px;
+  font-size: 1.3333rem;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #999;
+}
+.image {
+  display: block;
+  margin: 0 auto 30px;
+  max-height: 145px;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opactiy: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opactiy: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opactiy: 1;
+  }
+}
+@-webkit-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-o-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-2000px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+@keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.dotted {
+  background: #EAEAEA;
+}
+.multiplebgs.cssgradients .dotted {
+  background-color: #F5F5F5;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 3px 3px;
+}
+/* Desktops
+------------------------- */
+@media (min-width: 768px) {
+  .jumbotron {
+    -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+    -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+    box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+  }
+}
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+  .caption-javascript .btn-landing [class*="docGlyph"] {
+    font-size: 54px;
+    line-height: 36px;
+  }
+}
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+  /* Tighten up footer */
+  #bottom {
+    padding: 20px 0;
+  }
+}
+/* Body and structure
+-------------------------------------------------- */
+body.docs {
+  position: relative;
+  padding-top: 40px;
+}
+/* Code in headings */
+h3 code {
+  font-size: 14px;
+  font-weight: normal;
+}
+/* Tweak navbar brand link to be super sleek
+-------------------------------------------------- */
+body > .navbar {
+  font-size: 13px;
+}
+/* Sections
+-------------------------------------------------- */
+/* padding for in-page bookmarks and fixed navbar */
+section {
+  padding-top: 30px;
+}
+section > .page-header,
+section > .lead {
+  color: #5a5a5a;
+}
+section > ul li {
+  margin-bottom: 5px;
+}
+/* Jumbotrons
+-------------------------------------------------- */
+/* Base class
+------------------------- */
+.jumbotron {
+  position: relative;
+}
+.jumbotron h1 {
+  font-family: "ProximaNova-Bold", "Arial Black", Verdana, sans-serif;
+}
+.docs .jumbotron {
+  background: #033048;
+  /* Old browsers */
+  background-color: #916dbd;
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(45deg, #033048, #916dbd);
+  background-image: -webkit-linear-gradient(45deg, #033048, #916dbd);
+  background-image: -o-linear-gradient(45deg, #033048, #916dbd);
+  background-image: linear-gradient(45deg, #033048, #916dbd);
+  padding: 2.5rem 0 1.75rem;
+}
+/* Subhead (other pages)
+------------------------- */
+.subhead {
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.subhead h1 {
+  color: #ffffff;
+}
+.subhead p {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.subhead .navbar {
+  display: none;
+}
+/* Bottom
+-------------------------------------------------- */
+#bottom {
+  border-top: 1px solid #dddddd;
+  background-color: #f5f5f5;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  margin-top: 50px;
+  padding: 40px 0;
+}
+#bottom p {
+  margin-bottom: 0;
+  color: #777;
+}
+#bottom .icon-feedback {
+  border-color: #555555;
+}
+#bottom .icon-feedback b,
+#bottom .icon-feedback i {
+  background: #555555;
+}
+/* Special grid styles
+-------------------------------------------------- */
+.show-grid {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.show-grid [class*="span"] {
+  background-color: #eee;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  min-height: 40px;
+  line-height: 40px;
+}
+.show-grid [class*="span"]:hover {
+  background-color: #ddd;
+}
+.show-grid .show-grid {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.show-grid .show-grid [class*="span"] {
+  margin-top: 5px;
+}
+.show-grid [class*="span"] [class*="span"] {
+  background-color: #ccc;
+}
+.show-grid [class*="span"] [class*="span"] [class*="span"] {
+  background-color: #999;
+}
+/* Mini layout previews
+-------------------------------------------------- */
+.mini-layout {
+  border: 1px solid #ddd;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.075);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.075);
+  box-shadow: 0 1px 2px rgba(0,0,0,.075);
+}
+.mini-layout {
+  height: 300px;
+  margin-bottom: 20px;
+  padding: 0 9px;
+}
+.mini-layout [class*="span"] {
+  height: 280px;
+}
+.mini-layout div {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.mini-layout .mini-layout-body {
+  background-color: #dceaf4;
+}
+.mini-layout.fluid .mini-layout-sidebar {
+  background-color: #bbd8e9;
+}
+/* Misc
+-------------------------------------------------- */
+/* Make tables spaced out a bit more */
+h2 + table,
+h3 + table,
+h4 + table,
+h2 + .row {
+  margin-top: 5px;
+}
+.scrollspy-example {
+  height: 200px;
+  overflow: auto;
+  position: relative;
+}
+/* Fake the :focus state to demo it */
+.focused {
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.1), 0 0 8px rgba(82,168,236,.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,.1), 0 0 8px rgba(82,168,236,.6);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1), 0 0 8px rgba(82,168,236,.6);
+  outline: 0;
+}
+/* For input sizes, make them display block */
+.docs-input-sizes select,
+.docs-input-sizes input[type=text] {
+  display: block;
+  margin-bottom: 9px;
+}
+/* Icons
+------------------------- */
+.the-icons {
+  margin-left: 0;
+  list-style: none;
+}
+.the-icons li {
+  float: left;
+  width: 25%;
+  line-height: 25px;
+}
+.the-icons i:hover {
+  background-color: rgba(255, 0, 0, 0.25);
+}
+/* Example page
+------------------------- */
+.bootstrap-examples h4 {
+  margin: 10px 0 5px;
+}
+.bootstrap-examples p {
+  font-size: 13px;
+  line-height: 18px;
+}
+.bootstrap-examples .thumbnail {
+  margin-bottom: 9px;
+  background-color: #fff;
+}
+/* Bootstrap code examples
+-------------------------------------------------- */
+/* Base class */
+.bs-docs-example {
+  position: relative;
+  margin: 15px 0;
+  padding: 39px 19px 14px;
+  *padding-top: 19px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  /* Echo out a label for the example */
+
+  /* Remove spacing between an example and it's code */
+
+  /* Tweak examples
+  ------------------------- */
+
+}
+.bs-docs-example:after {
+  content: "Example";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #9da0a4;
+  -webkit-border-radius: 4px 0 4px 0;
+  -moz-border-radius: 4px 0 4px 0;
+  border-radius: 4px 0 4px 0;
+}
+.bs-docs-example + .prettyprint {
+  margin-top: -20px;
+  padding-top: 15px;
+}
+.bs-docs-example > p:last-child {
+  margin-bottom: 0;
+}
+.bs-docs-example .table,
+.bs-docs-example .progress,
+.bs-docs-example .well,
+.bs-docs-example .alert,
+.bs-docs-example .hero-unit,
+.bs-docs-example .pagination,
+.bs-docs-example .navbar,
+.bs-docs-example > .nav,
+.bs-docs-example blockquote {
+  margin-bottom: 5px;
+}
+.bs-docs-example .pagination {
+  margin-top: 0;
+}
+.bs-navbar-top-example,
+.bs-navbar-bottom-example {
+  z-index: 1;
+  padding: 0;
+  height: 90px;
+  overflow: hidden;
+  /* cut the drop shadows off */
+
+}
+.bs-navbar-top-example .navbar-fixed-top,
+.bs-navbar-bottom-example .navbar-fixed-bottom {
+  margin-left: 0;
+  margin-right: 0;
+}
+.bs-navbar-top-example {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+.bs-navbar-top-example:after {
+  top: auto;
+  bottom: -1px;
+  -webkit-border-radius: 0 4px 0 4px;
+  -moz-border-radius: 0 4px 0 4px;
+  border-radius: 0 4px 0 4px;
+}
+.bs-navbar-bottom-example {
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+.bs-navbar-bottom-example .navbar {
+  margin-bottom: 0;
+}
+form.bs-docs-example {
+  padding-bottom: 19px;
+}
+/* Web Fonts */
+.bs-docs-example-fonts dt {
+  font-size: 12px;
+}
+.bs-docs-example-fonts dd {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+/* Amp */
+.bs-docs-example-amp .amp {
+  font-size: 3em;
+  line-height: 1;
+  margin-top: -0.5em;
+  padding: 0;
+  text-align: center;
+}
+/* Tooltips */
+.bs-docs-tooltip-examples {
+  text-align: center;
+  margin: 0 0 10px;
+  list-style: none;
+}
+.bs-docs-tooltip-examples li {
+  display: inline;
+  padding: 0 10px;
+}
+/* Popovers */
+.bs-docs-example-popover {
+  padding-bottom: 24px;
+  background-color: #f9f9f9;
+}
+.bs-docs-example-popover .popover {
+  position: relative;
+  display: block;
+  float: left;
+  width: 260px;
+  margin: 20px;
+}
+/* Dropdowns */
+.bs-docs-example-submenus {
+  min-height: 180px;
+}
+.bs-docs-example-submenus > .pull-left + .pull-left {
+  margin-left: 20px;
+}
+.bs-docs-example-submenus .dropup > .dropdown-menu,
+.bs-docs-example-submenus .dropdown > .dropdown-menu {
+  display: block;
+  position: static;
+  margin-bottom: 5px;
+  *width: 180px;
+}
+/* Responsive docs
+-------------------------------------------------- */
+/* Utility classes table
+------------------------- */
+.responsive-utilities th small {
+  display: block;
+  font-weight: normal;
+  color: #999;
+}
+.responsive-utilities tbody th {
+  font-weight: normal;
+}
+.responsive-utilities td {
+  text-align: center;
+}
+.responsive-utilities td.is-visible {
+  color: #468847;
+  background-color: #dff0d8 !important;
+}
+.responsive-utilities td.is-hidden {
+  color: #ccc;
+  background-color: #f9f9f9 !important;
+}
+/* Responsive tests
+------------------------- */
+.responsive-utilities-test {
+  margin-top: 5px;
+  margin-left: 0;
+  list-style: none;
+  overflow: hidden;
+  /* clear floats */
+
+}
+.responsive-utilities-test li {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 43px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 43px;
+  color: #999;
+  text-align: center;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.responsive-utilities-test li + li {
+  margin-left: 10px;
+}
+.responsive-utilities-test span {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+}
+/* Sidenav for Docs
+-------------------------------------------------- */
+.bs-docs-sidenav {
+  width: 228px;
+  margin: 30px 0 0;
+  padding: 0;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+  box-shadow: 0 1px 4px rgba(0,0,0,.065);
+  /* Chevrons */
+
+}
+.bs-docs-sidenav > li > a {
+  display: block;
+  width: 190px \9;
+  margin: 0 0 -1px;
+  padding: 8px 14px;
+  border: 1px solid #e5e5e5;
+}
+.bs-docs-sidenav > li:first-child > a {
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+}
+.bs-docs-sidenav > li:last-child > a {
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+}
+.bs-docs-sidenav > .active > a {
+  position: relative;
+  z-index: 2;
+  padding: 9px 15px;
+  border: 0;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+  -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+  box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+}
+.bs-docs-sidenav .icon-chevron-right {
+  float: right;
+  margin-top: 2px;
+  margin-right: -6px;
+  opacity: .25;
+}
+.bs-docs-sidenav > li > a:hover {
+  background-color: #f5f5f5;
+}
+.bs-docs-sidenav a:hover .icon-chevron-right {
+  opacity: .5;
+}
+.bs-docs-sidenav .active .icon-chevron-right,
+.bs-docs-sidenav .active a:hover .icon-chevron-right {
+  background-image: url(../img/glyphicons-halflings-white.png);
+  opacity: 1;
+}
+.bs-docs-sidenav.affix {
+  top: 40px;
+}
+.bs-docs-sidenav.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 270px;
+}
+.glyph-sample {
+  background-color: #F7F7F9;
+  border: 1px solid #E1E1E8;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  float: left;
+  margin: 10px 20px 10px 0;
+  padding: 10px;
+  text-align: center;
+  width: 7em;
+}
+.glyph-sample b {
+  display: block;
+  font-size: 28px;
+  line-height: 32px;
+  padding-bottom: 10px;
+}
+.glyph-sample code {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  padding: 4px 8px;
+}
+/* Responsive
+-------------------------------------------------- */
+/* Desktop large
+------------------------- */
+@media (min-width: 1200px) {
+  .bs-docs-container {
+    max-width: 970px;
+  }
+  .bs-docs-sidenav {
+    width: 258px;
+  }
+  .bs-docs-sidenav > li > a {
+    width: 230px \9;
+    /* Override the previous IE8-9 hack */
+  
+  }
+}
+/* Desktop
+------------------------- */
+@media (max-width: 980px) {
+  /* Unfloat brand */
+  body > .navbar-fixed-top .brand {
+    float: left;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* Inline-block quick links for more spacing */
+  .quick-links li {
+    display: inline-block;
+    margin: 5px;
+  }
+  /* When affixed, space properly */
+  .bs-docs-sidenav {
+    top: 0;
+    width: 218px;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+}
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  /* Adjust sidenav width */
+  .bs-docs-sidenav {
+    width: 166px;
+    margin-top: 20px;
+  }
+  .bs-docs-sidenav.affix {
+    top: 0;
+  }
+  .docs #top {
+    margin-top: -20px;
+    /* Offset bottom margin on .navbar */
+  
+  }
+}
+/* Tablet
+------------------------- */
+@media (max-width: 767px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  /* Widen masthead and social buttons to fill body padding */
+  .docs .jumbotron {
+    padding: 40px 20px;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  .docs #top {
+    margin-top: -20px;
+    /* Offset bottom margin on .navbar */
+  
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  .docs #top .nav-brand {
+    padding-left: 15px;
+  }
+  .bs-docs-social {
+    margin: 0 -20px;
+  }
+  /* Space out the show-grid examples */
+  .show-grid [class*="span"] {
+    margin-bottom: 5px;
+  }
+  /* Sidenav */
+  .bs-docs-sidenav {
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .bs-docs-sidenav.affix {
+    position: static;
+    width: auto;
+    top: 0;
+  }
+}
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+  /* Remove padding above jumbotron */
+  body {
+    padding-top: 0;
+  }
+  /* Change up some type stuff */
+  h2 small {
+    display: block;
+  }
+  /* Downsize the jumbotrons */
+  .jumbotron h1 {
+    font-size: 45px;
+  }
+  .jumbotron p,
+  .jumbotron .btn {
+    font-size: 18px;
+  }
+  .jumbotron .btn {
+    display: block;
+    margin: 0 auto;
+  }
+  /* center align subhead text like the masthead */
+  .subhead h1,
+  .subhead p {
+    text-align: center;
+  }
+  /* Do our best to make tables work in narrow viewports */
+  table code {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  /* Examples: dropdowns */
+  .bs-docs-example-submenus > .pull-left {
+    float: none;
+    clear: both;
+  }
+  .bs-docs-example-submenus > .pull-left,
+  .bs-docs-example-submenus > .pull-left + .pull-left {
+    margin-left: 0;
+  }
+  .bs-docs-example-submenus p {
+    margin-bottom: 0;
+  }
+  .bs-docs-example-submenus .dropup > .dropdown-menu,
+  .bs-docs-example-submenus .dropdown > .dropdown-menu {
+    margin-bottom: 10px;
+    float: none;
+    max-width: 180px;
+  }
+  /* Examples: modal */
+  .modal-example .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+}
+.bg-color-brand {
+  background-color: #0881c2 !important;
+}
+.bg-color-accent {
+  background-color: #599abd !important;
+}
+.bg-color-accentDark {
+  background-color: #397290 !important;
+}
+.bg-color-accentDarker {
+  background-color: #244759 !important;
+}
+.bg-color-accentDarkest {
+  background-color: #152a35 !important;
+}
+.bg-color-accentLight {
+  background-color: #90bbd3 !important;
+}
+.bg-color-accentLighter {
+  background-color: #c6dde9 !important;
+}
+.bg-color-accentLightest {
+  background-color: #eff5f8 !important;
+}
+.bg-color-blue {
+  background-color: #076da5 !important;
+}
+.bg-color-green {
+  background-color: #1e9442 !important;
+}
+.bg-color-red {
+  background-color: #9d261d !important;
+}
+.bg-color-yellow {
+  background-color: #ffc40d !important;
+}
+.bg-color-orange {
+  background-color: #b94d00 !important;
+}
+.bg-color-pink {
+  background-color: #c3325f !important;
+}
+.bg-color-purple {
+  background-color: #916dbd !important;
+}
+.bg-color-burgundy {
+  background-color: #791321 !important;
+}
+.text-color-brand {
+  color: #0881c2 !important;
+}
+.text-color-accent {
+  color: #599abd !important;
+}
+.text-color-accentDark {
+  color: #397290 !important;
+}
+.text-color-accentDarker {
+  color: #244759 !important;
+}
+.text-color-accentDarkest {
+  color: #152a35 !important;
+}
+.text-color-accentLight {
+  color: #90bbd3 !important;
+}
+.text-color-accentLighter {
+  color: #c6dde9 !important;
+}
+.text-color-blue {
+  color: #076da5 !important;
+}
+.text-color-green {
+  color: #1e9442 !important;
+}
+.text-color-red {
+  color: #9d261d !important;
+}
+.text-color-yellow {
+  color: #ffc40d !important;
+}
+.text-color-orange {
+  color: #b94d00 !important;
+}
+.text-color-pink {
+  color: #c3325f !important;
+}
+.text-color-purple {
+  color: #916dbd !important;
+}
+.text-color-burgundy {
+  color: #791321 !important;
+}
+.webfontsOn {
+  display: none;
+}
+.fontface .webfontsOff {
+  display: none;
+}
+.fontface .webfontsOn {
+  display: inline;
+}
+.text-center {
+  text-align: center !important;
+}
+.fontfamily-sans {
+  font-family: "ProximaNova-Regular", Verdana, sans-serif !important;
+}
+.fontfamily-sansItalic {
+  font-family: "ProximaNova-RegularIt", Verdana, sans-serif !important;
+}
+.fontfamily-sansLight {
+  font-family: "ProximaNova-Light", Verdana, sans-serif !important;
+}
+.fontfamily-sansLightItalic {
+  font-family: "ProximaNova-LightIt", Verdana, sans-serif !important;
+}
+.fontfamily-sansSemibold {
+  font-family: "ProximaNova-Semibold", "Arial Black", sans-serif !important;
+}
+.fontfamily-sansSemiboldItalic {
+  font-family: "ProximaNova-SemiboldIt", "Arial Black", sans-serif !important;
+}
+.fontfamily-sansBold {
+  font-family: "ProximaNova-Bold", "Arial Black", Verdana, sans-serif !important;
+}
+.fontfamily-sansBoldItalic {
+  font-family: "ProximaNova-BoldIt", "Arial Black", sans-serif !important;
+}
+.fontfamily-sansCond {
+  font-family: "ProximaNovaCond-Regular", Verdana, sans-serif !important;
+}
+.fontfamily-sansCondSemibold {
+  font-family: "ProximaNovaCond-Semibold", Verdana, sans-serif !important;
+}
+.fontfamily-serif {
+  font-family: Georgia, "Times New Roman", Times, serif !important;
+}
+.fontfamily-mono {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace !important;
+}
+.fontfamily-script {
+  font-family: 'NinaWebMedium', 'Chalkboard', 'ChalkboardSE-Regular', cursive !important;
+}
+.fontfamily-scriptBold {
+  font-family: 'NinaWeb-Bold', 'Chalkboard', 'ChalkboardSE-Regular', cursive !important;
+}

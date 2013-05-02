@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+#parse ($init)
+
+<html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id">
+
+<head>
+    <title>$the_title - $company_name</title>
+
+    <link href="http://fnt.webink.com/wfs/webink.css/?project=AEC37CF0-6B2D-450D-9777-5062C06CCACA&fonts=58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,1366810A-C17C-C074-FF25-E81320293740:f=ProximaNovaCond-Semibold,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,FF4969BA-A10C-C1F1-4CAE-97A4557D103C:f=ProximaNovaCond-Regular,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold" rel="stylesheet" type="text/css"/>
+
+    $theme.include($top_head_include)
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="$javascript_folder/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script type="text/javascript" src="$javascript_folder/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script>
+        // set options for html5shiv
+        if(!window.html5){ window.html5 = {}; }
+        window.html5.shivMethods = false;
+    </script>
+    <script src="$javascript_folder/webshim/extras/modernizr-custom.js"></script>
+    <script src="$javascript_folder/webshim/polyfiller.js"></script>
+    <script src="$javascript_folder/webshim/webshim.js"></script>
+    <script type="text/javascript" src="$javascript_folder/vendor/oo_engine.min.js"></script>
+    <script>
+    	var oo_feedback = new OOo.Ocode({});
+    </script>
+
+    <link rel="shortcut icon" href="$images_folder/favicon.ico">
+</head>
+
+<body class="$css_class">
+    
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    $theme.include($body_top_include)
+
+    #if ($is_signed_in)
+    	#dockbar()
+    #end
+
+    #parse ("$full_templates_path/header.vm")
+    
+    <div class="container" id="main" role="main">
+    #if ($selectable)
+        $theme.include($content_include)
+    #else
+        $portletDisplay.recycle()
+        $portletDisplay.setTitle($the_title)
+        $theme.wrapPortlet("portlet.vm", $content_include)
+    #end
+
+        #parse ("$full_templates_path/navigation.vm")
+
+    #if ($has_navigation || $is_signed_in)
+        #parse ("$full_templates_path/navigation_information.vm")
+    #end
+
+        #parse ("$full_templates_path/navigation_utility.vm")
+    </div> <!-- (main) /container -->
+    
+    #parse ("$full_templates_path/footer.vm")
+
+    $theme.include($body_bottom_include)  
+    
+    <script type="text/javascript" src="$javascript_folder/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="$javascript_folder/vendor/handlebars.js"></script>
+    <script type="text/javascript" src="$javascript_folder/vendor/ember-1.0.0-rc.1.min.js"></script>
+    <script type="text/javascript" src="$javascript_folder/plugins.js"></script>
+    <script type="text/javascript" src="$javascript_folder/script.js"></script>
+
+</body>
+
+$theme.include($bottom_include)
+
+</html>

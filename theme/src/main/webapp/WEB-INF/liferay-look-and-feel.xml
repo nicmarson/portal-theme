@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 6.0.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_6_0_0.dtd">
+
+<look-and-feel>
+  <compatibility>
+    <version>6.1.20+</version>
+  </compatibility>
+  <theme id="npp" name="NPP Theme">
+       <settings>
+         <setting key="headerState" value="first-visit" />
+       </settings>
+       <color-scheme id="01" name="Regence">
+         <css-class>regence</css-class>
+         <color-scheme-images-path>${images-path}/color_schemes/${css-class}</color-scheme-images-path>
+      </color-scheme>
+      <color-scheme id="02" name="Asuris">
+         <css-class>asuris</css-class>
+         <color-scheme-images-path>${images-path}/color_schemes/${css-class}</color-scheme-images-path>
+      </color-scheme>
+      <color-scheme id="03" name="Bridgespan">
+         <css-class>bridge</css-class>
+         <color-scheme-images-path>${images-path}/color_schemes/${css-class}</color-scheme-images-path>
+      </color-scheme>
+    </theme>
+</look-and-feel>

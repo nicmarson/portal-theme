@@ -1,0 +1,55 @@
+/*------------------------------------*\
+    $REGENCE
+    $COLOR_SCHEME
+\*------------------------------------*/
+
+// Variables
+@import "variables/regence";
+
+// --------------------------------------
+// Regence only theme styles
+// --------------------------------------
+
+.regence {
+
+  // Themes
+  // --------------------------------------
+  .asuris-only,
+  .bridge-only {
+    display: none;
+  }
+
+  // Import theme styles
+  // --------------------------------------
+  @import "shared/general";
+}
+
+
+// Desktops and larger
+// --------------------------------------
+@media (min-width: 980px) {
+
+  .regence {
+    @import "shared/980px-min";
+  }
+}
+
+
+// Responsive: Tablet to large desktops
+// --------------------------------------
+@media (min-width: 768px) {
+
+  .regence {
+    @import "shared/768px-min";
+  }
+}
+
+
+// Responsive: Tablet to desktop
+// --------------------------------------
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .regence {
+    @import "shared/768px-979px";
+  }
+}
