@@ -13,24 +13,53 @@
 
 .bridge {
 
-  .color-brand {
-    color: $brand;
-  }
-
-  .color-accent {
-    color: $accent;
-  }
-  
-  .color-altHeading {
-    color: $altHeadingColor;
-  }
-
-  // Themes
+  // Theme utilities
   // --------------------------------------
   .asuris-only,
   .regence-only {
     display: none;
   }
+  .bridge-caret {
+    border: 4px solid $accent;
+    @include border-radius(16px);
+    font-size: 0;
+    padding: 12px 2px 12px 10px;
+    vertical-align: top;
+
+    .caret,
+    &:after {
+      border-bottom: 8px solid transparent;
+      border-left: 8px solid $grayLight;
+      border-top: 8px solid transparent;
+      content: "";
+      display: inline-block;
+      height: 0;
+      margin-right: -4px;
+      vertical-align: middle;
+      width: 0;
+    }
+  }
+
+
+  // Headings
+  // --------------------------------------
+  h1,
+  h2,
+  h3 {
+    font-family: $sansFontFamilyBold;
+  }
+
+
+  // Articles
+  // --------------------------------------
+  .article-landing {
+
+    h3 {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+
 
   // Import theme styles
   // --------------------------------------
@@ -44,6 +73,66 @@
 
   .bridge {
     @import "shared/980px-min";
+
+    #hero-welcome .hero-unit {
+      background-image: url(images/bridge/hero-welcome.png);
+      height: 360px;
+
+      .flush-bottom {
+        bottom: -24px;
+        font-family: $sansFontFamilyBold;
+        font-size: 134px;
+        left: 20px;
+        letter-spacing: -8px;
+        position: absolute;
+        text-transform: uppercase;
+      }
+      .form-signIn {
+        background-color: $white;
+        @include border-bottom-right-radius(10px);
+        @include border-top-left-radius(10px);
+        font-family: $sansFontFamilyLight;
+        padding: 20px 30px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        h2 {
+          color: $textColor;
+          font-family: $sansFontFamilySemibold;
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        input {
+          @include border-radius(0);
+          padding-bottom: 2px;
+          padding-top: 2px;
+          width: 146px;
+        }
+        label {
+          color: $textColor;
+          text-align: left;
+          width: 5.2em
+        }
+        p {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        .btn {
+          float: right;
+          font-family: $sansFontFamilyCond;
+          font-size: 16px;
+          padding: 5px 16px;
+          text-transform: uppercase;
+        }
+        .control-group {
+          margin-bottom: 10px;
+        }
+        .controls {
+          margin-left: 5.2em;
+        }
+      }
+    }
   }
 }
 

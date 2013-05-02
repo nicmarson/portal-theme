@@ -5,30 +5,37 @@
 
 // Brand colors
 // -------------------------
-$brand:							#008693; // teal
-$brandDarker:					darken($brand, 25%);
-$accent:						#F26C2A; // orange
-$accentDark:					darken($accent, 15%);
-$accentDarker:					darken($accent, 30%);
-$accentDarkest:					darken($accent, 40%);
-$accentLight:					lighten($accent, 15%);
-$accentLighter:					lighten($accent, 30%);
-$accentLightest:				lighten($accent, 41%);
-$altHeadingColor:				#6e6e6e; // gray
+$brand:                         #008693; // teal
+$brandDarker:                   darken($brand, 25%);
+$accent:                        #F26C2A; // orange
+$accentDark:                    darken($accent, 15%);
+$accentDarker:                  darken($accent, 30%);
+$accentDarkest:                 darken($accent, 40%);
+$accentLight:                   lighten($accent, 15%);
+$accentLighter:                 lighten($accent, 30%);
+$accentLightest:                lighten($accent, 41%);
+$altHeadingColor:               #6e6e6e; // gray
 
 
 // Web fonts
 // -------------------------
-$sansFontFamily:				"NewsGothic", Verdana, sans-serif;
-$sansFontFamilyIt:				"NewsGothic-RegularIt", Verdana, sans-serif;
-$sansFontFamilyLight:			"NewsGothic-Light", Verdana, sans-serif;
-$sansFontFamilyLightIt:			"NewsGothic-LightIt", Verdana, sans-serif;
-$sansFontFamilySemibold:		"NewsGothic-Semibold", "Arial Black", sans-serif;
-$sansFontFamilySemiboldIt:		"NewsGothic-SemiboldIt", "Arial Black", sans-serif;
-$sansFontFamilyBold:			"NewsGothic-Bold", "Arial Black", Verdana, sans-serif;
-$sansFontFamilyBoldIt:			"NewsGothic-BoldIt", "Arial Black", sans-serif;
-$sansFontFamilyCond:			"NewsGothicCond-Regular", Verdana, sans-serif;
-$sansFontFamilyCondSemibold:	"NewsGothicCond-Semibold", Verdana, sans-serif;
+$sansFontFamily:                "NewsGothicBT-Reg", Verdana, sans-serif;
+$sansFontFamilyIt:              "NewsGothicBT-It", Verdana, sans-serif;
+$sansFontFamilyLight:           "NewsGothicLtBT-Reg", Verdana, sans-serif;
+$sansFontFamilyLightIt:         "NewsGothicLtBT-It", Verdana, sans-serif;
+$sansFontFamilySemibold:        "NewsGothicDmBT-Reg", "Arial Black", sans-serif;
+$sansFontFamilySemiboldIt:      "NewsGothicDmBT-It", "Arial Black", sans-serif;
+$sansFontFamilyBold:            "NewsGothicBdBT-Reg", "Arial Black", Verdana, sans-serif;
+$sansFontFamilyBoldIt:          "NewsGothicBdBT-It", "Arial Black", sans-serif;
+$sansFontFamilyCond:            "NewsGothicCnBT-Reg", Verdana, sans-serif;
+$sansFontFamilyCondIt:          "NewsGothicCnBT-It", Verdana, sans-serif;
+$sansFontFamilyBoldCond:        "NewsGothicBdCnBT-Reg", Verdana, sans-serif;
+$sansFontFamilyBoldCondIt:      "NewsGothicBdCnBT-It", Verdana, sans-serif;
+
+
+// Scaffolding
+// -------------------------
+$textColor:             #4c4d4f;
 
 
 // Links
@@ -93,30 +100,30 @@ $dropdownLinkBackgroundHover:   $dropdownLinkBackgroundActive;
 
 // Article
 // -------------------------
-$articleBackground:				lighten($accent, 38%);
-$articleBackgroundBottom:		lighten($articleBackground, 8%);
-$contentBorder:					lighten($accentLighter, 8%);
-$asideHeadingBackground:		#F0F6F9;
-$asideHeadingBorder:			#E5EFF5;
-$asideHeadingColor:				#7D99A8;
-$bulletBackground:				$orange;
-$blockquoteBackground:			$accentLightest;
-$blockquoteBorder:				$accentLighter;
+$articleBackground:             lighten($accent, 38%);
+$articleBackgroundBottom:       lighten($articleBackground, 8%);
+$contentBorder:                 lighten($accentLighter, 8%);
+$asideHeadingBackground:        #F0F6F9;
+$asideHeadingBorder:            #E5EFF5;
+$asideHeadingColor:             #7D99A8;
+$bulletBackground:              $orange;
+$blockquoteBackground:          $accentLightest;
+$blockquoteBorder:              $accentLighter;
 
 
 // Lists
 // -------------------------
-$bulletBackground:					lighten($orange, 12%);
-$listIndent:						$baseLineHeight;
+$bulletBackground:                  lighten($orange, 12%);
+$listIndent:                        $baseLineHeight;
 
 
 // Personalization Widget
 // -------------------------
-$personalizeBackground:			#8FCCE7;
-$personalizeBackgroundBottom:	darken($personalizeBackground, 8%);
-$personalizeInput:				#4D9EC0;
-$personalizeInputHover:			darken($personalizeInput,4%);
-$personalizeInputActive:		darken($personalizeInput,8%);
+$personalizeBackground:         #8FCCE7;
+$personalizeBackgroundBottom:   darken($personalizeBackground, 8%);
+$personalizeInput:              #4D9EC0;
+$personalizeInputHover:         darken($personalizeInput,4%);
+$personalizeInputActive:        darken($personalizeInput,8%);
 
 
 // Navbar
@@ -161,50 +168,50 @@ $navbarInverseBrandColor:                $navbarInverseLinkColor;
 
 // Nav Inverted
 // -------------------------
-$navInvertedText:				$white;
-$navInvertedLinkColor:			$white;
-$navInvertedLinkColorHover:		lighten($orange, 40%);
-$navInvertedLinkColorActive:	lighten($orange, 20%);
+$navInvertedText:               $white;
+$navInvertedLinkColor:          $white;
+$navInvertedLinkColorHover:     lighten($orange, 40%);
+$navInvertedLinkColorActive:    lighten($orange, 20%);
 
 
 // Nav - Primary
 // -------------------------
-$navPrimaryBackground:			$accentLight;
-$navPrimaryBackgroundHover:		darken($navPrimaryBackground, 6%);
-$navPrimaryBackgroundActive:	darken($navPrimaryBackground, 10%);
-$navPrimaryBorder:				$accentLight;
-$navPrimaryBoxShadow:			rgba(255,255,255,.2);
-$navPrimaryLinkColor:			$white;
-$navSecondaryLinkColor:			darken($accent, 30%);
-$navSecondaryhrBorder:			lighten($accent, 22%);
+$navPrimaryBackground:          $accentLight;
+$navPrimaryBackgroundHover:     darken($navPrimaryBackground, 6%);
+$navPrimaryBackgroundActive:    darken($navPrimaryBackground, 10%);
+$navPrimaryBorder:              $accentLight;
+$navPrimaryBoxShadow:           rgba(255,255,255,.2);
+$navPrimaryLinkColor:           $white;
+$navSecondaryLinkColor:         darken($accent, 30%);
+$navSecondaryhrBorder:          lighten($accent, 22%);
 
 
 // Nav - Secondary
 // -------------------------
-$navSecondaryBackground:		#DDE9EF;
-$navSecondaryBottomBackground:	lighten($navSecondaryBackground, 10%);
-$navSecondaryTitleColor:		darken($accent, 5%);
-$navSecondaryLink:				darken($accent, 25%);
-$navSecondaryLinkHover:			darken($accent, 15%);
-$navSecondaryhrBorder:			darken($navSecondaryBackground, 10%);
+$navSecondaryBackground:        #DDE9EF;
+$navSecondaryBottomBackground:  lighten($navSecondaryBackground, 10%);
+$navSecondaryTitleColor:        darken($accent, 5%);
+$navSecondaryLink:              darken($accent, 25%);
+$navSecondaryLinkHover:         darken($accent, 15%);
+$navSecondaryhrBorder:          darken($navSecondaryBackground, 10%);
 
 
 // Scaffolding
 // -------------------------
-$bodyTopColor:					$accentLighter;
+$bodyTopColor:                  $accentLighter;
 
 
 // Top
 // -------------------------
-$topBackground:					$white;
-$topHeight:						80px;
-$topText:						$gray;
-$topLinkColor:					$gray;
-$topLinkColorHover:				$white;
-$topLinkBackground:				$grayLighter;
-$topLinkBorder:					$grayLighter;
-$audienceGlyphColor:			$accent;
-$audienceCaretColor:			$brand;
+$topBackground:                 $white;
+$topHeight:                     80px;
+$topText:                       $gray;
+$topLinkColor:                  $gray;
+$topLinkColorHover:             $white;
+$topLinkBackground:             $grayLighter;
+$topLinkBorder:                 $grayLighter;
+$audienceGlyphColor:            $accent;
+$audienceCaretColor:            $brand;
 
 
 // Hero unit
@@ -216,19 +223,19 @@ $heroUnitLeadColor:               inherit;
 
 // Contact
 // -------------------------
-$contactInfoBackground:			$wellBackground;
-$contactInfoLink:				$textColor;
-$contactInfoLinkHover:			$textColor;
-$contactPhoneBackground:		#66A131;
-$contactEmailBackground:		$purple;
+$contactInfoBackground:         $wellBackground;
+$contactInfoLink:               $textColor;
+$contactInfoLinkHover:          $textColor;
+$contactPhoneBackground:        #66A131;
+$contactEmailBackground:        $purple;
 
 
 // Bottom
 // -------------------------
-$bottomBackground:				$accent url(images/bridge/footerBackground.png);
-$bottomColor:					$white;
-$bottomFontSize:				16px;
-$bottomLinkBackground:			transparent;
-$bottomLinkBackgroundHover:		transparent;
-$bottomLinkColor:				$white;
-$bottomLinkColorHover:			$white;
+$bottomBackground:              $accent url(images/bridge/footerBackground.png);
+$bottomColor:                   $white;
+$bottomFontSize:                16px;
+$bottomLinkBackground:          transparent;
+$bottomLinkBackgroundHover:     transparent;
+$bottomLinkColor:               $white;
+$bottomLinkColorHover:          $white;

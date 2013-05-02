@@ -5,7 +5,7 @@
   <compatibility>
     <version>6.1.20+</version>
   </compatibility>
-  <theme id="npp" name="New Portal Project Master">
+  <theme id="npp" name="NPP Theme">
        <settings>
          <setting key="headerState" value="first-visit" />
        </settings>

@@ -61,12 +61,14 @@ ol {
 
 // Buttons
 // -------------------------
-.btn-link {
-  padding-left: 0;
-  padding-right: 0;
-}
 .btn small {
   display: block;
+}
+.btn-flat {
+  background: none;
+  border: none;
+  @include border-radius(0);
+  @include box-shadow(none);
 }
 
 

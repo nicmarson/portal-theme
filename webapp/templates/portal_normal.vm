@@ -26,6 +26,10 @@
     <script src="$javascript_folder/webshim/extras/modernizr-custom.js"></script>
     <script src="$javascript_folder/webshim/polyfiller.js"></script>
     <script src="$javascript_folder/webshim/webshim.js"></script>
+    <script type="text/javascript" src="$javascript_folder/vendor/oo_engine.min.js"></script>
+    <script>
+    	var oo_feedback = new OOo.Ocode({});
+    </script>
 
     <link rel="shortcut icon" href="$images_folder/favicon.ico">
 </head>
@@ -33,19 +37,13 @@
 <body class="$css_class">
     
     <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
     $theme.include($body_top_include)
 
     #if ($is_signed_in)
-    <!-- <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container"> -->
-                #dockbar()
-            <!-- </div>
-        </div>
-    </div> -->
+    	#dockbar()
     #end
 
     #parse ("$full_templates_path/header.vm")
@@ -59,22 +57,22 @@
         $theme.wrapPortlet("portlet.vm", $content_include)
     #end
 
+        #parse ("$full_templates_path/navigation.vm")
+
     #if ($has_navigation || $is_signed_in)
         #parse ("$full_templates_path/navigation_information.vm")
     #end
 
-    #parse ("$full_templates_path/navigation_utility.vm")
-    
+        #parse ("$full_templates_path/navigation_utility.vm")
     </div> <!-- (main) /container -->
     
     #parse ("$full_templates_path/footer.vm")
 
-    $theme.include($body_bottom_include)
+    $theme.include($body_bottom_include)  
     
     <script type="text/javascript" src="$javascript_folder/vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="$javascript_folder/vendor/handlebars.js"></script>
     <script type="text/javascript" src="$javascript_folder/vendor/ember-1.0.0-rc.1.min.js"></script>
-    <script type="text/javascript" src="$javascript_folder/internal-library.js"></script>
     <script type="text/javascript" src="$javascript_folder/plugins.js"></script>
     <script type="text/javascript" src="$javascript_folder/script.js"></script>
 

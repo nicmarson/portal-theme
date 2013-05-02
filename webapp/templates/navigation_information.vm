@@ -1,7 +1,7 @@
 <nav class="nav-information">
     <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#nav-information">More information</button> 
     <div class="row-fluid collapse" id="nav-information">
-        <div class="nav">
+        <div class="nav-group">
             <h3 class="title">Shop for Health Insurance</h3>
             <ul class="nav unstyled">
                 <li><a href="#">Individual and families</a></li>
@@ -9,7 +9,7 @@
                 <li><a href="#">For Medicare</a></li>
             </ul>
         </div>
-        <div class="nav">
+        <div class="nav-group">
             <h3 class="title">Current Customers</h3>
             <ul class="nav unstyled">
                 <li><a href="#">Individual and families</a></li>
@@ -18,7 +18,7 @@
                 <li><a href="#">myRegence.com</a></li>
             </ul>
         </div>
-        <div class="nav">
+        <div class="nav-group">
             <h3 class="title">Health &amp; Wellness</h3>
             <ul class="nav unstyled">
                 <li><a href="#">Treatment Cost Estimates</a></li>
@@ -27,7 +27,7 @@
                 <li><a href="#">Health &amp; Wellness News</a></li>
             </ul>
         </div>
-        <div class="nav">
+        <div class="nav-group">
             <h3 class="title">About Regence</h3>
             <ul class="nav unstyled">
                 <li><a href="#">Non-Profit Health Insurance</a></li>
@@ -37,7 +37,7 @@
                 <li><a href="#">Legal</a></li>
             </ul>
         </div>
-        <div class="nav">
+        <div class="nav-group">
             <h3 class="title">About Regence</h3>
             <ul class="nav unstyled">
                 <li><a href="#">Non-Profit Health Insurance</a></li>

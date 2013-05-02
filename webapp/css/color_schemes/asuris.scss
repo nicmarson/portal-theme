@@ -20,6 +20,16 @@
     display: none;
   }
 
+
+  // Headings
+  // --------------------------------------
+  h1,
+  h2,
+  h3 {
+    font-family: $sansFontFamilyLight; // Regular, bold, semi-bold look terrible on Windows
+  }
+  
+
   // Import theme styles
   // --------------------------------------
   @import "shared/general";
