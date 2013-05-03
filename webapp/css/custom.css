@@ -627,7 +627,6 @@ figcaption {
   .nav-main ul {
     display: table;
     list-style-type: none;
-    margin: 0;
     padding: 0;
     width: 100%; }
     .nav-main ul li {
@@ -2532,16 +2531,18 @@ table.contact-info {
       margin-top: -7px;
       vertical-align: middle;
       width: 0; }
-  .bridge .nav-main ul li a {
-    border: 1px solid #f26c2a;
-    -webkit-border-bottom-right-radius: 10px;
-    -moz-border-radius-bottomright: 10px;
-    border-bottom-right-radius: 10px;
-    -webkit-border-top-left-radius: 10px;
-    -moz-border-radius-topleft: 10px;
-    border-top-left-radius: 10px;
-    font-family: "NewsGothicBT-Reg", Verdana, sans-serif;
-    font-size: 16px; }
+  .bridge .nav-main ul {
+    margin: 30px 0; }
+    .bridge .nav-main ul li a {
+      border: 1px solid #f26c2a;
+      -webkit-border-bottom-right-radius: 10px;
+      -moz-border-radius-bottomright: 10px;
+      border-bottom-right-radius: 10px;
+      -webkit-border-top-left-radius: 10px;
+      -moz-border-radius-topleft: 10px;
+      border-top-left-radius: 10px;
+      font-family: "NewsGothicBT-Reg", Verdana, sans-serif;
+      font-size: 16px; }
   .bridge .article-landing h3 {
     font-size: 28px;
     line-height: 34px; }
@@ -2578,21 +2579,24 @@ table.contact-info {
     background-image: linear-gradient(to bottom, #00cce0, #008693);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00CCE0', endColorstr='#FF008693', GradientType=0); }
-  .bridge .dashboard [class^="icon-"],
-  .bridge .dashboard [class*=" icon-"] {
-    background-image: url("images/bridge/dashboard.png");
-    height: 64px;
-    left: 0;
-    line-height: 64px;
-    margin-top: 0;
-    position: absolute;
-    top: 0;
-    width: 64px; }
   .bridge .dashboard .display {
-    font-size: 24px;
-    line-height: 64px;
     padding-left: 79px;
     position: relative; }
+    .bridge .dashboard .display p {
+      margin-bottom: 10px; }
+  .bridge .dashboard .title {
+    font-size: 24px;
+    line-height: 64px; }
+    .bridge .dashboard .title [class^="icon-"],
+    .bridge .dashboard .title [class*=" icon-"] {
+      background-image: url("images/bridge/dashboard.png");
+      height: 64px;
+      left: 0;
+      line-height: 64px;
+      margin-top: 0;
+      position: absolute;
+      top: 0;
+      width: 64px; }
   .bridge .dashboard .icon-claims {
     background-position: 0 0; }
   .bridge .dashboard .icon-messages {
