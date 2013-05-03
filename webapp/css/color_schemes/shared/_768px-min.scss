@@ -17,45 +17,151 @@
 
 // Article
 // --------------------------------------
+
+
+// Nav Shopping
+// --------------------------------------
+#top .nav .nav-shopping > a {
+  padding-left: 60px;
+  padding-right: 45px;
+}
+
+
+// Article
+// -------------
 .article-left-sidebar {
-
-  .sidebar {
-    border-right: 1px solid $contentBorder;
-  }
-
-  .landing-content {
-    border: none;
-  }
-
-  .span8 .main-content {
-    margin-left: -4.5%;
-  }
-
-  .span9 .main-content {
-    margin-left: -4%;
-  }
 
   .sidebar .nav {
     text-align: right;
   }
-  
-  .sidebar .nav > li > a {
-    padding: 6px 10px;
+}
+
+.article-list > li {
+  font-size: 14px;
+}
+
+.article .main-content {
+  padding: $gridGutterWidth $gridGutterWidth ($baseLineHeight*2);
+}
+
+
+// Hero header
+// -------------------------------
+.hero-header {
+  padding: 40px 20px 5px;
+  text-align: right;
+
+  h1 {
+    color: $grayLight;
+    font-family: $sansFontFamilyLight;
+    margin: 0;
   }
 }
 
 
-// Hero units
-// --------------------------------------
+// Hero with image background
+// -------------------------------
+.hero-image {
+  padding: 0;
+  position: relative;
+
+  > .image {
+    min-height: 360px;
+  }
+
+  .hero-inner {
+    bottom: 0;
+    left: 20px;
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .caption {
+    background: $white;
+    background: rgba(255,255,255,.8);
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20px;
+    padding: 35px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+  }
+
+  .caption-title small,
+  .caption-text {
+    color: $gray;
+  }
+
+  .caption-title {
+    color: $orange;
+    font: 36px $sansFontFamilyLight;
+    line-height: 30px;
+    margin-bottom: 8px;
+
+    small {
+      color: $gray;
+      font-size: 24px;
+    }
+  }
+
+  .caption-text {
+    color: $gray;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+}
+
+
+// Hero with media boxes
+// -------------------------------
 .hero-media {
 
-  .media-heading {
-    color: $brand;
+  .media {
+
+    p {
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 15px;
+    }
+
+    li {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .cover {
+      bottom: 0;
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 10;
+    }
+
+    .lead {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    .media-heading {
+      line-height: .85;
+    }
   }
 }
 
-// Nav Shopping
-#top .nav .nav-shopping > a {
-  padding-left: 60px;
-  padding-right: 45px;
+
+// Health Insurance Guide
+// -------------------------------
+#understanding-insurance {
+
+  .hero-caption {
+    bottom: $gridGutterWidth;
+    left: $gridGutterWidth;
+    position: absolute;
+    right: $gridGutterWidth;
+  }
 }

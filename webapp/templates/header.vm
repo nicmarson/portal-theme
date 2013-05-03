@@ -36,29 +36,29 @@
 </nav>
 <header id="set-view-location" class="subhead collapse out">
     <div class="container">
-    	<form>
-	    	<div class="row-fluid">
-	    		<div class="span6">
-	    			<i class="glyph-users"></i>
-	    			<label>Change audience</label>
-	    			<select>
-					    <option>Individuals & Families</option>
-					    <option>2</option>
-					    <option>3</option>
-					    <option>4</option>
-					</select>
-	    		</div>
-	    		<div class="span6">
-	    			<i class="icon-location icon-white"></i>
-	    			<label>Change location</label>
-	    			<input type="text" placeholder="Postal code">
-	    		</div>
-	    	</div>
-    		<div class="form-actions">
-			    <button type="button" class="btn btn-link">Cancel</button>
-			    <button type="submit" class="btn">Update</button>
-			</div>
-    	</form>
+        <form>
+            <div class="row-fluid">
+                <div class="span6">
+                    <i class="glyph-users"></i>
+                    <label>Change audience</label>
+                    <select>
+                        <option>Individuals & Families</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="span6">
+                    <i class="icon-location icon-white"></i>
+                    <label>Change location</label>
+                    <input type="text" placeholder="Postal code">
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-link">Cancel</button>
+                <button type="submit" class="btn">Update</button>
+            </div>
+        </form>
         #set ($VOID = $velocityPortletPreferences.setValue('portlet-setup-show-borders', 'true'))
         $theme.runtime("setviewlocation_WAR_setviewlocation001SNAPSHOT","",$velocityPortletPreferences.toString())
     </div>

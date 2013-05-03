@@ -1,0 +1,15 @@
+//
+// Custom: Landscape phone to desktop/tablet
+// --------------------------------------------------
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+
+@media (max-width: 480px) {
+
+  // Block level the page header small tag for readability
+  .page-header h1 small {
+    line-height: $baseLineHeight;
+  }
+
+}

@@ -21,7 +21,6 @@ $white:                 #fff;
 // Accent colors
 // -------------------------
 $blue:					#076DA5;
-$blueDark:              #0064cd;
 $green:                 #1E9442;
 $red:                   #9d261d;
 $yellow:                #ffc40d;
@@ -31,54 +30,9 @@ $purple:                #916DBD;
 $burgundy:				#791321;
 
 
-// Scaffolding
-// -------------------------
-$bodyBackground:        $white;
-$textColor:             $grayDark;
-
-
-// Typography
-// -------------------------
-$serifFontFamily:				Georgia, "Times New Roman", Times, serif;
-$monoFontFamily:				Monaco, Menlo, Consolas, "Courier New", monospace;
-$scriptFontFamily:				'NinaWebMedium', 'Chalkboard', 'ChalkboardSE-Regular', cursive;
-$scriptFontFamilyBold:			'NinaWeb-Bold', 'Chalkboard', 'ChalkboardSE-Regular', cursive;
-
-$baseFontSize:          14px;
-$baseFontFamily:        Verdana, sans-serif;
-$baseLineHeight:        20px;
-$altFontFamily:         $serifFontFamily;
-
-$headingsFontFamily:    inherit; // empty to use BS default, $baseFontFamily
-$headingsFontWeight:    normal;    // instead of browser default, bold
-$headingsColor:         inherit; // empty to use BS default, $textColor
-
-
-// Component sizing
-// -------------------------
-// Based on 14px font-size and 20px line-height
-
-$fontSizeLarge:         $baseFontSize * 1.25; // ~18px
-$fontSizeSmall:         $baseFontSize * 0.85; // ~12px
-$fontSizeMini:          $baseFontSize * 0.75; // ~11px
-
-$paddingLarge:          11px 19px; // 44px
-$paddingSmall:          2px 10px;  // 26px
-$paddingMini:           0 6px;   // 22px
-
-$baseBorderRadius:      4px;
-$borderRadiusLarge:     6px;
-$borderRadiusSmall:     3px;
-
-
 // Forms
 // -------------------------
-$inputBorderRadius:             $baseBorderRadius;
-$inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
-
-
-// COMPONENT VARIABLES
-// --------------------------------------------------
+$inputHeight:                   16px + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
 
 
 // Z-index master list

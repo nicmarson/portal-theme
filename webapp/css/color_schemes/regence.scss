@@ -4,15 +4,28 @@
 \*------------------------------------*/
 
 // Variables
-@import "variables/regence";
+@import "variables/regence"; // Load regence colors and styles
+
 
 // --------------------------------------
 // Regence only theme styles
 // --------------------------------------
 
 .regence {
+  color: $textColor;
 
-  // Theme utility
+
+  // Import shared styles
+  // --------------------------------------
+  @import "shared/general";
+  @import "shared/article";
+  @import "shared/hero";
+
+
+  // Regence only styles
+  // --------------------------------------
+
+  // Theme utilities
   // --------------------------------------
   .asuris-only,
   .bridge-only {
@@ -27,15 +40,49 @@
   h3 {
     font-family: $sansFontFamilyLight; // Regular, bold, semi-bold look terrible on Windows
   }
+  
+
+  // Headers
+  // -------------------------
+  .page-header,
+  .section-header {
+
+     h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+    }
+  }
+  .page-header {
+    margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
+  }
+  .section-header {
+    background: #EAEFF1;
+    border-top: 1px solid #E0E3E4;
+    margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
+    padding: $baseLineHeight/2 15px;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $orange;
+    }
+  }
 
 
-  // Import shared styles
-  // --------------------------------------
-  @import "shared/general";
+  // NAV MAIN
+  // ----------------
+  .nav-main {
 
+    ul {
 
-  // Regence only styles
-  // --------------------------------------
+      li {
+
+        a {
+          @include border-radius(5px);
+          font-family: $sansFontFamily;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
 
   // Audience dropdown
   // -------------------------
@@ -49,19 +96,83 @@
     background: -ms-linear-gradient(top,  #55a8d5 0%,#55a8d5 15%,#3d8cb6 100%);
     background: linear-gradient(to bottom,  #55a8d5 0%,#55a8d5 15%,#3d8cb6 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55a8d5', endColorstr='#3d8cb6',GradientType=0 );
+  }
 
-    label {
-      font-family: "ProximaNova-Light", sans-serif;
+
+  // Article sidebar
+  // --------------------------------------
+  article .sidebar {
+      
+    h3 {
+      background: $asideHeadingBackground;
+      border-bottom: 1px solid $asideHeadingBorder;
+      border-top: 1px solid $asideHeadingBorder;
+      color: $asideHeadingColor;
+      font-size: 24px;
+      line-height: 28px;
+      padding: 8px 15px;
     }
-    .form-actions {
-      border-top-color: rgba(255,255,255, .5);
 
-      .btn-link {
-        color: #FFF;
+    .nav > li > a {
+      color: $textColor;
+
+      &:hover {
+        background: $white;
+        color: $linkColorHover;
         text-decoration: underline;
-        text-shadow: none;
       }
     }
+
+    .nav > .active > a,
+    .nav > .active > a:hover {
+      background: none;
+      color: $linkColorHover;
+      text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+  }
+
+
+  // Article left sidebar
+  // --------------------------------------
+  .article-left-sidebar .sidebar {
+
+    .nav > li > a {
+      color: $grayLight;
+      font: 24px $sansFontFamilyLight;
+      line-height: 24px;
+      padding: 12px 15px;
+
+      &:hover {
+        color: $accent;
+        text-decoration: none;
+      }
+    }
+
+    .nav > .active > a,
+    .nav > .active > a:hover {
+      color: $accent;
+    }
+  }
+}
+
+
+// Font face
+// -------------------------
+.fontface .regence { // If web fonts are supported
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: $headingsFontWeight;
+  }
+}
+
+
+//
+// Custom: Large desktop and up
+// --------------------------------------------------
+@media (min-width: 1200px) {
+
+  .bridge {
+    @import "shared/1200px-min";
   }
 }
 
@@ -72,6 +183,16 @@
 
   .regence {
     @import "shared/980px-min";
+
+
+    // Article
+    // --------------------------------------
+    .article-left-sidebar {
+
+      .sidebar {
+        border-right: 1px solid $contentBorder;
+      }
+    }
   }
 }
 

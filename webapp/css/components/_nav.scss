@@ -20,11 +20,8 @@
       display: table-cell;
 
       a {
-        @include border-radius(5px);
         @include box-shadow("0 1px 5px rgba(0, 0, 0, 0.1)");
         display: block;
-        font-family: "ProximaNova-Regular", Verdana, sans-serif;
-        font-size: 16px;
         height: 120px;
         line-height: 120px;
         margin: 0 10px;
@@ -158,26 +155,3 @@
     }
   }
 }
-
-
-
-// ARTICLE LIST
-// ------------
-.nav-articles {
-  margin-top: 20px;
-
-  > li {
-    font-size: 16px;
-
-    > a {
-      border-top: 1px solid #DDDFE0;
-      color: $gray;
-      padding: $baseLineHeight 15px;
-
-      &:hover {
-        color: $grayDark;
-      }
-    }
-  }
-}
-

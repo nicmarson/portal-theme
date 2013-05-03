@@ -12,8 +12,20 @@
 // --------------------------------------
 
 .asuris {
+  color: $textColor;
+  
 
-  // Themes
+  // Import theme styles
+  // --------------------------------------
+  @import "shared/general";
+  @import "shared/article";
+  @import "shared/hero";
+
+
+  // Asuris only styles
+  // --------------------------------------
+
+  // Theme utilities
   // --------------------------------------
   .regence-only,
   .bridge-only {
@@ -30,9 +42,120 @@
   }
   
 
-  // Import theme styles
+  // Headers
+  // -------------------------
+  .page-header,
+  .section-header {
+
+     h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+    }
+  }
+  .page-header {
+    margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
+  }
+  .section-header {
+    background: #EAEFF1;
+    border-top: 1px solid #E0E3E4;
+    margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
+    padding: $baseLineHeight/2 15px;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $orange;
+    }
+  }
+
+
+  // NAV MAIN
+  // ----------------
+  .nav-main {
+
+    ul {
+
+      li {
+
+        a {
+          @include border-radius(5px);
+          font-family: $sansFontFamily;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+
+  // Article sidebar
   // --------------------------------------
-  @import "shared/general";
+  article .sidebar {
+      
+    h3 {
+      background: $asideHeadingBackground;
+      border-bottom: 1px solid $asideHeadingBorder;
+      border-top: 1px solid $asideHeadingBorder;
+      color: $asideHeadingColor;
+      font-size: 24px;
+      line-height: 28px;
+      padding: 8px 15px;
+    }
+
+    .nav > li > a {
+      color: $textColor;
+
+      &:hover {
+        background: $white;
+        color: $linkColorHover;
+        text-decoration: underline;
+      }
+    }
+
+    .nav > .active > a,
+    .nav > .active > a:hover {
+      background: none;
+      color: $linkColorHover;
+      text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+  }
+
+
+  // Article left sidebar
+  // --------------------------------------
+  .article-left-sidebar .sidebar {
+
+    .nav > li > a {
+      color: $grayLight;
+      font: 24px $sansFontFamilyLight;
+      line-height: 24px;
+      padding: 12px 15px;
+
+      &:hover {
+        color: $accent;
+        text-decoration: none;
+      }
+    }
+
+    .nav > .active > a,
+    .nav > .active > a:hover {
+      color: $accent;
+    }
+  }
+  
+
+  // Audience dropdown
+  // -------------------------
+  #set-view-location {
+    @include gradient-vertical(lighten($brand, 15%), $brand);
+  }
+}
+
+
+//
+// Custom: Large desktop and up
+// --------------------------------------------------
+@media (min-width: 1200px) {
+
+  .bridge {
+    @import "shared/1200px-min";
+  }
 }
 
 
@@ -52,6 +175,16 @@
 
   .asuris {
     @import "shared/768px-979px";
+
+
+    // Article
+    // --------------------------------------
+    .article-left-sidebar {
+
+      .sidebar {
+        border-right: 1px solid $contentBorder;
+      }
+    }
   }
 }
 
@@ -62,5 +195,15 @@
 
   .asuris {
     @import "shared/768px-min";
+  }
+}
+
+
+// Responsive: Tablet to desktop
+// --------------------------------------
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .regence {
+    @import "shared/768px-979px";
   }
 }

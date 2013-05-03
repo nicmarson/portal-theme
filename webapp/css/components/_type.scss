@@ -3,21 +3,6 @@
 // --------------------------------------------------
 
 
-// Headings
-// -------------------------
-h1, h2, h3, h4, h5, h6 {
-  font-family: $headingsFontFamily;
-  font-weight: 700;
-}
-
-.fontface { // If web fonts are supported
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: $headingsFontWeight;
-  }
-}
-
-
 // Headers
 // -------------------------
 .page-header,
@@ -27,33 +12,21 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
   }
 }
-.page-header {
-  margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
-}
-.section-header {
-  background: #EAEFF1;
-  border-top: 1px solid #E0E3E4;
-  margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
-  padding: $baseLineHeight/2 15px;
-
-  h1, h2, h3, h4, h5, h6 {
-    color: $orange;
-  }
-}
 
 
 // Lists
 // -------------------------
+.faq dl {
+  margin-left: 0;
 
-ul,
-ol {
-  margin-bottom: $baseLineHeight;
+  dt {
+    text-align: left;
+  }
 }
 
 
-// Components
+// Dropdown menu
 // -------------------------
-
 .dropdown-menu {
   color: $black;
 }
@@ -73,6 +46,7 @@ ol {
 
 
 // Modals
+// -------------------------
 .modal {
   color: $gray;
   width: 515px;
@@ -93,6 +67,7 @@ ol {
 
 
 // Tooltips
+// -------------------------
 .tooltip {
   &.top    { margin-top:  -10px; }
   &.left   { margin-left: -10px; }
@@ -100,6 +75,7 @@ ol {
 
 
 // Images
+// -------------------------
 figcaption {
   padding: 5px 1px;
 }

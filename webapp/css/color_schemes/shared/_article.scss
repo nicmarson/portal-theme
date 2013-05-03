@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    $ARTICLE
+\*------------------------------------*/
+
+
+// ARTICLE TYPES
+// ---------------
+.story {
+
+  &.thumb {
+
+    a {
+      color: $gray;
+    }
+    .abstract {
+      font-size: 12px;
+    }
+    .image {
+      float: left;
+      margin-right: $baseLineHeight;
+    }
+    .story-headline {
+      color: $gray;
+      font-size: 18px;
+      line-height: 1;
+      margin-top: 0;
+    }
+  }
+}
+
+
+// ARTICLE LIST
+// ------------
+.nav-articles {
+  margin-top: 20px;
+
+  > li {
+    font-size: 16px;
+
+    > a {
+      border-top: 1px solid #DDDFE0;
+      color: $gray;
+      padding: $baseLineHeight 15px;
+
+      &:hover {
+        color: $grayDark;
+      }
+    }
+  }
+}
+
+
+// Article sidebar
+// --------------------------------------
+article .sidebar {
+
+  .content {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+  }
+}

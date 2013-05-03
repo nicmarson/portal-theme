@@ -1,0 +1,187 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+
+// Navigation
+// INVERTED COLORS
+// ---------------
+.nav-inverted > li > a {
+  color: $navInvertedLinkColor;
+
+  &:hover {
+    background: rgba(0,0,0,.16);
+  }
+
+  &:active {
+    color: $navInvertedLinkColorActive;
+  }
+}
+
+
+// Active state
+.nav-inverted.nav-pills > .active > a,
+.nav-inverted.nav-pills > .active > a:hover {
+  color: $linkColor;
+  background-color: $white;
+}
+
+
+// Inverted navbar
+// -------------------------
+.navbar-inverse {
+
+  .navbar-inner {
+    @include gradient-vertical($navbarInverseBackgroundHighlight, $navbarInverseBackground);
+    border-color: $navbarInverseBorder;
+  }
+
+  .brand,
+  .nav > li > a {
+    color: $navbarInverseLinkColor;
+    &:hover,
+    &:focus {
+      color: $navbarInverseLinkColorHover;
+    }
+  }
+
+  .brand {
+    color: $navbarInverseBrandColor;
+  }
+
+  .navbar-text {
+    color: $navbarInverseText;
+  }
+
+  .nav > li > a:focus,
+  .nav > li > a:hover {
+    background-color: $navbarInverseLinkBackgroundHover;
+    color: $navbarInverseLinkColorHover;
+  }
+
+  .nav .active > a,
+  .nav .active > a:hover,
+  .nav .active > a:focus {
+    color: $navbarInverseLinkColorActive;
+    background-color: $navbarInverseLinkBackgroundActive;
+  }
+
+  // Inline text links
+  .navbar-link {
+    color: $navbarInverseLinkColor;
+    &:hover,
+    &:focus {
+      color: $navbarInverseLinkColorHover;
+    }
+  }
+  
+  // Dropdowns
+  .nav li.dropdown.open > .dropdown-toggle,
+  .nav li.dropdown.active > .dropdown-toggle,
+  .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: $navbarInverseLinkBackgroundActive;
+    color: $navbarInverseLinkColorActive;
+  }
+
+  .nav li.dropdown > a:hover .caret,
+  .nav li.dropdown > a:focus .caret {
+    border-top-color: $navbarInverseLinkColorActive;
+    border-bottom-color: $navbarInverseLinkColorActive;
+  }
+
+  .nav li.dropdown > .dropdown-toggle .caret {
+    border-top-color: $navbarInverseLinkColor;
+    border-bottom-color: $navbarInverseLinkColor;
+  }
+
+  .nav li.dropdown.open > .dropdown-toggle .caret,
+  .nav li.dropdown.active > .dropdown-toggle .caret,
+  .nav li.dropdown.open.active > .dropdown-toggle .caret {
+    border-top-color: $navbarInverseLinkColorActive;
+    border-bottom-color: $navbarInverseLinkColorActive;
+  }
+}
+
+
+// Breadcrumb
+.breadcrumb {
+  margin: 10px 0 20px;
+  background-color: transparent;
+
+  > li .divider,
+  > .active {
+    color: $gray;
+  }
+}
+
+
+// Nav Information
+// Utility navigation near the footer
+// --------------------------------------
+.nav-information {
+  margin-top: ($gridGutterWidth*2);
+  padding: $gridGutterWidth 0 0;
+
+  .collapse {
+    border-bottom: 1px solid $navSecondaryhrBorder;
+
+    &.in {
+      border-top: 1px solid $navSecondaryhrBorder;
+    }
+  }
+  .nav.unstyled {
+    font-size: 12px;
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: $navSecondaryLink;
+
+      &:hover {
+        color: $navSecondaryLinkHover;
+        text-decoration: underline;
+      }
+    }
+  }
+  .nav-pills {
+    margin-bottom: 5px;
+
+    a {
+      color: $navSecondaryTitleColor;
+      font-family: $sansFontFamily;
+      font-size: 16px;
+
+      &:hover {
+        background: $white;
+      }
+    }
+  }
+
+  .title {
+    color: $navSecondaryTitleColor;
+    font: 16px $sansFontFamily;
+  }
+}
+
+
+// ARTICLE LIST
+// ------------
+.nav-articles {
+  margin-top: 20px;
+
+  > li {
+    font-size: 16px;
+
+    > a {
+      border-top: 1px solid #DDDFE0;
+      color: $gray;
+      padding: $baseLineHeight 15px;
+
+      &:hover {
+        color: $grayDark;
+      }
+    }
+  }
+}

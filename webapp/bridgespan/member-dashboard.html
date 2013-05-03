@@ -95,60 +95,88 @@
     
     <div class="container" id="main" role="main">
 
-        <article id="hero-welcome" class="article-landing">
-            <div id="employer" class="hero-unit hero-image hero-inverted">
-                <div class="row-fluid">
-                    <div class="span8">
-                        <h1 class="flush-bottom">Welcome</h1>
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a> <span class="arrow divider" aria-hidden="true">&#8250;</span></li>
+            <li><a href="/">Members</a> <span class="arrow divider" aria-hidden="true">&#8250;</span></li>
+            <li class="active">Member dashboard</li>
+        </ul>
+
+        <article class="article-left-sidebar post hentry row-fluid">
+            <aside class="sidebar span3">
+                <h3>Member dashboard</h3>
+                <nav>
+                    <ul class="nav nav-list">
+                        <li><a href="#">Forms</a></li>
+                        <li><a href="#">Claims</a></li>
+                        <li><a href="#">Benefits</a></li>
+                        <li><a href="#">My account</a></li>
+                        <li><a href="#">Message Center</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="span9">
+                <div class="dashboard">
+                    <div class="page-header">
+                        <h1 class="gamma">Member dashboard</h1>
                     </div>
-                    <div class="span4">
-                        <form class="form-horizontal form-signIn">
-                            <h2>Sign In</h2>
-                            <div class="control-group">
-                                <label class="control-label" for="inputEmail">User name:</label>
-                                <div class="controls">
-                                    <input type="text" id="inputUserName" placeholder="User name">
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" for="inputPassword">Password:</label>
-                                <div class="controls">
-                                    <input type="password" id="inputPassword" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="controls">
-                                    <button type="submit" class="btn btn-primary btn-flat">Sign in</button>
-                                </div>
-                            </div>
-                            <p><a href="#">Forgot user name/password</a></p>
-                            <p><a href="#">New member? Register here.</a></p>
-                        </form>
-                    </div>
+                    <section class="row-fluid">
+                        <div class="span6">
+                            <div class="display"><a href="#"><i class="icon-claims"></i> <strong>2</strong> New claims</a></div>
+                        </div>
+                        <div class="span6">
+                            <div class="display"><i class="icon-messages"></i> <strong>0</strong> New messages</div>
+                        </div>
+                    </section>
+                    <hr>
+                    <section class="row-fluid">
+                        <div class="span6">
+                            <div class="display"><a href="#"><i class="icon-premium"></i> Pay my premium</a></div>
+                        </div>
+                        <div class="span6">
+                            <div class="display"><a href="#"><i class="icon-statements"></i> EOB statements</a></div>
+                        </div>
+                    </section>
+                    <hr>
+                    <section class="row-fluid">
+                        <div class="display"><a href="#"><i class="icon-benefits"></i> Benefits</a></div>
+                    </section>
+                    <hr>
+                    <section class="row-fluid">
+                        <div class="display"><a href="#"><i class="icon-account"></i> My account</a></div>
+                    </section>
                 </div>
             </div>
         </article>
 
-        <article class="row-fluid article-landing">
-            <div class="span2">
-                <h3>Individuals &amp; Families&nbsp;<b class="bridge-caret"></b></h3>
-            </div>
-            <div class="span6">
-                <p>Are you looking for health care insurance? Tour our website and learn what BridgeSpan Health has to offer. We have plans for every budget and optional programs to help you improve your health. </p>
-                <ul class="unstyled">
-                    <li><a href="#">Find a doctor&nbsp;&rsaquo;</a></li>
-                    <li><a href="#">Check out our healthcare plans&nbsp;&rsaquo;</a></li>
-                </ul>
-            </div>
-            <aside class="span4">
-                <ul class="nav">
-                    <li><a href="#">For Providers&nbsp;<b class="bridge-caret"></b></a></li>
-                    <li><a href="#">For Producers&nbsp;<b class="bridge-caret"></b></a></li>
-                </ul>
-            </aside>
-        </article>
-
-        <nav id="navigation" class="nav-main"> <ul> <li class="nav-item nav-3-items lfr-nav-deletable lfr-nav-updateable"> <a href="http://localhost:8080/web/guest/about"> <span> About Us </span> </a> </li> <li class="nav-item nav-3-items lfr-nav-deletable lfr-nav-updateable"> <a href="http://localhost:8080/web/guest/welcome"> <span> Welcome </span> </a> </li> <li class="nav-item nav-3-items lfr-nav-deletable lfr-nav-updateable"> <a href="http://localhost:8080/web/guest/contact"> <span> Contact </span> </a> </li> </ul> </nav>
+        <nav id="navigation" class="nav-main">
+            <ul>
+                <li class="nav-item nav-3-items lfr-nav-deletable lfr-nav-updateable">
+                    <a href="#">
+                        <span>Plans</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-3-items lfr-nav-deletable lfr-nav-updateable">
+                    <a href="#">
+                        <span>Find a Doctor</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-3-items lfr-nav-deletable lfr-nav-updateable">
+                    <a href="#">
+                        <span>What We Offer</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-3-items lfr-nav-deletable lfr-nav-updateable">
+                    <a href="#">
+                        <span>Members</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-3-items lfr-nav-deletable lfr-nav-updateable">
+                    <a href="#">
+                        <span>Understanding Health Insurance</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
         <nav class="nav-information"> <button data-target="#nav-information" data-toggle="collapse" class="btn btn-link" type="button">More information</button> <div id="nav-information" class="row-fluid collapse"> <div class="nav-group"> <h3 class="title">Shop for Health Insurance</h3> <ul class="nav unstyled"> <li><a href="#">Individual and families</a></li> <li><a href="#">Through an employer</a></li> <li><a href="#">For Medicare</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">Current Customers</h3> <ul class="nav unstyled"> <li><a href="#">Individual and families</a></li> <li><a href="#">Coverage through an employer</a></li> <li><a href="#">Medicare eligible</a></li> <li><a href="#">myRegence.com</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">Health &amp; Wellness</h3> <ul class="nav unstyled"> <li><a href="#">Treatment Cost Estimates</a></li> <li><a href="#">Prescription Information</a></li> <li><a href="#">Health Insurance Guide</a></li> <li><a href="#">Health &amp; Wellness News</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">About Regence</h3> <ul class="nav unstyled"> <li><a href="#">Non-Profit Health Insurance</a></li> <li><a href="#">Contact Us</a></li> <li><a href="#">Careers</a></li> <li><a href="#">Company News</a></li> <li><a href="#">Legal</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">About Regence</h3> <ul class="nav unstyled"> <li><a href="#">Non-Profit Health Insurance</a></li> <li><a href="#">Contact Us</a></li> <li><a href="#">Careers</a></li> <li><a href="#">Company News</a></li> <li><a href="#">Legal</a></li> </ul> </div> </div> </nav>
 

@@ -1,15 +1,236 @@
 /*------------------------------------*\
-    $THEME
-    $RESPONSIVE
-    $980px-min
+  $THEME
+  $RESPONSIVE
+  $980px-min
 \*------------------------------------*/
 
 
 // Top
 // ------
-#top .nav .nav-shopping {
+#top {
 
-  > a {
-    border-left: 1px solid $topLinkBorder;
+  .nav .nav-shopping {
+
+    > a {
+      border-left: 1px solid $topLinkBorder;
+    }
   }
+}
+
+
+// Hero Units
+// ----------------------------/
+.hero-unit {
+  margin-bottom: 30px;
+  padding: 60px;
+
+  h1 {
+    font-size: 72px;
+  }
+  p {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+
+// Inverted hero unit
+// ----------------------------/
+.hero-inverted {
+  padding: ($gridGutterWidth*2) 0; // 40px 0
+}
+
+
+// Hero with image background
+// ----------------------------/
+.hero-image {
+  padding: 0; // redeclared for specificity
+
+  .image {
+    min-height: 420px;
+  }
+}
+
+
+// Hero with media boxes
+// ----------------------------/
+.hero-media {
+
+  .media {
+    margin-bottom: 20px;
+    min-height: 130px;
+  }
+
+  .media-body {
+    padding: 20px 25px 5px;
+  }
+}
+
+
+// Hero home
+// ----------------------------/
+#hero-home {
+
+  .hero-unit {
+    height: 360px;
+  }
+  .nav-pills {
+
+    li {
+      width: 20%;
+    }
+    li > a {
+      background-color: $white;
+      @include box-shadow("0 1px 5px rgba(0,0,0,.1)");
+      display: block;
+      font: 24px $sansFontFamilyLight;
+      line-height: 30px;
+      margin: 0 10px;
+      padding: 45px 0;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .active > a, 
+    .active > a:hover {
+      background-color: #076DA5;
+      @include box-shadow("0 2px 4px rgba(0,0,0,.2) inset, 0 2px 4px rgba(255,255,255,.8)");
+    }
+    .tab-individual a,
+    .tab-medicare a {
+      padding: 30px 0;
+    }
+  }
+}
+
+
+// Hero individual
+// ----------------------------/
+#hero-individual {
+
+  .hero-unit {
+    height: 450px;
+  }
+  #media-shop {
+    height: 280px;
+  }
+}
+
+
+// Hero employer
+// ----------------------------/
+#hero-employer {
+
+  .hero-unit {
+    height: 450px;
+  }
+  #media-forms {
+    height: 280px;
+  }
+}
+
+
+// Health Insurance Guide
+// -------------------------------
+#understanding-insurance {
+
+  .hero-caption {
+    bottom: $gridGutterWidth * 1.5;
+    left: $gridGutterWidth * 2;
+    right: $gridGutterWidth * 2;
+  }
+
+  .hero-inner {
+    padding: $gridGutterWidth * 2 $gridGutterWidth * 2 $gridGutterWidth * 1.5;
+  }
+
+  .media {
+    height: 175px;
+  }
+
+  .media-body {
+    padding: 20px 25px 0;
+  }
+
+  .media-body {
+    min-height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    em {
+      color: $accent;
+      font-style: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  .search-button {
+    font-size: 30px;
+    height: 59px;
+    line-height: normal;
+    padding: 0 16px;
+    right: 2px;
+    top: 2px;
+  }
+
+  .search-input {
+    font-size: 30px;
+    line-height: 36px;
+    padding: 10px 15px 11px;
+  }
+}
+
+
+// Contact Us
+// ----------
+table.contact-info {
+  font-size: 20px;
+  line-height: 16px;
+
+  small {
+    font-size: 14px;
+    line-height: 10px;
+  }
+  td.icon-contact-info {
+    padding: 20px 8px 20px 10px;    
+  }
+  td.contact-info-entry {
+    padding: 20px 8px 20px 5px;
+  }
+}
+
+// Contact Icons
+.icon-contact-info {
+
+  .icon-phone,
+  .icon-email,
+  .icon-phone:before,
+  .icon-email:before {
+    font-size: 40px;
+    height: 50px;
+    line-height: 50px;
+    width: 50px; 
+  }
+}
+
+// Google Map
+#map_sidebar {
+  float: left;
+  width: 150px;
+}
+#map_canvas {
+  float: right;
+  width: 425px;
+}
+
+
+// Styleguide
+// ----------
+.nav-styleguide {
+  margin-left: 25px;
+  margin-top: 30px;
+  width: 170px;
+}
+.nav-styleguide > li > a {
+  font-size: 16px;
+  *width: 160px;
 }
