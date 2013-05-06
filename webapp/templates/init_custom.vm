@@ -1,14 +1,6 @@
 #*
 This file allows you to override and define new Velocity variables.
 *#
-#set($ch_brand = "bridgespan")
-#set($ch_audience = "visitor")
-#set($ch_region = "default")
-#set($ch_site_array = $layout.getGroup().getName().split("_"))
-#set($ch_brand = $ch_site_array.get(0))
-#set($ch_audience = $ch_site_array.get(1))
-#set($ch_region = $ch_site_array.get(2))
-
 #macro(ch_region_text)
 	#if($ch_brand == "bridgespan")
 	        #if($ch_region == "default")

@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    $CUSTOM
+    $ARTICLE
+\*------------------------------------*/
+
+
+// ARTICLE TYPES
+// ------------
+.story {
+
+  &.thumb {
+
+    a {
+      color: $gray;
+    }
+    .abstract {
+      font-size: 12px;
+    }
+    .image {
+      float: left;
+      margin-right: $baseLineHeight;
+    }
+    .story-headline {
+      color: $gray;
+      font-size: 18px;
+      line-height: 1;
+      margin-top: 0;
+    }
+  }
+}
+

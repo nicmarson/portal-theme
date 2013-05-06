@@ -73,6 +73,9 @@ ul.bulleted > li {
 
 // Buttons
 // -------------------------
+.btn-primary {
+  color: #FFF;
+}
 .btn-link {
 
   .caret {
@@ -93,37 +96,6 @@ ul.bulleted > li {
       background-color: darken($brand, 10%);
     }
   }
-}
-
-
-// Forms
-// -------------------------
-
-
-// Shared size and type resets
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-  height: $baseLineHeight;
-  padding: 4px 6px;
-  font-size: $baseFontSize;
-  line-height: $baseLineHeight;
-  color: $gray;
-  @include border-radius($inputBorderRadius);
 }
 
 

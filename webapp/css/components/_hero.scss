@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    $CUSTOM
+    $HERO
+\*------------------------------------*/
+
+
+.hero-unit {
+  @include border-radius(0);
+  margin-bottom: 20px;
+  padding: 40px;
+
+  .container {
+    position: relative;
+  }
+  .hero-inner-title small {
+    display: block;
+  }
+}
+
+
+// Inverted hero unit
+.hero-inverted {
+  color: $white;
+  padding: $gridGutterWidth 0; // 20px 0
+
+  a,
+  h1,
+  .hero-inner-title,
+  .hero-inner-title small {
+    color: $white;
+  }
+}

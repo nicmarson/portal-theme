@@ -27,9 +27,14 @@
     <script src="$javascript_folder/webshim/polyfiller.js"></script>
     <script src="$javascript_folder/webshim/webshim.js"></script>
     <script type="text/javascript" src="$javascript_folder/vendor/oo_engine.min.js"></script>
-    <script>
+	<script type="text/javascript">
     	var oo_feedback = new OOo.Ocode({});
-    </script>
+		var P14n = P14n || {};
+		P14n.brand='${ch_brand}';
+		P14n.audience='${ch_audience}';
+		P14n.region = '${ch_region}'||'';
+		$('#togglemodal').click(P14n.toggleLocationModal);
+	</script>
 
     <link rel="shortcut icon" href="$images_folder/favicon.ico">
 </head>
@@ -74,6 +79,7 @@
     <script type="text/javascript" src="$javascript_folder/vendor/handlebars.js"></script>
     <script type="text/javascript" src="$javascript_folder/vendor/ember-1.0.0-rc.1.min.js"></script>
     <script type="text/javascript" src="$javascript_folder/plugins.js"></script>
+    <script type="text/javascript" src="$javascript_folder/vendor/webtrends.js"></script>
     <script type="text/javascript" src="$javascript_folder/script.js"></script>
 
 </body>
