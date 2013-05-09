@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    $APPLICATION
+\*------------------------------------*/
+
+
+// Dockbar
+// -------------------------
+.dockbar {
+
+  a {
+    color: #2C2F34;
+    font-weight: 400;
+    text-shadow: 1px 1px #FFFFFF;
+  }
+  .menu-button-active a {
+    color: #FFFFFF;
+    text-shadow: -1px -1px #2C2F34;
+  }
+}

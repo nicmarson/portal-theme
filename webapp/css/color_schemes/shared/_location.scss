@@ -64,12 +64,20 @@
     }
   }
 
+
+  // Nav Brand
+  .nav .nav-brand > a {
+    border-left: 1px solid $topLinkBorder;
+  }
+
+
   // Nav Login
   .nav .nav-login a {
-    border-left: 1px solid $topLinkBorder;
+    border-right: 1px solid $topLinkBorder;
     line-height: 30px;
     padding: 25px 20px;
   }
+
 
   // Nav Search
   .nav .nav-search {
@@ -80,15 +88,18 @@
     }
 
     form {
+      border-right: 1px solid $topLinkBorder;
       border-top: 1px solid $topLinkBorder;
       padding: 25px 15px 25px 5px;
     }
   }
 
+
   // Nav Shopping
   .nav .nav-shopping {
 
     > a {
+      border-left: 1px solid $topLinkBorder;
       border-right: 1px solid $topLinkBorder;
       border-top: 1px solid $topLinkBorder;
       height: 30px;
@@ -189,6 +200,14 @@
       text-shadow: none;
     }
   }
+}
+
+
+
+// Main
+// --------------------------------------
+#main {
+  background: $mainBackground;
 }
 
 

@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Regence Portal Demo</title>
+    <meta name="description" content="Simple click through pages to demonstrate new portal design">
+    <meta name="viewport" content="width=device-width">
+    <!-- Web Fonts -->
+    <link href="http://fnt.webink.com/wfs/webink.css/?project=AEC37CF0-6B2D-450D-9777-5062C06CCACA&fonts=58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,1366810A-C17C-C074-FF25-E81320293740:f=ProximaNovaCond-Semibold,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,FF4969BA-A10C-C1F1-4CAE-97A4557D103C:f=ProximaNovaCond-Regular,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body class="regence-demo" itemscope itemtype="http://schema.org/MedicalWebPage">
+    <link itemprop="audience" href="http://schema.org/Patient" />
+    <link itemprop="specialty" href="http://schema.org/PublicHealth" />
+    <meta itemprop="lastReviewed" content="2013-05-02"/>
+    
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="header clearfix" id="header" itemprop="WPHeader" role="banner">
+      <div class="container">
+        <ul class="nav visuallyhidden">
+          <li><a href="#hero">Skip to Content</a></li>
+          <li><a href="#nav">Skip to Navigation</a></li>
+          <li><a href="/medicare">Return to Homepage</a></li>
+        </ul>
+        <ul class="nav clearfix" itemscope itemtype="http://schema.org/Organization">
+          <li class="nav-brand">
+            <a class="logo-regence-cs" href="index.html">
+              <span class="brand-logo"><span class="hide-text">Regence</span></span>
+              <span class="brand-region">BlueCross BlueShield of Oregon</span>
+            </a>
+          </li>
+          <li class="nav-login"><a href="#login">Sign in</a></li>
+          <li class="nav-shopping">
+            <a id="js-shopping-toggle" href="#" class="toggle shopping-toggle-button"><span class="shopping-label">Individual &amp; Families <small>Portland, OR</small></span><span aria-hidden="true" class="icon-users hidden-phone"></span><b class="caret"></b></a>
+          </li>
+          <li class="nav-search">
+            <form class="form-search" action="http://www.regence.com/about/search.jsp" method="get" name="header-search" id="search" role="search">
+              <label for="searchQuery" class="hide">Search</label>
+              <input type="text" id="searchQuery" name="searchQuery" placeholder="Search" class="input-medium search-query">
+              <button type="submit" class="btn btn-link"><span class="icon-search" aria-hidden="true"></span><span class="visuallyhidden">Go</span></button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="main" role="main">
+      <div class="container">
+        <div class="content landing-content" id="hero-employer">
+          <div class="hero-unit hero-image hero-inverted hero-media" id="employer">
+            <div class="hero-inner">
+              <h1 class="hero-inner-title">For Employers</h1>
+              <div class="row-fluid">
+                <div class="span4">
+                  <div class="media">
+                    <div class="media-image pull-left">
+                      <i class="icon-regence icon-briefcase"></i>
+                    </div>
+                    <div class="media-body">
+                      <h2 class="media-heading">Plans</h2>
+                      <p>Find the plans best suited to your company and your employees&nbsp;&raquo;</p>
+                    </div>
+                    <a class="cover" href="#shop"></a>
+                  </div>
+                  <div class="media">
+                    <div class="media-image pull-left">
+                      <i class="icon-regence icon-heart"></i>
+                    </div>
+                    <div class="media-body">
+                      <h2 class="media-heading">Health Programs</h2>
+                      <p>From 24-hour nurse line to rare disease management, we offer value-add programs&nbsp;&raquo;</p>
+                    </div>
+                    <a class="cover" href="#shop"></a>
+                  </div>
+                </div>
+                <div class="span4">
+                  <div class="media" id="media-forms">
+                    <div class="media-image pull-left">
+                      <i class="icon-regence icon-paper"></i>
+                    </div>
+                    <div class="media-body">
+                      <h2 class="media-heading">Forms &amp; Documents</h2>
+                      <p><a href="#shop">All the forms you need, in one convenient place&nbsp;&raquo;</a></p>
+                    </div>
+                    <div class="media-body">
+                      <p>Or, download these here:</p>
+                      <div class="well well-small">
+                        <ul class="bulleted">
+                          <li><a href="#shop">Application for enrollment/ change <b class="muted">(PDF)</b></a></li>
+                          <li><a href="#shop">Verification of employment <b class="muted">(PDF)</b></a></li>
+                          <li><a href="#shop">Surepay authorization form <b class="muted">(Fillable PDF)</b></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="span4">
+                  <div class="media">
+                    <div class="media-image pull-left">
+                      <i class="icon-regence icon-puzzle"></i>
+                    </div>
+                    <div class="media-body">
+                      <h2 class="media-heading">Employee Tools</h2>
+                      <p>We help your employees manage their health&nbsp;&raquo;</p>
+                    </div>
+                    <a class="cover" href="#shop"></a>
+                  </div>
+                  <div class="media">
+                    <div class="media-image pull-left">
+                      <i class="icon-regence icon-bookmark"></i>
+                    </div>
+                    <div class="media-body">
+                      <h2 class="media-heading">Library</h2>
+                      <p>Check out our helpful guides and demos, as well as important notices&nbsp;&raquo;</p>
+                    </div>
+                    <a class="cover" href="#shop"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <article class="post hentry row-fluid">
+          <section class="span6">
+            <div class="section-header">
+              <h2>Employee choice plans</h2>
+            </div>
+            <article class="story thumb clearfix" itemscope="itemscope" itemtype="http://schema.org/NewsArticle">
+              <meta content="en" itemprop="inLanguage" />
+              <header>
+                <a href="#"><div class="image thumb"><img src="img/landings/employer/choice-plans-thumb.jpg" alt="image alt" itemprop="image"/></div>
+                <h2 class="story-headline" itemprop="headline">Offer your employees a variety of plans</h2></a>
+                <div class="abstract" itemprop="description">
+                  <p>Choice is a good thing, when you consider plans for your employees. They appreciate having options and you get more control of your benefits funding.</p>
+                </div>
+                <!-- <div class="meta">
+                  <div class="section">
+                    <span class="dt">label:</span><span class="dd" itemprop="articleSection">value</span>
+                  </div>
+                </div> -->
+              </header>
+            </article>
+          </section>
+          <section class="span6">
+            <div class="section-header">
+              <h2>Employer Center</h2>
+            </div>          
+            <article class="story thumb clearfix" itemscope="itemscope" itemtype="http://schema.org/NewsArticle">
+              <meta content="en" itemprop="inLanguage" />
+              <header>
+                <a href="#">
+                <div class="image thumb"><img src="img/landings/employer/center-thumb.jpg" alt="image alt" itemprop="image"/></div>
+               <h2 class="story-headline" itemprop="headline">Use Employer Center to streamline your employee enrollment and make easy updates</h2></a>
+                <div class="abstract" itemprop="description">
+                  <p>Have you registered? Contact your Regence account manager or sales representative to get started today.</p>
+                </div>
+                <!-- <div class="meta">
+                  <div class="section">
+                    <span class="dt">label:</span><span class="dd" itemprop="articleSection">value</span>
+                  </div>
+                </div> -->
+              </header>
+            </article>
+          </section>
+        </article>
+        <nav class="nav-information">
+          <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#nav-information">More Information for employers</button> 
+          <div class="row-fluid collapse" id="nav-information">
+            <div class="span2x4">
+              <h3 class="title">Plans</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">Plan comparison</a></li>
+                <li><a href="#">Portability plans</a></li>
+                <li><a href="#">Select Networks</a></li>
+              </ul>
+            </div>
+            <div class="span2x4">
+              <h3 class="title">Programs</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">EAP</a></li>
+                <li><a href="#">CDH</a></li>
+                <li><a href="#">Integrated Health Management</a></li>
+                <li><a href="#">AdviCare Disease Management</a></li>
+                <li><a href="#">Integrated Health Solutions</a></li>
+                <li><a href="#">24-hour nurse line</a></li>
+                <li><a href="#">Rare disease management</a></li>
+                <li><a href="#">Wellness &amp; screenings</a></li>
+              </ul>
+            </div>
+            <div class="span2x4">
+              <h3 class="title">Forms &amp; documents</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">Employee forms</a></li>
+                <li><a href="#">Notice &amp; disclosures</a></li>
+              </ul>
+            </div>
+            <div class="span2x4">
+              <h3 class="title">Library</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">Employer Center tools</a></li>
+                <li><a href="#">Guides &amp; demos</a></li>
+                <li><a href="#">New enrollee checklist</a></li>
+                <li><a href="#">Communications</a></li>
+              </ul>
+            </div>
+            <div class="span2x4">
+              <h3 class="title">Employee tools</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">Member Cards</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <nav class="nav-utility">
+          <div class="row-fluid">
+            <ul class="nav nav-pills pull-right">
+              <li><a href="#about">About Regence</a></li>
+              <li><a href="employer-contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <footer id="footer" role="contentinfo" itemprop="WPFooter">
+      <div class="row-fluid">
+        <div class="container">
+          <div class="span6">
+            <p>&copy; 2013 Regence <!-- BlueCross BlueShield of Oregon. All rights reserved. --></p>
+          </div>
+          <nav class="span6">
+            <ul class="nav nav-inverted nav-pills pull-right" role="navigation">
+              <li><a href="/legal/online-privacy-and-security/">Privacy</a></li>
+              <li><a href="/legal/terms-of-use/">Terms of Use</a></li>
+              <li><a onclick="oo_feedback.show()" href="javascript:void(0);"><span aria-hidden="true" class="icon-feedback"><b></b><i></i></span> Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+	
+  </body>
+</html>

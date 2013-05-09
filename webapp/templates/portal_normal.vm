@@ -27,14 +27,14 @@
     <script src="$javascript_folder/webshim/polyfiller.js"></script>
     <script src="$javascript_folder/webshim/webshim.js"></script>
     <script type="text/javascript" src="$javascript_folder/vendor/oo_engine.min.js"></script>
-	<script type="text/javascript">
-    	var oo_feedback = new OOo.Ocode({});
-		var P14n = P14n || {};
-		P14n.brand='${ch_brand}';
-		P14n.audience='${ch_audience}';
-		P14n.region = '${ch_region}'||'';
-		$('#togglemodal').click(P14n.toggleLocationModal);
-	</script>
+    <script type="text/javascript">
+        var oo_feedback = new OOo.Ocode({});
+        var P14n = P14n || {};
+        P14n.brand='${ch_brand}';
+        P14n.audience='${ch_audience}';
+        P14n.region = '${ch_region}'||'';
+        $('#togglemodal').click(P14n.toggleLocationModal);
+    </script>
 
     <link rel="shortcut icon" href="$images_folder/favicon.ico">
 </head>
@@ -48,28 +48,29 @@
     $theme.include($body_top_include)
 
     #if ($is_signed_in)
-    	#dockbar()
+        #dockbar()
     #end
 
     #parse ("$full_templates_path/header.vm")
     
-    <div class="container" id="main" role="main">
-    #if ($selectable)
-        $theme.include($content_include)
-    #else
-        $portletDisplay.recycle()
-        $portletDisplay.setTitle($the_title)
-        $theme.wrapPortlet("portlet.vm", $content_include)
-    #end
+    <div id="main" role="main">
+        <div class="container">    
+        #if ($selectable)
+            $theme.include($content_include)
+        #else
+            $portletDisplay.recycle()
+            $portletDisplay.setTitle($the_title)
+            $theme.wrapPortlet("portlet.vm", $content_include)
+        #end
 
-        #parse ("$full_templates_path/navigation.vm")
+            #parse ("$full_templates_path/navigation.vm")
 
-    #if ($has_navigation || $is_signed_in)
-        #parse ("$full_templates_path/navigation_information.vm")
-    #end
-
-        #parse ("$full_templates_path/navigation_utility.vm")
-    </div> <!-- (main) /container -->
+        #if ($has_navigation || $is_signed_in)
+            #parse ("$full_templates_path/navigation_information.vm")
+        #end
+            #parse ("$full_templates_path/navigation_utility.vm")
+        </div> <!-- /container -->
+    </div> <!-- /main -->
     
     #parse ("$full_templates_path/footer.vm")
 

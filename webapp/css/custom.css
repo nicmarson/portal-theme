@@ -16,123 +16,140 @@
 
 
 // LIFERAY
-/*-------------------------------*/
+//-------------------------------
 
+.portlet-topper-toolbar {
 
-/* ---------- Portlet wrapper and icons ---------- */
-
-.portlet {
-	background: #fff;
-	border: 1px solid #9AC1E7;
-	margin: 0 0 10px;
-	padding: 3px;
-}
-.portlet-topper {
-	border-bottom: 1px solid #AEB8BC;
-	padding-right: 40px;
-}
-
-.portlet-title {
-	float: none;
-	font-weight: bold;
-	min-width: 50%;
-	padding: 5px;
-	text-shadow: 1px 1px #FFF;
+    a:hover {
+        background-color: $grayLighter;
+    }
+    span {
+        float: left;
+        margin: 0 2px;
+        width: 16px;
+    }
+    img {
+        float: left;
+    }
 }
 
 .lfr-portlet-title-editable {
-	margin-top: -4px;
-	z-index: 9999;
-}
-
-.ie .lfr-portlet-title-editable {
-	margin-top: -6px;
+    margin-top: -4px;
+    z-index: 9999;
 }
 
 .lfr-portlet-title-editable-content {
-	padding: 0;
+    padding: 0;
 }
 
-.ie .lfr-portlet-title-editable-content {
-	margin-top: 4px;
+
+// SIGNED IN
+//-------------------------------
+
+.signed-in {
+
+    #main .portlet {
+        background: #fff;
+        border: 1px solid #9AC1E7;
+        margin: 0 0 10px;
+        padding: 3px;
+    }
+
+    .portlet-title {
+        float: none;
+        font-weight: bold;
+        min-width: 50%;
+        padding: 5px;
+        text-shadow: 1px 1px #FFF;
+    }
+
+    .portlet-topper {
+        border-bottom: 1px solid #AEB8BC;
+        @include box-shadow(1px 1px 0 #FFF);
+        padding-right: 40px;
+    }
+
+    .portlet-column-content.empty {
+        background-color: $grayLighter;
+        background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 1px, transparent 6px);
+        background-size: 8px 8px;
+    }
+
+    .portlet-borderless-bar {
+        @include border-radius(20px);
+        @include box-shadow(inset 0 1px 3px #000);
+    }
 }
+
+
+// Icons
+//-------------------------------
 
 .portlet-icons {
-	float: none;
+    float: none;
 }
 
 .portlet-icons .portlet-close-icon {
-	border-width: 0;
+    border-width: 0;
+}
+
+.portlet-journal-content .icon-actions {
+    background: none;
+    height: 16px;
+    width: auto;
 }
 
 .page-maximized .portlet-icons {
-	font-size: 11px;
+    font-size: 11px;
 }
 
-.portlet-icon-back {
-}
-
-.ie .portlet-title {
-	padding-bottom: 5px;
-}
-
-.ie6 .portlet-topper {
-	zoom: 1;
-}
-
-.portlet-column-content.empty {
-	background-color: $grayLighter;
-	background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 1px, transparent 6px);
-    background-size: 8px 8px;
+.taglib-icon:hover {
+    text-decoration: none;
 }
 
 
+// AUI
+//-------------------------------
 
-/* ---------- Misc. ---------- */
+.aui-combobox {
 
-.lfr-panel-container {
-	background-color: transparent;
-}
+    .aui-field-input {
+        padding: 4px 3px 3px;
+        font-size: 11px;
+        height: 15px;
+    }
 
-.aui-combobox .aui-field-input {
-	padding: 4px 3px 3px;
-	font-size: 11px;
-	height: 15px;
-}
-
-.aui-combobox .aui-field {
-	float: left;
-	line-height: 0;
+    .aui-field {
+        float: left;
+        line-height: 0;
+    }
 }
 
 .lfr-portlet-title-editable-content .aui-field {
-	float: none;
-	display: inline;
+    float: none;
+    display: inline;
 }
 
-/* ---------- Extras ---------- */
 
-.portlet-borderless-bar {
-	-moz-border-radius: 20px;
-	-moz-box-shadow: inset 0 1px 3px #000;
-	-webkit-border-radius: 20px;
-	-webkit-box-shadow: inset 0 1px 3px #000;
-	border-radius: 20px;
-	box-shadow: inset 0 1px 3px #000;
+// IE
+//-------------------------------
+
+.ie .portlet-title {
+    padding-bottom: 5px;
 }
 
-.portlet-topper {
-	-moz-box-shadow: 1px 1px 0 #FFF;
-	-webkit-box-shadow: 1px 1px 0 #FFF;
-	box-shadow: 1px 1px 0 #FFF;
+.ie .lfr-portlet-title-editable-content {
+    margin-top: 4px;
 }
 
-.aui-combobox .aui-toolbar-first {
-	-moz-border-radius-topleft: 0;
-	-moz-border-radius-bottomleft: 0;
-	-webkit-border-top-left-radius: 0;
-	-webkit-border-bottom-left-radius: 0;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
+.ie .lfr-portlet-title-editable {
+    margin-top: -6px;
 }
 
+.ie6 .portlet-topper {
+    zoom: 1;
+}
+
+.lfr-panel-container {
+    background-color: transparent;
+}

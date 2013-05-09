@@ -102,3 +102,10 @@
   content: "\e001";
   vertical-align: top;
 }
+
+[class^="icon-"], [class*=" icon-"] {
+
+  a:hover {
+    text-decoration: none;
+  }
+}

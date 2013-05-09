@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Regence Portal Demo</title>
+    <meta name="description" content="Simple click through pages to demonstrate new portal design">
+    <meta name="viewport" content="width=device-width">
+    <!-- Web Fonts -->
+    <link href="http://fnt.webink.com/wfs/webink.css/?project=AEC37CF0-6B2D-450D-9777-5062C06CCACA&fonts=58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,1366810A-C17C-C074-FF25-E81320293740:f=ProximaNovaCond-Semibold,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,FF4969BA-A10C-C1F1-4CAE-97A4557D103C:f=ProximaNovaCond-Regular,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body class="regence-demo" itemscope itemtype="http://schema.org/MedicalWebPage">
+    <link itemprop="audience" href="http://schema.org/Patient" />
+    <link itemprop="specialty" href="http://schema.org/PublicHealth" />
+    <meta itemprop="lastReviewed" content="2013-05-02"/>
+    
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="header clearfix" id="header" itemprop="WPHeader" role="banner">
+      <div class="container">
+        <ul class="nav visuallyhidden">
+          <li><a href="#hero">Skip to Content</a></li>
+          <li><a href="#nav">Skip to Navigation</a></li>
+          <li><a href="/medicare">Return to Homepage</a></li>
+        </ul>
+        <ul class="nav clearfix" itemscope itemtype="http://schema.org/Organization">
+          <li class="nav-brand">
+            <a class="logo-regence-cs" href="index.html">
+              <span class="brand-logo"><span class="hide-text">Regence</span></span>
+              <span class="brand-region">BlueCross BlueShield of Oregon</span>
+            </a>
+          </li>
+          <li class="nav-login"><a href="#login">Sign in</a></li>
+          <li class="nav-shopping">
+            <a id="js-shopping-toggle" href="#" class="toggle shopping-toggle-button"><span class="shopping-label">Individual &amp; Families <small>Portland, OR</small></span><span aria-hidden="true" class="icon-users hidden-phone"></span><b class="caret"></b></a>
+          </li>
+          <li class="nav-search">
+            <form class="form-search" action="http://www.regence.com/about/search.jsp" method="get" name="header-search" id="search" role="search">
+              <label for="searchQuery" class="hide">Search</label>
+              <input type="text" id="searchQuery" name="searchQuery" placeholder="Search" class="input-medium search-query">
+              <button type="submit" class="btn btn-link"><span class="icon-search" aria-hidden="true"></span><span class="visuallyhidden">Go</span></button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="main" role="main">
+      <div class="container">
+        <div class="content landing-content" id="hero-individual">
+          <div class="hero-unit hero-image hero-inverted hero-media" id="individual">
+            <div class="hero-inner">
+              <h1 class="hero-inner-title">For Individuals &amp; Families</h1>
+              <div class="row-fluid">
+                <div class="span4">
+                  <div class="media" id="media-shop">
+                    <img class="visible-desktop" src="img/landings/individual/media-shop.jpg">
+                    <div class="media-image pull-left">
+                      <i class="icon-regence icon-paper"></i>
+                    </div>
+                    <div class="media-body">
+                      <h2 class="media-heading">Shop for insurance</h2>
+                      <p class="lead">Custom health plans, made simple.</p>
+                      <p>Find the Regence health care plan that's just right for you&nbsp;&raquo;</p>
+                    </div>
+                    <a class="cover" href="#shop"></a>
+                  </div>
+                </div>
+                <div class="span4">
+                  <div class="media">
+                    <div class="media-image pull-left">
+                      <i class="icon-regence icon-heart"></i>
+                    </div>
+                    <div class="media-body">
+                      <h2 class="media-heading">What We Offer</h2>
+                      <p>Learn about BlueCard worldwide coverage, Advantages discounts, award-winning tools and more&nbsp;&raquo;</p>
+                    </div>
+                    <a class="cover" href="#shop"></a>
+                  </div>
+                  <div class="media">
+                    <div class="media-image pull-left">
+                      <i class="icon-regence icon-bookmark"></i>
+                    </div>
+                    <div class="media-body">
+                      <h2 class="media-heading">Understanding Health Insurance</h2>
+                      <p>Our reference guide answers many common questions&nbsp;&raquo;</p>
+                    </div>
+                    <a class="cover" href="#shop"></a>
+                  </div>
+                </div>
+                <div class="span4">
+                  <div class="media">
+                    <div class="media-image pull-left">
+                      <i class="icon-regence icon-briefcase"></i>
+                    </div>
+                    <div class="media-body">
+                      <h2 class="media-heading">Find a Doctor</h2>
+                      <p>Our online tool can help you locate doctors, clinics and other health care providers near you&nbsp;&raquo;</p>
+                    </div>
+                    <a class="cover" href="#shop"></a>
+                  </div>
+                  <div class="media">
+                    <div class="media-image pull-left">
+                      <i class="icon-regence icon-puzzle"></i>
+                    </div>
+                    <div class="media-body">
+                      <h2 class="media-heading">For Members</h2>
+                      <p>See your claims, read and write patient reviews, share with others in our community and more&nbsp;&raquo;</p>
+                    </div>
+                    <a class="cover" href="#shop"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <article class="post hentry row-fluid">
+          <section class="span6">
+            <div class="section-header">
+              <h2>Your health, connected</h2>
+            </div>
+            <div class="image">
+              <img src="img/landings/individual/section-top.jpg"/>
+            </div>
+            <ul class="nav nav-list nav-articles">
+              <li><a href="">Jan. 15: Regence covers flu shots&nbsp;&rsaquo;</a></li>
+              <li><a href="">Go paperless with Electronic EOBs&nbsp;&rsaquo;</a></li>
+              <li><a href="">What health care reform means for you&nbsp;&rsaquo;</a></li>
+              <li><a href="">Regence is nonprofit&nbsp;&rsaquo;</a></li>
+            </ul>
+          </section>
+          <section class="span6">
+            <div class="section-header">
+              <h2>Wellness resources</h2>
+            </div>          
+            <article class="story thumb clearfix" itemscope="itemscope" itemtype="http://schema.org/NewsArticle">
+              <meta content="en" itemprop="inLanguage" />
+              <header>
+                <a href="#"><div class="image thumb"><img src="img/landings/individual/section-thumb.jpg" alt="image alt" itemprop="image"/></div>
+                <h2 class="story-headline" itemprop="headline">Avoiding infection</h2></a>
+                <div class="abstract" itemprop="description">
+                  <p>There are four major types of infections that hospitals are working to prevent. Here's what you can do to reduce your risk of exposure.</p>
+                </div>
+                <!-- <div class="meta">
+                  <div class="section">
+                    <span class="dt">label:</span><span class="dd" itemprop="articleSection">value</span>
+                  </div>
+                </div> -->
+              </header>
+            </article>
+            <ul class="nav nav-list nav-articles">
+              <li><a href="">10 ways to communicate better with your doctor&nbsp;&rsaquo;</a></li>
+              <li><a href="">Antibiotic smarts&nbsp;&rsaquo;</a></li>
+              <li><a href="">Electronic health records on the rise&nbsp;&rsaquo;</a></li>
+              <li><a href="">After the diagnosis&nbsp;&rsaquo;</a></li>
+            </ul>
+          </section>
+        </article>
+        <nav class="nav-information">
+          <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#nav-information">More Information for individuals and families</button> 
+          <div class="row-fluid collapse" id="nav-information">
+            <div class="span2x4">
+              <h3 class="title">Shop for Health Insurance</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">Individual and families</a></li>
+                <li><a href="#">Through an employer</a></li>
+                <li><a href="#">For Medicare</a></li>
+              </ul>
+            </div>
+            <div class="span2x4">
+              <h3 class="title">Find a doctor</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">Find a dentist</a></li>
+                <li><a href="#">Pharmacies near you</a></li>
+                <li><a href="#">ER alternatives</a></li>
+              </ul>
+            </div>
+            <div class="span2x4">
+              <h3 class="title">What we offer</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">BlueCard</a></li>
+                <li><a href="#">Advantage discounts</a></li>
+                <li><a href="#">RegenceRx</a></li>
+              </ul>
+            </div>
+            <div class="span2x4">
+              <h3 class="title">Understand insurance</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">Insurance topic TBD</a></li>
+                <li><a href="#">Insurance topic TBD</a></li>
+                <li><a href="#">Insurance topic TBD</a></li>
+                <li><a href="#">Insurance topic TBD</a></li>
+                <li><a href="#">Insurance topic TBD</a></li>
+              </ul>
+            </div>
+            <div class="span2x4">
+              <h3 class="title">For members</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">Member forms</a></li>
+                <li><a href="#">myRegence</a></li>
+                <li><a href="#">Optimize your plan</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <nav class="nav-utility">
+          <div class="row-fluid">
+            <ul class="nav nav-pills pull-right">
+              <li><a href="#about">About Regence</a></li>
+              <li><a href="individual-contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <footer id="footer" role="contentinfo" itemprop="WPFooter">
+      <div class="row-fluid">
+        <div class="container">
+          <div class="span6">
+            <p>&copy; 2013 Regence <!-- BlueCross BlueShield of Oregon. All rights reserved. --></p>
+          </div>
+          <nav class="span6">
+            <ul class="nav nav-inverted nav-pills pull-right" role="navigation">
+              <li><a href="/legal/online-privacy-and-security/">Privacy</a></li>
+              <li><a href="/legal/terms-of-use/">Terms of Use</a></li>
+              <li><a onclick="oo_feedback.show()" href="javascript:void(0);"><span aria-hidden="true" class="icon-feedback"><b></b><i></i></span> Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+	
+  </body>
+</html>

@@ -50,6 +50,7 @@ $headingsColor:         inherit; // empty to use BS default, $textColor
 // -------------------------
 $textColor:             $grayDark;
 $bodyBackground:        $white;
+$mainBackground:        #EFF5F7;
 
 
 // Component sizing
@@ -276,5 +277,5 @@ $bottomColor:					$white;
 $bottomFontSize:				13px;
 $bottomLinkBackground:			transparent;
 $bottomLinkBackgroundHover:		transparent;
-$bottomLinkColor:				$textColor;
-$bottomLinkColorHover:			$textColor;
+$bottomLinkColor:				$white;
+$bottomLinkColorHover:			$white;

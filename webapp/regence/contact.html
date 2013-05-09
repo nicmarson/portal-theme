@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Regence Portal Demo</title>
+    <meta name="description" content="Simple click through pages to demonstrate new portal design">
+    <meta name="viewport" content="width=device-width">
+    <!-- Web Fonts -->
+    <link href="http://fnt.webink.com/wfs/webink.css/?project=AEC37CF0-6B2D-450D-9777-5062C06CCACA&fonts=58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,1366810A-C17C-C074-FF25-E81320293740:f=ProximaNovaCond-Semibold,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,FF4969BA-A10C-C1F1-4CAE-97A4557D103C:f=ProximaNovaCond-Regular,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body class="regence-demo" itemscope itemtype="http://schema.org/MedicalWebPage">
+    <link itemprop="audience" href="http://schema.org/Patient" />
+    <link itemprop="specialty" href="http://schema.org/PublicHealth" />
+    <meta itemprop="lastReviewed" content="2013-05-02"/>
+    
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="header clearfix" id="header" itemprop="WPHeader" role="banner">
+      <div class="container">
+        <ul class="nav visuallyhidden">
+          <li><a href="#hero">Skip to Content</a></li>
+          <li><a href="#nav">Skip to Navigation</a></li>
+          <li><a href="/medicare">Return to Homepage</a></li>
+        </ul>
+        <ul class="nav clearfix" itemscope itemtype="http://schema.org/Organization">
+          <li class="nav-brand">
+            <a class="logo-regence-cs" href="index.html">
+              <span class="brand-logo"><span class="hide-text">Regence</span></span>
+              <span class="brand-region">BlueCross BlueShield of Oregon</span>
+            </a>
+          </li>
+          <li class="nav-login"><a href="#login">Sign in</a></li>
+          <li class="nav-shopping">
+            <a id="js-shopping-toggle" href="#" class="toggle shopping-toggle-button"><span class="shopping-label">Individual &amp; Families <small>Portland, OR</small></span><span aria-hidden="true" class="icon-users hidden-phone"></span><b class="caret"></b></a>
+          </li>
+          <li class="nav-search">
+            <form class="form-search" action="http://www.regence.com/about/search.jsp" method="get" name="header-search" id="search" role="search">
+              <label for="searchQuery" class="hide">Search</label>
+              <input type="text" id="searchQuery" name="searchQuery" placeholder="Search" class="input-medium search-query">
+              <button type="submit" class="btn btn-link"><span class="icon-search" aria-hidden="true"></span><span class="visuallyhidden">Go</span></button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="main" role="main">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a> <span class="divider">&rsaquo;</span></li>
+          <li class="active">Contact Us</li>  
+        </ul>
+        <article class="article article-right-sidebar post hentry row-fluid">
+          <div class="content main-content span8 blocks">
+            <div class="page-header">
+              <h1>Contact Us</h1>
+            </div>
+            <hgroup>
+              <h2>Customer Service</h2>
+              <p>Help with benefits and account management</p>
+            </hgroup>
+            <table class="contact-info">
+              <tbody>
+                <tr>
+                  <td class="icon-contact-info"><span aria-hidden="true" class="icon-phone"><span class="caret"></span></span></td>
+                  <td class="contact-info-entry"><nobr>1 (888) 344-6347</nobr></td>
+                  <td class="icon-contact-info"><span aria-hidden="true" class="icon-email"><span class="caret"></span></span></td>
+                  <td><a href="#myModal" data-toggle="modal">Secure email</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <hgroup>
+              <h2>Medicare</h2>
+              <p>Help for all your Medicare needs</p>
+            </hgroup>
+            <table class="contact-info">
+              <tbody>
+                <tr>
+                  <td class="icon-contact-info"><span aria-hidden="true" class="icon-phone"><span class="caret"></span></span></td>
+                  <td class="contact-info-entry"><nobr>1 (800) 541-8981</nobr><br />
+                  <small>Daily, 8am - 8pm<br />
+                  TTY: 711</small>
+                  </td>
+                  <td class="icon-contact-info"><span aria-hidden="true" class="icon-email"><span class="caret"></span></span></td>
+                  <td class="contact-info-entry"><a href="#myModal" data-toggle="modal">Secure email</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <hgroup>
+              <h2>Sales</h2>
+              <p>Help with choosing the right plan</p>
+            </hgroup>
+            <table class="contact-info">
+              <tbody>
+                <tr>
+                  <td class="icon-contact-info"><span aria-hidden="true" class="icon-phone"><span class="caret"></span></span></td>
+                  <td class="contact-info-entry"><nobr>1 (888) 734-3623</nobr></td>
+                  <td class="icon-contact-info"><span aria-hidden="true" class="icon-email"><span class="caret"></span></span></td>
+                  <td class="contact-info-entry"><a href="#myModal" data-toggle="modal">Secure email</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <h2>Office Locations and Hours</h2>
+            <div class="btn-group" data-toggle="buttons-radio">
+              <button type="button" class="btn btn-primary active js-washingtonMarkers">Washington</button>
+              <button type="button" class="btn btn-primary js-oregonMarkers">Oregon</button>
+              <button type="button" class="btn btn-primary js-idahoMarkers">Idaho</button>
+              <button type="button" class="btn btn-primary js-utahMarkers">Utah</button>
+            </div>
+            <div class="row-fluid" id="map_container">
+              <div class="res" id="map_sidebar"></div>
+              <div class="map" id="map_canvas"></div>
+            </div>
+            <noscript>
+              <div class="row-fluid">
+                <div class="span3">
+                  <address>
+                  <strong>Burlington</strong><br />
+                  333 Gilkey Road<br />
+                  Burlington, WA 98233<br />
+                  <nobr>1 (877) 276-5906</nobr><br />
+                  Open weekdays 8-5
+                  </address>
+                  <address>
+                  <strong>Everett</strong><br />
+                  12728 19th Avenue SE,<br />
+                  Suite 101<br />
+                  Everett, WA 98208<br />
+                  <nobr>(425) 348-8100</nobr><br />
+                  Open weekdays 8-5
+                  </address>
+                  <address>
+                  <strong>Seattle</strong><br />
+                  1800 Ninth Avenue<br />
+                  Seattle, WA 98101<br />
+                  <nobr>(206) 464-3600</nobr><br />
+                  Open weekdays 8-5
+                  </address>
+                  <address>
+                  <strong>Tacoma</strong><br />
+                  1501 Market Street<br />
+                  Tacoma, WA 98402<br />
+                  <nobr>1 (888) 367-2112</nobr><br />
+                  Open weekdays 8-5
+                  </address>
+                </div>
+                <div class="span9">
+                  <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/ms?msa=0&amp;msid=201253017668109834490.0004cdff8f3cf98cd43f0&amp;ie=UTF8&amp;t=h&amp;ll=47.856847,-122.323435&amp;spn=1.216772,0.233289&amp;output=embed"></iframe><br />
+                  <small class="muted">View <a href="https://www.google.com/maps/ms?msa=0&amp;msid=201253017668109834490.0004cdff8f3cf98cd43f0&amp;ie=UTF8&amp;t=h&amp;ll=47.856847,-122.323435&amp;spn=1.216772,0.233289&amp;source=embed">Regence Office Locations</a> in a larger map</small>
+                </div>
+              </div>
+            </noscript>
+          </div>
+          <aside class="sidebar span4 blocks">
+            <h3>Mailing Address</h3>
+            <div class="content sidebar-content">
+              <address>
+                <b>Asuris Corporate</b><br />
+                PO Box 1071<br />
+                Portland OR 97217
+              </address>
+              <address>
+                <b>Asuris Sales and Applications</b><br />
+                PO Box 1107<br />
+                Lewiston ID 83501
+              </address>
+              <address>
+                <b>Asuris MedAdvantage and Medicare Script</b><br />
+                PO Box 12625, MS S5B<br />
+                Salem OR 97309
+              </address>
+            </div>
+
+            <h3>Other Contacts</h3>
+            <ul class="nav nav-list">
+              <li><a href="#">Membership Services&#187;</a></li>
+              <li><a href="#">Group Accounts&#187;</a></li>
+              <li><a href="#">ASO Accounts&#187;</a></li>
+              <li><a href="#">Provider Services&#187;</a></li>
+              <li><a href="#">Media Relations&#187;</a></li>
+            </ul>
+          </aside>
+        </article>
+        <nav class="nav-network">
+          <div class="container">
+            <div class="row-fluid">
+              <ul class="nav nav-pills">
+                <li class="nav-plans"><a href="#about"><i class="icon-regence icon-briefcase hidden-phone"></i><br>Plans</a></li>
+                <li class="nav-programs"><a href="contact.html"><i class="icon-regence icon-heart hidden-phone"></i><br>Health Programs</a></li>
+                <li class="nav-forms"><a href="#careers"><i class="icon-regence icon-paper hidden-phone"></i><br>Forms &amp; Documents</a></li>
+                <li class="nav-tools"><a href="#news"><i class="icon-regence icon-puzzle hidden-phone"></i><br>Employee Tools</a></li>
+                <li class="nav-library"><a href="#news"><i class="icon-regence icon-bookmark hidden-phone"></i><br>Library</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <nav class="nav-information">
+          <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#nav-information">More Information</button> 
+          <div class="row-fluid collapse" id="nav-information">
+            <div class="span2x4">
+              <h3 class="title">Shop for Health Insurance</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">Individual and families</a></li>
+                <li><a href="#">Through an employer</a></li>
+                <li><a href="#">For Medicare</a></li>
+              </ul>
+            </div>
+            <div class="span2x4">
+              <h3 class="title">Current Customers</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">Individual and families</a></li>
+                <li><a href="#">Coverage through an employer</a></li>
+                <li><a href="#">Medicare eligible</a></li>
+                <li><a href="#">myRegence.com</a></li>
+              </ul>
+            </div>
+            <div class="span2x4">
+              <h3 class="title">Health &amp; Wellness</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">Treatment Cost Estimates</a></li>
+                <li><a href="#">Prescription Information</a></li>
+                <li><a href="#">Health Insurance Guide</a></li>
+                <li><a href="#">Health &amp; Wellness News</a></li>
+              </ul>
+            </div>
+            <div class="span2x4">
+              <h3 class="title">About Regence</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">Non-Profit Health Insurance</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Company News</a></li>
+                <li><a href="#">Legal</a></li>
+              </ul>
+            </div>
+            <div class="span2x4">
+              <h3 class="title">About Regence</h3>
+              <ul class="nav unstyled">
+                <li><a href="#">Non-Profit Health Insurance</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Company News</a></li>
+                <li><a href="#">Legal</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <nav class="nav-utility">
+          <div class="row-fluid">
+            <ul class="nav nav-pills pull-right">
+              <li><a href="#about">About Regence</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#news">News</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <footer id="footer" role="contentinfo" itemprop="WPFooter">
+      <div class="row-fluid">
+        <div class="container">
+          <div class="span6">
+            <p>&copy; 2013 Regence <!-- BlueCross BlueShield of Oregon. All rights reserved. --></p>
+          </div>
+          <nav class="span6">
+            <ul class="nav nav-inverted nav-pills pull-right" role="navigation">
+              <li><a rel="nofollow" href="/c/portal/login?p_l_id=10183">Sign In</a></li>
+              <li><a href="/legal/online-privacy-and-security/">Privacy</a></li>
+              <li><a href="/legal/terms-of-use/">Terms of Use</a></li>
+              <li><a onclick="oo_feedback.show()" href="javascript:void(0);"><span aria-hidden="true" class="icon-feedback"><b></b><i></i></span> Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/google-map.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        // Load regional markers
+        placeMarkers('xml/washington.xml');
+      });
+    </script>
+
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+	
+  </body>
+</html>

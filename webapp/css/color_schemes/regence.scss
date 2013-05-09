@@ -18,6 +18,7 @@
   // Import shared styles
   // --------------------------------------
   @import "shared/general";
+  @import "shared/application";
   @import "shared/navigation";
   @import "shared/article";
   @import "shared/hero";
@@ -45,7 +46,7 @@
   
 
   // Headers
-  // -------------------------
+  // --------------------------------------
   .page-header,
   .section-header {
 
@@ -65,6 +66,54 @@
     h1, h2, h3, h4, h5, h6 {
       color: $orange;
     }
+  }
+
+
+  // Jumbotron
+  // --------------------------------------
+  .jumbotron {
+    background: #033048;
+    /* Old browsers */
+    background-color: #916dbd;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(45deg, #033048, #916dbd);
+    background-image: -webkit-linear-gradient(45deg, #033048, #916dbd);
+    background-image: -o-linear-gradient(45deg, #033048, #916dbd);
+    background-image: linear-gradient(45deg, #033048, #916dbd);
+    color: #FFF;
+    padding: 2.5rem 0 1.75rem;
+    position: relative;
+
+    h1 {
+      font-family: "ProximaNova-Bold", "Arial Black", Verdana, sans-serif;
+    }
+  }
+
+
+  // Subhead
+  // --------------------------------------
+  .subhead {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+
+    h1 {
+      color: #ffffff;
+    }
+    p {
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+  }
+
+
+  // Lists
+  // --------------------------------------
+  ul.bulleted li {
+    margin: $baseLineHeight / 2 0;
+  }
+
+  ul.bulleted > li {
+    list-style: square;
   }
 
 
@@ -158,19 +207,13 @@
 }
 
 
-// Font face
-// -------------------------
-.fontface .regence { // If web fonts are supported
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: $headingsFontWeight;
-  }
-}
-
-
 //
-// Custom: Large desktop and up
-// --------------------------------------------------
+// RESPONSIVE
+// --------------------------------------
+
+
+// Responsive: Large desktop and up
+// --------------------------------------
 @media (min-width: 1200px) {
 
   .bridge {
@@ -179,7 +222,7 @@
 }
 
 
-// Desktops and larger
+// Responsive: Desktops and larger
 // --------------------------------------
 @media (min-width: 980px) {
 
@@ -205,6 +248,12 @@
 
   .regence {
     @import "shared/768px-min";
+
+    .jumbotron {
+      -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+      -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+      box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+    }
   }
 }
 
@@ -215,5 +264,53 @@
 
   .regence {
     @import "shared/768px-979px";
+  }
+}
+
+
+// Tablet
+// --------------------------------------
+@media (max-width: 767px) {
+
+  .jumbotron {
+    padding: 40px 20px;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+}
+
+
+//
+// MODERNIZR
+// --------------------------------------
+
+
+// Font face
+// -------------------------
+.fontface .regence { // If web fonts are supported
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: $headingsFontWeight;
+  }
+}
+
+// Generated content
+// -------------------------
+.generatedcontent .regence {
+
+  ul.bulleted > li {
+    list-style: none;
+    position: relative;
+  }
+
+  ul.bulleted > li:before {
+    background: $bulletBackground;
+    @include border-radius(2px);
+    content: "";
+    height: 8px;
+    left: -($listIndent);
+    position: absolute;
+    top: $baseFontSize / 2;
+    width: 8px;
   }
 }

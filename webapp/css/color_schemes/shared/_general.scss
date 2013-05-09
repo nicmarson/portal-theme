@@ -38,39 +38,6 @@ h3 {
 }
 
 
-// Lists
-// --------------------------------------
-ul,
-ol {
-  margin-bottom: $baseLineHeight;
-}
-ul.bulleted li {
-  margin: $baseLineHeight / 2 0;
-}
-
-ul.bulleted > li {
-  list-style: square;
-}
-.generatedcontent {
-
-  ul.bulleted > li {
-    list-style: none;
-    position: relative;
-  }
-
-  ul.bulleted > li:before {
-    background: $bulletBackground;
-    @include border-radius(2px);
-    content: "";
-    height: 8px;
-    left: -($listIndent);
-    position: absolute;
-    top: $baseFontSize / 2;
-    width: 8px;
-  }
-}
-
-
 // Buttons
 // -------------------------
 .btn-primary {

@@ -1,0 +1,43 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib uri="http://java.sun.com/portlet" prefix="portlet" %>
+<%@ page import="com.cambiahealth.portal.services.p14n.P14nServiceUtil" %>
+<%@ page import="com.cambiahealth.portal.services.p14n.P14nService" %>
+<%@ page import="com.cambiahealth.portal.model.location.Region" %>
+
+<%
+	P14nService p14n = P14nServiceUtil.getServiceFromRequest(request);
+%>
+<portlet:actionURL var="locationActionURL">  
+  <portlet:param name="action" value="set-location"></portlet:param>  
+</portlet:actionURL>
+<c:set var="location.label.region" value="<%=p14n.getRegion().name().toLowerCase()%>"/>
+<c:set var="location.label.audience" value="<%=p14n.getAudience().name().toLowerCase()%>"/>
+<c:if test="<%=p14n.getRegion()==Region.Default %>">
+    <form id="set-view-location-form" action="${locationActionURL}" method="post">
+        <div class="row-fluid">
+            <div class="span6">
+                <i class="glyph-users"></i>
+                <label>Change audience</label>
+                <select>
+                    <option>Individuals & Families</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div class="span6">
+                <i class="icon-location icon-white"></i>
+                <label>Change location</label>
+                <spring:message code="location.modal.form.zipcode"/><input type="text" name="zipcode"/>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="button" class="btn btn-link"><spring:message code="location.modal.cancel"/></button>
+            <button type="submit" class="btn"><spring:message code="location.modal.continue"/></button>
+        </div>
+    </form>
+</c:if>
+<c:if test="<%=p14n.getRegion()!=Region.Default%>">
+</c:if>
