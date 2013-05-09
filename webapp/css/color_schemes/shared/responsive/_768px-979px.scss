@@ -1,0 +1,78 @@
+/*------------------------------------*\
+    $THEME
+    $RESPONSIVE
+    $768px-979px
+\*------------------------------------*/
+
+
+// Thumbnails
+// ---------------------------
+.thumbnail-left,
+.thumbnail-right {
+
+  .content,
+  .image {
+    width: 48%;
+  }
+}
+
+
+// NAV NETWORK
+// ---------------------------
+.nav-network {
+
+  li {
+    height: 140px;
+    width: 20%;
+  }
+
+  li > a {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0 10px;
+    padding: 40px 0 30px;
+  }
+}
+
+
+// Article
+// ------------
+.article-left-sidebar {
+
+  .sidebar .nav > li > a {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+
+// Hero units
+// ------------
+.hero-media {
+
+  .media-heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+
+// Health Insurance Guide
+// -------------------------------
+#hero-understanding-insurance {
+
+  .hero-unit {
+    height: 405px;
+  }
+
+  .hero-caption {
+    bottom: $gridGutterWidth;
+    left: $gridGutterWidth;
+    position: absolute;
+    right: $gridGutterWidth;
+  }
+
+  .media-image {
+    background-position: center;
+  }
+}

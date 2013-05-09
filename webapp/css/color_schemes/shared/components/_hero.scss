@@ -1,0 +1,196 @@
+/*------------------------------------*\
+    $CUSTOM
+    $HERO
+\*------------------------------------*/
+
+
+// Hero unit
+.hero-unit {
+  @include border-radius(0);
+  margin-bottom: 20px;
+  padding: 40px;
+
+  &#default {
+    background-image: url(images/bridge/landings/global/hero-global.jpg);
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .hero-inner-title small {
+    display: block;
+  }
+}
+
+
+// Inverted hero unit
+.hero-inverted {
+  color: $white;
+  padding: $gridGutterWidth 0; // 20px 0
+
+  a,
+  h1,
+  .hero-inner-title,
+  .hero-inner-title small {
+    color: $white;
+  }
+}
+
+
+// Hero with image background
+// -------------------------------
+.hero-image {
+  padding: 0;
+  position: relative;
+
+  > .image {
+    overflow: hidden;
+    z-index: 1;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+// Hero with media boxes
+// -------------------------------
+.hero-media {
+
+  .hero-inner {
+    padding: 0;
+  }
+
+  .hero-inner-title {
+    margin-bottom: 15px;
+  }
+
+  .media {
+    background-color: $white;
+    background-color: rgba(255,255,255,.9);
+    @include box-shadow("0 1px 5px rgba(0,0,0,.1)");
+    color: $textColor;
+    margin-top: 0;
+    position: relative;
+    @include transition(all .2s ease-in-out);
+
+    &:hover {
+      background-color: $white;
+      @include box-shadow("0 1px 5px rgba(0,0,0,.5)");
+    }
+
+    a {
+      color: $textColor;
+    }
+  }
+
+  .media-image {
+    position: relative;
+  }
+
+  .media-heading {
+    margin-bottom: 10px;
+
+    small {
+      color: $accent;
+      font-family: $serifFontFamilyIt;
+      font-size: 16px;
+      display: block;
+    }
+  }
+
+  .pull-left {
+    margin-right: 0;
+  }
+}
+
+
+// Health Insurance Guide
+// -------------------------------
+#hero-understanding-insurance {
+
+  form {
+    position: relative;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  .hero-unit {
+    height: 405px;
+  }
+
+  .hero-caption {
+    background: $white;
+    background: rgba(255,255,255,.9);
+    padding: 12px 15px;
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 5px;
+    }
+  }
+
+  .hero-inner {
+    padding: $gridGutterWidth;
+  }
+
+  .hero-caption-title {
+    border-bottom: 1px solid $grayLight;
+    color: $accent;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+  }
+
+  .search-button {
+    height: 29px;
+    padding: 0 10px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+  }
+
+  .search-input {
+    font-family: $sansFontFamilyLight;
+    font-size: 20px;
+    height: auto;
+  }
+
+  .search-input:focus {
+    box-shadow: none
+  }
+
+  .media {
+    margin-bottom: 0;
+  }
+
+  .media-image {
+    min-height: 110px;
+
+    .glyph-play:before {
+      color: $white;
+      color: rgba(255,255,255, .8);
+      font-size: 36px;
+      left: 50%;
+      margin-left: -16px;
+      margin-top: -18px;
+      position: absolute;
+      text-shadow: 0 0 5px rgba(0,0,0, .5);
+      top: 50%;
+    }
+  }
+  .media:hover {
+
+    .glyph-play:before {
+      color: $white;
+    }    
+  }
+}

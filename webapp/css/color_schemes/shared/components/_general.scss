@@ -1,0 +1,214 @@
+/*------------------------------------*\
+    $GENERAL
+\*------------------------------------*/
+
+
+// Links
+// -------------------------
+a {
+  color: $linkColor;
+}
+a:hover,
+a:focus {
+  color: $linkColorHover;
+}
+a:active {
+  background-color: $linkColorHover;
+  color: #FFF;
+}
+
+
+// Headings
+// --------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headingsFontFamily;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $headingsFontFamilyAlt;
+  text-shadow: 0 0 1px rgba(0,0,0,.1); // Helps text rendering on Windows
+}
+
+
+// Headers
+// -------------------------
+
+.page-header,
+.section-header {
+
+   h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+}
+
+// Page header
+.page-header {
+  border-bottom: $pageHeaderBorderBottom;
+  margin: $pageHeaderMargin;
+}
+
+// Section header
+.section-header {
+  background: $sectionHeaderBackground;
+  border-top: $sectionHeaderBorderTop;
+  margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
+  padding: $baseLineHeight/2 15px;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $sectionHeaderHeadingColor;
+  }
+}
+
+
+// Subhead
+// --------------------------------------
+.subhead {
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+
+  h1 {
+    color: #ffffff;
+  }
+  p {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+
+
+// Jumbotron
+// --------------------------------------
+.jumbotron {
+  background: #033048;
+  /* Old browsers */
+  background-color: #916dbd;
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(45deg, #033048, #916dbd);
+  background-image: -webkit-linear-gradient(45deg, #033048, #916dbd);
+  background-image: -o-linear-gradient(45deg, #033048, #916dbd);
+  background-image: linear-gradient(45deg, #033048, #916dbd);
+  color: #FFF;
+  padding: 2.5rem 0 1.75rem;
+  position: relative;
+
+  h1 {
+    font-family: "ProximaNova-Bold", "Arial Black", Verdana, sans-serif;
+  }
+}
+
+
+// Lists
+// -------------------------
+
+// FAQ
+.faq dl {
+  margin-left: 0;
+
+  dt {
+    text-align: left;
+  }
+}
+
+// Bulleted
+ul.bulleted li {
+  margin: $baseLineHeight / 2 0;
+}
+
+ul.bulleted > li {
+  list-style: square;
+}
+
+
+// Images
+// -------------------------
+figcaption {
+  padding: 5px 1px;
+}
+
+
+// Buttons
+// -------------------------
+
+.btn small {
+  display: block;
+}
+
+.btn-flat {
+  background: none;
+  background-color: $grayLight;
+  border: none;
+  @include border-radius(0);
+  @include box-shadow(none);
+
+  &.btn-primary {
+    background-color: $brand;
+
+    &:hover {
+      background-color: darken($brand, 10%);
+    }
+  }
+}
+
+.btn-link {
+
+  .caret {
+    border-top-color: $linkColor;
+  }
+
+  &:hover .caret {
+    border-top-color: $linkColorHover;
+  }
+}
+
+.btn-primary {
+  color: #FFF;
+}
+
+
+// Dropdown menu
+// -------------------------
+.dropdown-menu {
+  color: $black;
+}
+
+
+// Tooltips
+// -------------------------
+.tooltip {
+  &.top    { margin-top:  -10px; }
+  &.left   { margin-left: -10px; }
+}
+
+
+// Modals
+// -------------------------
+.modal {
+  color: $gray;
+  width: 515px;
+
+  form {
+    margin: 0;
+  }
+}
+.modal-header {
+  padding: 10px 15px;
+
+  h3 {
+    color: $brand;
+  }
+}
+.modal-body {
+  padding: 20px 15px 15px;
+}
+.modal-footer {
+  padding: 19px 15px 20px;
+}

@@ -1,0 +1,261 @@
+/*------------------------------------*\
+    $CUSTOM
+    $TOP
+    $top
+\*------------------------------------*/
+
+
+#top {
+  text-align: right;
+
+  .nav {
+    margin: 0;
+
+    li > a {
+      text-decoration: none;
+      @include transition(background-color .3s ease-in-out);
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .active > a {
+      text-decoration: none;
+    }
+  }
+
+  .container {
+    padding: 0;
+    position: relative;
+  }
+
+
+  // Nav Brand
+  .nav .nav-brand {
+    float: left;
+
+    .brand {
+      height: 100%;
+      margin-right: 5px;
+      width: 100%;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+
+  // Nav Login
+  .nav .nav-login {
+    float: right;
+  }
+
+
+  // Nav Search
+  .nav .nav-search {
+    float: right;
+    width: 49.9999%;
+
+    button {
+      border: none;
+      position: absolute;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    form {
+      margin: 0;
+      position: relative;
+    }
+  }
+
+
+  // Nav Shopping
+  .nav .nav-shopping {
+    clear: left;
+    float: left;
+    text-align: left;
+    width: 49.9999%;
+
+    > a {
+      display: block;
+      position: relative;
+    }
+
+    .active > a {
+      text-decoration: none;
+    }
+
+    .caret {
+      display: block;
+      position: absolute;
+    }
+
+    .glyph-users {
+      position: absolute;
+    }
+
+    .shopping-label {
+      display: block;
+
+      small {
+        display: block;
+      }
+    }
+  }
+}
+
+.brand {
+  display: block;
+  padding-left: 20px;
+  position: relative;
+}
+
+.brand-logo {
+  background: url("images/identity/identity.png") no-repeat;
+  display: block;
+  max-width: 250px;
+  min-width: 143px;
+  position: relative;
+  *width: 250px;
+}
+
+.brand-region {
+  bottom: 0;
+  color: $grayLight;
+  display: none;
+  font-family: arial;
+  font-size: 12px;
+  left: 20px;
+  line-height: 18px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.logo-asuris {
+  // Height 45px
+  padding-bottom: 23px;
+  padding-top: 12px;
+}
+
+.logo-myasuris {
+  // Height 33px
+  padding-bottom: 25px;
+  padding-top: 22px;
+}
+
+.logo-bridge {
+  // Height 44px
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+
+.logo-myregence {
+  // Height 50px
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.logo-regence-s,
+.logo-regence-cs {
+  // Height 33px
+  padding-bottom: 28px;
+  padding-top: 19px;
+}
+
+.logo-regence-s .brand-region {
+  display: block;
+  left: 36px;
+}
+
+.logo-regence-cs .brand-region {
+  display: block;
+  left: 70px;
+}
+
+
+// Logos
+.logo-asuris .brand-logo {
+  background-position: 0 -300px;
+  height: 45px;
+  width: 148px;
+}
+
+.logo-myasuris .brand-logo {
+  background-position: 0 -400px;
+  height: 33px;
+  width: 176px;
+}
+
+.logo-bridge .brand-logo {
+  background-position: 0 -500px;
+  height: 44px;
+  width: 124px;
+}
+
+.logo-myregence .brand-logo {
+  background-position: 0 -200px;
+  height: 50px;
+  width: 250px;
+}
+
+.logo-regence-cs .brand-logo {
+  background-position: 0 0;
+  height: 33px;
+  width: 180px;
+}
+
+.logo-regence-s .brand-logo {
+  background-position: 0 -100px;
+  height: 33px;
+  width: 145px;
+}
+
+
+// High Res Logos
+@media all and (-webkit-min-device-pixel-ratio : 1.5) {
+
+  .backgroundsize .brand-logo {
+    background-image: url("images/identity/identity$2x.png");
+    background-size: 250px auto; /* Actual width is 450px */
+  }
+}
+
+
+// SVG Logos
+.svg.backgroundsize {
+
+  .logo-regence-cs .brand-logo {
+    background: url("images/identity/regence-cs.svg") no-repeat 0 0;
+    background-size: 178px auto;
+  }
+
+  .logo-regence-s .brand-logo {
+    background: url("images/identity/regence-s.svg") no-repeat 0 0;
+    background-size: 143px auto;
+  }
+
+  .logo-myregence .brand-logo {
+    background: url("images/identity/myregence.svg") no-repeat 0 0;
+    background-size: 250px auto;
+  }
+
+  .logo-asuris .brand-logo {
+    background: url("images/identity/asuris.svg") no-repeat 0 0;
+    background-size: 148px auto;
+  }
+
+  .logo-myasuris .brand-logo {
+    background: url("images/identity/myasuris.svg") no-repeat 0 0;
+    background-size: 176px auto;
+  }
+  
+  .logo-bridge .brand-logo {
+    background: url("images/identity/bridgespan.svg") no-repeat 0 0;
+    background-size: 124px auto;
+  }
+}

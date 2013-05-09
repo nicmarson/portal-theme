@@ -2,21 +2,21 @@
  * Main - Custom Styles
  *
  * Author - Nic Marson
- * Date - 1/22/2013
- * Version - 1.0
+ * Date - 5/9/2013
+ * Version - 1.5
  *
  */
 
 
 // Core variables and mixins
-// ---------------------------
+// --------------------------------------------------
 //import "compass";
 @import "variables/default";
 @import "variables/mixins";
 
 
 // Font for icons
-// ---------------------------
+// --------------------------------------------------
 @font-face {
   font-family: 'icomoon';
   src:url('fonts/icomoon.eot');
@@ -30,38 +30,36 @@
 
 
 // COMPONENTS
-// ---------------------------
+// --------------------------------------------------
 @import "components/typeplate";
-@import "components/type";
 @import "components/utilities";
 @import "components/sprites";
-@import "components/nav";
-
-
-// LOCATIONS
-// ---------------------------
-@import "locations/top";
-@import "locations/bottom";
-@import "locations/contact";
 
 
 
 // MEDIA QUERIES
-// ---------------------------
+// --------------------------------------------------
 
-// Large desktops
-@import "responsive/1200px-min";
+// Custom: Large desktop and up
+// --------------------------------------------------
+@media (min-width: 1200px) {
 
-// Desktops and larger
-@import "responsive/980px-min";
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 
-// Tablets to regular desktops
-@import "responsive/768px-979px";
+// Custom: Landscape phone to desktop/tablet
+// --------------------------------------------------
+@media (max-width: 767px) {
 
-// Tablets and larger
-@import "responsive/768px-min";
-
-// Phones to portrait tablets and narrow desktops
-@import "responsive/767px-max";
+  // Padding to set content in a bit
+  .container {
+    min-width: 360px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 

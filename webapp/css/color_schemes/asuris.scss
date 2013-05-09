@@ -13,16 +13,22 @@
 
 .asuris {
   color: $textColor;
-  
 
-  // Import theme styles
+
+  // Import shared components
   // --------------------------------------
-  @import "shared/general";
-  @import "shared/application";
-  @import "shared/navigation";
-  @import "shared/article";
-  @import "shared/hero";
-  @import "shared/location";
+  @import "shared/components/general";
+  @import "shared/components/application";
+  @import "shared/components/navigation";
+  @import "shared/components/article";
+  @import "shared/components/hero";
+
+
+  // Import shared locations
+  // --------------------------------------
+  @import "shared/locations/top";
+  @import "shared/locations/bottom";
+  @import "shared/locations/contact";
 
 
   // Asuris only styles
@@ -36,54 +42,10 @@
   }
 
 
-  // Headings
-  // --------------------------------------
-  h1,
-  h2,
-  h3 {
-    font-family: $sansFontFamilyLight; // Regular, bold, semi-bold look terrible on Windows
-  }
-  
-
-  // Headers
-  // -------------------------
-  .page-header,
-  .section-header {
-
-     h1, h2, h3, h4, h5, h6 {
-      margin: 0;
-    }
-  }
-  .page-header {
-    margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
-  }
-  .section-header {
-    background: #EAEFF1;
-    border-top: 1px solid #E0E3E4;
-    margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
-    padding: $baseLineHeight/2 15px;
-
-    h1, h2, h3, h4, h5, h6 {
-      color: $orange;
-    }
-  }
-
-
   // NAV MAIN
-  // ----------------
-  .nav-main {
-
-    ul {
-
-      li {
-
-        a {
-          @include border-radius(5px);
-          font-family: $sansFontFamily;
-          font-size: 16px;
-        }
-      }
-    }
+  // --------------------------------------
+  .nav-main ul li a {
+    @include border-radius(5px);
   }
 
 
@@ -152,12 +114,27 @@
 
 
 //
+// RESPONSIVE
+// --------------------------------------
+
+
+//
 // Custom: Large desktop and up
 // --------------------------------------------------
 @media (min-width: 1200px) {
 
-  .bridge {
-    @import "shared/1200px-min";
+  .asuris {
+    @import "shared/responsive/1200px-min";
+  }
+}
+
+
+// Responsive: Desktop to large desktop
+// --------------------------------------------------
+@media (min-width: 980px) and (max-width: 1199px) {
+
+  .asuris {
+    @import "shared/responsive/980px-1199px";
   }
 }
 
@@ -167,7 +144,7 @@
 @media (min-width: 980px) {
 
   .asuris {
-    @import "shared/980px-min";
+    @import "shared/responsive/980px-min";
   }
 }
 
@@ -177,7 +154,7 @@
 @media (min-width: 768px) and (max-width: 979px) {
 
   .asuris {
-    @import "shared/768px-979px";
+    @import "shared/responsive/768px-979px";
 
 
     // Article
@@ -197,7 +174,7 @@
 @media (min-width: 768px) {
 
   .asuris {
-    @import "shared/768px-min";
+    @import "shared/responsive/768px-min";
   }
 }
 
@@ -206,7 +183,32 @@
 // --------------------------------------
 @media (min-width: 768px) and (max-width: 979px) {
 
+  .asuris {
+    @import "shared/responsive/768px-979px";
+  }
+}
+
+
+// Tablet
+// --------------------------------------
+@media (max-width: 767px) {
+
   .regence {
-    @import "shared/768px-979px";
+    @import "shared/responsive/768px-979px";
+  }
+}
+
+
+//
+// MODERNIZR
+// --------------------------------------
+
+
+// Font face
+// -------------------------
+.fontface .asuris { // If web fonts are supported
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: $headingsFontWeight;
   }
 }

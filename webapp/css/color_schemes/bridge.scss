@@ -15,14 +15,20 @@
   color: $textColor;
 
 
-  // Import theme styles
+  // Import shared components
   // --------------------------------------
-  @import "shared/general";
-  @import "shared/application";
-  @import "shared/navigation";
-  @import "shared/article";
-  @import "shared/hero";
-  @import "shared/location";
+  @import "shared/components/general";
+  @import "shared/components/application";
+  @import "shared/components/navigation";
+  @import "shared/components/article";
+  @import "shared/components/hero";
+
+
+  // Import shared locations
+  // --------------------------------------
+  @import "shared/locations/top";
+  @import "shared/locations/bottom";
+  @import "shared/locations/contact";
 
 
   // Bridge only styles
@@ -42,31 +48,6 @@
   h2,
   h3 {
     font-family: $sansFontFamilyBold;
-  }
-  
-
-  // Headers
-  // -------------------------
-  .page-header,
-  .section-header {
-
-     h1, h2, h3, h4, h5, h6 {
-      margin: 0;
-    }
-  }
-  .page-header {
-    border-bottom: 2px solid $textColor;
-    margin: 0 0 30px;
-  }
-  .section-header {
-    background: #EAEFF1;
-    border-top: 1px solid #E0E3E4;
-    margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
-    padding: $baseLineHeight/2 15px;
-
-    h1, h2, h3, h4, h5, h6 {
-      color: $orange;
-    }
   }
 
 
@@ -98,101 +79,31 @@
 
   // NAV MAIN
   // ----------------
-  .nav-main {
-
-    ul {
-      margin: 30px 0;
-
-      li {
-
-        a {
-          border: 1px solid $accent;
-          @include border-bottom-right-radius(10px);
-          @include border-top-left-radius(10px);
-          font-family: $sansFontFamily;
-          font-size: 16px;
-        }
-      }
-    }
-  }
-
-
-  // Articles
-  // --------------------------------------
-  .article-landing {
-
-    h3 {
-      font-size: 28px;
-      line-height: 34px;
-    }
-    li {
-      font-size: 20px;
-      line-height: 1;
-      margin-bottom: 10px;
-    }
-    .nav > li {
-      font-size: 24px;
-      line-height: 30px;
-      margin-bottom: 20px;
-
-      > a {
-        color: $textColor;
-
-        &:hover {
-          background-color: $white;
-
-          .bridge-caret {
-            border-color: $brand;
-          }
-        }
-      }
-    }
-  }
-
-
-  // Article sidebar
-  // --------------------------------------
-  article .sidebar {
-
-    h3 {
-      color: $grayLight;
-      font: 20px/1 $sansFontFamilyLight;
-    }
-  }
-
-
-  // Article left sidebar
-  // --------------------------------------
-  .article-left-sidebar .sidebar {
-
-    .nav > li > a {
-      border-top: 1px solid $grayLighter;
-      font: 20px/1 $sansFontFamilyLight;
-      padding: 12px 15px;
-    }
-
-    .nav > .active > a,
-    .nav > .active > a:hover {
-      color: $accent;
-    }
+  .nav-main ul li a {
+    @include border-bottom-right-radius(10px);
+    @include border-top-left-radius(10px);
   }
 
 
   // Audience dropdown
-  // -------------------------
+  // --------------------------------------
   #set-view-location {
     @include gradient-vertical(lighten($brand, 15%), $brand);
   }
 
 
   // Dashboard
-
+  // --------------------------------------
   .dashboard {
 
     .display {
       padding-left: 79px;
       position: relative;
 
+      legend {
+        color: $brand;
+        font-size: inherit;
+      }
       p {
         margin-bottom: 10px;
       }
@@ -235,14 +146,10 @@
 }
 
 
-// Font face
-// -------------------------
-.fontface .bridge { // If web fonts are supported
 
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: $headingsFontWeight;
-  }
-}
+//
+// RESPONSIVE
+// --------------------------------------
 
 
 //
@@ -251,7 +158,17 @@
 @media (min-width: 1200px) {
 
   .bridge {
-    @import "shared/1200px-min";
+    @import "shared/responsive/1200px-min";
+  }
+}
+
+
+// Responsive: Desktop to large desktop
+// --------------------------------------------------
+@media (min-width: 980px) and (max-width: 1199px) {
+
+  .bridge {
+    @import "shared/responsive/980px-1199px";
   }
 }
 
@@ -261,7 +178,7 @@
 @media (min-width: 980px) {
 
   .bridge {
-    @import "shared/980px-min";
+    @import "shared/responsive/980px-min";
   }
 }
 
@@ -271,7 +188,7 @@
 @media (min-width: 768px) {
 
   .bridge {
-    @import "shared/768px-min";
+    @import "shared/responsive/768px-min";
 
     .hero-unit {
 
@@ -361,14 +278,6 @@
 
     #hero-understanding-insurance {
 
-      .hero-unit {
-        height: 405px;
-      }
-
-      .media-image {
-        background-position: center;
-      }
-
       .media-copay .media-image {
         background-image: url(images/bridge/landings/understanding-insurance/media-copay.png);
       }
@@ -390,6 +299,31 @@
 @media (min-width: 768px) and (max-width: 979px) {
 
   .bridge {
-    @import "shared/768px-979px";
+    @import "shared/responsive/768px-979px";
+  }
+}
+
+
+// Tablet
+// --------------------------------------
+@media (max-width: 767px) {
+
+  .regence {
+    @import "shared/responsive/768px-979px";
+  }
+}
+
+
+//
+// MODERNIZR
+// --------------------------------------
+
+
+// Font face
+// -------------------------
+.fontface .bridge { // If web fonts are supported
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: $headingsFontWeight;
   }
 }

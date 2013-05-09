@@ -1,0 +1,223 @@
+/*------------------------------------*\
+    $THEME
+    $RESPONSIVE
+    $768px-min
+\*------------------------------------*/
+
+
+// Thumbnails
+// ---------------------------
+.thumbnail-left {
+
+  .content {
+    float: right;
+  }
+
+  .image {
+    float: left;
+    padding-right: $gridGutterWidth;
+  }
+}
+.thumbnail-right {
+
+  .content {
+    float: left;
+  }
+
+  .image {
+    float: right;
+    padding-left: $gridGutterWidth;
+  }
+}
+
+
+// NAV INFORMATION
+// ---------------------------
+.nav-information {
+
+  .nav-group {
+    float: left;
+    width: 19.9999%;
+  }
+}
+
+
+// NAV NETWORK
+// ---------------------------
+.nav-network {
+  margin-top: 30px;
+
+  li > a {
+    background-color: #F8FAFB;
+    @include box-shadow("0 1px 5px rgba(0,0,0,.1)");
+    display: block;
+    font-family: $sansFontFamily;
+    text-align: center;
+    @include transition(all .2s ease-in-out);
+    vertical-align: middle;
+
+    &:hover {
+      background-color: #F8FAFB;
+      @include box-shadow("0 1px 5px rgba(0,0,0,.5)");
+    }
+  }
+
+  .active > a, 
+  .active > a:hover {
+    background-color: #076DA5;
+  }
+}
+
+
+// Article
+// -------------
+.article-left-sidebar {
+
+  .sidebar .nav {
+    text-align: right;
+  }
+}
+
+.article-list > li {
+  font-size: 14px;
+}
+
+.article .main-content {
+  padding: $gridGutterWidth $gridGutterWidth ($baseLineHeight*2);
+}
+
+
+// Hero header
+// -------------------------------
+.hero-header {
+  padding: 40px 20px 5px;
+  text-align: right;
+
+  h1 {
+    color: $grayLight;
+    font-family: $sansFontFamilyLight;
+    margin: 0;
+  }
+}
+
+
+// Hero with image background
+// -------------------------------
+.hero-image {
+  padding: 0;
+  position: relative;
+
+  > .image {
+    min-height: 360px;
+  }
+
+  .hero-inner {
+    bottom: 0;
+    left: 20px;
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .caption {
+    background: $white;
+    background: rgba(255,255,255,.8);
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20px;
+    padding: 35px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+  }
+
+  .caption-title small,
+  .caption-text {
+    color: $gray;
+  }
+
+  .caption-title {
+    color: $orange;
+    font: 36px $sansFontFamilyLight;
+    line-height: 30px;
+    margin-bottom: 8px;
+
+    small {
+      color: $gray;
+      font-size: 24px;
+    }
+  }
+
+  .caption-text {
+    color: $gray;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+}
+
+
+// Hero with media boxes
+// -------------------------------
+.hero-media {
+
+  .media {
+
+    p {
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 15px;
+    }
+
+    li {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .cover {
+      bottom: 0;
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 10;
+    }
+
+    .lead {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    .media-heading {
+      line-height: .85;
+    }
+  }
+}
+
+
+// Top
+// --------------------------------------
+#top {
+  border-bottom: none;
+
+  // Nav Shopping
+  .nav .nav-shopping > a {
+    padding-left: 60px;
+    padding-right: 45px;
+  }
+}
+
+
+// Bottom
+// --------------------------------------
+#bottom {
+
+  p {
+    text-align: left;
+  }
+  
+  ul {
+    text-align: right;
+  }
+}

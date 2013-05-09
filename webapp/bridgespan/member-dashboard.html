@@ -10,8 +10,8 @@
     <meta name="description" content="Bridgespan portal pages">
     <meta name="viewport" content="width=device-width">
 
-    <link href="https://fnt.webink.com/wfs/webink.css/?project=0BD8AE7B-BA97-469A-803F-4EAFD6EE0334&fonts=D15EC0DB-8C78-97F3-7FFC-53AE3364DA97:f=NewsGothicBdCnBT-It,B79BBC76-B20F-9E0C-AB12-10BA09958B6E:f=NewsGothicLtBT-It,E84775D4-DE72-2F89-F273-0ABE2B31207E:f=NewsGothicCnBT-Reg,1F1F3FB2-7D81-43AA-DCE4-D52AA5EA43C8:f=NewsGothicBT-It,E9FF2D01-CECF-3C68-CDD7-6219489B1C10:f=NewsGothicCnBT-It,4B3C766D-19C8-271A-6916-B0192D2E9722:f=NewsGothicBT-Reg,A053F1A3-227C-4158-6291-4B5965C1E530:f=NewsGothicBdBT-Reg,DEC48D37-A47A-BB26-E548-A6C707C066C5:f=NewsGothicLtBT-Reg,871BC8D2-26C3-228B-C09C-B2D9FD2E0BB7:f=NewsGothicBdBT-It,C3C39CE1-604C-3BF6-5E20-ACC536D4A277:f=NewsGothicDmBT-Reg,C874B676-84AA-F5DA-8812-B49D8DEA4B2C:f=NewsGothicDmBT-It,243EFB25-ECB2-D3F3-A511-6CCE778FBACB:f=NewsGothicBdCnBT-Reg" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fnt.webink.com/wfs/webink.css/?project=0BD8AE7B-BA97-469A-803F-4EAFD6EE0334&fonts=D15EC0DB-8C78-97F3-7FFC-53AE3364DA97:f=NewsGothicBdCnBT-It,E84775D4-DE72-2F89-F273-0ABE2B31207E:f=NewsGothicCnBT-Reg,1F1F3FB2-7D81-43AA-DCE4-D52AA5EA43C8:f=NewsGothicBT-It,835165A1-1228-CBD9-703B-0659517C5E59:f=KeplerStd-ItCapt,E9FF2D01-CECF-3C68-CDD7-6219489B1C10:f=NewsGothicCnBT-It,A053F1A3-227C-4158-6291-4B5965C1E530:f=NewsGothicBdBT-Reg,93C07DFE-8E15-55F8-9C85-5EB9EAA58FD6:f=KeplerStd-Capt,C874B676-84AA-F5DA-8812-B49D8DEA4B2C:f=NewsGothicDmBT-It,C3C39CE1-604C-3BF6-5E20-ACC536D4A277:f=NewsGothicDmBT-Reg,B79BBC76-B20F-9E0C-AB12-10BA09958B6E:f=NewsGothicLtBT-It,4B3C766D-19C8-271A-6916-B0192D2E9722:f=NewsGothicBT-Reg,871BC8D2-26C3-228B-C09C-B2D9FD2E0BB7:f=NewsGothicBdBT-It,DEC48D37-A47A-BB26-E548-A6C707C066C5:f=NewsGothicLtBT-Reg,243EFB25-ECB2-D3F3-A511-6CCE778FBACB:f=NewsGothicBdCnBT-Reg" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/custom.css">
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
@@ -148,12 +148,38 @@
                     <section class="row-fluid">
                         <div class="display">
                             <div class="title"><i class="icon-benefits"></i> Benefits</div>
-                            <p><a href="#">Deductibles (in network) <i class="icon-question-sign"></i></a></p>
-                            <p>Individual&nbsp;&nbsp;<img class="inline" src="../css/images/bridge/dashboard/deductibles-individual.png"/></p>
-                            <p>Family&nbsp;&nbsp;<img class="inline" src="../css/images/bridge/dashboard/deductibles-family.png"/></p>
-                            <p><a href="#">Annual coinsurance max. (in network) <i class="icon-question-sign"></i></a></p>
-                            <p>Individual&nbsp;&nbsp;<img class="inline" src="../css/images/bridge/dashboard/coinsurance-individual.png"/></p>
-                            <p>Family&nbsp;&nbsp;<img class="inline" src="../css/images/bridge/dashboard/coinsurance-family.png"/></p>
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <legend>Deductibles (in network) <i class="icon-question-sign"></i></legend>
+                                    <div class="control-group">
+                                        <label class="control-label">Individual</label>
+                                        <div class="controls">
+                                            <img class="inline" src="../css/images/bridge/dashboard/deductibles-individual.png"/>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Family</label>
+                                        <div class="controls">
+                                            <img class="inline" src="../css/images/bridge/dashboard/deductibles-family.png"/>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Annual coinsurance max. (in network) <i class="icon-question-sign"></i></legend>
+                                    <div class="control-group">
+                                        <label class="control-label">Individual</label>
+                                        <div class="controls">
+                                            <img class="inline" src="../css/images/bridge/dashboard/coinsurance-individual.png"/>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Family</label>
+                                        <div class="controls">
+                                            <img class="inline" src="../css/images/bridge/dashboard/coinsurance-family.png"/>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
                         </div>
                     </section>
                     <hr>

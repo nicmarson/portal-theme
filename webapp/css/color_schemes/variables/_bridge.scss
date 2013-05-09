@@ -38,14 +38,15 @@ $monoFontFamily:                Monaco, Menlo, Consolas, "Courier New", monospac
 $scriptFontFamily:              'NinaWebMedium', 'Chalkboard', 'ChalkboardSE-Regular', cursive;
 $scriptFontFamilyBold:          'NinaWeb-Bold', 'Chalkboard', 'ChalkboardSE-Regular', cursive;
 
-$baseFontSize:          14px;
-$baseFontFamily:        Verdana, sans-serif;
-$baseLineHeight:        20px;
-$altFontFamily:         $serifFontFamily;
+$baseFontSize:                  14px;
+$baseFontFamily:                Verdana, sans-serif;
+$baseLineHeight:                20px;
+$altFontFamily:                 $serifFontFamily;
 
-$headingsFontFamily:    inherit; // empty to use BS default, $baseFontFamily
-$headingsFontWeight:    normal;    // instead of browser default, bold
-$headingsColor:         inherit; // empty to use BS default, $textColor
+$headingsFontFamily:            inherit; // empty to use BS default, $baseFontFamily
+$headingsFontFamilyAlt:         $sansFontFamilyLight;
+$headingsFontWeight:            normal;    // instead of browser default, bold
+$headingsColor:                 inherit; // empty to use BS default, $textColor
 
 
 // Scaffolding
@@ -138,6 +139,19 @@ $dropdownLinkBackgroundActive:  $linkColor;
 $dropdownLinkBackgroundHover:   $dropdownLinkBackgroundActive;
 
 
+// Headers
+// -------------------------
+
+// Page header
+$pageHeaderBorderBottom:        2px solid $textColor;
+$pageHeaderMargin:              0 0 30px;
+
+// Section header
+$sectionHeaderBackground:       #EAEFF1;
+$sectionHeaderBorderTop:        1px solid #E0E3E4;
+$sectionHeaderHeadingColor:     $orange;
+
+
 // Article
 // -------------------------
 $articleBackground:             lighten($accent, 38%);
@@ -185,6 +199,7 @@ $navbarLinkBackgroundActive:      darken($navbarBackground, 5%);
 
 $navbarBrandColor:                $navbarLinkColor;
 
+
 // Inverted navbar
 // -------------------------
 $navbarInverseBackground:                darken($gray, 6%);
@@ -214,16 +229,12 @@ $navInvertedLinkColorHover:     lighten($orange, 40%);
 $navInvertedLinkColorActive:    lighten($orange, 20%);
 
 
-// Nav - Primary
+// Nav - Main
 // -------------------------
-$navPrimaryBackground:          $accentLight;
-$navPrimaryBackgroundHover:     darken($navPrimaryBackground, 6%);
-$navPrimaryBackgroundActive:    darken($navPrimaryBackground, 10%);
-$navPrimaryBorder:              $accentLight;
-$navPrimaryBoxShadow:           rgba(255,255,255,.2);
-$navPrimaryLinkColor:           $white;
-$navSecondaryLinkColor:         darken($accent, 30%);
-$navSecondaryhrBorder:          lighten($accent, 22%);
+$navMainLinkBackground:         $white;
+$navMainLinkBackgroundHover:    $white;
+$navMainLinkHeight:             80px;
+$navMainLinkMargin:             0 10px;
 
 
 // Nav - Secondary
@@ -234,11 +245,6 @@ $navSecondaryTitleColor:        darken($accent, 5%);
 $navSecondaryLink:              darken($accent, 25%);
 $navSecondaryLinkHover:         darken($accent, 15%);
 $navSecondaryhrBorder:          darken($navSecondaryBackground, 10%);
-
-
-// Scaffolding
-// -------------------------
-$bodyTopColor:                  $accentLighter;
 
 
 // Top

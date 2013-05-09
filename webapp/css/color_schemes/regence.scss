@@ -15,14 +15,20 @@
   color: $textColor;
 
 
-  // Import shared styles
+  // Import shared components
   // --------------------------------------
-  @import "shared/general";
-  @import "shared/application";
-  @import "shared/navigation";
-  @import "shared/article";
-  @import "shared/hero";
-  @import "shared/location";
+  @import "shared/components/general";
+  @import "shared/components/application";
+  @import "shared/components/navigation";
+  @import "shared/components/article";
+  @import "shared/components/hero";
+
+
+  // Import shared locations
+  // --------------------------------------
+  @import "shared/locations/top";
+  @import "shared/locations/bottom";
+  @import "shared/locations/contact";
 
 
   // Regence only styles
@@ -36,107 +42,15 @@
   }
 
 
-  // Headings
-  // --------------------------------------
-  h1,
-  h2,
-  h3 {
-    font-family: $sansFontFamilyLight; // Regular, bold, semi-bold look terrible on Windows
-  }
-  
-
-  // Headers
-  // --------------------------------------
-  .page-header,
-  .section-header {
-
-     h1, h2, h3, h4, h5, h6 {
-      margin: 0;
-    }
-  }
-  .page-header {
-    margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
-  }
-  .section-header {
-    background: #EAEFF1;
-    border-top: 1px solid #E0E3E4;
-    margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
-    padding: $baseLineHeight/2 15px;
-
-    h1, h2, h3, h4, h5, h6 {
-      color: $orange;
-    }
-  }
-
-
-  // Jumbotron
-  // --------------------------------------
-  .jumbotron {
-    background: #033048;
-    /* Old browsers */
-    background-color: #916dbd;
-    background-repeat: repeat-x;
-    background-image: -moz-linear-gradient(45deg, #033048, #916dbd);
-    background-image: -webkit-linear-gradient(45deg, #033048, #916dbd);
-    background-image: -o-linear-gradient(45deg, #033048, #916dbd);
-    background-image: linear-gradient(45deg, #033048, #916dbd);
-    color: #FFF;
-    padding: 2.5rem 0 1.75rem;
-    position: relative;
-
-    h1 {
-      font-family: "ProximaNova-Bold", "Arial Black", Verdana, sans-serif;
-    }
-  }
-
-
-  // Subhead
-  // --------------------------------------
-  .subhead {
-    border-bottom: 1px solid #ddd;
-    text-align: left;
-
-    h1 {
-      color: #ffffff;
-    }
-    p {
-      color: #ffffff;
-      margin-bottom: 20px;
-    }
-  }
-
-
-  // Lists
-  // --------------------------------------
-  ul.bulleted li {
-    margin: $baseLineHeight / 2 0;
-  }
-
-  ul.bulleted > li {
-    list-style: square;
-  }
-
-
   // NAV MAIN
-  // ----------------
-  .nav-main {
-
-    ul {
-
-      li {
-
-        a {
-          @include border-radius(5px);
-          font-family: $sansFontFamily;
-          font-size: 16px;
-        }
-      }
-    }
+  // --------------------------------------
+  .nav-main ul li a {
+    @include border-radius(5px);
   }
 
 
   // Audience dropdown
-  // -------------------------
+  // --------------------------------------
   #set-view-location {
     background: #55a8d5;
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU1YThkNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE1JSIgc3RvcC1jb2xvcj0iIzU1YThkNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzZDhjYjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -147,62 +61,6 @@
     background: -ms-linear-gradient(top,  #55a8d5 0%,#55a8d5 15%,#3d8cb6 100%);
     background: linear-gradient(to bottom,  #55a8d5 0%,#55a8d5 15%,#3d8cb6 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55a8d5', endColorstr='#3d8cb6',GradientType=0 );
-  }
-
-
-  // Article sidebar
-  // --------------------------------------
-  article .sidebar {
-      
-    h3 {
-      background: $asideHeadingBackground;
-      border-bottom: 1px solid $asideHeadingBorder;
-      border-top: 1px solid $asideHeadingBorder;
-      color: $asideHeadingColor;
-      font-size: 24px;
-      line-height: 28px;
-      padding: 8px 15px;
-    }
-
-    .nav > li > a {
-      color: $textColor;
-
-      &:hover {
-        background: $white;
-        color: $linkColorHover;
-        text-decoration: underline;
-      }
-    }
-
-    .nav > .active > a,
-    .nav > .active > a:hover {
-      background: none;
-      color: $linkColorHover;
-      text-shadow: 0 1px 0 rgba(255,255,255,.5);
-    }
-  }
-
-
-  // Article left sidebar
-  // --------------------------------------
-  .article-left-sidebar .sidebar {
-
-    .nav > li > a {
-      color: $grayLight;
-      font: 24px $sansFontFamilyLight;
-      line-height: 24px;
-      padding: 12px 15px;
-
-      &:hover {
-        color: $accent;
-        text-decoration: none;
-      }
-    }
-
-    .nav > .active > a,
-    .nav > .active > a:hover {
-      color: $accent;
-    }
   }
 }
 
@@ -216,8 +74,18 @@
 // --------------------------------------
 @media (min-width: 1200px) {
 
-  .bridge {
-    @import "shared/1200px-min";
+  .regence {
+    @import "shared/responsive/1200px-min";
+  }
+}
+
+
+// Responsive: Desktop to large desktop
+// --------------------------------------------------
+@media (min-width: 980px) and (max-width: 1199px) {
+
+  .regence {
+    @import "shared/responsive/980px-1199px";
   }
 }
 
@@ -227,17 +95,7 @@
 @media (min-width: 980px) {
 
   .regence {
-    @import "shared/980px-min";
-
-
-    // Article
-    // --------------------------------------
-    .article-left-sidebar {
-
-      .sidebar {
-        border-right: 1px solid $contentBorder;
-      }
-    }
+    @import "shared/responsive/980px-min";
   }
 }
 
@@ -247,7 +105,7 @@
 @media (min-width: 768px) {
 
   .regence {
-    @import "shared/768px-min";
+    @import "shared/responsive/768px-min";
 
     .jumbotron {
       -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
@@ -263,7 +121,7 @@
 @media (min-width: 768px) and (max-width: 979px) {
 
   .regence {
-    @import "shared/768px-979px";
+    @import "shared/responsive/768px-979px";
   }
 }
 
@@ -272,10 +130,8 @@
 // --------------------------------------
 @media (max-width: 767px) {
 
-  .jumbotron {
-    padding: 40px 20px;
-    margin-right: -20px;
-    margin-left: -20px;
+  .regence {
+    @import "shared/responsive/768px-979px";
   }
 }
 
@@ -312,5 +168,49 @@
     position: absolute;
     top: $baseFontSize / 2;
     width: 8px;
+  }
+  
+  .contact-info-glyph {
+
+    .caret {
+      border-color: transparent;
+      border-top-width:   8px;
+      border-right-width: 8px;
+      border-left-width:  8px;
+      position: absolute;
+      right: -8px;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 3;
+
+        background: $contactInfoBackground;
+        @include border-radius(8px);
+        height: 16px;
+        right: -16px;
+        width: 16px;
+      }
+    }
+
+    .glyph-phone .caret {
+      border-bottom: 8px solid $contactPhoneBackground;
+      border-top: 0 solid transparent;
+      bottom: 0;
+
+      &:after {
+        bottom: -7px;
+      }
+    }
+
+    .glyph-email .caret {
+      border-top-color: $contactEmailBackground;
+      top: 0;
+
+      &:after {
+        top: -7px;
+      }
+    }
   }
 }
