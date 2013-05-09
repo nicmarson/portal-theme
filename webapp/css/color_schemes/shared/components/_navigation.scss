@@ -238,12 +238,13 @@
 // Breadcrumb
 // ---------------------------
 .breadcrumb {
-  margin: 10px 0 20px;
-  background-color: transparent;
+  background: $breadcrumbBackground;
+  margin: $breadcrumbMargin;
+  padding: $breadcrumbPadding;
 
   > li .divider,
   > .active {
-    color: $gray;
+    color: $breadcrumbDividerColor;
   }
 }
 

@@ -38,6 +38,31 @@ h3 {
   text-shadow: 0 0 1px rgba(0,0,0,.1); // Helps text rendering on Windows
 }
 
+h1 {
+  font-size: 36px;
+  line-height: 46px;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+h4 { font-size: 18px; line-height: 20px; }
+h5 { font-size: 14px; line-height: 20px; }
+h6 { font-size: 12px; line-height: 20px; }
+
+h1 small { font-size: 24px; }
+h2 small { font-size: 18px; }
+h3 small { font-size: 14px; }
+h4 small { font-size: 14px; }
+
 
 // Headers
 // -------------------------
@@ -54,6 +79,10 @@ h3 {
 .page-header {
   border-bottom: $pageHeaderBorderBottom;
   margin: $pageHeaderMargin;
+
+  h1 {
+    color: $brand;
+  }
 }
 
 // Section header

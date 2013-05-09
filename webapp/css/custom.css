@@ -15,425 +15,6 @@
   font-weight: normal;
   font-style: normal; }
 
-/*
-+---------------------------------------------------------------------+
-|        _                               _         _                  |
-|       | |_  _   _  _ __    ___  _ __  | |  __ _ | |_  ___           |
-|       | __|| | | || '_ \  / _ \| '_ \ | | / _` || __|/ _ \          |
-|       | |_ | |_| || |_) ||  __/| |_) || || (_| || |_|  __/          |
-|        \__| \__, || .__/  \___|| .__/ |_| \__,_| \__|\___|          |
-|             |___/ |_|          |_|                                  |
-|                                                                     |
-|                                                                     |
-| URL: http://typeplate.com                                           |
-| VERSION: 1.0.1                                                      |
-| Github: https://github.com/typePlate/typeplate.github.com           |
-| AUTHORS: Zachary Kain (@zakkain) & Dennis Gaebel (@gryghostvisuals) |
-| LICENSE: Creative Commmons                                          |
-| http://creativecommons.org/licenses/by/3.0                          |
-|                                                                     |
-+---------------------------------------------------------------------+
-*/
-@font-face {
-  font-family: "Ampersand";
-  src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
-  unicode-range: U+0026; }
-
-@font-face {
-  font-family: "Ampersand";
-  src: local("Georgia");
-  unicode-range: U+270C; }
-
-body {
-  word-wrap: break-word; }
-
-pre code {
-  word-wrap: normal; }
-
-/**
- * Dropcap Sass @include
- * Use the following Sass @include with any selector you feel necessary.
- *
-	@include dropcap($float: left, $font-size: 4em, $font-family: inherit, $text-indent: 0, $margin: inherit, $padding: inherit, $color: inherit, $lineHeight: 1, $bg: transparent);
- *
- * Extend this object into your custom stylesheet.
- *
- */
-.drop-cap:first-letter {
-  float: left;
-  margin: inherit;
-  padding: inherit;
-  font-size: 4em;
-  font-family: inherit;
-  line-height: 1;
-  text-indent: 0;
-  background: transparent;
-  color: inherit; }
-
-li {
-  line-height: 1; }
-
-html {
-  font: normal 112.5%/1.65 serif; }
-
-body {
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto; }
-
-h1, h2, h3, h4, h5, h6 {
-  text-rendering: optimizeLegibility;
-  line-height: 1;
-  margin-top: 0; }
-
-.tera {
-  font-size: 117px;
-  font-size: 6.5rem;
-  margin-bottom: 0.25385rem; }
-
-.giga {
-  font-size: 90px;
-  font-size: 5rem;
-  margin-bottom: 0.33rem; }
-
-.mega {
-  font-size: 72px;
-  font-size: 4rem;
-  margin-bottom: 0.4125rem; }
-
-.alpha, h1 {
-  font-size: 60px;
-  font-size: 3.33333rem;
-  margin-bottom: 0.495rem; }
-
-.beta, h2 {
-  font-size: 48px;
-  font-size: 2.66667rem;
-  margin-bottom: 0.61875rem; }
-
-.gamma, h3 {
-  font-size: 36px;
-  font-size: 2rem;
-  margin-bottom: 0.825rem; }
-
-.delta, h4 {
-  font-size: 24px;
-  font-size: 1.33333rem;
-  margin-bottom: 1.2375rem; }
-
-.epsilon, h5 {
-  font-size: 21px;
-  font-size: 1.16667rem;
-  margin-bottom: 1.41429rem; }
-
-.zeta, h6 {
-  font-size: 18px;
-  font-size: 1rem;
-  margin-bottom: 1.65rem; }
-
-p {
-  margin: 0 0 1.5em; }
-
-.story p + p {
-  text-indent: 1.5em;
-  margin-top: -1.5em; }
-
-abbr,
-acronym,
-blockquote,
-code,
-dir,
-kbd,
-listing,
-plaintext,
-q,
-samp,
-tt,
-var,
-xmp {
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  -o-hyphens: none;
-  hyphens: none; }
-
-pre code {
-  white-space: -moz-pre-wrap;
-  white-space: pre-wrap; }
-
-pre {
-  white-space: pre; }
-
-code {
-  white-space: pre;
-  font-family: monospace; }
-
-/**
- * Abbreviations Markup
- *
-	<abbr title="hyper text markup language">HMTL</abbr>
- *
- * Extend this object into your markup.
- *
- */
-abbr {
-  font-variant: small-caps;
-  font-weight: 600;
-  text-transform: lowercase;
-  color: gray; }
-
-abbr:hover {
-  cursor: help; }
-
-/**
- * Lining Definition Style Markup
- *
-	<dl class="lining">
-		<dt><b></b></dt>
-		<dd></dd>
-	</dl>
- *
- * Extend this object into your markup.
- *
- */
-.lining dt,
-.lining dd {
-  display: inline;
-  margin: 0; }
-
-.lining dt + dt:before,
-.lining dd + dt:before {
-  content: "\A";
-  white-space: pre; }
-
-.lining dd + dd:before {
-  content: ", "; }
-
-.lining dd:before {
-  content: ": ";
-  margin-left: -0.2rem; }
-
-/**
- * Dictionary Definition Style Markup
- *
-	<dl class="dictionary-style">
-		<dt><b></b></dt>
-			<dd></dd>
-	</dl>
- *
- * Extend this object into your markup.
- *
- */
-.dictionary-style dt {
-  display: inline;
-  counter-reset: definitions; }
-
-.dictionary-style dt + dt:before {
-  content: ", ";
-  margin-left: -0.2rem; }
-
-.dictionary-style dd {
-  display: block;
-  counter-increment: definitions; }
-
-.dictionary-style dd:before {
-  content: counter(definitions, decimal) ". "; }
-
-/**
- * Stats Tab Markup
- *
-	<ul class="stats-tabs">
-		<li><a href="#">[value]<b>[name]</b></a></li>
-	</ul>
- *
- * Extend this object into your markup.
- *
- */
-.stats-tabs {
-  padding: 0; }
-
-.stats-tabs li {
-  display: inline-block;
-  margin: 0 0.625rem 0 0;
-  padding: 0 0.625rem 0 0;
-  border-right: 0.125rem solid #cccccc; }
-
-.stats-tabs li:last-child {
-  margin: 0;
-  padding: 0;
-  border: none; }
-
-.stats-tabs li a {
-  display: inline-block;
-  font-size: 1.5rem;
-  font-weight: bold; }
-
-.stats-tabs li a b {
-  display: block;
-  margin: 0.125rem 0 0 0;
-  font-size: 0.875rem;
-  font-weight: normal; }
-
-/**
- * Blockquote Markup
- *
-	<blockquote cite="">
-		<p>&Prime;&Prime;</p>
-		<cite>
-			<small><a href=""></a></small>
-		</cite>
-	</blockquote>
- *
- * Extend this object into your markup.
- *
- */
-blockquote p + p {
-  text-indent: 1.5em; }
-
-/**
- * Pull Quotes Markup
- *
-	<aside class="pull-quote">
-		<blockquote>
-			<p></p>
-		</blockquote>
-	</aside>
- *
- * Extend this object into your custom stylesheet.
- *
- */
-.pull-quote {
-  position: relative;
-  padding: 1em; }
-
-.pull-quote:before, .pull-quote:after {
-  height: 1em;
-  opacity: 0.15;
-  position: absolute;
-  font-size: 4em; }
-
-.pull-quote:before {
-  content: '"';
-  top: 0;
-  left: 0; }
-
-.pull-quote:after {
-  content: '"';
-  bottom: 0;
-  right: 0; }
-
-/**
- * Figures Markup
- *
-	<figure>
-		<figcaption>
-			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
-		</figcaption>
-	</figure>
- *
- * Extend this object into your markup.
- *
- */
-/**
- * Footnote Markup : Replace 'X' with your unique number for each footnote
- *
-	<article>
-		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
-		<footer>
-			<ol class="foot-notes">
-				<li id="fn-itemX"><a href="#fn-returnX">?</a></li>
-			</ol>
-		</footer>
-	</article>
- *
- * Extend this object into your markup.
- *
- */
-/* this resolution has the narrowest 
- * spans per window size, so we'll set
- * the REM smaller
-------------------------- */
-@media (min-width: 768px) and (max-width: 979px) {
-  .drop-cap:first-letter {
-    float: left;
-    margin: inherit;
-    padding: inherit;
-    font-size: 4em;
-    font-family: inherit;
-    line-height: 1;
-    text-indent: 0;
-    background: transparent;
-    color: inherit; }
-
-  html {
-    font: normal 112.5%/1.65 serif; }
-
-  .pull-quote {
-    position: relative;
-    padding: 1em; }
-
-  .pull-quote:before, .pull-quote:after {
-    height: 1em;
-    opacity: 0.15;
-    position: absolute;
-    font-size: 4em; }
-
-  .pull-quote:before {
-    content: '"';
-    top: 0;
-    left: 0; }
-
-  .pull-quote:after {
-    content: '"';
-    bottom: 0;
-    right: 0; }
-
-  .tera {
-    font-size: 117px;
-    font-size: 9.75rem;
-    margin-bottom: 0.16923rem; }
-
-  .giga {
-    font-size: 90px;
-    font-size: 7.5rem;
-    margin-bottom: 0.22rem; }
-
-  .mega {
-    font-size: 72px;
-    font-size: 6rem;
-    margin-bottom: 0.275rem; }
-
-  .alpha, h1 {
-    font-size: 60px;
-    font-size: 5rem;
-    margin-bottom: 0.33rem; }
-
-  .beta, h2 {
-    font-size: 48px;
-    font-size: 4rem;
-    margin-bottom: 0.4125rem; }
-
-  .gamma, h3 {
-    font-size: 36px;
-    font-size: 3rem;
-    margin-bottom: 0.55rem; }
-
-  .delta, h4 {
-    font-size: 24px;
-    font-size: 2rem;
-    margin-bottom: 0.825rem; }
-
-  .epsilon, h5 {
-    font-size: 21px;
-    font-size: 1.75rem;
-    margin-bottom: 0.94286rem; }
-
-  .zeta, h6 {
-    font-size: 18px;
-    font-size: 1.5rem;
-    margin-bottom: 1.1rem; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -659,6 +240,33 @@ blockquote p + p {
   .asuris h3 {
     font-family: "ProximaNova-Light", Verdana, sans-serif;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.1); }
+  .asuris h1 {
+    font-size: 36px;
+    line-height: 46px;
+    margin: 10px 0; }
+  .asuris h2 {
+    font-size: 24px;
+    line-height: 36px; }
+  .asuris h3 {
+    font-size: 24px;
+    line-height: 40px; }
+  .asuris h4 {
+    font-size: 18px;
+    line-height: 20px; }
+  .asuris h5 {
+    font-size: 14px;
+    line-height: 20px; }
+  .asuris h6 {
+    font-size: 12px;
+    line-height: 20px; }
+  .asuris h1 small {
+    font-size: 24px; }
+  .asuris h2 small {
+    font-size: 18px; }
+  .asuris h3 small {
+    font-size: 14px; }
+  .asuris h4 small {
+    font-size: 14px; }
   .asuris .page-header h1, .asuris .page-header h2, .asuris .page-header h3, .asuris .page-header h4, .asuris .page-header h5, .asuris .page-header h6,
   .asuris .section-header h1,
   .asuris .section-header h2,
@@ -670,6 +278,8 @@ blockquote p + p {
   .asuris .page-header {
     border-bottom: none;
     margin: 20px 0 30px; }
+    .asuris .page-header h1 {
+      color: #1e9442; }
   .asuris .section-header {
     background: #eaeff1;
     border-top: 1px solid #e0e3e4;
@@ -901,8 +511,9 @@ blockquote p + p {
         .asuris .nav-articles > li > a:hover {
           color: #333333; }
   .asuris .breadcrumb {
-    margin: 10px 0 20px;
-    background-color: transparent; }
+    background: transparent;
+    margin: 20px 0 0;
+    padding: 8px 0; }
     .asuris .breadcrumb > li .divider,
     .asuris .breadcrumb > .active {
       color: #555555; }
@@ -1173,25 +784,54 @@ blockquote p + p {
   .asuris #hero-understanding-insurance .media:hover .glyph-play:before {
     color: white; }
   .asuris #top {
+    background: white;
+    border-bottom: 1px solid #dddddd;
+    color: #555555;
+    min-height: 80px;
     text-align: right; }
     .asuris #top .nav {
       margin: 0; }
       .asuris #top .nav li > a {
+        color: #555555;
         text-decoration: none;
         -webkit-transition: background-color 0.3s ease-in-out;
         -moz-transition: background-color 0.3s ease-in-out;
         -o-transition: background-color 0.3s ease-in-out;
         transition: background-color 0.3s ease-in-out; }
         .asuris #top .nav li > a:hover {
+          background-color: #afe1f7;
+          color: white;
           text-decoration: none; }
+          .asuris #top .nav li > a:hover small,
+          .asuris #top .nav li > a:hover [class^="glyph-"] {
+            color: white; }
+          .asuris #top .nav li > a:hover .caret {
+            border-top-color: white; }
+        .asuris #top .nav li > a small {
+          color: #999999; }
+        .asuris #top .nav li > a [class^="glyph-"] {
+          color: #1e9442; }
+        .asuris #top .nav li > a .caret {
+          border-top-color: #1e9442; }
       .asuris #top .nav .active > a {
+        background-color: #afe1f7;
+        color: white;
         text-decoration: none; }
+        .asuris #top .nav .active > a small,
+        .asuris #top .nav .active > a [class^="glyph-"] {
+          color: white; }
+        .asuris #top .nav .active > a .caret {
+          border-top-color: white; }
+      .asuris #top .nav .active > a:hover,
+      .asuris #top .nav .active > a:focus {
+        background-color: #9cdaf5; }
     .asuris #top .container {
       padding: 0;
       position: relative; }
     .asuris #top .nav .nav-brand {
       float: left; }
       .asuris #top .nav .nav-brand .brand {
+        border-left: 1px solid #dddddd;
         height: 100%;
         margin-right: 5px;
         width: 100%; }
@@ -1199,16 +839,25 @@ blockquote p + p {
           background-color: transparent; }
     .asuris #top .nav .nav-login {
       float: right; }
+      .asuris #top .nav .nav-login a {
+        border-right: 1px solid #dddddd;
+        line-height: 30px;
+        padding: 25px 20px; }
     .asuris #top .nav .nav-search {
       float: right;
       width: 49.9999%; }
       .asuris #top .nav .nav-search button {
         border: none;
-        position: absolute; }
+        position: absolute;
+        right: 12px;
+        top: 25px; }
         .asuris #top .nav .nav-search button:hover {
           text-decoration: none; }
       .asuris #top .nav .nav-search form {
+        border-right: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
         margin: 0;
+        padding: 25px 15px 25px 5px;
         position: relative; }
     .asuris #top .nav .nav-shopping {
       clear: left;
@@ -1216,19 +865,49 @@ blockquote p + p {
       text-align: left;
       width: 49.9999%; }
       .asuris #top .nav .nav-shopping > a {
+        border-left: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
         display: block;
+        height: 30px;
+        padding: 25px 15px;
         position: relative; }
       .asuris #top .nav .nav-shopping .active > a {
+        background-color: #afe1f7;
+        color: white;
         text-decoration: none; }
+        .asuris #top .nav .nav-shopping .active > a small,
+        .asuris #top .nav .nav-shopping .active > a [class^="glyph-"] {
+          color: white; }
+      .asuris #top .nav .nav-shopping .active > a:hover,
+      .asuris #top .nav .nav-shopping .active > a:focus {
+        background-color: #9cdaf5; }
       .asuris #top .nav .nav-shopping .caret {
+        border-top-width: 8px;
+        border-right-width: 8px;
+        border-left-width: 8px;
         display: block;
-        position: absolute; }
+        margin-top: 16px;
+        position: absolute;
+        right: 15px;
+        top: 22px; }
+      .asuris #top .nav .nav-shopping a:hover .caret,
+      .asuris #top .nav .nav-shopping .active > a .caret {
+        border-color: white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0); }
       .asuris #top .nav .nav-shopping .glyph-users {
-        position: absolute; }
+        font-size: 26px;
+        left: 16px;
+        height: 40px;
+        line-height: 30px;
+        position: absolute;
+        top: 22px; }
       .asuris #top .nav .nav-shopping .shopping-label {
-        display: block; }
+        display: block;
+        font-size: 16px;
+        line-height: 16px; }
         .asuris #top .nav .nav-shopping .shopping-label small {
-          display: block; }
+          display: block;
+          font-size: 13px; }
   .asuris .brand {
     display: block;
     padding-left: 20px;
@@ -1241,7 +920,7 @@ blockquote p + p {
     position: relative;
     *width: 250px; }
   .asuris .brand-region {
-    bottom: 0;
+    bottom: 10px;
     color: #999999;
     display: none;
     font-family: arial;
@@ -1319,7 +998,46 @@ blockquote p + p {
   .asuris .svg.backgroundsize .logo-bridge .brand-logo {
     background: url("images/identity/bridgespan.svg") no-repeat 0 0;
     background-size: 124px auto; }
+  .asuris #set-view-location {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
+    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset; }
+    .asuris #set-view-location form {
+      margin: 0 20%;
+      padding-top: 36px; }
+    .asuris #set-view-location label {
+      color: #FFF;
+      font-family: "ProximaNova-Light", Verdana, sans-serif;
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 10px; }
+    .asuris #set-view-location .glyph-users,
+    .asuris #set-view-location .icon-location {
+      float: left;
+      height: 84px;
+      margin-right: 15px;
+      opacity: .4;
+      width: 84px; }
+    .asuris #set-view-location [class^="glyph-"]:before,
+    .asuris #set-view-location [class*=" glyph-"]:before {
+      color: #FFF;
+      font-size: 72px;
+      line-height: 84px;
+      vertical-align: inherit; }
+    .asuris #set-view-location .icon-location {
+      background: url(images/large-white-icons.png) no-repeat 0 -100px; }
+    .asuris #set-view-location .form-actions {
+      background-color: transparent;
+      border-top-color: rgba(255, 255, 255, 0.5);
+      text-align: right; }
+      .asuris #set-view-location .form-actions .btn-link {
+        color: #FFF;
+        text-decoration: underline;
+        text-shadow: none; }
   .asuris #bottom {
+    background: #85b365;
+    color: #333333;
+    font-size: 13px;
     padding: 20px 0 60px;
     text-align: center; }
     .asuris #bottom ul {
@@ -1354,17 +1072,27 @@ blockquote p + p {
         width: 7px; }
     .asuris #bottom p,
     .asuris #bottom .nav > li > a {
+      font-family: "ProximaNova-Regular", Verdana, sans-serif;
       line-height: 14px;
       margin-bottom: 6px;
       margin-top: 6px;
       padding-top: 10px;
       padding-bottom: 10px; }
+    .asuris #bottom .nav > li > a {
+      background: transparent;
+      color: #333333; }
+      .asuris #bottom .nav > li > a:hover {
+        background: transparent;
+        color: #333333; }
+    .asuris #bottom + .row-fluid {
+      border-top: 1px solid white; }
   .asuris table.contact-info {
     background: #f3f3f3;
     border-top: 1px solid #e1e1e1;
     display: block;
     font-size: 14px;
     line-height: 1;
+    margin-bottom: 20px;
     width: 100%; }
     .asuris table.contact-info a {
       color: #333333;
@@ -1741,6 +1469,9 @@ blockquote p + p {
         text-transform: uppercase; }
     .asuris #hero-understanding-insurance .search-button {
       line-height: normal; }
+    .asuris #top .nav .nav-brand .brand {
+      border-left: none;
+      padding-left: 0; }
     .asuris #top .nav .nav-search {
       width: auto; }
       .asuris #top .nav .nav-search form {
@@ -1750,7 +1481,7 @@ blockquote p + p {
       float: right;
       width: auto; }
       .asuris #top .nav .nav-shopping > a {
-        border-right: none;
+        border-left: none;
         border-top: none; }
     .asuris #map_sidebar {
       float: left; }
@@ -2047,6 +1778,33 @@ blockquote p + p {
   .bridge h3 {
     font-family: "NewsGothicLtBT-Reg", Verdana, sans-serif;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.1); }
+  .bridge h1 {
+    font-size: 36px;
+    line-height: 46px;
+    margin: 10px 0; }
+  .bridge h2 {
+    font-size: 24px;
+    line-height: 36px; }
+  .bridge h3 {
+    font-size: 24px;
+    line-height: 40px; }
+  .bridge h4 {
+    font-size: 18px;
+    line-height: 20px; }
+  .bridge h5 {
+    font-size: 14px;
+    line-height: 20px; }
+  .bridge h6 {
+    font-size: 12px;
+    line-height: 20px; }
+  .bridge h1 small {
+    font-size: 24px; }
+  .bridge h2 small {
+    font-size: 18px; }
+  .bridge h3 small {
+    font-size: 14px; }
+  .bridge h4 small {
+    font-size: 14px; }
   .bridge .page-header h1, .bridge .page-header h2, .bridge .page-header h3, .bridge .page-header h4, .bridge .page-header h5, .bridge .page-header h6,
   .bridge .section-header h1,
   .bridge .section-header h2,
@@ -2058,6 +1816,8 @@ blockquote p + p {
   .bridge .page-header {
     border-bottom: 2px solid #4c4d4f;
     margin: 0 0 30px; }
+    .bridge .page-header h1 {
+      color: #008693; }
   .bridge .section-header {
     background: #eaeff1;
     border-top: 1px solid #e0e3e4;
@@ -2289,8 +2049,9 @@ blockquote p + p {
         .bridge .nav-articles > li > a:hover {
           color: #333333; }
   .bridge .breadcrumb {
+    background: transparent;
     margin: 10px 0 20px;
-    background-color: transparent; }
+    padding: 0; }
     .bridge .breadcrumb > li .divider,
     .bridge .breadcrumb > .active {
       color: #555555; }
@@ -2561,25 +2322,54 @@ blockquote p + p {
   .bridge #hero-understanding-insurance .media:hover .glyph-play:before {
     color: white; }
   .bridge #top {
+    background: white;
+    border-bottom: 1px solid #dddddd;
+    color: #555555;
+    min-height: 80px;
     text-align: right; }
     .bridge #top .nav {
       margin: 0; }
       .bridge #top .nav li > a {
+        color: #555555;
         text-decoration: none;
         -webkit-transition: background-color 0.3s ease-in-out;
         -moz-transition: background-color 0.3s ease-in-out;
         -o-transition: background-color 0.3s ease-in-out;
         transition: background-color 0.3s ease-in-out; }
         .bridge #top .nav li > a:hover {
+          background-color: #dddddd;
+          color: white;
           text-decoration: none; }
+          .bridge #top .nav li > a:hover small,
+          .bridge #top .nav li > a:hover [class^="glyph-"] {
+            color: white; }
+          .bridge #top .nav li > a:hover .caret {
+            border-top-color: white; }
+        .bridge #top .nav li > a small {
+          color: #999999; }
+        .bridge #top .nav li > a [class^="glyph-"] {
+          color: #f26c2a; }
+        .bridge #top .nav li > a .caret {
+          border-top-color: #008693; }
       .bridge #top .nav .active > a {
+        background-color: #dddddd;
+        color: white;
         text-decoration: none; }
+        .bridge #top .nav .active > a small,
+        .bridge #top .nav .active > a [class^="glyph-"] {
+          color: white; }
+        .bridge #top .nav .active > a .caret {
+          border-top-color: white; }
+      .bridge #top .nav .active > a:hover,
+      .bridge #top .nav .active > a:focus {
+        background-color: lightgrey; }
     .bridge #top .container {
       padding: 0;
       position: relative; }
     .bridge #top .nav .nav-brand {
       float: left; }
       .bridge #top .nav .nav-brand .brand {
+        border-left: 1px solid #dddddd;
         height: 100%;
         margin-right: 5px;
         width: 100%; }
@@ -2587,16 +2377,25 @@ blockquote p + p {
           background-color: transparent; }
     .bridge #top .nav .nav-login {
       float: right; }
+      .bridge #top .nav .nav-login a {
+        border-right: 1px solid #dddddd;
+        line-height: 30px;
+        padding: 25px 20px; }
     .bridge #top .nav .nav-search {
       float: right;
       width: 49.9999%; }
       .bridge #top .nav .nav-search button {
         border: none;
-        position: absolute; }
+        position: absolute;
+        right: 12px;
+        top: 25px; }
         .bridge #top .nav .nav-search button:hover {
           text-decoration: none; }
       .bridge #top .nav .nav-search form {
+        border-right: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
         margin: 0;
+        padding: 25px 15px 25px 5px;
         position: relative; }
     .bridge #top .nav .nav-shopping {
       clear: left;
@@ -2604,19 +2403,49 @@ blockquote p + p {
       text-align: left;
       width: 49.9999%; }
       .bridge #top .nav .nav-shopping > a {
+        border-left: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
         display: block;
+        height: 30px;
+        padding: 25px 15px;
         position: relative; }
       .bridge #top .nav .nav-shopping .active > a {
+        background-color: #dddddd;
+        color: white;
         text-decoration: none; }
+        .bridge #top .nav .nav-shopping .active > a small,
+        .bridge #top .nav .nav-shopping .active > a [class^="glyph-"] {
+          color: white; }
+      .bridge #top .nav .nav-shopping .active > a:hover,
+      .bridge #top .nav .nav-shopping .active > a:focus {
+        background-color: lightgrey; }
       .bridge #top .nav .nav-shopping .caret {
+        border-top-width: 8px;
+        border-right-width: 8px;
+        border-left-width: 8px;
         display: block;
-        position: absolute; }
+        margin-top: 16px;
+        position: absolute;
+        right: 15px;
+        top: 22px; }
+      .bridge #top .nav .nav-shopping a:hover .caret,
+      .bridge #top .nav .nav-shopping .active > a .caret {
+        border-color: white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0); }
       .bridge #top .nav .nav-shopping .glyph-users {
-        position: absolute; }
+        font-size: 26px;
+        left: 16px;
+        height: 40px;
+        line-height: 30px;
+        position: absolute;
+        top: 22px; }
       .bridge #top .nav .nav-shopping .shopping-label {
-        display: block; }
+        display: block;
+        font-size: 16px;
+        line-height: 16px; }
         .bridge #top .nav .nav-shopping .shopping-label small {
-          display: block; }
+          display: block;
+          font-size: 13px; }
   .bridge .brand {
     display: block;
     padding-left: 20px;
@@ -2629,7 +2458,7 @@ blockquote p + p {
     position: relative;
     *width: 250px; }
   .bridge .brand-region {
-    bottom: 0;
+    bottom: 10px;
     color: #999999;
     display: none;
     font-family: arial;
@@ -2707,7 +2536,46 @@ blockquote p + p {
   .bridge .svg.backgroundsize .logo-bridge .brand-logo {
     background: url("images/identity/bridgespan.svg") no-repeat 0 0;
     background-size: 124px auto; }
+  .bridge #set-view-location {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
+    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset; }
+    .bridge #set-view-location form {
+      margin: 0 20%;
+      padding-top: 36px; }
+    .bridge #set-view-location label {
+      color: #FFF;
+      font-family: "NewsGothicLtBT-Reg", Verdana, sans-serif;
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 10px; }
+    .bridge #set-view-location .glyph-users,
+    .bridge #set-view-location .icon-location {
+      float: left;
+      height: 84px;
+      margin-right: 15px;
+      opacity: .4;
+      width: 84px; }
+    .bridge #set-view-location [class^="glyph-"]:before,
+    .bridge #set-view-location [class*=" glyph-"]:before {
+      color: #FFF;
+      font-size: 72px;
+      line-height: 84px;
+      vertical-align: inherit; }
+    .bridge #set-view-location .icon-location {
+      background: url(images/large-white-icons.png) no-repeat 0 -100px; }
+    .bridge #set-view-location .form-actions {
+      background-color: transparent;
+      border-top-color: rgba(255, 255, 255, 0.5);
+      text-align: right; }
+      .bridge #set-view-location .form-actions .btn-link {
+        color: #FFF;
+        text-decoration: underline;
+        text-shadow: none; }
   .bridge #bottom {
+    background: #f26c2a url(images/bridge/footerBackground.png);
+    color: white;
+    font-size: 16px;
     padding: 20px 0 60px;
     text-align: center; }
     .bridge #bottom ul {
@@ -2742,17 +2610,27 @@ blockquote p + p {
         width: 7px; }
     .bridge #bottom p,
     .bridge #bottom .nav > li > a {
+      font-family: "NewsGothicBT-Reg", Verdana, sans-serif;
       line-height: 14px;
       margin-bottom: 6px;
       margin-top: 6px;
       padding-top: 10px;
       padding-bottom: 10px; }
+    .bridge #bottom .nav > li > a {
+      background: transparent;
+      color: white; }
+      .bridge #bottom .nav > li > a:hover {
+        background: transparent;
+        color: white; }
+    .bridge #bottom + .row-fluid {
+      border-top: 1px solid white; }
   .bridge table.contact-info {
     background: #f3f3f3;
     border-top: 1px solid #e1e1e1;
     display: block;
     font-size: 14px;
     line-height: 1;
+    margin-bottom: 20px;
     width: 100%; }
     .bridge table.contact-info a {
       color: #4c4d4f;
@@ -3160,6 +3038,9 @@ blockquote p + p {
         text-transform: uppercase; }
     .bridge #hero-understanding-insurance .search-button {
       line-height: normal; }
+    .bridge #top .nav .nav-brand .brand {
+      border-left: none;
+      padding-left: 0; }
     .bridge #top .nav .nav-search {
       width: auto; }
       .bridge #top .nav .nav-search form {
@@ -3169,7 +3050,7 @@ blockquote p + p {
       float: right;
       width: auto; }
       .bridge #top .nav .nav-shopping > a {
-        border-right: none;
+        border-left: none;
         border-top: none; }
     .bridge #map_sidebar {
       float: left; }
@@ -3504,6 +3385,33 @@ blockquote p + p {
   .regence h3 {
     font-family: "ProximaNova-Light", Verdana, sans-serif;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.1); }
+  .regence h1 {
+    font-size: 36px;
+    line-height: 46px;
+    margin: 10px 0; }
+  .regence h2 {
+    font-size: 24px;
+    line-height: 36px; }
+  .regence h3 {
+    font-size: 24px;
+    line-height: 40px; }
+  .regence h4 {
+    font-size: 18px;
+    line-height: 20px; }
+  .regence h5 {
+    font-size: 14px;
+    line-height: 20px; }
+  .regence h6 {
+    font-size: 12px;
+    line-height: 20px; }
+  .regence h1 small {
+    font-size: 24px; }
+  .regence h2 small {
+    font-size: 18px; }
+  .regence h3 small {
+    font-size: 14px; }
+  .regence h4 small {
+    font-size: 14px; }
   .regence .page-header h1, .regence .page-header h2, .regence .page-header h3, .regence .page-header h4, .regence .page-header h5, .regence .page-header h6,
   .regence .section-header h1,
   .regence .section-header h2,
@@ -3515,6 +3423,8 @@ blockquote p + p {
   .regence .page-header {
     border-bottom: 1px solid #dddddd;
     margin: 20px 0 30px; }
+    .regence .page-header h1 {
+      color: #0881c2; }
   .regence .section-header {
     background: #eaeff1;
     border-top: 1px solid #e0e3e4;
@@ -3746,8 +3656,9 @@ blockquote p + p {
         .regence .nav-articles > li > a:hover {
           color: #333333; }
   .regence .breadcrumb {
-    margin: 10px 0 20px;
-    background-color: transparent; }
+    background: transparent;
+    margin: 20px 0 0;
+    padding: 8px 0; }
     .regence .breadcrumb > li .divider,
     .regence .breadcrumb > .active {
       color: #555555; }
@@ -4018,25 +3929,54 @@ blockquote p + p {
   .regence #hero-understanding-insurance .media:hover .glyph-play:before {
     color: white; }
   .regence #top {
+    background: white;
+    border-bottom: 1px solid #dddddd;
+    color: #555555;
+    min-height: 80px;
     text-align: right; }
     .regence #top .nav {
       margin: 0; }
       .regence #top .nav li > a {
+        color: #555555;
         text-decoration: none;
         -webkit-transition: background-color 0.3s ease-in-out;
         -moz-transition: background-color 0.3s ease-in-out;
         -o-transition: background-color 0.3s ease-in-out;
         transition: background-color 0.3s ease-in-out; }
         .regence #top .nav li > a:hover {
+          background-color: #afe1f7;
+          color: white;
           text-decoration: none; }
+          .regence #top .nav li > a:hover small,
+          .regence #top .nav li > a:hover [class^="glyph-"] {
+            color: white; }
+          .regence #top .nav li > a:hover .caret {
+            border-top-color: white; }
+        .regence #top .nav li > a small {
+          color: #999999; }
+        .regence #top .nav li > a [class^="glyph-"] {
+          color: #0881c2; }
+        .regence #top .nav li > a .caret {
+          border-top-color: #0881c2; }
       .regence #top .nav .active > a {
+        background-color: #afe1f7;
+        color: white;
         text-decoration: none; }
+        .regence #top .nav .active > a small,
+        .regence #top .nav .active > a [class^="glyph-"] {
+          color: white; }
+        .regence #top .nav .active > a .caret {
+          border-top-color: white; }
+      .regence #top .nav .active > a:hover,
+      .regence #top .nav .active > a:focus {
+        background-color: #9cdaf5; }
     .regence #top .container {
       padding: 0;
       position: relative; }
     .regence #top .nav .nav-brand {
       float: left; }
       .regence #top .nav .nav-brand .brand {
+        border-left: 1px solid #dddddd;
         height: 100%;
         margin-right: 5px;
         width: 100%; }
@@ -4044,16 +3984,25 @@ blockquote p + p {
           background-color: transparent; }
     .regence #top .nav .nav-login {
       float: right; }
+      .regence #top .nav .nav-login a {
+        border-right: 1px solid #dddddd;
+        line-height: 30px;
+        padding: 25px 20px; }
     .regence #top .nav .nav-search {
       float: right;
       width: 49.9999%; }
       .regence #top .nav .nav-search button {
         border: none;
-        position: absolute; }
+        position: absolute;
+        right: 12px;
+        top: 25px; }
         .regence #top .nav .nav-search button:hover {
           text-decoration: none; }
       .regence #top .nav .nav-search form {
+        border-right: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
         margin: 0;
+        padding: 25px 15px 25px 5px;
         position: relative; }
     .regence #top .nav .nav-shopping {
       clear: left;
@@ -4061,19 +4010,49 @@ blockquote p + p {
       text-align: left;
       width: 49.9999%; }
       .regence #top .nav .nav-shopping > a {
+        border-left: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
         display: block;
+        height: 30px;
+        padding: 25px 15px;
         position: relative; }
       .regence #top .nav .nav-shopping .active > a {
+        background-color: #afe1f7;
+        color: white;
         text-decoration: none; }
+        .regence #top .nav .nav-shopping .active > a small,
+        .regence #top .nav .nav-shopping .active > a [class^="glyph-"] {
+          color: white; }
+      .regence #top .nav .nav-shopping .active > a:hover,
+      .regence #top .nav .nav-shopping .active > a:focus {
+        background-color: #9cdaf5; }
       .regence #top .nav .nav-shopping .caret {
+        border-top-width: 8px;
+        border-right-width: 8px;
+        border-left-width: 8px;
         display: block;
-        position: absolute; }
+        margin-top: 16px;
+        position: absolute;
+        right: 15px;
+        top: 22px; }
+      .regence #top .nav .nav-shopping a:hover .caret,
+      .regence #top .nav .nav-shopping .active > a .caret {
+        border-color: white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0); }
       .regence #top .nav .nav-shopping .glyph-users {
-        position: absolute; }
+        font-size: 26px;
+        left: 16px;
+        height: 40px;
+        line-height: 30px;
+        position: absolute;
+        top: 22px; }
       .regence #top .nav .nav-shopping .shopping-label {
-        display: block; }
+        display: block;
+        font-size: 16px;
+        line-height: 16px; }
         .regence #top .nav .nav-shopping .shopping-label small {
-          display: block; }
+          display: block;
+          font-size: 13px; }
   .regence .brand {
     display: block;
     padding-left: 20px;
@@ -4086,7 +4065,7 @@ blockquote p + p {
     position: relative;
     *width: 250px; }
   .regence .brand-region {
-    bottom: 0;
+    bottom: 10px;
     color: #999999;
     display: none;
     font-family: arial;
@@ -4164,7 +4143,46 @@ blockquote p + p {
   .regence .svg.backgroundsize .logo-bridge .brand-logo {
     background: url("images/identity/bridgespan.svg") no-repeat 0 0;
     background-size: 124px auto; }
+  .regence #set-view-location {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
+    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset; }
+    .regence #set-view-location form {
+      margin: 0 20%;
+      padding-top: 36px; }
+    .regence #set-view-location label {
+      color: #FFF;
+      font-family: "ProximaNova-Light", Verdana, sans-serif;
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 10px; }
+    .regence #set-view-location .glyph-users,
+    .regence #set-view-location .icon-location {
+      float: left;
+      height: 84px;
+      margin-right: 15px;
+      opacity: .4;
+      width: 84px; }
+    .regence #set-view-location [class^="glyph-"]:before,
+    .regence #set-view-location [class*=" glyph-"]:before {
+      color: #FFF;
+      font-size: 72px;
+      line-height: 84px;
+      vertical-align: inherit; }
+    .regence #set-view-location .icon-location {
+      background: url(images/large-white-icons.png) no-repeat 0 -100px; }
+    .regence #set-view-location .form-actions {
+      background-color: transparent;
+      border-top-color: rgba(255, 255, 255, 0.5);
+      text-align: right; }
+      .regence #set-view-location .form-actions .btn-link {
+        color: #FFF;
+        text-decoration: underline;
+        text-shadow: none; }
   .regence #bottom {
+    background: #599abd url(images/regence/footerBackground.png);
+    color: white;
+    font-size: 13px;
     padding: 20px 0 60px;
     text-align: center; }
     .regence #bottom ul {
@@ -4199,17 +4217,27 @@ blockquote p + p {
         width: 7px; }
     .regence #bottom p,
     .regence #bottom .nav > li > a {
+      font-family: "ProximaNova-Regular", Verdana, sans-serif;
       line-height: 14px;
       margin-bottom: 6px;
       margin-top: 6px;
       padding-top: 10px;
       padding-bottom: 10px; }
+    .regence #bottom .nav > li > a {
+      background: transparent;
+      color: white; }
+      .regence #bottom .nav > li > a:hover {
+        background: transparent;
+        color: white; }
+    .regence #bottom + .row-fluid {
+      border-top: 1px solid white; }
   .regence table.contact-info {
     background: #f3f3f3;
     border-top: 1px solid #e1e1e1;
     display: block;
     font-size: 14px;
     line-height: 1;
+    margin-bottom: 20px;
     width: 100%; }
     .regence table.contact-info a {
       color: #333333;
@@ -4333,6 +4361,10 @@ blockquote p + p {
   .regence .asuris-only,
   .regence .bridge-only {
     display: none; }
+  .regence h2 {
+    color: #b94d00; }
+  .regence #main {
+    background: #eff5f7; }
   .regence .nav-main ul li a {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -4557,6 +4589,9 @@ blockquote p + p {
         text-transform: uppercase; }
     .regence #hero-understanding-insurance .search-button {
       line-height: normal; }
+    .regence #top .nav .nav-brand .brand {
+      border-left: none;
+      padding-left: 0; }
     .regence #top .nav .nav-search {
       width: auto; }
       .regence #top .nav .nav-search form {
@@ -4566,7 +4601,7 @@ blockquote p + p {
       float: right;
       width: auto; }
       .regence #top .nav .nav-shopping > a {
-        border-right: none;
+        border-left: none;
         border-top: none; }
     .regence #map_sidebar {
       float: left; }

@@ -4,8 +4,10 @@
     $FOOTER
 \*------------------------------------*/
 
-
 #bottom {
+  background: $bottomBackground;
+  color: $bottomColor;
+  font-size: $bottomFontSize;
   padding: $gridGutterWidth 0 $gridColumnWidth;
   text-align: center;
 
@@ -51,10 +53,25 @@
 
   p,
   .nav > li > a {
+    font-family: $sansFontFamily;
     line-height: 14px;
     margin-bottom: 6px;
     margin-top: 6px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .nav > li > a {
+    background: $bottomLinkBackground;
+    color: $bottomLinkColor;
+
+    &:hover {
+      background: $bottomLinkBackgroundHover;
+      color: $bottomLinkColorHover;
+    }
+  }
+
+  + .row-fluid {
+    border-top: 1px solid #FFF;
   }
 }

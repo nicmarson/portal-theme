@@ -247,6 +247,14 @@ $navSecondaryLinkHover:         darken($accent, 15%);
 $navSecondaryhrBorder:          darken($navSecondaryBackground, 10%);
 
 
+// Nav - Breadcrumb
+// -------------------------
+$breadcrumbBackground:          transparent;
+$breadcrumbMargin:              20px 0 0;
+$breadcrumbPadding:             8px 0;
+$breadcrumbDividerColor:        $gray;
+
+
 // Top
 // -------------------------
 $topBackground:                 $white;

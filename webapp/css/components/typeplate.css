@@ -166,8 +166,9 @@ abbr {
   font-weight: 600;
   text-transform: lowercase;
   color: gray; }
-  abbr:hover {
-    cursor: help; }
+
+abbr:hover {
+  cursor: help; }
 
 /**
  * Lining Definition Style Markup
@@ -184,12 +185,15 @@ abbr {
 .lining dd {
   display: inline;
   margin: 0; }
+
 .lining dt + dt:before,
 .lining dd + dt:before {
   content: "\A";
   white-space: pre; }
+
 .lining dd + dd:before {
   content: ", "; }
+
 .lining dd:before {
   content: ": ";
   margin-left: -0.2rem; }
@@ -208,14 +212,17 @@ abbr {
 .dictionary-style dt {
   display: inline;
   counter-reset: definitions; }
-  .dictionary-style dt + dt:before {
-    content: ", ";
-    margin-left: -0.2rem; }
+
+.dictionary-style dt + dt:before {
+  content: ", ";
+  margin-left: -0.2rem; }
+
 .dictionary-style dd {
   display: block;
   counter-increment: definitions; }
-  .dictionary-style dd:before {
-    content: counter(definitions, decimal) ". "; }
+
+.dictionary-style dd:before {
+  content: counter(definitions, decimal) ". "; }
 
 /**
  * Stats Tab Markup
@@ -229,24 +236,28 @@ abbr {
  */
 .stats-tabs {
   padding: 0; }
-  .stats-tabs li {
-    display: inline-block;
-    margin: 0 0.625rem 0 0;
-    padding: 0 0.625rem 0 0;
-    border-right: 0.125rem solid #cccccc; }
-    .stats-tabs li:last-child {
-      margin: 0;
-      padding: 0;
-      border: none; }
-    .stats-tabs li a {
-      display: inline-block;
-      font-size: 1.5rem;
-      font-weight: bold; }
-      .stats-tabs li a b {
-        display: block;
-        margin: 0.125rem 0 0 0;
-        font-size: 0.875rem;
-        font-weight: normal; }
+
+.stats-tabs li {
+  display: inline-block;
+  margin: 0 0.625rem 0 0;
+  padding: 0 0.625rem 0 0;
+  border-right: 0.125rem solid #cccccc; }
+
+.stats-tabs li:last-child {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+.stats-tabs li a {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold; }
+
+.stats-tabs li a b {
+  display: block;
+  margin: 0.125rem 0 0 0;
+  font-size: 0.875rem;
+  font-weight: normal; }
 
 /**
  * Blockquote Markup
@@ -279,19 +290,22 @@ blockquote p + p {
 .pull-quote {
   position: relative;
   padding: 1em; }
-  .pull-quote:before, .pull-quote:after {
-    height: 1em;
-    opacity: 0.15;
-    position: absolute;
-    font-size: 4em; }
-  .pull-quote:before {
-    content: '“';
-    top: 0;
-    left: 0; }
-  .pull-quote:after {
-    content: '”';
-    bottom: 0;
-    right: 0; }
+
+.pull-quote:before, .pull-quote:after {
+  height: 1em;
+  opacity: 0.15;
+  position: absolute;
+  font-size: 4em; }
+
+.pull-quote:before {
+  content: '"';
+  top: 0;
+  left: 0; }
+
+.pull-quote:after {
+  content: '"';
+  bottom: 0;
+  right: 0; }
 
 /**
  * Figures Markup
@@ -342,19 +356,22 @@ blockquote p + p {
   .pull-quote {
     position: relative;
     padding: 1em; }
-    .pull-quote:before, .pull-quote:after {
-      height: 1em;
-      opacity: 0.15;
-      position: absolute;
-      font-size: 4em; }
-    .pull-quote:before {
-      content: '“';
-      top: 0;
-      left: 0; }
-    .pull-quote:after {
-      content: '”';
-      bottom: 0;
-      right: 0; }
+
+  .pull-quote:before, .pull-quote:after {
+    height: 1em;
+    opacity: 0.15;
+    position: absolute;
+    font-size: 4em; }
+
+  .pull-quote:before {
+    content: '"';
+    top: 0;
+    left: 0; }
+
+  .pull-quote:after {
+    content: '"';
+    bottom: 0;
+    right: 0; }
 
   .tera {
     font-size: 117px;
