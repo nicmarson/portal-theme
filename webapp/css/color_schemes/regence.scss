@@ -18,7 +18,6 @@
   // Import shared components
   // --------------------------------------
   @import "shared/components/general";
-  @import "shared/components/application";
   @import "shared/components/navigation";
   @import "shared/components/article";
   @import "shared/components/hero";
@@ -159,72 +158,12 @@
 // -------------------------
 .fontface .regence { // If web fonts are supported
 
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: $headingsFontWeight;
-  }
+  @import "shared/modernizr/font_face";
 }
 
 // Generated content
 // -------------------------
 .generatedcontent .regence {
 
-  ul.bulleted > li {
-    list-style: none;
-    position: relative;
-  }
-
-  ul.bulleted > li:before {
-    background: $bulletBackground;
-    @include border-radius(2px);
-    content: "";
-    height: 8px;
-    left: -($listIndent);
-    position: absolute;
-    top: $baseFontSize / 2;
-    width: 8px;
-  }
-  
-  .contact-info-glyph {
-
-    .caret {
-      border-color: transparent;
-      border-top-width:   8px;
-      border-right-width: 8px;
-      border-left-width:  8px;
-      position: absolute;
-      right: -8px;
-
-      &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        z-index: 3;
-
-        background: $contactInfoBackground;
-        @include border-radius(8px);
-        height: 16px;
-        right: -16px;
-        width: 16px;
-      }
-    }
-
-    .glyph-phone .caret {
-      border-bottom: 8px solid $contactPhoneBackground;
-      border-top: 0 solid transparent;
-      bottom: 0;
-
-      &:after {
-        bottom: -7px;
-      }
-    }
-
-    .glyph-email .caret {
-      border-top-color: $contactEmailBackground;
-      top: 0;
-
-      &:after {
-        top: -7px;
-      }
-    }
-  }
+  @import "shared/modernizr/generated_content";
 }

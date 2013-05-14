@@ -1,0 +1,241 @@
+/*------------------------------------*\
+    $APPLICATION
+\*------------------------------------*/
+
+
+// Dockbar
+// -------------------------
+.dockbar-ready .dockbar {
+
+  a {
+    color: #2C2F34;
+    font-weight: 400;
+    text-shadow: 1px 1px #FFFFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    line-height: 1.5;
+  }
+
+  .menu-button-active a {
+    color: #FFFFFF;
+    text-shadow: -1px -1px #2C2F34;
+  }
+}
+
+
+// Portlet topper
+// -------------------------
+.portlet {
+
+  .portlet-topper {
+    background: #F5F5F5;
+    padding-right: 40px;
+  }
+
+  .portlet-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding: 5px 0;
+    text-align: left;
+    text-indent: 10px;
+    text-shadow: 1px 1px #FFF;
+  }
+}
+
+
+.signed-in {
+
+  // Portlet wrapper
+  // -------------------------
+  .portlet-borderless-bar {
+    @include border-radius(20px);
+    @include box-shadow(inset 0 1px 3px #000);
+  }
+
+  .portlet {
+
+    // Portlet topper
+    // -------------------------
+
+    .portlet-topper-toolbar {
+      padding: 0;
+      right: 0;
+      top: 0;
+
+      > span {
+        float: left;
+        height: 16px;
+        padding: 7px;
+        width: 16px;
+      }
+
+      [class*="-icon"] {
+        height: 30px;
+        padding: 0;
+        width: 30px;
+
+        > a {
+          background: $grayLighter;
+          display: block;
+          height: 16px;
+          padding: 7px;
+          width: 16px;
+
+          &:hover {
+            background: lighten($blue, 50%);
+          }        
+        }
+
+        img {
+          float: left;
+        }
+      }
+    }
+
+    .portlet-icons {
+      float: none;
+
+      .portlet-close-icon {
+        border-width: 0;
+      }
+    }
+
+    .page-maximized .portlet-icons {
+      font-size: 11px;
+    }
+
+    .portlet-column-content.empty {
+      background-color: #E5E5E5;
+      background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 1px, transparent 6px);
+      background-size: 8px 8px;
+    }
+  }
+
+
+  // LFR
+  // -------------------------
+  .lfr-component {
+    font-size: 11px;
+    line-height: 17px;
+  }
+
+  .lfr-panel-container {
+    background-color: transparent;
+  }
+
+  .lfr-portlet-title-editable {
+    margin-top: -4px;
+    z-index: 9999;
+  }
+
+  .lfr-portlet-title-editable-content {
+    padding: 0;
+
+    .aui-field {
+      float: none;
+      display: inline;
+    }
+  }
+
+
+  // AUI
+  // -------------------------
+  .aui-form {
+    font-size: 11px;
+    line-height: 17px;
+
+    label, input, button, select, textarea {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+      padding: 2px 5px;
+    }
+
+    select, input[type="file"] {
+      height: 26px;
+      line-height: 26px;
+    }
+
+    .aui-combobox {
+
+      .aui-field-input {
+        padding: 4px 3px 3px;
+        font-size: 11px;
+        height: 15px;
+      }
+
+      .aui-field {
+        float: left;
+        line-height: 0;
+      }
+    }
+
+    .aui-choice-label {
+      display: inline-block; // fixes TB incompadibility
+    }
+
+    .aui-field-label-right input {
+      margin: inherit; // fixes TB incompadibility
+    }
+
+    .aui-field-label,
+    .aui-field-label-inline-label {
+      font-weight: normal;
+    }
+
+    .aui-field-inline .aui-field-content,
+    .aui-field-inline .aui-field-label {
+      display: block;
+    }
+  }
+
+  .aui-component {
+    font-size: 11px;
+    line-height: 17px;
+
+    .aui-column-content-first {
+      border-right: 1px solid $grayLighter;
+    }
+
+    .aui-tab-label,
+    .aui-tab-label a {
+      color: #1F1E1E;
+
+      &:hover,
+      &:focus {
+        color: #06C;
+      }
+    }
+
+    .aui-tab-active .aui-tab-label {
+      color: #FFF;
+    }
+  }
+}
+
+
+// IE
+// -------------------------
+.ie {
+
+  .portlet .portlet-title {
+    padding-bottom: 5px;
+  }
+
+  .lfr-portlet-title-editable {
+    margin-top: -6px;
+  }
+
+  .lfr-portlet-title-editable-content {
+    margin-top: 4px;
+  }
+}
+
+.ie6 .portlet-topper {
+  zoom: 1;
+}

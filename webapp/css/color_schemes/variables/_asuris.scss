@@ -108,6 +108,16 @@ $btnInverseBackground:              #444;
 $btnInverseBackgroundHighlight:     $grayDarker;
 
 
+// Alerts
+// -------------------------
+$alertBorder:                       none;
+$alert404Background:                transparent url("images/regence/large-warning.png") no-repeat 0 12px;
+$alert404Color:                     #999;
+$alert404FontSize:                  24px;
+$alert404HeadingColor:              #d06a21;
+$alert404HeadingSize:               36px;
+
+
 // Tables
 // -------------------------
 $tableBackground:                   transparent; // overall background-color
@@ -289,7 +299,10 @@ $contactEmailBackground:        $purple;
 $bottomBackground:              $accent;
 $bottomColor:                   $textColor;
 $bottomFontSize:                13px;
+$bottomLineHeight:              16px;
 $bottomLinkBackground:          transparent;
 $bottomLinkBackgroundHover:     transparent;
 $bottomLinkColor:               $textColor;
 $bottomLinkColorHover:          $textColor;
+
+$feedbackIconMarginTop:         4px;

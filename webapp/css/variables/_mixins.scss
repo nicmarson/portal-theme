@@ -685,7 +685,3 @@
     $gridColumns: $gridColumns - 1;
   }
 }
-
-@mixin grid-input-span($columns, $gridColumnWidth, $gridGutterWidth) {
-  width: (($gridColumnWidth) * $columns) + ($gridGutterWidth * ($columns - 1)) - 14;
-}
