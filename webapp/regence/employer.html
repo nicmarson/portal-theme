@@ -3,19 +3,30 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Regence Portal Demo</title>
-    <meta name="description" content="Simple click through pages to demonstrate new portal design">
+    <title>Regence</title>
+    <meta name="description" content="Regence portal pages">
     <meta name="viewport" content="width=device-width">
-    <!-- Web Fonts -->
+
     <link href="http://fnt.webink.com/wfs/webink.css/?project=AEC37CF0-6B2D-450D-9777-5062C06CCACA&fonts=58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,1366810A-C17C-C074-FF25-E81320293740:f=ProximaNovaCond-Semibold,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,FF4969BA-A10C-C1F1-4CAE-97A4557D103C:f=ProximaNovaCond-Regular,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-  </head>
+    <link rel="stylesheet" href="../css/cambia.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script type="text/javascript" src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script>
+        // set options for html5shiv
+        if(!window.html5){ window.html5 = {}; }
+        window.html5.shivMethods = false;
+    </script>
+    <script src="../js/webshim/extras/modernizr-custom.js"></script>
+    <script src="../js/webshim/polyfiller.js"></script>
+    <script src="../js/webshim/webshim.js"></script>
+
+    <link rel="shortcut icon" href="../images/favicon.ico">
+</head>
   <body class="regence-demo" itemscope itemtype="http://schema.org/MedicalWebPage">
     <link itemprop="audience" href="http://schema.org/Patient" />
     <link itemprop="specialty" href="http://schema.org/PublicHealth" />

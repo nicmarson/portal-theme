@@ -45,14 +45,73 @@
   }
 }
 
+.article-list > li {
+  font-size: 14px;
+}
 
-// Hero units
-// ------------
+
+// Hero with image background
+// -------------------------------
+.hero-image {
+
+  .caption-title {
+    font-size: 36px;
+    line-height: 30px;
+
+    small {
+      font-size: 24px;
+    }
+  }
+
+  .caption-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+
+// Hero with media boxes
+// -------------------------------
 .hero-media {
+
+  .media {
+
+    p,
+    li {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .lead {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
 
   .media-heading {
     font-size: 18px;
     line-height: 24px;
+
+    small {
+      font-size: 16px;
+    }
+  }
+}
+
+
+// Landing - Individual
+#hero-individual {
+
+  .hero-unit {
+    height: 420px;
+  }
+
+  .media {
+    min-height: 160px;
+  }
+
+  #media-shop {
+    height: 340px;
   }
 }
 
@@ -64,15 +123,33 @@
   .hero-unit {
     height: 405px;
   }
+}
 
-  .hero-caption {
-    bottom: $gridGutterWidth;
-    left: $gridGutterWidth;
-    position: absolute;
-    right: $gridGutterWidth;
+
+// Audience dropdown
+// ---------------------------
+#set-view-location {
+
+  form {
+    margin: 0;
+    padding-top: 24px;
   }
-
-  .media-image {
-    background-position: center;
+  label {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .form-actions {
+    padding-right: 43px;
+  }
+  .glyph-users,
+  .icon-location {
+    height: 74px;
+    margin-right: 15px;
+    width: 74px;
+  }
+  [class^="glyph-"]:before,
+  [class*=" glyph-"]:before {
+    font-size: 62px;
+    line-height: 74px;
   }
 }

@@ -113,6 +113,26 @@
 }
 
 
+// Responsive: Tablet to desktop
+// --------------------------------------
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .regence {
+    @import "shared/responsive/768px-979px";
+
+
+    // Article
+    // --------------------------------------
+    .article-left-sidebar {
+
+      .sidebar {
+        border-right: 1px solid $contentBorder;
+      }
+    }
+  }
+}
+
+
 // Responsive: Tablet to large desktops
 // --------------------------------------
 @media (min-width: 768px) {
@@ -129,22 +149,12 @@
 }
 
 
-// Responsive: Tablet to desktop
-// --------------------------------------
-@media (min-width: 768px) and (max-width: 979px) {
-
-  .regence {
-    @import "shared/responsive/768px-979px";
-  }
-}
-
-
 // Tablet
 // --------------------------------------
 @media (max-width: 767px) {
 
   .regence {
-    @import "shared/responsive/768px-979px";
+    @import "shared/responsive/767px-max";
   }
 }
 

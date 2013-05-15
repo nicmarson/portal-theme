@@ -52,19 +52,39 @@
 
   body {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
   }
 }
+
+
+// Responsive: Desktop to large desktop
+// --------------------------------------------------
+@media (min-width: 980px) and (max-width: 1199px) {
+
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+
+// Responsive: Tablet to desktop
+// --------------------------------------
+@media (min-width: 768px) and (max-width: 979px) {
+
+  body {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
 
 // Custom: Landscape phone to desktop/tablet
 // --------------------------------------------------
 @media (max-width: 767px) {
 
-  // Padding to set content in a bit
   .container {
     min-width: 360px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 

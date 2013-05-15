@@ -182,6 +182,16 @@
 }
 
 
+// Responsive: Tablet to desktop
+// --------------------------------------
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .bridge {
+    @import "shared/responsive/768px-979px";
+  }
+}
+
+
 // Responsive: Tablet to large desktops
 // --------------------------------------
 @media (min-width: 768px) {
@@ -210,6 +220,8 @@
         font-size: 134px;
         left: 20px;
         letter-spacing: -8px;
+        line-height: 1;
+        margin: 0;
         position: absolute;
         text-transform: uppercase;
       }
@@ -261,17 +273,9 @@
 
     #hero-individual {
 
-      .hero-unit {
-        height: 405px;
-      }
-
       .media {
         @include border-bottom-right-radius(10px);
         @include border-top-left-radius(10px);
-      }
-
-      #media-shop {
-        height: 295px;
       }
     }
 
@@ -293,22 +297,12 @@
 }
 
 
-// Responsive: Tablet to desktop
-// --------------------------------------
-@media (min-width: 768px) and (max-width: 979px) {
-
-  .bridge {
-    @import "shared/responsive/768px-979px";
-  }
-}
-
-
 // Tablet
 // --------------------------------------
 @media (max-width: 767px) {
 
-  .regence {
-    @import "shared/responsive/768px-979px";
+  .bridge {
+    @import "shared/responsive/767px-max";
   }
 }
 
@@ -322,7 +316,12 @@
 // -------------------------
 .fontface .bridge { // If web fonts are supported
 
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: $headingsFontWeight;
-  }
+  @import "shared/modernizr/font_face";
+}
+
+// Generated content
+// -------------------------
+.generatedcontent .bridge {
+
+  @import "shared/modernizr/generated_content";
 }

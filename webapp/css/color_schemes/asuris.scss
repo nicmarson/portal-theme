@@ -178,22 +178,12 @@
 }
 
 
-// Responsive: Tablet to desktop
-// --------------------------------------
-@media (min-width: 768px) and (max-width: 979px) {
-
-  .asuris {
-    @import "shared/responsive/768px-979px";
-  }
-}
-
-
 // Tablet
 // --------------------------------------
 @media (max-width: 767px) {
 
-  .regence {
-    @import "shared/responsive/768px-979px";
+  .asuris {
+    @import "shared/responsive/767px-max";
   }
 }
 
@@ -207,7 +197,12 @@
 // -------------------------
 .fontface .asuris { // If web fonts are supported
 
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: $headingsFontWeight;
-  }
+  @import "shared/modernizr/font_face";
+}
+
+// Generated content
+// -------------------------
+.generatedcontent .asuris {
+
+  @import "shared/modernizr/generated_content";
 }

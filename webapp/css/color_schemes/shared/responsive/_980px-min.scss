@@ -82,6 +82,11 @@
 // Top
 // ---------------------------
 #top {
+  border-bottom: 1px solid $topLinkBorder;
+
+  .container {
+    border-bottom: none;
+  }
 
   .nav .nav-brand {
 

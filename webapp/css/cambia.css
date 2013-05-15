@@ -15,6 +15,138 @@
   font-weight: normal;
   font-style: normal; }
 
+/*------------------------------------*\
+    $APPLICATION
+\*------------------------------------*/
+.dockbar-ready .dockbar a {
+  color: #2C2F34;
+  font-weight: 400;
+  text-shadow: 1px 1px white; }
+.dockbar-ready .dockbar h1, .dockbar-ready .dockbar h2, .dockbar-ready .dockbar h3, .dockbar-ready .dockbar h4, .dockbar-ready .dockbar h5, .dockbar-ready .dockbar h6 {
+  font-size: inherit;
+  line-height: 1.5; }
+.dockbar-ready .dockbar .menu-button-active a {
+  color: #FFFFFF;
+  text-shadow: -1px -1px #2c2f34; }
+
+.portlet .portlet-topper {
+  background: #F5F5F5;
+  padding-right: 40px; }
+.portlet .portlet-title {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 5px 0;
+  text-align: left;
+  text-indent: 10px;
+  text-shadow: 1px 1px white; }
+
+.signed-in .portlet-borderless-bar {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 1px 3px black;
+  -moz-box-shadow: inset 0 1px 3px black;
+  box-shadow: inset 0 1px 3px black; }
+.signed-in .portlet .portlet-topper-toolbar {
+  padding: 0;
+  right: 0;
+  top: 0; }
+  .signed-in .portlet .portlet-topper-toolbar > span {
+    float: left;
+    height: 16px;
+    padding: 7px;
+    width: 16px; }
+  .signed-in .portlet .portlet-topper-toolbar [class*="-icon"] {
+    height: 30px;
+    padding: 0;
+    width: 30px; }
+    .signed-in .portlet .portlet-topper-toolbar [class*="-icon"] > a {
+      background: #dddddd;
+      display: block;
+      height: 16px;
+      padding: 7px;
+      width: 16px; }
+      .signed-in .portlet .portlet-topper-toolbar [class*="-icon"] > a:hover {
+        background: #afe1fc; }
+    .signed-in .portlet .portlet-topper-toolbar [class*="-icon"] img {
+      float: left; }
+.signed-in .portlet .portlet-icons {
+  float: none; }
+  .signed-in .portlet .portlet-icons .portlet-close-icon {
+    border-width: 0; }
+.signed-in .portlet .page-maximized .portlet-icons {
+  font-size: 11px; }
+.signed-in .portlet .portlet-column-content.empty {
+  background-color: #E5E5E5;
+  background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 6px);
+  background-size: 8px 8px; }
+.signed-in .lfr-component {
+  font-size: 11px;
+  line-height: 17px; }
+.signed-in .lfr-panel-container {
+  background-color: transparent; }
+.signed-in .lfr-portlet-title-editable {
+  margin-top: -4px;
+  z-index: 9999; }
+.signed-in .lfr-portlet-title-editable-content {
+  padding: 0; }
+  .signed-in .lfr-portlet-title-editable-content .aui-field {
+    float: none;
+    display: inline; }
+.signed-in .aui-form {
+  font-size: 11px;
+  line-height: 17px; }
+  .signed-in .aui-form label, .signed-in .aui-form input, .signed-in .aui-form button, .signed-in .aui-form select, .signed-in .aui-form textarea {
+    font-size: 12px;
+    line-height: 18px; }
+  .signed-in .aui-form select, .signed-in .aui-form textarea, .signed-in .aui-form input[type="text"], .signed-in .aui-form input[type="password"], .signed-in .aui-form input[type="datetime"], .signed-in .aui-form input[type="datetime-local"], .signed-in .aui-form input[type="date"], .signed-in .aui-form input[type="month"], .signed-in .aui-form input[type="time"], .signed-in .aui-form input[type="week"], .signed-in .aui-form input[type="number"], .signed-in .aui-form input[type="email"], .signed-in .aui-form input[type="url"], .signed-in .aui-form input[type="search"], .signed-in .aui-form input[type="tel"], .signed-in .aui-form input[type="color"], .signed-in .aui-form .uneditable-input {
+    padding: 2px 5px; }
+  .signed-in .aui-form select, .signed-in .aui-form input[type="file"] {
+    height: 26px;
+    line-height: 26px; }
+  .signed-in .aui-form .aui-combobox .aui-field-input {
+    padding: 4px 3px 3px;
+    font-size: 11px;
+    height: 15px; }
+  .signed-in .aui-form .aui-combobox .aui-field {
+    float: left;
+    line-height: 0; }
+  .signed-in .aui-form .aui-choice-label {
+    display: inline-block; }
+  .signed-in .aui-form .aui-field-label-right input {
+    margin: inherit; }
+  .signed-in .aui-form .aui-field-label,
+  .signed-in .aui-form .aui-field-label-inline-label {
+    font-weight: normal; }
+  .signed-in .aui-form .aui-field-inline .aui-field-content,
+  .signed-in .aui-form .aui-field-inline .aui-field-label {
+    display: block; }
+.signed-in .aui-component {
+  font-size: 11px;
+  line-height: 17px; }
+  .signed-in .aui-component .aui-column-content-first {
+    border-right: 1px solid #dddddd; }
+  .signed-in .aui-component .aui-tab-label,
+  .signed-in .aui-component .aui-tab-label a {
+    color: #1F1E1E; }
+    .signed-in .aui-component .aui-tab-label:hover, .signed-in .aui-component .aui-tab-label:focus,
+    .signed-in .aui-component .aui-tab-label a:hover,
+    .signed-in .aui-component .aui-tab-label a:focus {
+      color: #06C; }
+  .signed-in .aui-component .aui-tab-active .aui-tab-label {
+    color: #FFF; }
+
+.ie .portlet .portlet-title {
+  padding-bottom: 5px; }
+.ie .lfr-portlet-title-editable {
+  margin-top: -6px; }
+.ie .lfr-portlet-title-editable-content {
+  margin-top: 4px; }
+
+.ie6 .portlet-topper {
+  zoom: 1; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -175,12 +307,18 @@
 @media (min-width: 1200px) {
   body {
     font-size: 16px;
-    line-height: 24px; } }
+    line-height: 22px; } }
+@media (min-width: 980px) and (max-width: 1199px) {
+  body {
+    font-size: 14px;
+    line-height: 20px; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  body {
+    font-size: 12px;
+    line-height: 18px; } }
 @media (max-width: 767px) {
   .container {
-    min-width: 360px;
-    padding-left: 20px;
-    padding-right: 20px; } }
+    min-width: 360px; } }
 /*------------------------------------*\
     $ASURIS
     $COLOR_SCHEME
@@ -189,9 +327,6 @@
   color: #333333;
   /*------------------------------------*\
       $GENERAL
-  \*------------------------------------*/
-  /*------------------------------------*\
-      $APPLICATION
   \*------------------------------------*/
   /*------------------------------------*\
       $NAVIGATION
@@ -341,6 +476,73 @@
     border-top-color: #9d261d; }
   .asuris .btn-primary {
     color: #FFF; }
+  .asuris .well-large {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.07);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.07);
+    color: #999999;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 80px; }
+    .asuris .well-large h1, .asuris .well-large h2, .asuris .well-large h3, .asuris .well-large h4, .asuris .well-large h5, .asuris .well-large h6 {
+      color: #999999;
+      font-family: "ProximaNova-Regular", Verdana, sans-serif; }
+    .asuris .well-large h1 {
+      font-size: 48px;
+      line-height: 54px; }
+    .asuris .well-large h2 {
+      font-size: 44px;
+      line-height: 50px; }
+    .asuris .well-large h3 {
+      font-size: 40px;
+      line-height: 46px; }
+    .asuris .well-large h4 {
+      font-size: 36px;
+      line-height: 40px; }
+    .asuris .well-large h5 {
+      font-size: 32px;
+      line-height: 36px; }
+    .asuris .well-large h6 {
+      font-size: 28px;
+      line-height: 32px; }
+  .asuris .alert {
+    background-color: #FFF;
+    border: none;
+    color: #ca5400;
+    position: relative; }
+    .asuris .alert h4 {
+      font-weight: 700;
+      margin: 0; }
+    .asuris .alert [class^="icon-"],
+    .asuris .alert [class*=" icon-"] {
+      left: 15px;
+      line-height: 20px;
+      position: absolute;
+      top: 8px; }
+  .asuris .warning-text {
+    color: #ca5400; }
+  .asuris a.warning-text:hover {
+    background-color: #fcf8e3;
+    color: #ca5400; }
+  .asuris .alert-block [class^="icon-"],
+  .asuris .alert-block [class*=" icon-"] {
+    top: 14px; }
+  .asuris h4.alert-heading {
+    margin-bottom: 5px; }
+  .asuris .alert-404 {
+    background: transparent url("images/regence/large-warning.png") no-repeat 0 12px;
+    color: #999999;
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 0 0 0 120px; }
+    .asuris .alert-404 h2 {
+      color: #d06a21;
+      font-size: 36px;
+      line-height: 1;
+      margin-top: 0; }
   .asuris .dropdown-menu {
     color: black; }
   .asuris .tooltip.top {
@@ -360,13 +562,6 @@
     padding: 20px 15px 15px; }
   .asuris .modal-footer {
     padding: 19px 15px 20px; }
-  .asuris .dockbar a {
-    color: #2C2F34;
-    font-weight: 400;
-    text-shadow: 1px 1px white; }
-  .asuris .dockbar .menu-button-active a {
-    color: #FFFFFF;
-    text-shadow: -1px -1px #2c2f34; }
   .asuris .nav-main {
     display: block;
     width: 100%; }
@@ -706,7 +901,9 @@
     -moz-box-shadow: "0 1px 5px rgba(0,0,0,.1)";
     box-shadow: "0 1px 5px rgba(0,0,0,.1)";
     color: #333333;
+    margin-bottom: 20px;
     margin-top: 0;
+    min-height: 130px;
     position: relative;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -719,15 +916,16 @@
       box-shadow: "0 1px 5px rgba(0,0,0,.5)"; }
     .asuris .hero-media .media a {
       color: #333333; }
-  .asuris .hero-media .media-image {
-    position: relative; }
   .asuris .hero-media .media-heading {
     margin-bottom: 10px; }
     .asuris .hero-media .media-heading small {
       color: #85b365;
       font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: 16px;
       display: block; }
+  .asuris .hero-media .media-body {
+    padding: 20px 0 5px; }
+  .asuris .hero-media .media-image {
+    position: relative; }
   .asuris .hero-media .pull-left {
     margin-right: 0; }
   .asuris #hero-understanding-insurance form {
@@ -785,10 +983,11 @@
     color: white; }
   .asuris #top {
     background: white;
-    border-bottom: 1px solid #dddddd;
     color: #555555;
     min-height: 80px;
     text-align: right; }
+    .asuris #top .container {
+      border-bottom: 1px solid #dddddd; }
     .asuris #top .nav {
       margin: 0; }
       .asuris #top .nav li > a {
@@ -998,46 +1197,28 @@
   .asuris .svg.backgroundsize .logo-bridge .brand-logo {
     background: url("images/identity/bridgespan.svg") no-repeat 0 0;
     background-size: 124px auto; }
-  .asuris #set-view-location {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
-    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset; }
-    .asuris #set-view-location form {
-      margin: 0 20%;
-      padding-top: 36px; }
-    .asuris #set-view-location label {
+  .asuris #set-view-location form {
+    margin: 0 20px;
+    padding-top: 20px; }
+  .asuris #set-view-location label {
+    color: #FFF;
+    font-family: "ProximaNova-Light", Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 10px; }
+  .asuris #set-view-location .form-actions {
+    background-color: transparent;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    text-align: right; }
+    .asuris #set-view-location .form-actions .btn-link {
       color: #FFF;
-      font-family: "ProximaNova-Light", Verdana, sans-serif;
-      font-size: 24px;
-      line-height: 34px;
-      margin-bottom: 10px; }
-    .asuris #set-view-location .glyph-users,
-    .asuris #set-view-location .icon-location {
-      float: left;
-      height: 84px;
-      margin-right: 15px;
-      opacity: .4;
-      width: 84px; }
-    .asuris #set-view-location [class^="glyph-"]:before,
-    .asuris #set-view-location [class*=" glyph-"]:before {
-      color: #FFF;
-      font-size: 72px;
-      line-height: 84px;
-      vertical-align: inherit; }
-    .asuris #set-view-location .icon-location {
-      background: url(images/large-white-icons.png) no-repeat 0 -100px; }
-    .asuris #set-view-location .form-actions {
-      background-color: transparent;
-      border-top-color: rgba(255, 255, 255, 0.5);
-      text-align: right; }
-      .asuris #set-view-location .form-actions .btn-link {
-        color: #FFF;
-        text-decoration: underline;
-        text-shadow: none; }
+      text-decoration: underline;
+      text-shadow: none; }
   .asuris #bottom {
     background: #85b365;
     color: #333333;
     font-size: 13px;
+    line-height: 16px;
     padding: 20px 0 60px;
     text-align: center; }
     .asuris #bottom ul {
@@ -1050,7 +1231,7 @@
       float: left;
       height: 7px;
       margin-right: 4px;
-      margin-top: 1px;
+      margin-top: 4px;
       padding: 1px;
       position: relative;
       width: 7px; }
@@ -1073,7 +1254,6 @@
     .asuris #bottom p,
     .asuris #bottom .nav > li > a {
       font-family: "ProximaNova-Regular", Verdana, sans-serif;
-      line-height: 14px;
       margin-bottom: 6px;
       margin-top: 6px;
       padding-top: 10px;
@@ -1296,6 +1476,21 @@
     .asuris .hero-image .caption-text {
       font-size: 20px;
       line-height: 24px; }
+    .asuris .hero-media .media p,
+    .asuris .hero-media .media li {
+      font-size: 16px;
+      line-height: 18px; }
+    .asuris .hero-media .media .lead {
+      font-size: 18px;
+      line-height: 20px; }
+    .asuris .hero-media .media-heading {
+      font-size: 22px;
+      line-height: 28px; }
+      .asuris .hero-media .media-heading small {
+        font-size: 20px; }
+    .asuris .hero-media .media-body {
+      padding-bottom: 10px;
+      padding-top: 25px; }
     .asuris #understanding-insurance .hero-caption {
       bottom: 40px;
       left: 60px;
@@ -1323,8 +1518,31 @@
       font-size: 28px; }
     .asuris .hero-find-doctor .image {
       min-height: 398px; }
+    .asuris #hero-individual .hero-unit {
+      height: 485px; }
+    .asuris #hero-individual .media {
+      min-height: 170px; }
+    .asuris #hero-individual #media-shop {
+      height: 360px; }
     .asuris #top .container {
       width: 1170px; }
+    .asuris #set-view-location form {
+      margin: 0 15%;
+      padding-top: 48px; }
+    .asuris #set-view-location label {
+      font-size: 24px;
+      line-height: 34px; }
+    .asuris #set-view-location .form-actions {
+      padding-right: 43px; }
+    .asuris #set-view-location .glyph-users,
+    .asuris #set-view-location .icon-location {
+      height: 84px;
+      margin-right: 15px;
+      width: 84px; }
+    .asuris #set-view-location [class^="glyph-"]:before,
+    .asuris #set-view-location [class*=" glyph-"]:before {
+      font-size: 72px;
+      line-height: 84px; }
     .asuris table.contact-info {
       font-size: 24px;
       line-height: 20px; }
@@ -1365,15 +1583,24 @@
       padding: 40px 0; }
     .asuris .hero-image .image {
       min-height: 420px; }
-    .asuris .hero-media .media {
-      margin-bottom: 20px;
-      min-height: 130px; }
-    .asuris .hero-media .media-body {
-      padding: 20px 25px 5px; }
+    .asuris .hero-media .media p,
+    .asuris .hero-media .media li {
+      font-size: 14px;
+      line-height: 16px; }
+    .asuris .hero-media .media .lead {
+      font-size: 16px;
+      line-height: 18px; }
+    .asuris .hero-media .media-heading {
+      font-size: 20px;
+      line-height: 26px; }
+      .asuris .hero-media .media-heading small {
+        font-size: 18px; }
     .asuris #hero-individual .hero-unit {
-      height: 450px; }
+      height: 445px; }
+    .asuris #hero-individual .media {
+      min-height: 150px; }
     .asuris #hero-individual #media-shop {
-      height: 280px; }
+      height: 320px; }
     .asuris #hero-employer .hero-unit {
       height: 450px; }
     .asuris #hero-employer #media-forms {
@@ -1402,6 +1629,23 @@
       padding: 10px 15px 11px; }
     .asuris #top .container {
       width: 940px; }
+    .asuris #set-view-location form {
+      margin: 0 10%;
+      padding-top: 36px; }
+    .asuris #set-view-location label {
+      font-size: 24px;
+      line-height: 34px; }
+    .asuris #set-view-location .form-actions {
+      padding-right: 43px; }
+    .asuris #set-view-location .glyph-users,
+    .asuris #set-view-location .icon-location {
+      height: 84px;
+      margin-right: 15px;
+      width: 84px; }
+    .asuris #set-view-location [class^="glyph-"]:before,
+    .asuris #set-view-location [class*=" glyph-"]:before {
+      font-size: 72px;
+      line-height: 84px; }
     .asuris table.contact-info {
       font-size: 20px;
       line-height: 16px; }
@@ -1469,20 +1713,24 @@
         text-transform: uppercase; }
     .asuris #hero-understanding-insurance .search-button {
       line-height: normal; }
-    .asuris #top .nav .nav-brand .brand {
-      border-left: none;
-      padding-left: 0; }
-    .asuris #top .nav .nav-search {
-      width: auto; }
-      .asuris #top .nav .nav-search form {
-        border-top: none; }
-    .asuris #top .nav .nav-shopping {
-      clear: none;
-      float: right;
-      width: auto; }
-      .asuris #top .nav .nav-shopping > a {
+    .asuris #top {
+      border-bottom: 1px solid #dddddd; }
+      .asuris #top .container {
+        border-bottom: none; }
+      .asuris #top .nav .nav-brand .brand {
         border-left: none;
-        border-top: none; }
+        padding-left: 0; }
+      .asuris #top .nav .nav-search {
+        width: auto; }
+        .asuris #top .nav .nav-search form {
+          border-top: none; }
+      .asuris #top .nav .nav-shopping {
+        clear: none;
+        float: right;
+        width: auto; }
+        .asuris #top .nav .nav-shopping > a {
+          border-left: none;
+          border-top: none; }
     .asuris #map_sidebar {
       float: left; }
     .asuris #map_canvas {
@@ -1510,18 +1758,53 @@
     .asuris .article-left-sidebar .sidebar .nav > li > a {
       font-size: 16px;
       line-height: 18px; }
+    .asuris .article-list > li {
+      font-size: 14px; }
+    .asuris .hero-image .caption-title {
+      font-size: 36px;
+      line-height: 30px; }
+      .asuris .hero-image .caption-title small {
+        font-size: 24px; }
+    .asuris .hero-image .caption-text {
+      font-size: 14px;
+      line-height: 20px; }
+    .asuris .hero-media .media p,
+    .asuris .hero-media .media li {
+      font-size: 12px;
+      line-height: 14px; }
+    .asuris .hero-media .media .lead {
+      font-size: 14px;
+      line-height: 16px; }
     .asuris .hero-media .media-heading {
       font-size: 18px;
       line-height: 24px; }
+      .asuris .hero-media .media-heading small {
+        font-size: 16px; }
+    .asuris #hero-individual .hero-unit {
+      height: 420px; }
+    .asuris #hero-individual .media {
+      min-height: 160px; }
+    .asuris #hero-individual #media-shop {
+      height: 340px; }
     .asuris #hero-understanding-insurance .hero-unit {
       height: 405px; }
-    .asuris #hero-understanding-insurance .hero-caption {
-      bottom: 20px;
-      left: 20px;
-      position: absolute;
-      right: 20px; }
-    .asuris #hero-understanding-insurance .media-image {
-      background-position: center; }
+    .asuris #set-view-location form {
+      margin: 0;
+      padding-top: 24px; }
+    .asuris #set-view-location label {
+      font-size: 18px;
+      line-height: 28px; }
+    .asuris #set-view-location .form-actions {
+      padding-right: 43px; }
+    .asuris #set-view-location .glyph-users,
+    .asuris #set-view-location .icon-location {
+      height: 74px;
+      margin-right: 15px;
+      width: 74px; }
+    .asuris #set-view-location [class^="glyph-"]:before,
+    .asuris #set-view-location [class*=" glyph-"]:before {
+      font-size: 62px;
+      line-height: 74px; }
     .asuris .article-left-sidebar .sidebar {
       border-right: 1px solid #ecf3e7; } }
 @media (min-width: 768px) {
@@ -1569,8 +1852,6 @@
         background-color: #076DA5; }
     .asuris .article-left-sidebar .sidebar .nav {
       text-align: right; }
-    .asuris .article-list > li {
-      font-size: 14px; }
     .asuris .article .main-content {
       padding: 20px 20px 40px; }
     .asuris .hero-header {
@@ -1606,24 +1887,15 @@
         color: #555555; }
       .asuris .hero-image .caption-title {
         color: #b94d00;
-        font: 36px "ProximaNova-Light", Verdana, sans-serif;
-        line-height: 30px;
+        font-family: "ProximaNova-Light", Verdana, sans-serif;
         margin-bottom: 8px; }
         .asuris .hero-image .caption-title small {
-          color: #555555;
-          font-size: 24px; }
+          color: #555555; }
       .asuris .hero-image .caption-text {
         color: #555555;
-        font-size: 14px;
-        line-height: 20px;
         margin-bottom: 0; }
     .asuris .hero-media .media p {
-      font-size: 12px;
-      line-height: 14px;
       margin-bottom: 15px; }
-    .asuris .hero-media .media li {
-      font-size: 12px;
-      line-height: 14px; }
     .asuris .hero-media .media .cover {
       bottom: 0;
       display: block;
@@ -1632,92 +1904,110 @@
       right: 0;
       top: 0;
       z-index: 10; }
-    .asuris .hero-media .media .lead {
-      font-size: 14px;
-      line-height: 16px; }
     .asuris .hero-media .media .media-heading {
       line-height: .85; }
-    .asuris #top {
-      border-bottom: none; }
-      .asuris #top .nav .nav-shopping > a {
-        padding-left: 60px;
-        padding-right: 45px; }
-    .asuris #bottom p {
-      text-align: left; }
-    .asuris #bottom ul {
-      text-align: right; } }
-@media (min-width: 768px) and (max-width: 979px) {
-  .asuris {
-    /*------------------------------------*\
-        $THEME
-        $RESPONSIVE
-        $768px-979px
-    \*------------------------------------*/ }
-    .asuris .thumbnail-left .content,
-    .asuris .thumbnail-left .image,
-    .asuris .thumbnail-right .content,
-    .asuris .thumbnail-right .image {
-      width: 48%; }
-    .asuris .nav-network li {
-      height: 140px;
-      width: 20%; }
-    .asuris .nav-network li > a {
-      font-size: 16px;
-      line-height: 25px;
-      margin: 0 10px;
-      padding: 40px 0 30px; }
-    .asuris .article-left-sidebar .sidebar .nav > li > a {
-      font-size: 16px;
-      line-height: 18px; }
-    .asuris .hero-media .media-heading {
-      font-size: 18px;
-      line-height: 24px; }
-    .asuris #hero-understanding-insurance .hero-unit {
-      height: 405px; }
+    .asuris .hero-media .media .media-body {
+      padding: 20px 25px 5px; }
     .asuris #hero-understanding-insurance .hero-caption {
       bottom: 20px;
       left: 20px;
       position: absolute;
       right: 20px; }
     .asuris #hero-understanding-insurance .media-image {
-      background-position: center; } }
-@media (max-width: 767px) {
-  .regence {
-    /*------------------------------------*\
-        $THEME
-        $RESPONSIVE
-        $768px-979px
-    \*------------------------------------*/ }
-    .regence .thumbnail-left .content,
-    .regence .thumbnail-left .image,
-    .regence .thumbnail-right .content,
-    .regence .thumbnail-right .image {
-      width: 48%; }
-    .regence .nav-network li {
-      height: 140px;
-      width: 20%; }
-    .regence .nav-network li > a {
-      font-size: 16px;
-      line-height: 25px;
-      margin: 0 10px;
-      padding: 40px 0 30px; }
-    .regence .article-left-sidebar .sidebar .nav > li > a {
-      font-size: 16px;
-      line-height: 18px; }
-    .regence .hero-media .media-heading {
-      font-size: 18px;
-      line-height: 24px; }
-    .regence #hero-understanding-insurance .hero-unit {
-      height: 405px; }
-    .regence #hero-understanding-insurance .hero-caption {
-      bottom: 20px;
-      left: 20px;
+      background-position: center; }
+    .asuris #top .nav .nav-shopping > a {
+      padding-left: 60px;
+      padding-right: 45px; }
+    .asuris #set-view-location {
+      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
+      -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset; }
+      .asuris #set-view-location .glyph-users,
+      .asuris #set-view-location .icon-location {
+        float: left;
+        opacity: .4; }
+      .asuris #set-view-location [class^="glyph-"]:before,
+      .asuris #set-view-location [class*=" glyph-"]:before {
+        color: #FFF;
+        vertical-align: inherit; }
+      .asuris #set-view-location .icon-location {
+        background: url(images/large-white-icons.png) no-repeat 0 -100px; }
+    .asuris #bottom p {
+      text-align: left; }
+    .asuris #bottom ul {
+      text-align: right; } }
+@media (max-width: 767px) and (max-width: 480px) {
+  .asuris .page-header h1 small {
+    line-height: 20px; }
+  .asuris .jumbotron {
+    padding: 40px 20px;
+    margin-right: -20px;
+    margin-left: -20px; } }
+
+.fontface .asuris {
+  /*------------------------------------*\
+      $FONT FACE
+  \*------------------------------------*/ }
+  .fontface .asuris h1, .fontface .asuris h2, .fontface .asuris h3, .fontface .asuris h4, .fontface .asuris h5, .fontface .asuris h6 {
+    font-weight: normal; }
+  .fontface .asuris .alert h1, .fontface .asuris .alert h2, .fontface .asuris .alert h3, .fontface .asuris .alert h4, .fontface .asuris .alert h5, .fontface .asuris .alert h6,
+  .fontface .asuris .well-large h1,
+  .fontface .asuris .well-large h2,
+  .fontface .asuris .well-large h3,
+  .fontface .asuris .well-large h4,
+  .fontface .asuris .well-large h5,
+  .fontface .asuris .well-large h6 {
+    font-family: "ProximaNova-Semibold", "Arial Black", sans-serif;
+    font-weight: 400; }
+
+.generatedcontent .asuris {
+  /*------------------------------------*\
+      $GENERATED CONTENT
+  \*------------------------------------*/ }
+  .generatedcontent .asuris ul.bulleted > li {
+    list-style: none;
+    position: relative; }
+  .generatedcontent .asuris ul.bulleted > li:before {
+    background: #f66600;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    content: "";
+    height: 8px;
+    left: -20px;
+    position: absolute;
+    top: 7px;
+    width: 8px; }
+  .generatedcontent .asuris .contact-info-glyph .caret {
+    border-color: transparent;
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-left-width: 8px;
+    position: absolute;
+    right: -8px; }
+    .generatedcontent .asuris .contact-info-glyph .caret:after {
+      content: "";
+      display: block;
       position: absolute;
-      right: 20px; }
-    .regence #hero-understanding-insurance .media-image {
-      background-position: center; } }
-.fontface .asuris h1, .fontface .asuris h2, .fontface .asuris h3, .fontface .asuris h4, .fontface .asuris h5, .fontface .asuris h6 {
-  font-weight: normal; }
+      z-index: 3;
+      background: #f3f3f3;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+      height: 16px;
+      right: -16px;
+      width: 16px; }
+  .generatedcontent .asuris .contact-info-glyph .glyph-phone .caret {
+    border-bottom: 8px solid #66a131;
+    border-top: 0 solid transparent;
+    bottom: 0; }
+    .generatedcontent .asuris .contact-info-glyph .glyph-phone .caret:after {
+      bottom: -7px; }
+  .generatedcontent .asuris .contact-info-glyph .glyph-email .caret {
+    border-top-color: #916dbd;
+    top: 0; }
+    .generatedcontent .asuris .contact-info-glyph .glyph-email .caret:after {
+      top: -7px; }
 
 /*------------------------------------*\
     $BRIDGESPAN
@@ -1727,9 +2017,6 @@
   color: #4c4d4f;
   /*------------------------------------*\
       $GENERAL
-  \*------------------------------------*/
-  /*------------------------------------*\
-      $APPLICATION
   \*------------------------------------*/
   /*------------------------------------*\
       $NAVIGATION
@@ -1879,6 +2166,73 @@
     border-top-color: #f26c2a; }
   .bridge .btn-primary {
     color: #FFF; }
+  .bridge .well-large {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.07);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.07);
+    color: #999999;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 80px; }
+    .bridge .well-large h1, .bridge .well-large h2, .bridge .well-large h3, .bridge .well-large h4, .bridge .well-large h5, .bridge .well-large h6 {
+      color: #999999;
+      font-family: "ProximaNova-Regular", Verdana, sans-serif; }
+    .bridge .well-large h1 {
+      font-size: 48px;
+      line-height: 54px; }
+    .bridge .well-large h2 {
+      font-size: 44px;
+      line-height: 50px; }
+    .bridge .well-large h3 {
+      font-size: 40px;
+      line-height: 46px; }
+    .bridge .well-large h4 {
+      font-size: 36px;
+      line-height: 40px; }
+    .bridge .well-large h5 {
+      font-size: 32px;
+      line-height: 36px; }
+    .bridge .well-large h6 {
+      font-size: 28px;
+      line-height: 32px; }
+  .bridge .alert {
+    background-color: #FFF;
+    border: none;
+    color: #ca5400;
+    position: relative; }
+    .bridge .alert h4 {
+      font-weight: 700;
+      margin: 0; }
+    .bridge .alert [class^="icon-"],
+    .bridge .alert [class*=" icon-"] {
+      left: 15px;
+      line-height: 20px;
+      position: absolute;
+      top: 8px; }
+  .bridge .warning-text {
+    color: #ca5400; }
+  .bridge a.warning-text:hover {
+    background-color: #fcf8e3;
+    color: #ca5400; }
+  .bridge .alert-block [class^="icon-"],
+  .bridge .alert-block [class*=" icon-"] {
+    top: 14px; }
+  .bridge h4.alert-heading {
+    margin-bottom: 5px; }
+  .bridge .alert-404 {
+    background: transparent url("images/regence/large-warning.png") no-repeat 0 12px;
+    color: #999999;
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 0 0 0 120px; }
+    .bridge .alert-404 h2 {
+      color: #d06a21;
+      font-size: 36px;
+      line-height: 1;
+      margin-top: 0; }
   .bridge .dropdown-menu {
     color: black; }
   .bridge .tooltip.top {
@@ -1898,13 +2252,6 @@
     padding: 20px 15px 15px; }
   .bridge .modal-footer {
     padding: 19px 15px 20px; }
-  .bridge .dockbar a {
-    color: #2C2F34;
-    font-weight: 400;
-    text-shadow: 1px 1px white; }
-  .bridge .dockbar .menu-button-active a {
-    color: #FFFFFF;
-    text-shadow: -1px -1px #2c2f34; }
   .bridge .nav-main {
     display: block;
     width: 100%; }
@@ -2244,7 +2591,9 @@
     -moz-box-shadow: "0 1px 5px rgba(0,0,0,.1)";
     box-shadow: "0 1px 5px rgba(0,0,0,.1)";
     color: #4c4d4f;
+    margin-bottom: 20px;
     margin-top: 0;
+    min-height: 130px;
     position: relative;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -2257,15 +2606,16 @@
       box-shadow: "0 1px 5px rgba(0,0,0,.5)"; }
     .bridge .hero-media .media a {
       color: #4c4d4f; }
-  .bridge .hero-media .media-image {
-    position: relative; }
   .bridge .hero-media .media-heading {
     margin-bottom: 10px; }
     .bridge .hero-media .media-heading small {
       color: #f26c2a;
       font-family: "KeplerStd-ItCapt", Georgia, "Times New Roman", Times, serif;
-      font-size: 16px;
       display: block; }
+  .bridge .hero-media .media-body {
+    padding: 20px 0 5px; }
+  .bridge .hero-media .media-image {
+    position: relative; }
   .bridge .hero-media .pull-left {
     margin-right: 0; }
   .bridge #hero-understanding-insurance form {
@@ -2323,10 +2673,11 @@
     color: white; }
   .bridge #top {
     background: white;
-    border-bottom: 1px solid #dddddd;
     color: #555555;
     min-height: 80px;
     text-align: right; }
+    .bridge #top .container {
+      border-bottom: 1px solid #dddddd; }
     .bridge #top .nav {
       margin: 0; }
       .bridge #top .nav li > a {
@@ -2536,46 +2887,28 @@
   .bridge .svg.backgroundsize .logo-bridge .brand-logo {
     background: url("images/identity/bridgespan.svg") no-repeat 0 0;
     background-size: 124px auto; }
-  .bridge #set-view-location {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
-    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset; }
-    .bridge #set-view-location form {
-      margin: 0 20%;
-      padding-top: 36px; }
-    .bridge #set-view-location label {
+  .bridge #set-view-location form {
+    margin: 0 20px;
+    padding-top: 20px; }
+  .bridge #set-view-location label {
+    color: #FFF;
+    font-family: "NewsGothicLtBT-Reg", Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 10px; }
+  .bridge #set-view-location .form-actions {
+    background-color: transparent;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    text-align: right; }
+    .bridge #set-view-location .form-actions .btn-link {
       color: #FFF;
-      font-family: "NewsGothicLtBT-Reg", Verdana, sans-serif;
-      font-size: 24px;
-      line-height: 34px;
-      margin-bottom: 10px; }
-    .bridge #set-view-location .glyph-users,
-    .bridge #set-view-location .icon-location {
-      float: left;
-      height: 84px;
-      margin-right: 15px;
-      opacity: .4;
-      width: 84px; }
-    .bridge #set-view-location [class^="glyph-"]:before,
-    .bridge #set-view-location [class*=" glyph-"]:before {
-      color: #FFF;
-      font-size: 72px;
-      line-height: 84px;
-      vertical-align: inherit; }
-    .bridge #set-view-location .icon-location {
-      background: url(images/large-white-icons.png) no-repeat 0 -100px; }
-    .bridge #set-view-location .form-actions {
-      background-color: transparent;
-      border-top-color: rgba(255, 255, 255, 0.5);
-      text-align: right; }
-      .bridge #set-view-location .form-actions .btn-link {
-        color: #FFF;
-        text-decoration: underline;
-        text-shadow: none; }
+      text-decoration: underline;
+      text-shadow: none; }
   .bridge #bottom {
     background: #f26c2a url(images/bridge/footerBackground.png);
     color: white;
     font-size: 16px;
+    line-height: 18px;
     padding: 20px 0 60px;
     text-align: center; }
     .bridge #bottom ul {
@@ -2588,7 +2921,7 @@
       float: left;
       height: 7px;
       margin-right: 4px;
-      margin-top: 1px;
+      margin-top: 5px;
       padding: 1px;
       position: relative;
       width: 7px; }
@@ -2611,7 +2944,6 @@
     .bridge #bottom p,
     .bridge #bottom .nav > li > a {
       font-family: "NewsGothicBT-Reg", Verdana, sans-serif;
-      line-height: 14px;
       margin-bottom: 6px;
       margin-top: 6px;
       padding-top: 10px;
@@ -2865,6 +3197,21 @@
     .bridge .hero-image .caption-text {
       font-size: 20px;
       line-height: 24px; }
+    .bridge .hero-media .media p,
+    .bridge .hero-media .media li {
+      font-size: 16px;
+      line-height: 18px; }
+    .bridge .hero-media .media .lead {
+      font-size: 18px;
+      line-height: 20px; }
+    .bridge .hero-media .media-heading {
+      font-size: 22px;
+      line-height: 28px; }
+      .bridge .hero-media .media-heading small {
+        font-size: 20px; }
+    .bridge .hero-media .media-body {
+      padding-bottom: 10px;
+      padding-top: 25px; }
     .bridge #understanding-insurance .hero-caption {
       bottom: 40px;
       left: 60px;
@@ -2892,8 +3239,31 @@
       font-size: 28px; }
     .bridge .hero-find-doctor .image {
       min-height: 398px; }
+    .bridge #hero-individual .hero-unit {
+      height: 485px; }
+    .bridge #hero-individual .media {
+      min-height: 170px; }
+    .bridge #hero-individual #media-shop {
+      height: 360px; }
     .bridge #top .container {
       width: 1170px; }
+    .bridge #set-view-location form {
+      margin: 0 15%;
+      padding-top: 48px; }
+    .bridge #set-view-location label {
+      font-size: 24px;
+      line-height: 34px; }
+    .bridge #set-view-location .form-actions {
+      padding-right: 43px; }
+    .bridge #set-view-location .glyph-users,
+    .bridge #set-view-location .icon-location {
+      height: 84px;
+      margin-right: 15px;
+      width: 84px; }
+    .bridge #set-view-location [class^="glyph-"]:before,
+    .bridge #set-view-location [class*=" glyph-"]:before {
+      font-size: 72px;
+      line-height: 84px; }
     .bridge table.contact-info {
       font-size: 24px;
       line-height: 20px; }
@@ -2934,15 +3304,24 @@
       padding: 40px 0; }
     .bridge .hero-image .image {
       min-height: 420px; }
-    .bridge .hero-media .media {
-      margin-bottom: 20px;
-      min-height: 130px; }
-    .bridge .hero-media .media-body {
-      padding: 20px 25px 5px; }
+    .bridge .hero-media .media p,
+    .bridge .hero-media .media li {
+      font-size: 14px;
+      line-height: 16px; }
+    .bridge .hero-media .media .lead {
+      font-size: 16px;
+      line-height: 18px; }
+    .bridge .hero-media .media-heading {
+      font-size: 20px;
+      line-height: 26px; }
+      .bridge .hero-media .media-heading small {
+        font-size: 18px; }
     .bridge #hero-individual .hero-unit {
-      height: 450px; }
+      height: 445px; }
+    .bridge #hero-individual .media {
+      min-height: 150px; }
     .bridge #hero-individual #media-shop {
-      height: 280px; }
+      height: 320px; }
     .bridge #hero-employer .hero-unit {
       height: 450px; }
     .bridge #hero-employer #media-forms {
@@ -2971,6 +3350,23 @@
       padding: 10px 15px 11px; }
     .bridge #top .container {
       width: 940px; }
+    .bridge #set-view-location form {
+      margin: 0 10%;
+      padding-top: 36px; }
+    .bridge #set-view-location label {
+      font-size: 24px;
+      line-height: 34px; }
+    .bridge #set-view-location .form-actions {
+      padding-right: 43px; }
+    .bridge #set-view-location .glyph-users,
+    .bridge #set-view-location .icon-location {
+      height: 84px;
+      margin-right: 15px;
+      width: 84px; }
+    .bridge #set-view-location [class^="glyph-"]:before,
+    .bridge #set-view-location [class*=" glyph-"]:before {
+      font-size: 72px;
+      line-height: 84px; }
     .bridge table.contact-info {
       font-size: 20px;
       line-height: 16px; }
@@ -3038,24 +3434,98 @@
         text-transform: uppercase; }
     .bridge #hero-understanding-insurance .search-button {
       line-height: normal; }
-    .bridge #top .nav .nav-brand .brand {
-      border-left: none;
-      padding-left: 0; }
-    .bridge #top .nav .nav-search {
-      width: auto; }
-      .bridge #top .nav .nav-search form {
-        border-top: none; }
-    .bridge #top .nav .nav-shopping {
-      clear: none;
-      float: right;
-      width: auto; }
-      .bridge #top .nav .nav-shopping > a {
+    .bridge #top {
+      border-bottom: 1px solid #dddddd; }
+      .bridge #top .container {
+        border-bottom: none; }
+      .bridge #top .nav .nav-brand .brand {
         border-left: none;
-        border-top: none; }
+        padding-left: 0; }
+      .bridge #top .nav .nav-search {
+        width: auto; }
+        .bridge #top .nav .nav-search form {
+          border-top: none; }
+      .bridge #top .nav .nav-shopping {
+        clear: none;
+        float: right;
+        width: auto; }
+        .bridge #top .nav .nav-shopping > a {
+          border-left: none;
+          border-top: none; }
     .bridge #map_sidebar {
       float: left; }
     .bridge #map_canvas {
       float: right; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  .bridge {
+    /*------------------------------------*\
+        $THEME
+        $RESPONSIVE
+        $768px-979px
+    \*------------------------------------*/ }
+    .bridge .thumbnail-left .content,
+    .bridge .thumbnail-left .image,
+    .bridge .thumbnail-right .content,
+    .bridge .thumbnail-right .image {
+      width: 48%; }
+    .bridge .nav-network li {
+      height: 140px;
+      width: 20%; }
+    .bridge .nav-network li > a {
+      font-size: 16px;
+      line-height: 25px;
+      margin: 0 10px;
+      padding: 40px 0 30px; }
+    .bridge .article-left-sidebar .sidebar .nav > li > a {
+      font-size: 16px;
+      line-height: 18px; }
+    .bridge .article-list > li {
+      font-size: 14px; }
+    .bridge .hero-image .caption-title {
+      font-size: 36px;
+      line-height: 30px; }
+      .bridge .hero-image .caption-title small {
+        font-size: 24px; }
+    .bridge .hero-image .caption-text {
+      font-size: 14px;
+      line-height: 20px; }
+    .bridge .hero-media .media p,
+    .bridge .hero-media .media li {
+      font-size: 12px;
+      line-height: 14px; }
+    .bridge .hero-media .media .lead {
+      font-size: 14px;
+      line-height: 16px; }
+    .bridge .hero-media .media-heading {
+      font-size: 18px;
+      line-height: 24px; }
+      .bridge .hero-media .media-heading small {
+        font-size: 16px; }
+    .bridge #hero-individual .hero-unit {
+      height: 420px; }
+    .bridge #hero-individual .media {
+      min-height: 160px; }
+    .bridge #hero-individual #media-shop {
+      height: 340px; }
+    .bridge #hero-understanding-insurance .hero-unit {
+      height: 405px; }
+    .bridge #set-view-location form {
+      margin: 0;
+      padding-top: 24px; }
+    .bridge #set-view-location label {
+      font-size: 18px;
+      line-height: 28px; }
+    .bridge #set-view-location .form-actions {
+      padding-right: 43px; }
+    .bridge #set-view-location .glyph-users,
+    .bridge #set-view-location .icon-location {
+      height: 74px;
+      margin-right: 15px;
+      width: 74px; }
+    .bridge #set-view-location [class^="glyph-"]:before,
+    .bridge #set-view-location [class*=" glyph-"]:before {
+      font-size: 62px;
+      line-height: 74px; } }
 @media (min-width: 768px) {
   .bridge {
     /*------------------------------------*\
@@ -3101,8 +3571,6 @@
         background-color: #076DA5; }
     .bridge .article-left-sidebar .sidebar .nav {
       text-align: right; }
-    .bridge .article-list > li {
-      font-size: 14px; }
     .bridge .article .main-content {
       padding: 20px 20px 40px; }
     .bridge .hero-header {
@@ -3138,24 +3606,15 @@
         color: #555555; }
       .bridge .hero-image .caption-title {
         color: #b94d00;
-        font: 36px "NewsGothicLtBT-Reg", Verdana, sans-serif;
-        line-height: 30px;
+        font-family: "NewsGothicLtBT-Reg", Verdana, sans-serif;
         margin-bottom: 8px; }
         .bridge .hero-image .caption-title small {
-          color: #555555;
-          font-size: 24px; }
+          color: #555555; }
       .bridge .hero-image .caption-text {
         color: #555555;
-        font-size: 14px;
-        line-height: 20px;
         margin-bottom: 0; }
     .bridge .hero-media .media p {
-      font-size: 12px;
-      line-height: 14px;
       margin-bottom: 15px; }
-    .bridge .hero-media .media li {
-      font-size: 12px;
-      line-height: 14px; }
     .bridge .hero-media .media .cover {
       bottom: 0;
       display: block;
@@ -3164,16 +3623,34 @@
       right: 0;
       top: 0;
       z-index: 10; }
-    .bridge .hero-media .media .lead {
-      font-size: 14px;
-      line-height: 16px; }
     .bridge .hero-media .media .media-heading {
       line-height: .85; }
-    .bridge #top {
-      border-bottom: none; }
-      .bridge #top .nav .nav-shopping > a {
-        padding-left: 60px;
-        padding-right: 45px; }
+    .bridge .hero-media .media .media-body {
+      padding: 20px 25px 5px; }
+    .bridge #hero-understanding-insurance .hero-caption {
+      bottom: 20px;
+      left: 20px;
+      position: absolute;
+      right: 20px; }
+    .bridge #hero-understanding-insurance .media-image {
+      background-position: center; }
+    .bridge #top .nav .nav-shopping > a {
+      padding-left: 60px;
+      padding-right: 45px; }
+    .bridge #set-view-location {
+      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
+      -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset; }
+      .bridge #set-view-location .glyph-users,
+      .bridge #set-view-location .icon-location {
+        float: left;
+        opacity: .4; }
+      .bridge #set-view-location [class^="glyph-"]:before,
+      .bridge #set-view-location [class*=" glyph-"]:before {
+        color: #FFF;
+        vertical-align: inherit; }
+      .bridge #set-view-location .icon-location {
+        background: url(images/large-white-icons.png) no-repeat 0 -100px; }
     .bridge #bottom p {
       text-align: left; }
     .bridge #bottom ul {
@@ -3195,6 +3672,8 @@
         font-size: 134px;
         left: 20px;
         letter-spacing: -8px;
+        line-height: 1;
+        margin: 0;
         position: absolute;
         text-transform: uppercase; }
       .bridge #hero-welcome .hero-unit .form-signIn {
@@ -3236,8 +3715,6 @@
           margin-bottom: 10px; }
         .bridge #hero-welcome .hero-unit .form-signIn .controls {
           margin-left: 90px; }
-    .bridge #hero-individual .hero-unit {
-      height: 405px; }
     .bridge #hero-individual .media {
       -webkit-border-bottom-right-radius: 10px;
       -moz-border-radius-bottomright: 10px;
@@ -3245,86 +3722,84 @@
       -webkit-border-top-left-radius: 10px;
       -moz-border-radius-topleft: 10px;
       border-top-left-radius: 10px; }
-    .bridge #hero-individual #media-shop {
-      height: 295px; }
     .bridge #hero-understanding-insurance .media-copay .media-image {
       background-image: url(images/bridge/landings/understanding-insurance/media-copay.png); }
     .bridge #hero-understanding-insurance .media-infographic .media-image {
       background-image: url(images/bridge/landings/understanding-insurance/media-infographic.png); }
     .bridge #hero-understanding-insurance .media-video .media-image {
       background-image: url(images/bridge/landings/understanding-insurance/media-video.png); } }
-@media (min-width: 768px) and (max-width: 979px) {
-  .bridge {
-    /*------------------------------------*\
-        $THEME
-        $RESPONSIVE
-        $768px-979px
-    \*------------------------------------*/ }
-    .bridge .thumbnail-left .content,
-    .bridge .thumbnail-left .image,
-    .bridge .thumbnail-right .content,
-    .bridge .thumbnail-right .image {
-      width: 48%; }
-    .bridge .nav-network li {
-      height: 140px;
-      width: 20%; }
-    .bridge .nav-network li > a {
-      font-size: 16px;
-      line-height: 25px;
-      margin: 0 10px;
-      padding: 40px 0 30px; }
-    .bridge .article-left-sidebar .sidebar .nav > li > a {
-      font-size: 16px;
-      line-height: 18px; }
-    .bridge .hero-media .media-heading {
-      font-size: 18px;
-      line-height: 24px; }
-    .bridge #hero-understanding-insurance .hero-unit {
-      height: 405px; }
-    .bridge #hero-understanding-insurance .hero-caption {
-      bottom: 20px;
-      left: 20px;
+@media (max-width: 767px) and (max-width: 480px) {
+  .bridge .page-header h1 small {
+    line-height: 20px; }
+  .bridge .jumbotron {
+    padding: 40px 20px;
+    margin-right: -20px;
+    margin-left: -20px; } }
+
+.fontface .bridge {
+  /*------------------------------------*\
+      $FONT FACE
+  \*------------------------------------*/ }
+  .fontface .bridge h1, .fontface .bridge h2, .fontface .bridge h3, .fontface .bridge h4, .fontface .bridge h5, .fontface .bridge h6 {
+    font-weight: normal; }
+  .fontface .bridge .alert h1, .fontface .bridge .alert h2, .fontface .bridge .alert h3, .fontface .bridge .alert h4, .fontface .bridge .alert h5, .fontface .bridge .alert h6,
+  .fontface .bridge .well-large h1,
+  .fontface .bridge .well-large h2,
+  .fontface .bridge .well-large h3,
+  .fontface .bridge .well-large h4,
+  .fontface .bridge .well-large h5,
+  .fontface .bridge .well-large h6 {
+    font-family: "NewsGothicDmBT-Reg", "Arial Black", sans-serif;
+    font-weight: 400; }
+
+.generatedcontent .bridge {
+  /*------------------------------------*\
+      $GENERATED CONTENT
+  \*------------------------------------*/ }
+  .generatedcontent .bridge ul.bulleted > li {
+    list-style: none;
+    position: relative; }
+  .generatedcontent .bridge ul.bulleted > li:before {
+    background: #f66600;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    content: "";
+    height: 8px;
+    left: -20px;
+    position: absolute;
+    top: 7px;
+    width: 8px; }
+  .generatedcontent .bridge .contact-info-glyph .caret {
+    border-color: transparent;
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-left-width: 8px;
+    position: absolute;
+    right: -8px; }
+    .generatedcontent .bridge .contact-info-glyph .caret:after {
+      content: "";
+      display: block;
       position: absolute;
-      right: 20px; }
-    .bridge #hero-understanding-insurance .media-image {
-      background-position: center; } }
-@media (max-width: 767px) {
-  .regence {
-    /*------------------------------------*\
-        $THEME
-        $RESPONSIVE
-        $768px-979px
-    \*------------------------------------*/ }
-    .regence .thumbnail-left .content,
-    .regence .thumbnail-left .image,
-    .regence .thumbnail-right .content,
-    .regence .thumbnail-right .image {
-      width: 48%; }
-    .regence .nav-network li {
-      height: 140px;
-      width: 20%; }
-    .regence .nav-network li > a {
-      font-size: 16px;
-      line-height: 25px;
-      margin: 0 10px;
-      padding: 40px 0 30px; }
-    .regence .article-left-sidebar .sidebar .nav > li > a {
-      font-size: 16px;
-      line-height: 18px; }
-    .regence .hero-media .media-heading {
-      font-size: 18px;
-      line-height: 24px; }
-    .regence #hero-understanding-insurance .hero-unit {
-      height: 405px; }
-    .regence #hero-understanding-insurance .hero-caption {
-      bottom: 20px;
-      left: 20px;
-      position: absolute;
-      right: 20px; }
-    .regence #hero-understanding-insurance .media-image {
-      background-position: center; } }
-.fontface .bridge h1, .fontface .bridge h2, .fontface .bridge h3, .fontface .bridge h4, .fontface .bridge h5, .fontface .bridge h6 {
-  font-weight: normal; }
+      z-index: 3;
+      background: #f3f3f3;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+      height: 16px;
+      right: -16px;
+      width: 16px; }
+  .generatedcontent .bridge .contact-info-glyph .glyph-phone .caret {
+    border-bottom: 8px solid #66a131;
+    border-top: 0 solid transparent;
+    bottom: 0; }
+    .generatedcontent .bridge .contact-info-glyph .glyph-phone .caret:after {
+      bottom: -7px; }
+  .generatedcontent .bridge .contact-info-glyph .glyph-email .caret {
+    border-top-color: #916dbd;
+    top: 0; }
+    .generatedcontent .bridge .contact-info-glyph .glyph-email .caret:after {
+      top: -7px; }
 
 /*------------------------------------*\
     $REGENCE
@@ -3334,9 +3809,6 @@
   color: #333333;
   /*------------------------------------*\
       $GENERAL
-  \*------------------------------------*/
-  /*------------------------------------*\
-      $APPLICATION
   \*------------------------------------*/
   /*------------------------------------*\
       $NAVIGATION
@@ -3486,6 +3958,73 @@
     border-top-color: #9d261d; }
   .regence .btn-primary {
     color: #FFF; }
+  .regence .well-large {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.07);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.07);
+    color: #999999;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 80px; }
+    .regence .well-large h1, .regence .well-large h2, .regence .well-large h3, .regence .well-large h4, .regence .well-large h5, .regence .well-large h6 {
+      color: #999999;
+      font-family: "ProximaNova-Regular", Verdana, sans-serif; }
+    .regence .well-large h1 {
+      font-size: 48px;
+      line-height: 54px; }
+    .regence .well-large h2 {
+      font-size: 44px;
+      line-height: 50px; }
+    .regence .well-large h3 {
+      font-size: 40px;
+      line-height: 46px; }
+    .regence .well-large h4 {
+      font-size: 36px;
+      line-height: 40px; }
+    .regence .well-large h5 {
+      font-size: 32px;
+      line-height: 36px; }
+    .regence .well-large h6 {
+      font-size: 28px;
+      line-height: 32px; }
+  .regence .alert {
+    background-color: #FFF;
+    border: none;
+    color: #ca5400;
+    position: relative; }
+    .regence .alert h4 {
+      font-weight: 700;
+      margin: 0; }
+    .regence .alert [class^="icon-"],
+    .regence .alert [class*=" icon-"] {
+      left: 15px;
+      line-height: 20px;
+      position: absolute;
+      top: 8px; }
+  .regence .warning-text {
+    color: #ca5400; }
+  .regence a.warning-text:hover {
+    background-color: #fcf8e3;
+    color: #ca5400; }
+  .regence .alert-block [class^="icon-"],
+  .regence .alert-block [class*=" icon-"] {
+    top: 14px; }
+  .regence h4.alert-heading {
+    margin-bottom: 5px; }
+  .regence .alert-404 {
+    background: transparent url("images/regence/large-warning.png") no-repeat 0 12px;
+    color: #999999;
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 0 0 0 120px; }
+    .regence .alert-404 h2 {
+      color: #d06a21;
+      font-size: 36px;
+      line-height: 1;
+      margin-top: 0; }
   .regence .dropdown-menu {
     color: black; }
   .regence .tooltip.top {
@@ -3505,13 +4044,6 @@
     padding: 20px 15px 15px; }
   .regence .modal-footer {
     padding: 19px 15px 20px; }
-  .regence .dockbar a {
-    color: #2C2F34;
-    font-weight: 400;
-    text-shadow: 1px 1px white; }
-  .regence .dockbar .menu-button-active a {
-    color: #FFFFFF;
-    text-shadow: -1px -1px #2c2f34; }
   .regence .nav-main {
     display: block;
     width: 100%; }
@@ -3851,7 +4383,9 @@
     -moz-box-shadow: "0 1px 5px rgba(0,0,0,.1)";
     box-shadow: "0 1px 5px rgba(0,0,0,.1)";
     color: #333333;
+    margin-bottom: 20px;
     margin-top: 0;
+    min-height: 130px;
     position: relative;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -3864,15 +4398,16 @@
       box-shadow: "0 1px 5px rgba(0,0,0,.5)"; }
     .regence .hero-media .media a {
       color: #333333; }
-  .regence .hero-media .media-image {
-    position: relative; }
   .regence .hero-media .media-heading {
     margin-bottom: 10px; }
     .regence .hero-media .media-heading small {
       color: #599abd;
       font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: 16px;
       display: block; }
+  .regence .hero-media .media-body {
+    padding: 20px 0 5px; }
+  .regence .hero-media .media-image {
+    position: relative; }
   .regence .hero-media .pull-left {
     margin-right: 0; }
   .regence #hero-understanding-insurance form {
@@ -3930,10 +4465,11 @@
     color: white; }
   .regence #top {
     background: white;
-    border-bottom: 1px solid #dddddd;
     color: #555555;
     min-height: 80px;
     text-align: right; }
+    .regence #top .container {
+      border-bottom: 1px solid #dddddd; }
     .regence #top .nav {
       margin: 0; }
       .regence #top .nav li > a {
@@ -4143,46 +4679,28 @@
   .regence .svg.backgroundsize .logo-bridge .brand-logo {
     background: url("images/identity/bridgespan.svg") no-repeat 0 0;
     background-size: 124px auto; }
-  .regence #set-view-location {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
-    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset; }
-    .regence #set-view-location form {
-      margin: 0 20%;
-      padding-top: 36px; }
-    .regence #set-view-location label {
+  .regence #set-view-location form {
+    margin: 0 20px;
+    padding-top: 20px; }
+  .regence #set-view-location label {
+    color: #FFF;
+    font-family: "ProximaNova-Light", Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 10px; }
+  .regence #set-view-location .form-actions {
+    background-color: transparent;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    text-align: right; }
+    .regence #set-view-location .form-actions .btn-link {
       color: #FFF;
-      font-family: "ProximaNova-Light", Verdana, sans-serif;
-      font-size: 24px;
-      line-height: 34px;
-      margin-bottom: 10px; }
-    .regence #set-view-location .glyph-users,
-    .regence #set-view-location .icon-location {
-      float: left;
-      height: 84px;
-      margin-right: 15px;
-      opacity: .4;
-      width: 84px; }
-    .regence #set-view-location [class^="glyph-"]:before,
-    .regence #set-view-location [class*=" glyph-"]:before {
-      color: #FFF;
-      font-size: 72px;
-      line-height: 84px;
-      vertical-align: inherit; }
-    .regence #set-view-location .icon-location {
-      background: url(images/large-white-icons.png) no-repeat 0 -100px; }
-    .regence #set-view-location .form-actions {
-      background-color: transparent;
-      border-top-color: rgba(255, 255, 255, 0.5);
-      text-align: right; }
-      .regence #set-view-location .form-actions .btn-link {
-        color: #FFF;
-        text-decoration: underline;
-        text-shadow: none; }
+      text-decoration: underline;
+      text-shadow: none; }
   .regence #bottom {
     background: #599abd url(images/regence/footerBackground.png);
     color: white;
     font-size: 13px;
+    line-height: 16px;
     padding: 20px 0 60px;
     text-align: center; }
     .regence #bottom ul {
@@ -4195,7 +4713,7 @@
       float: left;
       height: 7px;
       margin-right: 4px;
-      margin-top: 1px;
+      margin-top: 4px;
       padding: 1px;
       position: relative;
       width: 7px; }
@@ -4218,7 +4736,6 @@
     .regence #bottom p,
     .regence #bottom .nav > li > a {
       font-family: "ProximaNova-Regular", Verdana, sans-serif;
-      line-height: 14px;
       margin-bottom: 6px;
       margin-top: 6px;
       padding-top: 10px;
@@ -4416,6 +4933,21 @@
     .regence .hero-image .caption-text {
       font-size: 20px;
       line-height: 24px; }
+    .regence .hero-media .media p,
+    .regence .hero-media .media li {
+      font-size: 16px;
+      line-height: 18px; }
+    .regence .hero-media .media .lead {
+      font-size: 18px;
+      line-height: 20px; }
+    .regence .hero-media .media-heading {
+      font-size: 22px;
+      line-height: 28px; }
+      .regence .hero-media .media-heading small {
+        font-size: 20px; }
+    .regence .hero-media .media-body {
+      padding-bottom: 10px;
+      padding-top: 25px; }
     .regence #understanding-insurance .hero-caption {
       bottom: 40px;
       left: 60px;
@@ -4443,8 +4975,31 @@
       font-size: 28px; }
     .regence .hero-find-doctor .image {
       min-height: 398px; }
+    .regence #hero-individual .hero-unit {
+      height: 485px; }
+    .regence #hero-individual .media {
+      min-height: 170px; }
+    .regence #hero-individual #media-shop {
+      height: 360px; }
     .regence #top .container {
       width: 1170px; }
+    .regence #set-view-location form {
+      margin: 0 15%;
+      padding-top: 48px; }
+    .regence #set-view-location label {
+      font-size: 24px;
+      line-height: 34px; }
+    .regence #set-view-location .form-actions {
+      padding-right: 43px; }
+    .regence #set-view-location .glyph-users,
+    .regence #set-view-location .icon-location {
+      height: 84px;
+      margin-right: 15px;
+      width: 84px; }
+    .regence #set-view-location [class^="glyph-"]:before,
+    .regence #set-view-location [class*=" glyph-"]:before {
+      font-size: 72px;
+      line-height: 84px; }
     .regence table.contact-info {
       font-size: 24px;
       line-height: 20px; }
@@ -4485,15 +5040,24 @@
       padding: 40px 0; }
     .regence .hero-image .image {
       min-height: 420px; }
-    .regence .hero-media .media {
-      margin-bottom: 20px;
-      min-height: 130px; }
-    .regence .hero-media .media-body {
-      padding: 20px 25px 5px; }
+    .regence .hero-media .media p,
+    .regence .hero-media .media li {
+      font-size: 14px;
+      line-height: 16px; }
+    .regence .hero-media .media .lead {
+      font-size: 16px;
+      line-height: 18px; }
+    .regence .hero-media .media-heading {
+      font-size: 20px;
+      line-height: 26px; }
+      .regence .hero-media .media-heading small {
+        font-size: 18px; }
     .regence #hero-individual .hero-unit {
-      height: 450px; }
+      height: 445px; }
+    .regence #hero-individual .media {
+      min-height: 150px; }
     .regence #hero-individual #media-shop {
-      height: 280px; }
+      height: 320px; }
     .regence #hero-employer .hero-unit {
       height: 450px; }
     .regence #hero-employer #media-forms {
@@ -4522,6 +5086,23 @@
       padding: 10px 15px 11px; }
     .regence #top .container {
       width: 940px; }
+    .regence #set-view-location form {
+      margin: 0 10%;
+      padding-top: 36px; }
+    .regence #set-view-location label {
+      font-size: 24px;
+      line-height: 34px; }
+    .regence #set-view-location .form-actions {
+      padding-right: 43px; }
+    .regence #set-view-location .glyph-users,
+    .regence #set-view-location .icon-location {
+      height: 84px;
+      margin-right: 15px;
+      width: 84px; }
+    .regence #set-view-location [class^="glyph-"]:before,
+    .regence #set-view-location [class*=" glyph-"]:before {
+      font-size: 72px;
+      line-height: 84px; }
     .regence table.contact-info {
       font-size: 20px;
       line-height: 16px; }
@@ -4589,24 +5170,100 @@
         text-transform: uppercase; }
     .regence #hero-understanding-insurance .search-button {
       line-height: normal; }
-    .regence #top .nav .nav-brand .brand {
-      border-left: none;
-      padding-left: 0; }
-    .regence #top .nav .nav-search {
-      width: auto; }
-      .regence #top .nav .nav-search form {
-        border-top: none; }
-    .regence #top .nav .nav-shopping {
-      clear: none;
-      float: right;
-      width: auto; }
-      .regence #top .nav .nav-shopping > a {
+    .regence #top {
+      border-bottom: 1px solid #dddddd; }
+      .regence #top .container {
+        border-bottom: none; }
+      .regence #top .nav .nav-brand .brand {
         border-left: none;
-        border-top: none; }
+        padding-left: 0; }
+      .regence #top .nav .nav-search {
+        width: auto; }
+        .regence #top .nav .nav-search form {
+          border-top: none; }
+      .regence #top .nav .nav-shopping {
+        clear: none;
+        float: right;
+        width: auto; }
+        .regence #top .nav .nav-shopping > a {
+          border-left: none;
+          border-top: none; }
     .regence #map_sidebar {
       float: left; }
     .regence #map_canvas {
       float: right; } }
+@media (min-width: 768px) and (max-width: 979px) {
+  .regence {
+    /*------------------------------------*\
+        $THEME
+        $RESPONSIVE
+        $768px-979px
+    \*------------------------------------*/ }
+    .regence .thumbnail-left .content,
+    .regence .thumbnail-left .image,
+    .regence .thumbnail-right .content,
+    .regence .thumbnail-right .image {
+      width: 48%; }
+    .regence .nav-network li {
+      height: 140px;
+      width: 20%; }
+    .regence .nav-network li > a {
+      font-size: 16px;
+      line-height: 25px;
+      margin: 0 10px;
+      padding: 40px 0 30px; }
+    .regence .article-left-sidebar .sidebar .nav > li > a {
+      font-size: 16px;
+      line-height: 18px; }
+    .regence .article-list > li {
+      font-size: 14px; }
+    .regence .hero-image .caption-title {
+      font-size: 36px;
+      line-height: 30px; }
+      .regence .hero-image .caption-title small {
+        font-size: 24px; }
+    .regence .hero-image .caption-text {
+      font-size: 14px;
+      line-height: 20px; }
+    .regence .hero-media .media p,
+    .regence .hero-media .media li {
+      font-size: 12px;
+      line-height: 14px; }
+    .regence .hero-media .media .lead {
+      font-size: 14px;
+      line-height: 16px; }
+    .regence .hero-media .media-heading {
+      font-size: 18px;
+      line-height: 24px; }
+      .regence .hero-media .media-heading small {
+        font-size: 16px; }
+    .regence #hero-individual .hero-unit {
+      height: 420px; }
+    .regence #hero-individual .media {
+      min-height: 160px; }
+    .regence #hero-individual #media-shop {
+      height: 340px; }
+    .regence #hero-understanding-insurance .hero-unit {
+      height: 405px; }
+    .regence #set-view-location form {
+      margin: 0;
+      padding-top: 24px; }
+    .regence #set-view-location label {
+      font-size: 18px;
+      line-height: 28px; }
+    .regence #set-view-location .form-actions {
+      padding-right: 43px; }
+    .regence #set-view-location .glyph-users,
+    .regence #set-view-location .icon-location {
+      height: 74px;
+      margin-right: 15px;
+      width: 74px; }
+    .regence #set-view-location [class^="glyph-"]:before,
+    .regence #set-view-location [class*=" glyph-"]:before {
+      font-size: 62px;
+      line-height: 74px; }
+    .regence .article-left-sidebar .sidebar {
+      border-right: 1px solid #e4eef4; } }
 @media (min-width: 768px) {
   .regence {
     /*------------------------------------*\
@@ -4652,8 +5309,6 @@
         background-color: #076DA5; }
     .regence .article-left-sidebar .sidebar .nav {
       text-align: right; }
-    .regence .article-list > li {
-      font-size: 14px; }
     .regence .article .main-content {
       padding: 20px 20px 40px; }
     .regence .hero-header {
@@ -4689,24 +5344,15 @@
         color: #555555; }
       .regence .hero-image .caption-title {
         color: #b94d00;
-        font: 36px "ProximaNova-Light", Verdana, sans-serif;
-        line-height: 30px;
+        font-family: "ProximaNova-Light", Verdana, sans-serif;
         margin-bottom: 8px; }
         .regence .hero-image .caption-title small {
-          color: #555555;
-          font-size: 24px; }
+          color: #555555; }
       .regence .hero-image .caption-text {
         color: #555555;
-        font-size: 14px;
-        line-height: 20px;
         margin-bottom: 0; }
     .regence .hero-media .media p {
-      font-size: 12px;
-      line-height: 14px;
       margin-bottom: 15px; }
-    .regence .hero-media .media li {
-      font-size: 12px;
-      line-height: 14px; }
     .regence .hero-media .media .cover {
       bottom: 0;
       display: block;
@@ -4715,16 +5361,34 @@
       right: 0;
       top: 0;
       z-index: 10; }
-    .regence .hero-media .media .lead {
-      font-size: 14px;
-      line-height: 16px; }
     .regence .hero-media .media .media-heading {
       line-height: .85; }
-    .regence #top {
-      border-bottom: none; }
-      .regence #top .nav .nav-shopping > a {
-        padding-left: 60px;
-        padding-right: 45px; }
+    .regence .hero-media .media .media-body {
+      padding: 20px 25px 5px; }
+    .regence #hero-understanding-insurance .hero-caption {
+      bottom: 20px;
+      left: 20px;
+      position: absolute;
+      right: 20px; }
+    .regence #hero-understanding-insurance .media-image {
+      background-position: center; }
+    .regence #top .nav .nav-shopping > a {
+      padding-left: 60px;
+      padding-right: 45px; }
+    .regence #set-view-location {
+      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
+      -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) inset, 0 -5px 5px rgba(0, 0, 0, 0.05) inset; }
+      .regence #set-view-location .glyph-users,
+      .regence #set-view-location .icon-location {
+        float: left;
+        opacity: .4; }
+      .regence #set-view-location [class^="glyph-"]:before,
+      .regence #set-view-location [class*=" glyph-"]:before {
+        color: #FFF;
+        vertical-align: inherit; }
+      .regence #set-view-location .icon-location {
+        background: url(images/large-white-icons.png) no-repeat 0 -100px; }
     .regence #bottom p {
       text-align: left; }
     .regence #bottom ul {
@@ -4733,210 +5397,75 @@
       -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
       -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
       box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2); } }
-@media (min-width: 768px) and (max-width: 979px) {
-  .regence {
-    /*------------------------------------*\
-        $THEME
-        $RESPONSIVE
-        $768px-979px
-    \*------------------------------------*/ }
-    .regence .thumbnail-left .content,
-    .regence .thumbnail-left .image,
-    .regence .thumbnail-right .content,
-    .regence .thumbnail-right .image {
-      width: 48%; }
-    .regence .nav-network li {
-      height: 140px;
-      width: 20%; }
-    .regence .nav-network li > a {
-      font-size: 16px;
-      line-height: 25px;
-      margin: 0 10px;
-      padding: 40px 0 30px; }
-    .regence .article-left-sidebar .sidebar .nav > li > a {
-      font-size: 16px;
-      line-height: 18px; }
-    .regence .hero-media .media-heading {
-      font-size: 18px;
-      line-height: 24px; }
-    .regence #hero-understanding-insurance .hero-unit {
-      height: 405px; }
-    .regence #hero-understanding-insurance .hero-caption {
-      bottom: 20px;
-      left: 20px;
-      position: absolute;
-      right: 20px; }
-    .regence #hero-understanding-insurance .media-image {
-      background-position: center; } }
-@media (max-width: 767px) {
-  .regence {
-    /*------------------------------------*\
-        $THEME
-        $RESPONSIVE
-        $768px-979px
-    \*------------------------------------*/ }
-    .regence .thumbnail-left .content,
-    .regence .thumbnail-left .image,
-    .regence .thumbnail-right .content,
-    .regence .thumbnail-right .image {
-      width: 48%; }
-    .regence .nav-network li {
-      height: 140px;
-      width: 20%; }
-    .regence .nav-network li > a {
-      font-size: 16px;
-      line-height: 25px;
-      margin: 0 10px;
-      padding: 40px 0 30px; }
-    .regence .article-left-sidebar .sidebar .nav > li > a {
-      font-size: 16px;
-      line-height: 18px; }
-    .regence .hero-media .media-heading {
-      font-size: 18px;
-      line-height: 24px; }
-    .regence #hero-understanding-insurance .hero-unit {
-      height: 405px; }
-    .regence #hero-understanding-insurance .hero-caption {
-      bottom: 20px;
-      left: 20px;
-      position: absolute;
-      right: 20px; }
-    .regence #hero-understanding-insurance .media-image {
-      background-position: center; } }
-.fontface .regence h1, .fontface .regence h2, .fontface .regence h3, .fontface .regence h4, .fontface .regence h5, .fontface .regence h6 {
-  font-weight: normal; }
+@media (max-width: 767px) and (max-width: 480px) {
+  .regence .page-header h1 small {
+    line-height: 20px; }
+  .regence .jumbotron {
+    padding: 40px 20px;
+    margin-right: -20px;
+    margin-left: -20px; } }
 
-.generatedcontent .regence ul.bulleted > li {
-  list-style: none;
-  position: relative; }
-.generatedcontent .regence ul.bulleted > li:before {
-  background: #f66600;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  content: "";
-  height: 8px;
-  left: -20px;
-  position: absolute;
-  top: 7px;
-  width: 8px; }
-.generatedcontent .regence .contact-info-glyph .caret {
-  border-color: transparent;
-  border-top-width: 8px;
-  border-right-width: 8px;
-  border-left-width: 8px;
-  position: absolute;
-  right: -8px; }
-  .generatedcontent .regence .contact-info-glyph .caret:after {
+.fontface .regence {
+  /*------------------------------------*\
+      $FONT FACE
+  \*------------------------------------*/ }
+  .fontface .regence h1, .fontface .regence h2, .fontface .regence h3, .fontface .regence h4, .fontface .regence h5, .fontface .regence h6 {
+    font-weight: normal; }
+  .fontface .regence .alert h1, .fontface .regence .alert h2, .fontface .regence .alert h3, .fontface .regence .alert h4, .fontface .regence .alert h5, .fontface .regence .alert h6,
+  .fontface .regence .well-large h1,
+  .fontface .regence .well-large h2,
+  .fontface .regence .well-large h3,
+  .fontface .regence .well-large h4,
+  .fontface .regence .well-large h5,
+  .fontface .regence .well-large h6 {
+    font-family: "ProximaNova-Semibold", "Arial Black", sans-serif;
+    font-weight: 400; }
+
+.generatedcontent .regence {
+  /*------------------------------------*\
+      $GENERATED CONTENT
+  \*------------------------------------*/ }
+  .generatedcontent .regence ul.bulleted > li {
+    list-style: none;
+    position: relative; }
+  .generatedcontent .regence ul.bulleted > li:before {
+    background: #f66600;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     content: "";
-    display: block;
+    height: 8px;
+    left: -20px;
     position: absolute;
-    z-index: 3;
-    background: #f3f3f3;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    height: 16px;
-    right: -16px;
-    width: 16px; }
-.generatedcontent .regence .contact-info-glyph .glyph-phone .caret {
-  border-bottom: 8px solid #66a131;
-  border-top: 0 solid transparent;
-  bottom: 0; }
-  .generatedcontent .regence .contact-info-glyph .glyph-phone .caret:after {
-    bottom: -7px; }
-.generatedcontent .regence .contact-info-glyph .glyph-email .caret {
-  border-top-color: #916dbd;
-  top: 0; }
-  .generatedcontent .regence .contact-info-glyph .glyph-email .caret:after {
-    top: -7px; }
-
-/* ---------- Portlet wrapper and icons ---------- */
-.portlet {
-  background: #fff;
-  border: 1px solid #9ac1e7;
-  margin: 0 0 10px;
-  padding: 3px; }
-
-.portlet-topper {
-  border-bottom: 1px solid #aeb8bc;
-  padding-right: 40px; }
-
-.portlet-title {
-  float: none;
-  font-weight: bold;
-  min-width: 50%;
-  padding: 5px;
-  text-shadow: 1px 1px white; }
-
-.lfr-portlet-title-editable {
-  margin-top: -4px;
-  z-index: 9999; }
-
-.ie .lfr-portlet-title-editable {
-  margin-top: -6px; }
-
-.lfr-portlet-title-editable-content {
-  padding: 0; }
-
-.ie .lfr-portlet-title-editable-content {
-  margin-top: 4px; }
-
-.portlet-icons {
-  float: none; }
-
-.portlet-icons .portlet-close-icon {
-  border-width: 0; }
-
-.page-maximized .portlet-icons {
-  font-size: 11px; }
-
-.ie .portlet-title {
-  padding-bottom: 5px; }
-
-.ie6 .portlet-topper {
-  zoom: 1; }
-
-.portlet-column-content.empty {
-  background-color: #dddddd;
-  background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 6px);
-  background-size: 8px 8px; }
-
-/* ---------- Misc. ---------- */
-.lfr-panel-container {
-  background-color: transparent; }
-
-.aui-combobox .aui-field-input {
-  padding: 4px 3px 3px;
-  font-size: 11px;
-  height: 15px; }
-
-.aui-combobox .aui-field {
-  float: left;
-  line-height: 0; }
-
-.lfr-portlet-title-editable-content .aui-field {
-  float: none;
-  display: inline; }
-
-/* ---------- Extras ---------- */
-.portlet-borderless-bar {
-  -moz-border-radius: 20px;
-  -moz-box-shadow: inset 0 1px 3px black;
-  -webkit-border-radius: 20px;
-  -webkit-box-shadow: inset 0 1px 3px black;
-  border-radius: 20px;
-  box-shadow: inset 0 1px 3px black; }
-
-.portlet-topper {
-  -moz-box-shadow: 1px 1px 0 white;
-  -webkit-box-shadow: 1px 1px 0 white;
-  box-shadow: 1px 1px 0 white; }
-
-.aui-combobox .aui-toolbar-first {
-  -moz-border-radius-topleft: 0;
-  -moz-border-radius-bottomleft: 0;
-  -webkit-border-top-left-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0; }
+    top: 7px;
+    width: 8px; }
+  .generatedcontent .regence .contact-info-glyph .caret {
+    border-color: transparent;
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-left-width: 8px;
+    position: absolute;
+    right: -8px; }
+    .generatedcontent .regence .contact-info-glyph .caret:after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 3;
+      background: #f3f3f3;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+      height: 16px;
+      right: -16px;
+      width: 16px; }
+  .generatedcontent .regence .contact-info-glyph .glyph-phone .caret {
+    border-bottom: 8px solid #66a131;
+    border-top: 0 solid transparent;
+    bottom: 0; }
+    .generatedcontent .regence .contact-info-glyph .glyph-phone .caret:after {
+      bottom: -7px; }
+  .generatedcontent .regence .contact-info-glyph .glyph-email .caret {
+    border-top-color: #916dbd;
+    top: 0; }
+    .generatedcontent .regence .contact-info-glyph .glyph-email .caret:after {
+      top: -7px; }
