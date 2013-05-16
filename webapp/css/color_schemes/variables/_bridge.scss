@@ -76,8 +76,10 @@ $borderRadiusSmall:     3px;
 // Forms
 // -------------------------
 $inputBorderRadius:             $baseBorderRadius;
+$inputColor:                    #555555;
 $inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
-
+$inputFontSize:                 14px;
+$inputPadding:                  4px 6px;
 
 // Links
 // -------------------------
@@ -114,7 +116,7 @@ $btnInverseBackgroundHighlight:     $grayDarker;
 // Alerts
 // -------------------------
 $alertBorder:                       none;
-$alert404Background: 				transparent url("images/regence/large-warning.png") no-repeat 0 12px;
+$alert404Background:                transparent url("images/regence/large-warning.png") no-repeat 0 12px;
 $alert404Color:                     #999;
 $alert404FontSize:                  24px;
 $alert404HeadingColor:              #d06a21;

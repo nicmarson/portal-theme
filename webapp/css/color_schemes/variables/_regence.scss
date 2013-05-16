@@ -74,7 +74,10 @@ $borderRadiusSmall:     3px;
 // Forms
 // -------------------------
 $inputBorderRadius:             $baseBorderRadius;
+$inputColor:                    #555555;
 $inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+$inputFontSize:                 14px;
+$inputPadding:                  4px 6px;
 
 
 // Links

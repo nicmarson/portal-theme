@@ -70,6 +70,7 @@
   .media {
     background-color: $white;
     background-color: rgba(255,255,255,.9);
+    @include border-radius(4px);
     @include box-shadow("0 1px 5px rgba(0,0,0,.1)");
     color: $textColor;
     margin-bottom: 20px;
@@ -118,10 +119,6 @@
 
   form {
     position: relative;
-  }
-
-  h2 {
-    margin-bottom: 15px;
   }
 
   .hero-unit {
@@ -183,10 +180,10 @@
     .glyph-play:before {
       color: $white;
       color: rgba(255,255,255, .8);
-      font-size: 36px;
+      font-size: 60px;
       left: 50%;
-      margin-left: -16px;
-      margin-top: -18px;
+      margin-left: -30px;
+      margin-top: -15px;
       position: absolute;
       text-shadow: 0 0 5px rgba(0,0,0, .5);
       top: 50%;

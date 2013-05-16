@@ -1,6 +1,4 @@
-// import bridgespan fonts
 @import url("https://fnt.webink.com/wfs/webink.css/?project=0BD8AE7B-BA97-469A-803F-4EAFD6EE0334&fonts=D15EC0DB-8C78-97F3-7FFC-53AE3364DA97:f=NewsGothicBdCnBT-It,E84775D4-DE72-2F89-F273-0ABE2B31207E:f=NewsGothicCnBT-Reg,1F1F3FB2-7D81-43AA-DCE4-D52AA5EA43C8:f=NewsGothicBT-It,835165A1-1228-CBD9-703B-0659517C5E59:f=KeplerStd-ItCapt,E9FF2D01-CECF-3C68-CDD7-6219489B1C10:f=NewsGothicCnBT-It,A053F1A3-227C-4158-6291-4B5965C1E530:f=NewsGothicBdBT-Reg,93C07DFE-8E15-55F8-9C85-5EB9EAA58FD6:f=KeplerStd-Capt,C874B676-84AA-F5DA-8812-B49D8DEA4B2C:f=NewsGothicDmBT-It,C3C39CE1-604C-3BF6-5E20-ACC536D4A277:f=NewsGothicDmBT-Reg,B79BBC76-B20F-9E0C-AB12-10BA09958B6E:f=NewsGothicLtBT-It,4B3C766D-19C8-271A-6916-B0192D2E9722:f=NewsGothicBT-Reg,871BC8D2-26C3-228B-C09C-B2D9FD2E0BB7:f=NewsGothicBdBT-It,DEC48D37-A47A-BB26-E548-A6C707C066C5:f=NewsGothicLtBT-Reg,243EFB25-ECB2-D3F3-A511-6CCE778FBACB:f=NewsGothicBdCnBT-Reg");
-// import regence fonts
 @import url("https://fnt.webink.com/wfs/webink.css/?project=AEC37CF0-6B2D-450D-9777-5062C06CCACA&fonts=D658C100-EB60-0878-7701-BA465DF17739:f=ProximaNovaT-Thin,38D80777-BBB8-AAF3-8C21-AAA9AD92B6E6:f=ProximaNova-BlackIt,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light,FF4969BA-A10C-C1F1-4CAE-97A4557D103C:f=ProximaNovaCond-Regular,FA4379E2-2038-8F3F-1CCD-9D7F6C1BE854:f=ProximaNova-ExtrabldIt,58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,1366810A-C17C-C074-FF25-E81320293740:f=ProximaNovaCond-Semibold,D8F30418-0E92-EBB4-6408-D220574EF53E:f=ProximaNova-Extrabld,7ADDF267-02FA-4E7A-F098-EF6D9CFEF9AE:f=ProximaNova-Black,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,DD341213-BCCD-C52B-39B2-FF9E7464B6E5:f=ProximaNova-ThinIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold");
 @import url(bootstrap/bootstrap.css);
 @import url(bootstrap/responsive.css);
@@ -22,16 +20,17 @@
 /*------------------------------------*\
     $APPLICATION
 \*------------------------------------*/
-.dockbar-ready .dockbar a {
-  color: #2C2F34;
-  font-weight: 400;
-  text-shadow: 1px 1px white; }
-.dockbar-ready .dockbar h1, .dockbar-ready .dockbar h2, .dockbar-ready .dockbar h3, .dockbar-ready .dockbar h4, .dockbar-ready .dockbar h5, .dockbar-ready .dockbar h6 {
-  font-size: inherit;
-  line-height: 1.5; }
-.dockbar-ready .dockbar .menu-button-active a {
-  color: #FFFFFF;
-  text-shadow: -1px -1px #2c2f34; }
+.dockbar-ready .dockbar {
+  font-family: Arial, Helvetica, sans-serif; }
+  .dockbar-ready .dockbar a {
+    color: #2C2F34;
+    text-shadow: 1px 1px white; }
+  .dockbar-ready .dockbar h1, .dockbar-ready .dockbar h2, .dockbar-ready .dockbar h3, .dockbar-ready .dockbar h4, .dockbar-ready .dockbar h5, .dockbar-ready .dockbar h6 {
+    font-size: inherit;
+    line-height: 1.5; }
+  .dockbar-ready .dockbar .menu-button-active a {
+    color: #FFF;
+    text-shadow: -1px -1px #2c2f34; }
 
 .portlet .portlet-topper {
   background: #F5F5F5;
@@ -85,9 +84,6 @@
   background-color: #E5E5E5;
   background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 6px);
   background-size: 8px 8px; }
-.signed-in .lfr-component {
-  font-size: 11px;
-  line-height: 17px; }
 .signed-in .lfr-panel-container {
   background-color: transparent; }
 .signed-in .lfr-portlet-title-editable {
@@ -98,39 +94,48 @@
   .signed-in .lfr-portlet-title-editable-content .aui-field {
     float: none;
     display: inline; }
-.signed-in .aui-form {
-  font-size: 11px;
-  line-height: 17px; }
-  .signed-in .aui-form label, .signed-in .aui-form input, .signed-in .aui-form button, .signed-in .aui-form select, .signed-in .aui-form textarea {
-    font-size: 12px;
-    line-height: 18px; }
-  .signed-in .aui-form select, .signed-in .aui-form textarea, .signed-in .aui-form input[type="text"], .signed-in .aui-form input[type="password"], .signed-in .aui-form input[type="datetime"], .signed-in .aui-form input[type="datetime-local"], .signed-in .aui-form input[type="date"], .signed-in .aui-form input[type="month"], .signed-in .aui-form input[type="time"], .signed-in .aui-form input[type="week"], .signed-in .aui-form input[type="number"], .signed-in .aui-form input[type="email"], .signed-in .aui-form input[type="url"], .signed-in .aui-form input[type="search"], .signed-in .aui-form input[type="tel"], .signed-in .aui-form input[type="color"], .signed-in .aui-form .uneditable-input {
-    padding: 2px 5px; }
-  .signed-in .aui-form select, .signed-in .aui-form input[type="file"] {
-    height: 26px;
-    line-height: 26px; }
-  .signed-in .aui-form .aui-combobox .aui-field-input {
-    padding: 4px 3px 3px;
-    font-size: 11px;
-    height: 15px; }
-  .signed-in .aui-form .aui-combobox .aui-field {
-    float: left;
-    line-height: 0; }
-  .signed-in .aui-form .aui-choice-label {
-    display: inline-block; }
-  .signed-in .aui-form .aui-field-label-right input {
-    margin: inherit; }
-  .signed-in .aui-form .aui-field-label,
-  .signed-in .aui-form .aui-field-label-inline-label {
-    font-weight: normal; }
-  .signed-in .aui-form .aui-field-inline .aui-field-content,
-  .signed-in .aui-form .aui-field-inline .aui-field-label {
-    display: block; }
+.signed-in .icon-actions {
+  height: 15px;
+  width: auto; }
 .signed-in .aui-component {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
   line-height: 17px; }
-  .signed-in .aui-component .aui-column-content-first {
+  .signed-in .aui-component label,
+  .signed-in .aui-component input,
+  .signed-in .aui-component button,
+  .signed-in .aui-component select,
+  .signed-in .aui-component textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 17px;
+    margin-bottom: 0; }
+  .signed-in .aui-component select,
+  .signed-in .aui-component textarea,
+  .signed-in .aui-component input[type="text"],
+  .signed-in .aui-component input[type="password"],
+  .signed-in .aui-component input[type="datetime"],
+  .signed-in .aui-component input[type="datetime-local"],
+  .signed-in .aui-component input[type="date"],
+  .signed-in .aui-component input[type="month"],
+  .signed-in .aui-component input[type="time"],
+  .signed-in .aui-component input[type="week"],
+  .signed-in .aui-component input[type="number"],
+  .signed-in .aui-component input[type="email"],
+  .signed-in .aui-component input[type="url"],
+  .signed-in .aui-component input[type="search"],
+  .signed-in .aui-component input[type="tel"],
+  .signed-in .aui-component input[type="color"],
+  .signed-in .aui-component .uneditable-input {
+    padding: 2px 5px; }
+  .signed-in .aui-component select,
+  .signed-in .aui-component input[type="file"] {
+    height: 22px;
+    line-height: 22px; }
+  .signed-in .aui-component .aui-column {
     border-right: 1px solid #dddddd; }
+  .signed-in .aui-component .aui-column-last {
+    border-right: none; }
   .signed-in .aui-component .aui-tab-label,
   .signed-in .aui-component .aui-tab-label a {
     color: #1F1E1E; }
@@ -140,6 +145,15 @@
       color: #06C; }
   .signed-in .aui-component .aui-tab-active .aui-tab-label {
     color: #FFF; }
+  .signed-in .aui-component .aui-fieldset .aui-field-content,
+  .signed-in .aui-component .aui-field-row,
+  .signed-in .aui-component .aui-button-holder,
+  .signed-in .aui-component .aui-field-wrapper-content {
+    margin: 10px 0; }
+  .signed-in .aui-component .aui-choice-label {
+    display: inline-block; }
+  .signed-in .aui-component .aui-field-input-choice {
+    margin: 0.4em 0.4em 0.4em 0; }
 
 .ie .portlet .portlet-title {
   padding-bottom: 5px; }
@@ -308,6 +322,12 @@
 [class^="icon-"] a:hover, [class*=" icon-"] a:hover {
   text-decoration: none; }
 
+/*------------------------------------*\
+    $GENERAL
+\*------------------------------------*/
+.nav-tabs .btn {
+  margin: 0 6px; }
+
 @media (min-width: 1200px) {
   body {
     font-size: 16px;
@@ -343,6 +363,10 @@
   /*------------------------------------*\
       $CUSTOM
       $HERO
+  \*------------------------------------*/
+  /*------------------------------------*\
+      $CUSTOM
+      $MESSAGE
   \*------------------------------------*/
   /*------------------------------------*\
       $CUSTOM
@@ -458,8 +482,13 @@
     list-style: square; }
   .asuris figcaption {
     padding: 5px 1px; }
-  .asuris .btn small {
-    display: block; }
+  .asuris .btn {
+    color: #333333; }
+    .asuris .btn:hover, .asuris .btn:focus, .asuris .btn:active, .asuris .btn.active, .asuris .btn.disabled, .asuris .btn[disabled] {
+      background-color: #E6E6E6;
+      color: #333333; }
+    .asuris .btn small {
+      display: block; }
   .asuris .btn-flat {
     background: none;
     background-color: #999999;
@@ -480,6 +509,15 @@
     border-top-color: #9d261d; }
   .asuris .btn-primary {
     color: #FFF; }
+  .asuris select, .asuris textarea, .asuris input[type="text"], .asuris input[type="password"], .asuris input[type="datetime"], .asuris input[type="datetime-local"], .asuris input[type="date"], .asuris input[type="month"], .asuris input[type="time"], .asuris input[type="week"], .asuris input[type="number"], .asuris input[type="email"], .asuris input[type="url"], .asuris input[type="search"], .asuris input[type="tel"], .asuris input[type="color"], .asuris .uneditable-input {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #555555;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 4px 6px; }
   .asuris .well-large {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -901,6 +939,9 @@
   .asuris .hero-media .media {
     background-color: white;
     background-color: rgba(255, 255, 255, 0.9);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     -webkit-box-shadow: "0 1px 5px rgba(0,0,0,.1)";
     -moz-box-shadow: "0 1px 5px rgba(0,0,0,.1)";
     box-shadow: "0 1px 5px rgba(0,0,0,.1)";
@@ -934,8 +975,6 @@
     margin-right: 0; }
   .asuris #hero-understanding-insurance form {
     position: relative; }
-  .asuris #hero-understanding-insurance h2 {
-    margin-bottom: 15px; }
   .asuris #hero-understanding-insurance .hero-unit {
     height: 405px; }
   .asuris #hero-understanding-insurance .hero-caption {
@@ -976,15 +1015,39 @@
     .asuris #hero-understanding-insurance .media-image .glyph-play:before {
       color: white;
       color: rgba(255, 255, 255, 0.8);
-      font-size: 36px;
+      font-size: 60px;
       left: 50%;
-      margin-left: -16px;
-      margin-top: -18px;
+      margin-left: -30px;
+      margin-top: -15px;
       position: absolute;
       text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
       top: 50%; }
   .asuris #hero-understanding-insurance .media:hover .glyph-play:before {
     color: white; }
+  .asuris .mail-portlet .btn-group {
+    margin-bottom: 10px; }
+  .asuris .mail-portlet .message-header {
+    background: whitesmoke;
+    border: none;
+    margin: 0; }
+    .asuris .mail-portlet .message-header .subject,
+    .asuris .mail-portlet .message-header .byline {
+      border-bottom: 1px solid #dddddd;
+      margin: 0;
+      padding: 10px 30px; }
+    .asuris .mail-portlet .message-header .subject {
+      font-size: 18px;
+      line-height: 24px; }
+  .asuris .mail-portlet .message-body {
+    padding: 20px 30px; }
+  .asuris .mail-portlet #controlContainer {
+    background: none;
+    border: none;
+    padding: 0; }
+  .asuris .mail-portlet #messageContentContainer {
+    border: 1px solid #dddddd;
+    margin: 0 0 10px;
+    padding: 0; }
   .asuris #top {
     background: white;
     color: #555555;
@@ -2036,6 +2099,10 @@
   \*------------------------------------*/
   /*------------------------------------*\
       $CUSTOM
+      $MESSAGE
+  \*------------------------------------*/
+  /*------------------------------------*\
+      $CUSTOM
       $TOP
       $top
   \*------------------------------------*/
@@ -2148,8 +2215,13 @@
     list-style: square; }
   .bridge figcaption {
     padding: 5px 1px; }
-  .bridge .btn small {
-    display: block; }
+  .bridge .btn {
+    color: #4c4d4f; }
+    .bridge .btn:hover, .bridge .btn:focus, .bridge .btn:active, .bridge .btn.active, .bridge .btn.disabled, .bridge .btn[disabled] {
+      background-color: #E6E6E6;
+      color: #4c4d4f; }
+    .bridge .btn small {
+      display: block; }
   .bridge .btn-flat {
     background: none;
     background-color: #999999;
@@ -2170,6 +2242,15 @@
     border-top-color: #f26c2a; }
   .bridge .btn-primary {
     color: #FFF; }
+  .bridge select, .bridge textarea, .bridge input[type="text"], .bridge input[type="password"], .bridge input[type="datetime"], .bridge input[type="datetime-local"], .bridge input[type="date"], .bridge input[type="month"], .bridge input[type="time"], .bridge input[type="week"], .bridge input[type="number"], .bridge input[type="email"], .bridge input[type="url"], .bridge input[type="search"], .bridge input[type="tel"], .bridge input[type="color"], .bridge .uneditable-input {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #555555;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 4px 6px; }
   .bridge .well-large {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -2591,6 +2672,9 @@
   .bridge .hero-media .media {
     background-color: white;
     background-color: rgba(255, 255, 255, 0.9);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     -webkit-box-shadow: "0 1px 5px rgba(0,0,0,.1)";
     -moz-box-shadow: "0 1px 5px rgba(0,0,0,.1)";
     box-shadow: "0 1px 5px rgba(0,0,0,.1)";
@@ -2624,8 +2708,6 @@
     margin-right: 0; }
   .bridge #hero-understanding-insurance form {
     position: relative; }
-  .bridge #hero-understanding-insurance h2 {
-    margin-bottom: 15px; }
   .bridge #hero-understanding-insurance .hero-unit {
     height: 405px; }
   .bridge #hero-understanding-insurance .hero-caption {
@@ -2666,15 +2748,39 @@
     .bridge #hero-understanding-insurance .media-image .glyph-play:before {
       color: white;
       color: rgba(255, 255, 255, 0.8);
-      font-size: 36px;
+      font-size: 60px;
       left: 50%;
-      margin-left: -16px;
-      margin-top: -18px;
+      margin-left: -30px;
+      margin-top: -15px;
       position: absolute;
       text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
       top: 50%; }
   .bridge #hero-understanding-insurance .media:hover .glyph-play:before {
     color: white; }
+  .bridge .mail-portlet .btn-group {
+    margin-bottom: 10px; }
+  .bridge .mail-portlet .message-header {
+    background: whitesmoke;
+    border: none;
+    margin: 0; }
+    .bridge .mail-portlet .message-header .subject,
+    .bridge .mail-portlet .message-header .byline {
+      border-bottom: 1px solid #dddddd;
+      margin: 0;
+      padding: 10px 30px; }
+    .bridge .mail-portlet .message-header .subject {
+      font-size: 18px;
+      line-height: 24px; }
+  .bridge .mail-portlet .message-body {
+    padding: 20px 30px; }
+  .bridge .mail-portlet #controlContainer {
+    background: none;
+    border: none;
+    padding: 0; }
+  .bridge .mail-portlet #messageContentContainer {
+    border: 1px solid #dddddd;
+    margin: 0 0 10px;
+    padding: 0; }
   .bridge #top {
     background: white;
     color: #555555;
@@ -3828,6 +3934,10 @@
   \*------------------------------------*/
   /*------------------------------------*\
       $CUSTOM
+      $MESSAGE
+  \*------------------------------------*/
+  /*------------------------------------*\
+      $CUSTOM
       $TOP
       $top
   \*------------------------------------*/
@@ -3940,8 +4050,13 @@
     list-style: square; }
   .regence figcaption {
     padding: 5px 1px; }
-  .regence .btn small {
-    display: block; }
+  .regence .btn {
+    color: #333333; }
+    .regence .btn:hover, .regence .btn:focus, .regence .btn:active, .regence .btn.active, .regence .btn.disabled, .regence .btn[disabled] {
+      background-color: #E6E6E6;
+      color: #333333; }
+    .regence .btn small {
+      display: block; }
   .regence .btn-flat {
     background: none;
     background-color: #999999;
@@ -3962,6 +4077,15 @@
     border-top-color: #9d261d; }
   .regence .btn-primary {
     color: #FFF; }
+  .regence select, .regence textarea, .regence input[type="text"], .regence input[type="password"], .regence input[type="datetime"], .regence input[type="datetime-local"], .regence input[type="date"], .regence input[type="month"], .regence input[type="time"], .regence input[type="week"], .regence input[type="number"], .regence input[type="email"], .regence input[type="url"], .regence input[type="search"], .regence input[type="tel"], .regence input[type="color"], .regence .uneditable-input {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #555555;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 4px 6px; }
   .regence .well-large {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -4383,6 +4507,9 @@
   .regence .hero-media .media {
     background-color: white;
     background-color: rgba(255, 255, 255, 0.9);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     -webkit-box-shadow: "0 1px 5px rgba(0,0,0,.1)";
     -moz-box-shadow: "0 1px 5px rgba(0,0,0,.1)";
     box-shadow: "0 1px 5px rgba(0,0,0,.1)";
@@ -4416,8 +4543,6 @@
     margin-right: 0; }
   .regence #hero-understanding-insurance form {
     position: relative; }
-  .regence #hero-understanding-insurance h2 {
-    margin-bottom: 15px; }
   .regence #hero-understanding-insurance .hero-unit {
     height: 405px; }
   .regence #hero-understanding-insurance .hero-caption {
@@ -4458,15 +4583,39 @@
     .regence #hero-understanding-insurance .media-image .glyph-play:before {
       color: white;
       color: rgba(255, 255, 255, 0.8);
-      font-size: 36px;
+      font-size: 60px;
       left: 50%;
-      margin-left: -16px;
-      margin-top: -18px;
+      margin-left: -30px;
+      margin-top: -15px;
       position: absolute;
       text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
       top: 50%; }
   .regence #hero-understanding-insurance .media:hover .glyph-play:before {
     color: white; }
+  .regence .mail-portlet .btn-group {
+    margin-bottom: 10px; }
+  .regence .mail-portlet .message-header {
+    background: whitesmoke;
+    border: none;
+    margin: 0; }
+    .regence .mail-portlet .message-header .subject,
+    .regence .mail-portlet .message-header .byline {
+      border-bottom: 1px solid #dddddd;
+      margin: 0;
+      padding: 10px 30px; }
+    .regence .mail-portlet .message-header .subject {
+      font-size: 18px;
+      line-height: 24px; }
+  .regence .mail-portlet .message-body {
+    padding: 20px 30px; }
+  .regence .mail-portlet #controlContainer {
+    background: none;
+    border: none;
+    padding: 0; }
+  .regence .mail-portlet #messageContentContainer {
+    border: 1px solid #dddddd;
+    margin: 0 0 10px;
+    padding: 0; }
   .regence #top {
     background: white;
     color: #555555;
