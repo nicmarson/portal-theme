@@ -88,6 +88,7 @@ $linkColorHover:        $red;
 $btnBackground:                     $white;
 $btnBackgroundHighlight:            darken($white, 10%);
 $btnBorder:                         #bbb;
+$btnColor:                          $textColor;
 
 $btnPrimaryBackground:              $linkColor;
 $btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%);

@@ -8,6 +8,14 @@
  */
 
 
+// Web fonts
+// --------------------------------------------------
+// bridgespan
+@import url("https://fnt.webink.com/wfs/webink.css/?project=0BD8AE7B-BA97-469A-803F-4EAFD6EE0334&fonts=D15EC0DB-8C78-97F3-7FFC-53AE3364DA97:f=NewsGothicBdCnBT-It,E84775D4-DE72-2F89-F273-0ABE2B31207E:f=NewsGothicCnBT-Reg,1F1F3FB2-7D81-43AA-DCE4-D52AA5EA43C8:f=NewsGothicBT-It,835165A1-1228-CBD9-703B-0659517C5E59:f=KeplerStd-ItCapt,E9FF2D01-CECF-3C68-CDD7-6219489B1C10:f=NewsGothicCnBT-It,A053F1A3-227C-4158-6291-4B5965C1E530:f=NewsGothicBdBT-Reg,93C07DFE-8E15-55F8-9C85-5EB9EAA58FD6:f=KeplerStd-Capt,C874B676-84AA-F5DA-8812-B49D8DEA4B2C:f=NewsGothicDmBT-It,C3C39CE1-604C-3BF6-5E20-ACC536D4A277:f=NewsGothicDmBT-Reg,B79BBC76-B20F-9E0C-AB12-10BA09958B6E:f=NewsGothicLtBT-It,4B3C766D-19C8-271A-6916-B0192D2E9722:f=NewsGothicBT-Reg,871BC8D2-26C3-228B-C09C-B2D9FD2E0BB7:f=NewsGothicBdBT-It,DEC48D37-A47A-BB26-E548-A6C707C066C5:f=NewsGothicLtBT-Reg,243EFB25-ECB2-D3F3-A511-6CCE778FBACB:f=NewsGothicBdCnBT-Reg");
+// regence
+@import url("https://fnt.webink.com/wfs/webink.css/?project=AEC37CF0-6B2D-450D-9777-5062C06CCACA&fonts=D658C100-EB60-0878-7701-BA465DF17739:f=ProximaNovaT-Thin,38D80777-BBB8-AAF3-8C21-AAA9AD92B6E6:f=ProximaNova-BlackIt,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light,FF4969BA-A10C-C1F1-4CAE-97A4557D103C:f=ProximaNovaCond-Regular,FA4379E2-2038-8F3F-1CCD-9D7F6C1BE854:f=ProximaNova-ExtrabldIt,58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,1366810A-C17C-C074-FF25-E81320293740:f=ProximaNovaCond-Semibold,D8F30418-0E92-EBB4-6408-D220574EF53E:f=ProximaNova-Extrabld,7ADDF267-02FA-4E7A-F098-EF6D9CFEF9AE:f=ProximaNova-Black,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,DD341213-BCCD-C52B-39B2-FF9E7464B6E5:f=ProximaNova-ThinIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold");
+
+
 // Bootstrap
 // --------------------------------------------------
 @import url(bootstrap/bootstrap.css);
@@ -40,6 +48,7 @@
 @import "components/application";
 @import "components/utilities";
 @import "components/sprites";
+@import "components/general";
 
 
 

@@ -6,11 +6,11 @@
 // Dockbar
 // -------------------------
 .dockbar-ready .dockbar {
+  font-family: Arial, Helvetica, sans-serif;
 
   a {
     color: #2C2F34;
-    font-weight: 400;
-    text-shadow: 1px 1px #FFFFFF;
+    text-shadow: 1px 1px #FFF;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -19,7 +19,7 @@
   }
 
   .menu-button-active a {
-    color: #FFFFFF;
+    color: #FFF;
     text-shadow: -1px -1px #2C2F34;
   }
 }
@@ -117,11 +117,6 @@
 
   // LFR
   // -------------------------
-  .lfr-component {
-    font-size: 11px;
-    line-height: 17px;
-  }
-
   .lfr-panel-container {
     background-color: transparent;
   }
@@ -140,68 +135,67 @@
     }
   }
 
+  .icon-actions {
+    height: 15px;
+    width: auto;
+  }
+
 
   // AUI
   // -------------------------
-  .aui-form {
+  .aui-component {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     line-height: 17px;
 
-    label, input, button, select, textarea {
-      font-size: 12px;
-      line-height: 18px;
+    label,
+    input,
+    button,
+    select,
+    textarea {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      line-height: 17px;
+      margin-bottom: 0;
     }
 
-    select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    select,
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    .uneditable-input {
       padding: 2px 5px;
     }
 
-    select, input[type="file"] {
-      height: 26px;
-      line-height: 26px;
+    select,
+    input[type="file"] {
+      height: 22px;
+      line-height: 22px;
     }
 
-    .aui-combobox {
-
-      .aui-field-input {
-        padding: 4px 3px 3px;
-        font-size: 11px;
-        height: 15px;
-      }
-
-      .aui-field {
-        float: left;
-        line-height: 0;
-      }
-    }
-
-    .aui-choice-label {
-      display: inline-block; // fixes TB incompadibility
-    }
-
-    .aui-field-label-right input {
-      margin: inherit; // fixes TB incompadibility
-    }
-
-    .aui-field-label,
-    .aui-field-label-inline-label {
-      font-weight: normal;
-    }
-
-    .aui-field-inline .aui-field-content,
-    .aui-field-inline .aui-field-label {
-      display: block;
-    }
-  }
-
-  .aui-component {
-    font-size: 11px;
-    line-height: 17px;
-
-    .aui-column-content-first {
+    .aui-column {
       border-right: 1px solid $grayLighter;
     }
 
+    .aui-column-last {
+      border-right: none;
+    }
+
+    // TABS
+
+    // override theme link colors
     .aui-tab-label,
     .aui-tab-label a {
       color: #1F1E1E;
@@ -214,6 +208,23 @@
 
     .aui-tab-active .aui-tab-label {
       color: #FFF;
+    }
+
+    // FORMS
+
+    .aui-fieldset .aui-field-content,
+    .aui-field-row,
+    .aui-button-holder,
+    .aui-field-wrapper-content {
+      margin: 10px 0;
+    }
+
+    .aui-choice-label {
+      display: inline-block; // fixes TB incompatibility
+    }
+
+    .aui-field-input-choice {
+      margin: .4em .4em .4em 0; // fixes checkbox
     }
   }
 }

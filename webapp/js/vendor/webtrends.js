@@ -6,10 +6,8 @@
 function WebTrends(){
 	var that=this;
 	// begin: user modifiable
-	//this.dcsid="dcsh81aon100004fukdztrefo_8u6y";
-	this.dcsid="WT_ID_INTENTIONALLY_CHANGED";
-	this.domain="sdc.myregence.com";
-	
+	this.dcsid="dcsh81aon100004fukdztrefo_8u6y";
+	this.domain="my-devsdc.myregence.com";
 	this.timezone=-7;
 	this.enabled=true;
 	this.i18n=false;
@@ -590,6 +588,24 @@ WebTrends.prototype.dcsDebug=function(){
 	t.w.document.write(m);
 	t.w.focus();
 }
+
+
+// TODO: Paul Montgomery
+WebTrends.prototype.dcsDebugHTML=function(){
+	var t=this;
+	var i=t.images[0].src;
+	var q=i.indexOf("?");
+	var r=i.substring(0,q).split("/");
+	var m="<b>Protocol</b><br><code>"+r[0]+"<br></code>";
+	m+="<b>Domain</b><br><code>"+r[2]+"<br></code>";
+	m+="<b>Path</b><br><code>/"+r[3]+"/"+r[4]+"<br></code>";
+	m+="<b>Query Params</b><code>"+i.substring(q+1).replace(/\&/g,"<br>")+"</code>";
+	m+="<br><b>Cookies</b><br><code>"+document.cookie.replace(/\;/g,"<br>")+"</code>";
+
+	return m;
+}
+
+
 WebTrends.prototype.dcsCollect=function(){
     if (this.enabled){
         this.dcsVar();

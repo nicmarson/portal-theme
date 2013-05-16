@@ -25,7 +25,7 @@
                     #if($is_signed_in)
                         <a href="$theme_display.getURLSignOut()">Sign out</a>
                     #else
-                        <a href="#bridgspanSignInModal" data-toggle="modal" title="Bridgespan">Sign in</a>
+                        <a href="#" data-target="#bridgeSpanSignin" data-toggle="collapse" title="Bridgespan" class="toggle">Sign in</a>
                     #end
 
                     </li>
@@ -35,20 +35,18 @@
                     </li>
                 #end
                 <li class="nav-shopping">
-                    <a href="#" data-target="#set-view-location" data-toggle="collapse" class="toggle shopping-toggle-button">#ch_location_audience()<small>#ch_location_text()</small></span><span aria-hidden="true" class="glyph-users hidden-phone"></span><b class="caret"></b></a>
+                    <a href="#" data-target="#set-view-location" data-toggle="collapse" title="Personalization" class="toggle shopping-toggle-button">#ch_location_audience()<small>#ch_location_text()</small></span><span aria-hidden="true" class="glyph-users hidden-phone"></span><b class="caret"></b></a>
                 </li>
                 <li class="nav-search">
-                    <form class="form-search" action="http://www.regence.com/about/search.jsp" method="get" name="header-search" id="search" role="search">
-                        <label for="searchQuery" class="hide">Search</label>
-                        <input type="text" id="searchQuery" name="searchQuery" placeholder="Search" class="input-medium search-query">
-                        <button type="submit" class="btn btn-link"><span class="glyph-search" aria-hidden="true"></span><span class="visuallyhidden">Go</span></button>
-                    </form>
+                     #set ($VOID = $velocityPortletPreferences.setValue('portlet-setup-show-borders', 'false'))
+			        $theme.runtime("3_INSTANCE_ff73","",$velocityPortletPreferences.toString())                		
+					#set ($VOID = $velocityPortletPreferences.reset())
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<header id="set-view-location" class="collapse out">
+<header id="set-view-location" class="collapse out collapseDrawer" data-drawer-group="header">
     <div class="container">
         #set ($locPortletId = "setviewlocation_WAR_setviewlocation")
         $velocityPortletPreferences.setValue("portlet-setup-show-borders", "false")
@@ -57,10 +55,13 @@
         $velocityPortletPreferences.reset()
     </div>
 </header>
+<header id="bridgeSpanSignin" class="collapse out collapseDrawer" data-drawer-group="header">
+    <div class="container" style="background-color:green;">
+		#set ($locPortletId = "signinportlet_WAR_portalportletsignin")
+		$velocityPortletPreferences.setValue("portlet-setup-show-borders", "false")
+		#set ($locRenderedPortletContent = $theme.runtime($locPortletId, "", $velocityPortletPreferences.toString()))
+		$locRenderedPortletContent
+		$velocityPortletPreferences.reset()
+    </div>
+</header>
 
-<!-- Bridgespan Sign In Modal -->
-#set ($locPortletId = "signinportlet_WAR_portalportletsignin")
-$velocityPortletPreferences.setValue("portlet-setup-show-borders", "false")
-#set ($locRenderedPortletContent = $theme.runtime($locPortletId, "", $velocityPortletPreferences.toString()))
-$locRenderedPortletContent
-$velocityPortletPreferences.reset()

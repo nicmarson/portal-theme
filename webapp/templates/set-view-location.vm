@@ -18,7 +18,7 @@
     <form id="set-view-location-form" action="${locationActionURL}" method="post">
         <div class="row-fluid">
             <div class="span6">
-                <i class="hidden-phone glyph-users"></i>
+                <i class="glyph-users"></i>
                 <label>Change audience</label>
                 <select>
                     <option>Individuals & Families</option>
@@ -28,7 +28,7 @@
                 </select>
             </div>
             <div class="span6">
-                <i class="hidden-phone icon-location icon-white"></i>
+                <i class="icon-location icon-white"></i>
                 <label>Change location</label>
                 <spring:message code="location.modal.form.zipcode"/><input type="text" name="zipcode"/>
             </div>

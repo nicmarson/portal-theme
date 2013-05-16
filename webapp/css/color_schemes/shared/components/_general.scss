@@ -166,9 +166,22 @@ figcaption {
 
 // Buttons
 // -------------------------
+.btn {
+  color: $btnColor;
 
-.btn small {
-  display: block;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  &.disabled,
+  &[disabled] {
+    background-color: #E6E6E6;
+    color: $btnColor;
+  }
+
+  small {
+    display: block;
+  }
 }
 
 .btn-flat {

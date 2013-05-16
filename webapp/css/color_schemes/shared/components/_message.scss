@@ -1,0 +1,50 @@
+/*------------------------------------*\
+    $CUSTOM
+    $MESSAGE
+\*------------------------------------*/
+
+
+// Portlet - Message
+// --------------------------------------
+.mail-portlet {
+
+  .btn-group {
+    margin-bottom: 10px;
+  }
+
+  .message-header {
+    background: darken($white, 4%);
+    border: none;
+    margin: 0;
+
+    .subject,
+    .byline {
+      border-bottom: 1px solid $grayLighter;
+      margin: 0;
+      padding: 10px 30px;
+    }
+
+    .subject {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  
+  .message-body {
+    padding: 20px 30px;
+  }
+
+  // folder container
+  #controlContainer {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  // message, subject, byline
+  #messageContentContainer {
+    border: 1px solid $grayLighter;
+    margin: 0 0 10px;
+    padding: 0;
+  }
+}
