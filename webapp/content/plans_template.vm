@@ -48,36 +48,107 @@
 ## the print icon to view this article.
 ##
 
-
-<div class="page-header">
-    <h1>$Product_Name.getData()</h1>
+<div class="span3">
+    <nav>
+        <ul class="nav nav-list">
+            <li><a href="">Innova</a></li>
+        </ul>
+    </nav>
 </div>
-<section>
-    $Product_Name.getData()
-</section>
+<div class="span9">
+    <div class="page-header">
+        <h1>$Product_Name.getData()</h1>
+        <p class="lead">Free thermometers</p>
+    </div>
+    <div class="row">
+        <section class="span8">
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" data-src="holder.js/64x64">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Free thermometers</h4>
+                    <p>Assertively maximize high-quality meta-services before open-source collaboration and idea-sharing. Progressively engage user friendly meta-services before bleeding-edge networks.</p>
+                </div>
+            </div>
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" data-src="holder.js/64x64">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Emergency services</h4>
+                    <p>Assertively maximize high-quality meta-services before open-source collaboration and idea-sharing. Progressively engage user friendly meta-services before bleeding-edge networks.</p>
+                </div>
+            </div>
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" data-src="holder.js/64x64">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Pharmacies in the city</h4>
+                    <p>Assertively maximize high-quality meta-services before open-source collaboration and idea-sharing. Progressively engage user friendly meta-services before bleeding-edge networks.</p>
+                </div>
+            </div>
+        </section>
+        <aside class="span4">
+            <h3>Call for more</h3>
+        </aside>
 
-<ul class="nav nav-tabs" id="planTab">
-    <li class="active"><a href="#overview">overview</a></li>
-    <li><a href="#networkOptions">network options</a></li>
-    <li><a href="#messages">pharmacy benefits</a></li>
-    <li><a href="#settings">optional benefits</a></li>
-    <li><a href="#home">banking</a></li>
-    <li><a href="#home">exclusions and limitations</a></li>
-    <li><a href="#home">wellness resources</a></li>
-</ul>
-     
-<div class="tab-content">
-    <div class="tab-pane active" id="overview">...</div>
-    <div class="tab-pane" id="networkOptions">...</div>
-    <div class="tab-pane" id="messages">...</div>
-    <div class="tab-pane" id="settings">...</div>
-    <div class="tab-pane" id="profile">...</div>
-    <div class="tab-pane" id="messages">...</div>
-    <div class="tab-pane" id="settings">...</div>
+    <ul class="nav nav-tabs" id="planTab">
+        <li class="active"><a href="#overview">overview</a></li>
+        <li><a href="#networkOptions">network options</a></li>
+        <li><a href="#messages">pharmacy benefits</a></li>
+        <li><a href="#settings">optional benefits</a></li>
+        <li><a href="#home">banking</a></li>
+        <li><a href="#home">exclusions and limitations</a></li>
+        <li><a href="#home">wellness resources</a></li>
+    </ul>
+
+        <dynamic-element name="Synopsis_1" type="text_area" index-type="text" repeatable="false"/>
+        <dynamic-element name="Synopsis_2" type="text_area" index-type="text" repeatable="false"/>
+        <dynamic-element name="Synopsis_3" type="text_area" index-type="text" repeatable="false"/>
+        <dynamic-element name="Synopsis_4" type="text_area" index-type="text" repeatable="false"/>
+        <dynamic-element name="Synopsis_5" type="text_area" index-type="text" repeatable="false"/>
+        <dynamic-element name="Call_to_Action" type="text_area" index-type="text" repeatable="false"/>
+        <dynamic-element name="Network_Options" type="text_area" index-type="text" repeatable="false"/>
+        <dynamic-element name="Indy_Ded_in" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Indy_Ded_out" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Fam_Ded_in" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Fam_Ded_out" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Copay_Primary_in" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Copay_Specialist_in" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Copay_Urgent_in" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="ER_Copay" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Coins_in" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Coins_out" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Indy_OOP_Max_in" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Indy_OOP_Max_out" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Fam_OOP_Max_in" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Fam_OOP_Max_out" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Rx_Tier_1" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Rx_Tier_2" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Rx_Tier_3" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Rx_Tier_4" type="text" index-type="text" repeatable="false"/>
+        <dynamic-element name="Formulary" type="text_area" index-type="" repeatable="false"/>
+        <dynamic-element name="Wellness_Resources" type="text_area" index-type="" repeatable="false"/>
+        <dynamic-element name="Optional_Benefits" type="text_area" index-type="" repeatable="false"/>
+        <dynamic-element name="Banking" type="text_area" index-type="" repeatable="false"/>
+        <dynamic-element name="PlanHighlightsLink" type="text" index-type="" repeatable="false"/>
+        <dynamic-element name="RelatedDocumentsLink" type="text" index-type="" repeatable="false"/>
+         
+    <div class="tab-content">
+        <div class="tab-pane active" id="overview">...</div>
+        <div class="tab-pane" id="networkOptions">...</div>
+        <div class="tab-pane" id="messages">...</div>
+        <div class="tab-pane" id="settings">...</div>
+        <div class="tab-pane" id="profile">...</div>
+        <div class="tab-pane" id="messages">...</div>
+        <div class="tab-pane" id="settings">...</div>
+    </div>
+         
+    <script>
+        $(function () {
+            $('#planTab a:last').tab('show');
+        })
+    </script>
 </div>
-     
-<script>
-    $(function () {
-        $('#myTab a:last').tab('show');
-    })
-</script>

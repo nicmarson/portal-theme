@@ -26,24 +26,42 @@
   }
 
 
+  // Article content
+  // -------------------------
+  article {
+
+    h3,
+    .gamma {
+      color: $orange;
+    }
+  }
+
+
   // Article sidebar
   // -------------------------
+  article aside,
   article .sidebar {
     background-color: $asideBackground;
+
+    h3 {
+      color: $asideHeadingColor;
+    }
+  }
+
+  article .sidebar {
 
     h3 {
       background: $asideHeadingBackground;
       border-bottom: 1px solid $asideHeadingBorder;
       border-top: 1px solid $asideHeadingBorder;
-      font-family: $sansFontFamilyLight;
     }
   }
 
   // Article left sidebar
+  // -------------------------
   .article-left-sidebar .sidebar {
 
     .nav > li > a {
-      border-top: 1px solid $grayLighter;
       font-family: $sansFontFamilyLight;
 
       &:hover {

@@ -10,10 +10,15 @@ $breadcrumbMargin:              20px 0 0;
 $breadcrumbPadding:             8px 0;
 $breadcrumbDividerColor:        $gray;
 
+
 // Navigation - Tabs
 // -------------------------
 .nav-tabs {
 
+  a {
+    text-decoration: none;
+  }
+  
   .btn {
     margin: 0 6px;
   }

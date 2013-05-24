@@ -3,9 +3,6 @@
 \*------------------------------------*/
 
 
-// SIDEBARS
-// --------------------------------------
-
 // Article sidebar
 // -------------------------
 article .sidebar {
@@ -41,22 +38,29 @@ article .sidebar {
 }
 
 
-// ARTICLE TYPES
-// ---------------
+// Article content
+// -------------------------
+article .content section,
+article .content aside {
+  padding: $articleContentPadding;
+}
 
 
-// Landing
+// Article - Landing
+// -------------------------
 .article-landing {
 
   h3 {
     font-size: 28px;
     line-height: 34px;
   }
+
   li {
     font-size: 20px;
     line-height: 1;
     margin-bottom: 10px;
   }
+
   .nav > li {
     font-size: 24px;
     line-height: 30px;
@@ -76,7 +80,9 @@ article .sidebar {
   }
 }
 
-// Story
+
+// Article - Story
+// -------------------------
 .story {
 
   &.thumb {
@@ -84,13 +90,16 @@ article .sidebar {
     a {
       color: $gray;
     }
+
     .abstract {
       font-size: 12px;
     }
+
     .image {
       float: left;
       margin-right: $baseLineHeight;
     }
+
     .story-headline {
       color: $gray;
       font-size: 18px;

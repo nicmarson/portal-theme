@@ -121,6 +121,7 @@ $sectionHeaderHeadingColor:     $orange;
 // -------------------------
 $articleBackground:                 $white;
 $articleBorder:                     lighten($accentLighter, 8%);
+$articleContentPadding: 			0 20px;
 
 $asideHeadingBorder:                #d7d7d7;
 $asideHeadingColor:                 $grayLight;
@@ -196,6 +197,13 @@ $navMainLinkBackground:         $white;
 $navMainLinkBackgroundHover:    $white;
 $navMainLinkHeight:             80px;
 $navMainLinkMargin:             0 10px;
+
+
+// Tabs
+// -------------------------
+$tabBackgroundColor: 				#FFF;
+$tabActiveBackgroundColor: 			#F7FAFB;
+$tabActiveBorderColor: 				#CCC #CCC transparent;
 
 
 // LOCATIONS

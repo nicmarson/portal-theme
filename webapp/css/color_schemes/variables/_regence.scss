@@ -119,11 +119,12 @@ $sectionHeaderHeadingColor:     $orange;
 // -------------------------
 $articleBackground:					$white;
 $articleBorder:						lighten($accentLighter, 8%);
+$articleContentPadding: 			0 20px;
 
-$asideBackground:					#F7FAFB;
+$asideBackground:					#F2F8F9;
 $asideHeadingBackground:			#F0F6F9;
-$asideHeadingBorder:                #d7d7d7;
-$asideHeadingColor:                 $grayLight;
+$asideHeadingBorder:                #D9E6EA;
+$asideHeadingColor:                 #5e7b8c;
 $asideHeadingFontSize:              20px;
 $asideLinkFontSize:                 16px;
 $asideLinkColor:                    $grayLight;
@@ -205,6 +206,13 @@ $navInformationTitleColor:        darken($accent, 5%);
 $navInformationLink:              darken($accent, 25%);
 $navInformationLinkHover:         darken($accent, 15%);
 $navInformationBorder:            darken($navInformationBackground, 10%);
+
+
+// Tabs
+// -------------------------
+$tabBackgroundColor: 				#FFF;
+$tabActiveBackgroundColor: 			#F6F7F8;
+$tabActiveBorderColor: 				#CCC #CCC transparent;
 
 
 // LOCATIONS
