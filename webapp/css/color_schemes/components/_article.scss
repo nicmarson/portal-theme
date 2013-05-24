@@ -1,0 +1,101 @@
+/*------------------------------------*\
+    $ARTICLE
+\*------------------------------------*/
+
+
+// SIDEBARS
+// --------------------------------------
+
+// Article sidebar
+// -------------------------
+article .sidebar {
+
+  h3 {
+    color: $asideHeadingColor;
+    font-size: $asideHeadingFontSize;
+    line-height: 1;
+  }
+
+  .nav > li > a {
+    color: $asideLinkColor;
+    font-size: $asideLinkFontSize;
+
+    &:hover {
+      background: $white;
+      color: $asideLinkColorHover;
+      text-decoration: underline;
+    }
+  }
+
+  .nav > .active > a,
+  .nav > .active > a:hover {
+    background: none;
+    color: $asideLinkColorHover;
+  }
+
+  .content {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+  }
+}
+
+
+// ARTICLE TYPES
+// ---------------
+
+
+// Landing
+.article-landing {
+
+  h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  li {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .nav > li {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+    > a {
+      color: $textColor;
+
+      &:hover {
+        background-color: $white;
+
+        .bridge-caret {
+          border-color: $brand;
+        }
+      }
+    }
+  }
+}
+
+// Story
+.story {
+
+  &.thumb {
+
+    a {
+      color: $gray;
+    }
+    .abstract {
+      font-size: 12px;
+    }
+    .image {
+      float: left;
+      margin-right: $baseLineHeight;
+    }
+    .story-headline {
+      color: $gray;
+      font-size: 18px;
+      line-height: 1;
+      margin-top: 0;
+    }
+  }
+}

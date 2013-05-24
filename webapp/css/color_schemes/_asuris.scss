@@ -1,0 +1,66 @@
+/*------------------------------------*\
+    $ASURIS
+    $COLOR_SCHEME
+\*------------------------------------*/
+
+// Variables
+@import "variables/asuris"; // Load asuris colors and styles
+
+
+// --------------------------------------
+// Asuris only theme styles
+// --------------------------------------
+
+.asuris {
+
+  // Import theme fonts and colors
+  // --------------------------------------
+  @import "themes/colors";
+  
+
+  // Theme utilities
+  // --------------------------------------
+  .regence-only,
+  .bridge-only {
+    display: none;
+  }
+
+
+  // Article sidebar
+  // -------------------------
+  article .sidebar {
+    background-color: $asideBackground;
+
+    h3 {
+      background: $asideHeadingBackground;
+      border-bottom: 1px solid $asideHeadingBorder;
+      border-top: 1px solid $asideHeadingBorder;
+      font-family: $sansFontFamilyLight;
+    }
+  }
+
+  // Article left sidebar
+  .article-left-sidebar .sidebar {
+
+    .nav > li > a {
+      border-top: 1px solid $grayLighter;
+      font-family: $sansFontFamilyLight;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+
+    .nav > .active > a,
+    .nav > .active > a:hover {
+      color: $accent;
+    }
+  }
+  
+
+  // Audience dropdown
+  // -------------------------
+  #set-view-location {
+    @include gradient-vertical(lighten($brand, 15%), $brand);
+  }
+}

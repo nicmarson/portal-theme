@@ -1,0 +1,199 @@
+/*------------------------------------*\
+    $CUSTOM
+    $HERO
+\*------------------------------------*/
+
+
+// Hero unit
+// -------------------------------
+.hero-unit {
+  @include border-radius(0);
+  margin-bottom: 20px;
+  padding: 40px;
+
+  &#default {
+    background-image: url(images/bridge/landings/global/hero-global.jpg);
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .hero-inner-title small {
+    display: block;
+  }
+}
+
+
+// Inverted hero unit
+// -------------------------------
+.hero-inverted {
+  color: $white;
+  padding: $gridGutterWidth 0; // 20px 0
+
+  a,
+  h1,
+  .hero-inner-title,
+  .hero-inner-title small {
+    color: $white;
+  }
+}
+
+
+// Hero header
+// -------------------------------
+.hero-header {
+  padding: 40px 20px 5px;
+  text-align: right;
+
+  h1 {
+    color: $grayLight;
+    font-family: $sansFontFamilyLight;
+    margin: 0;
+  }
+}
+
+
+// Hero with image background
+// -------------------------------
+.hero-image {
+  padding: 0;
+  position: relative;
+
+  > .image {
+    overflow: hidden;
+    z-index: 1;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+// Hero with media boxes
+// -------------------------------
+.hero-media {
+
+  .hero-inner {
+    padding: 0;
+  }
+
+  .hero-inner-title {
+    margin-bottom: 15px;
+  }
+
+  .media {
+    color: $textColor;
+    margin-bottom: 20px;
+    margin-top: 0;
+    position: relative;
+
+    a {
+      color: $textColor;
+    }
+
+    .cover {
+      bottom: 0;
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 10;
+    }
+  }
+
+  .media-heading {
+    margin: 0;
+
+    small {
+      color: $accent;
+      font-family: $serifFontFamilyIt;
+      display: block;
+    }
+  }
+
+  .media-body,
+  .media-header {
+    padding-bottom: 5px;
+    padding-top: 15px;
+  }
+
+  .media-image {
+    position: relative;
+  }
+
+  .pull-left {
+    margin-right: 0;
+  }
+}
+
+
+// Health Insurance Guide
+// -------------------------------
+#hero-understanding-insurance {
+
+  form {
+    position: relative;
+  }
+
+  .search-button {
+    height: 29px;
+    padding: 0 10px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+  }
+
+  .search-input {
+    font-family: $sansFontFamilyLight;
+    font-size: 20px;
+    height: auto;
+
+    &:focus {
+      box-shadow: none
+    }
+  }
+
+  .media {
+    margin-bottom: 0;
+
+    &:hover {
+
+      .glyph-play:before {
+        color: $white;
+      }    
+    }
+  }
+
+  .media-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 110px;
+
+    .glyph-play:before {
+      color: $white;
+      color: rgba(255,255,255, .8);
+      font-size: 60px;
+      left: 50%;
+      margin-left: -30px;
+      margin-top: -15px;
+      position: absolute;
+      text-shadow: 0 0 5px rgba(0,0,0, .5);
+      top: 50%;
+    }
+  }
+
+  .media-copay .media-image {
+    background-image: url(images/bridge/landings/understanding-insurance/media-copay.png);
+  }
+
+  .media-infographic .media-image {
+    background-image: url(images/bridge/landings/understanding-insurance/media-infographic.png);
+  }
+
+  .media-video .media-image {
+    background-image: url(images/bridge/landings/understanding-insurance/media-video.png);
+  }
+}

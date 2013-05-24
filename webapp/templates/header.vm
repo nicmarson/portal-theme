@@ -10,15 +10,23 @@
         <div class="clearfix">
             <ul class="nav" itemscope itemtype="http://schema.org/Organization">
                 <li class="nav-brand">
-                    <a class="brand logo-regence-cs" href="$theme_display.getURLHome()">
+                    <a class="brand #ch_brand_logo()" href="$theme_display.getURLHome()">
                         <span class="brand-logo"><span class="hide-text">${ch_brand}</span></span>
                         <span class="brand-region">#ch_region_text()</span>
                     </a>
                 </li>    
+                #if (!${ch_region})
+                <li class="nav-brand">
+                    <a class="brand logo-regence-s" href="$theme_display.getURLHome()">
+                        <span class="brand-logo"><span class="hide-text">${ch_brand}</span></span>
+                        <span class="brand-region">Idaho and select counties of Washington</span>
+                    </a>
+                </li> 
+                #end
                 #set ($theme_color = $theme_display.getColorSchemeId())
                 #if ($theme_color == "02")
                     <li class="nav-login">
-                        <a href="https://www.myasuris.com/" data-toggle="tooltip" title="Asuris">Sign in</a>
+                        <a href="$propsUtil.get("legacy.sign.in.myasuris")" target="_blank" data-toggle="tooltip" title="Asuris">Sign in</a>
                     </li>
                 #elseif ($theme_color == "03")
                     <li class="nav-login">
@@ -31,11 +39,14 @@
                     </li>
                 #elseif ($theme_color == "01")
                     <li class="nav-login">
-                        <a href="https://www.myregence.com/" data-toggle="tooltip" title="Regence">Sign in</a>
+                        <a href="$propsUtil.get("legacy.sign.in.myregence")" target="_blank" data-toggle="tooltip" title="Regence">Sign in</a>
                     </li>
                 #end
                 <li class="nav-shopping">
-                    <a href="#" data-target="#set-view-location" data-toggle="collapse" title="Personalization" class="toggle shopping-toggle-button">#ch_location_audience()<small>#ch_location_text()</small></span><span aria-hidden="true" class="glyph-users hidden-phone"></span><b class="caret"></b></a>
+                    <a href="#" data-target="#set-view-location" data-toggle="collapse" title="Personalization" class="toggle shopping-toggle-button">
+                    	#ch_location_audience()<p><small>#ch_location_text()</small></p>
+                    	<span aria-hidden="true" class="glyph-users hidden-phone"></span><b class="caret"></b>
+                    </a>
                 </li>
                 <li class="nav-search">
                      #set ($VOID = $velocityPortletPreferences.setValue('portlet-setup-show-borders', 'false'))
@@ -56,7 +67,7 @@
     </div>
 </header>
 <header id="bridgeSpanSignin" class="collapse out collapseDrawer" data-drawer-group="header">
-    <div class="container" style="background-color:green;">
+    <div class="container">
 		#set ($locPortletId = "signinportlet_WAR_portalportletsignin")
 		$velocityPortletPreferences.setValue("portlet-setup-show-borders", "false")
 		#set ($locRenderedPortletContent = $theme.runtime($locPortletId, "", $velocityPortletPreferences.toString()))
@@ -65,3 +76,9 @@
     </div>
 </header>
 
+<!-- Bridgespan Sign In Modal -->
+#set ($locPortletId = "signinportlet_WAR_signinportlet")
+$velocityPortletPreferences.setValue("portlet-setup-show-borders", "false")
+#set ($locRenderedPortletContent = $theme.runtime($locPortletId, "", $velocityPortletPreferences.toString()))
+$locRenderedPortletContent
+$velocityPortletPreferences.reset()

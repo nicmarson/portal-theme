@@ -24,9 +24,7 @@
     <script src="$javascript_folder/webshim/extras/modernizr-custom.js"></script>
     <script src="$javascript_folder/webshim/polyfiller.js"></script>
     <script src="$javascript_folder/webshim/webshim.js"></script>
-    <script type="text/javascript" src="$javascript_folder/vendor/oo_engine.min.js"></script>
     <script type="text/javascript">
-        var oo_feedback = new OOo.Ocode({});
         var P14n = P14n || {};
         P14n.brand='${ch_brand}';
         P14n.audience='${ch_audience}';

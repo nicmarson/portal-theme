@@ -1,0 +1,318 @@
+/*------------------------------------*\
+    $TYPOGRAPHY
+    $FONT-FAMILY, SIZE, WEIGHT
+    $HEIGHT
+    $LINE-HEIGHT
+    $LISTS
+    $MARGIN
+    $PADDING
+    $POSITION - TOP, RIGHT, BOTTOM, LEFT
+    $TEXT-SHADOW
+\*------------------------------------*/
+
+
+// Forms
+// -------------------------
+$inputFontSize:                 14px;
+$inputHeight:                   20px;
+$inputPadding:                  4px 6px;
+
+
+// Headings
+// --------------------------------------
+
+// make a multi-dimensional array, where:
+// the first value is the name of the class
+// and the second value is the variable for the size
+$sizes: tera $tera, giga $giga, mega $mega, alpha $alpha, beta $beta, gamma $gamma, delta $delta, epsilon $epsilon, zeta $zeta;
+
+// for each size in the scale, create a class
+@each $size in $sizes {
+  .#{nth($size, 1)} {
+    @include modular-scale(nth($size, 2), $font-base, '#{$type-scale-unit-value}');
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headingsFontFamily;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $headingsFontFamilyAlt;
+  text-shadow: 0 0 1px rgba(0,0,0,.1); // Helps text rendering on Windows
+}
+
+h1 {
+  @extend .alpha;
+  line-height: 1.2;
+
+  small {
+    @extend .delta;
+    line-height: 1.3;
+  }
+}
+
+h2 {
+  @extend .beta;
+  line-height: 1.25;
+
+  small {
+    @extend .zeta;
+    line-height: 1.8;
+  }
+}
+
+h3 {
+  @extend .gamma;
+  line-height: 1.25;
+
+  small {
+    font-size: 14px;
+    font-size: .875rem;
+  }
+}
+
+h4 {
+  @extend .delta;
+  line-height: 1.3;
+
+  small {
+    font-size: 14px;
+    font-size: .875rem;
+  }
+}
+
+h5 {
+  @extend .epsilon;
+  line-height: 1.6;
+}
+
+h6 {
+  @extend .zeta;
+  line-height: 1.8;
+}
+
+
+// Headers
+// -------------------------
+
+.page-header,
+.section-header {
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+}
+
+// Page header
+.page-header {
+  margin: $pageHeaderMargin;
+}
+
+// Section header
+.section-header {
+  margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
+  padding: $baseLineHeight/2 15px;
+}
+
+
+// Subhead
+// --------------------------------------
+.subhead {
+  text-align: left;
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+
+// Jumbotron
+// --------------------------------------
+.jumbotron {
+  padding: 2.5rem 0 1.75rem;
+  position: relative;
+
+  h1 {
+    font-family: $sansFontFamilyBold;
+  }
+}
+
+
+// Forms
+// -------------------------
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  font-size: $inputFontSize;
+  height: $inputHeight;
+  line-height: $inputHeight;
+  padding: $inputPadding;
+}
+
+select, input[type="file"] {
+  height: $inputHeight + 10px;
+  line-height: $inputHeight + 10px;
+}
+
+.help-block {
+  font-size: 14px;
+  font-size: .875rem;
+}
+
+
+// Alerts
+// -------------------------
+.alert {
+  position: relative;
+
+  h4 {
+    font-weight: 700;
+    margin: 0;
+  }
+
+  [class^="icon-"],
+  [class*=" icon-"] {
+    left: 15px;
+    line-height: 20px;
+    position: absolute;
+    top: 8px;
+  }
+}
+
+.alert-block {
+
+  [class^="icon-"],
+  [class*=" icon-"] {
+    top: 14px;
+  }
+}
+
+h4.alert-heading {
+  margin-bottom: 5px;
+}
+
+
+// Wells
+// -------------------------
+
+// Well large
+.well-large {
+  @include border-radius(8px);
+  @include box-shadow(inset 0 0 8px rgba(0,0,0, .07));
+  font-size: 24px;
+  line-height: 30px;
+  padding: 80px;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $sansFontFamily;
+  }
+
+  h1 {
+    @extend .tera;
+  }
+
+  h2 {
+    @extend .giga;
+  }
+
+  h3 {
+    @extend .mega;
+  }
+
+  h4 {
+    @extend .alpha;
+  }
+
+  h5 {
+    @extend .beta;
+  }
+
+  h6 {
+    @extend .gamma;
+  }
+}
+
+
+// Lists
+// -------------------------
+
+// FAQ
+dl.faq {
+  margin-left: 0;
+
+  dt {
+    text-align: left;
+  }
+}
+
+// Bulleted
+ul.bulleted li {
+  margin: $baseLineHeight / 2 0;
+}
+
+ul.bulleted > li {
+  list-style: square;
+}
+
+
+// Images
+// -------------------------
+figcaption {
+  padding: 5px 1px;
+}
+
+
+// Modals
+// -------------------------
+.modal {
+  width: 515px;
+
+  form {
+    margin: 0;
+  }
+}
+
+.modal-header {
+  padding: 10px 15px;
+}
+
+.modal-body {
+  padding: 20px 15px 15px;
+}
+
+.modal-footer {
+  padding: 19px 15px 20px;
+}
+
+
+// jQuery UI
+// -------------------------
+.ui-widget-header,
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+  font-family: $sansFontFamilyBold;
+}

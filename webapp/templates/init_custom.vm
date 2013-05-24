@@ -1,30 +1,67 @@
 #*
 This file allows you to override and define new Velocity variables.
 *#
+
+#* Header LOGO *#
+#macro(ch_brand_logo)
+    #if($ch_brand == "bridgespan")
+    	logo-bridge
+    #elseif($ch_brand == "asuris")
+    	logo-asuris
+    #elseif($ch_brand == "regence")
+        #if($ch_region)
+	        #if($ch_region == "or" || $ch_region == "ut")
+	        	logo-regence-cs
+	        #elseif($ch_region == "wa" || $ch_region == "ww" || $ch_region == "id")
+	        	logo-regence-s
+	        #end
+	    #else
+	    	logo-regence-cs logo-regence-cs
+		#end
+    #end
+#end
+
+#* Header LOGO Tagline *#
 #macro(ch_region_text)
 	#if($ch_brand == "bridgespan")
-	        #if($ch_region == "default")
-	                BlueCross BlueShield of Oregon
-	        #elseif($ch_region == "or")
-	                BlueCross BlueShield of Oregon
-	        #elseif($ch_region == "wa")
-	                BlueCross BlueShield of Washington
-	        #end
-	#end
+    	BridgeSpan Health Company
+    #elseif($ch_brand == "asuris")
+    	Asuris Northwest Health
+    #elseif($ch_brand == "regence")
+    	#if(!$ch_region)
+    		Oregon and Utah
+        #elseif($ch_region == "or")
+        	Regence BlueCross BlueShield of Oregon
+        #elseif($ch_region == "ut")
+        	Regence BlueCross BlueShield of Utah
+        #elseif($ch_region == "wa")
+        	Regence BlueShield
+        #elseif($ch_region == "ww")
+        	Regence BlueShield of Washington
+        #elseif($ch_region == "id")
+        	Regence BlueShield of Idaho
+        #end
+    #end
 #end
+
+
+#* Header Location Text*#
 #macro(ch_location_text)
-	#if($ch_brand == "bridgespan")
-	        #if($ch_region == "default")
-	                New Location
-	        #elseif($ch_region == "or")
-	                Oregon
-	        #elseif($ch_region == "id")
-	                Idaho
-	        #elseif($ch_region == "wa")
-	                Washington
-	        #end
-	#end
+    #if(!$ch_region)
+            New Location
+    #elseif($ch_region == "or")
+            Oregon
+    #elseif($ch_region == "id")
+            Idaho
+    #elseif($ch_region == "wa" || $ch_region == "ww" || $ch_region == "ew")
+            Washington
+    #elseif($ch_region == "ut")
+            Utah
+    #end
 #end
+
+
+#* Header Audience *#
 #macro(ch_location_audience)
     #if($ch_audience == "visitor")
             Visitor
@@ -34,5 +71,37 @@ This file allows you to override and define new Velocity variables.
             Producer
     #elseif($ch_audience == "provider")
             Provider
+    #elseif($ch_audience == "individual")
+            Individual and Family
+    #elseif($ch_audience == "medicare")
+            Medicare
+    #end
+#end
+
+
+
+
+
+
+#* FOOTER copywrite *#
+#macro(ch_footer_copywrite)
+	#if($ch_brand == "bridgespan")
+    	BridgeSpan Health Company. All rights reserved.
+    #elseif($ch_brand == "asuris")
+    	Asuris Northwest Health. All rights reserved.
+    #elseif($ch_brand == "regence")
+    	#if(!$ch_region)
+    		Regence. All rights reserved.
+        #elseif($ch_region == "or")
+        	Regence BlueCross BlueShield of Oregon. All rights reserved. Regence BlueCross BlueShield of Oregon is an Independent Licensee of the Blue Cross and Blue Shield Association.
+        #elseif($ch_region == "ut")
+        	Regence BlueCross BlueShield of Utah. All rights reserved. Regence BlueCross BlueShield of Utah is an Independent Licensee of the Blue Cross and Blue Shield Association.
+        #elseif($ch_region == "wa")
+        	Regence BlueShield. All rights reserved. Regence BlueShield of Washington is an Independent Licensee of the Blue Cross and Blue Shield Association.
+        #elseif($ch_region == "ww")
+        	Regence BlueShield of Washington. All rights reserved. Regence BlueShield of Washington is an Independent Licensee of the Blue Cross and Blue Shield Association.
+        #elseif($ch_region == "id")
+        	Regence BlueShield of Idaho. All rights reserved. Regence BlueShield of Idaho is an Independent Licensee of the Blue Cross and Blue Shield Association.
+        #end
     #end
 #end

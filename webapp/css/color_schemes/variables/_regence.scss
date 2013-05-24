@@ -3,21 +3,39 @@
 // --------------------------------------------------
 
 
+// REGENCE COLORS
+// --------------------------------------------------
+
 // Brand colors
 // -------------------------
-$brand:                         #0881C2;
-$brandDarker:                   darken($brand, 25%);
-$accent:                        #599ABD;
-$accentDark:                    darken($accent, 15%);
-$accentDarker:                  darken($accent, 30%);
-$accentDarkest:                 darken($accent, 40%);
-$accentLight:                   lighten($accent, 15%);
-$accentLighter:                 lighten($accent, 30%);
-$accentLightest:                lighten($accent, 41%);
-$altHeadingColor:               #8599a8;
+$brand:                 #0881C2;
+$brandDarker:           darken($brand, 25%);
+$accent:                #599ABD;
+$accentDark:            darken($accent, 15%);
+$accentDarker:          darken($accent, 30%);
+$accentDarkest:         darken($accent, 40%);
+$accentLight:           lighten($accent, 15%);
+$accentLighter:         lighten($accent, 30%);
+$accentLightest:        lighten($accent, 41%);
+$altHeadingColor:       #8599a8;
+
+// Base
+// -------------------------
+$bodyBackground:        $white;
+$textColor:             $grayDark;
+$mainBackground:        #EFF5F7;
+
+// Links
+// -------------------------
+$linkColor:             $blue;
+$linkColorHover:        $red;
+$placeholderText:       $gray;
 
 
-// Web fonts
+// TYPOGRAPHY - REGENCE AND ASURIS
+// --------------------------------------------------
+
+// Brand fonts
 // -------------------------
 $sansFontFamily:                "ProximaNova-Regular", Verdana, sans-serif;
 $sansFontFamilyIt:              "ProximaNova-RegularIt", Verdana, sans-serif;
@@ -30,43 +48,50 @@ $sansFontFamilyBoldIt:          "ProximaNova-BoldIt", "Arial Black", sans-serif;
 $sansFontFamilyCond:            "ProximaNovaCond-Regular", Verdana, sans-serif;
 $sansFontFamilyCondSemibold:    "ProximaNovaCond-Semibold", Verdana, sans-serif;
 
+// Alt fonts
+// -------------------------
 $serifFontFamily:               Georgia, "Times New Roman", Times, serif;
 $serifFontFamilyIt:             Georgia, "Times New Roman", Times, serif;
 $monoFontFamily:                Monaco, Menlo, Consolas, "Courier New", monospace;
 $scriptFontFamily:              'NinaWebMedium', 'Chalkboard', 'ChalkboardSE-Regular', cursive;
 $scriptFontFamilyBold:          'NinaWeb-Bold', 'Chalkboard', 'ChalkboardSE-Regular', cursive;
 
+// Base typography
+// -------------------------
+$weight:                        normal;
+$font-base:                     14;
 $baseFontSize:                  14px;
-$baseFontFamily:                Verdana, sans-serif;
+$baseFontFamily:                $sansFontFamily;
 $baseLineHeight:                20px;
 $altFontFamily:                 $serifFontFamily;
+$serif-boolean:                 true !default;
 
+// Heading typography
+// -------------------------
 $headingsFontFamily:            inherit; // empty to use BS default, $baseFontFamily
 $headingsFontFamilyAlt:         $sansFontFamilyLight;
 $headingsFontWeight:            normal;    // instead of browser default, bold
 $headingsColor:                 inherit; // empty to use BS default, $textColor
 
-
-// Scaffolding
+// TypeScale
 // -------------------------
-$textColor:             $grayDark;
-$bodyBackground:        $white;
-$mainBackground:        #EFF5F7;
+$tera: 72; // 117 = 18 × 6.5
+$giga: 60; // 90 = 18 × 5
+$mega: 48; // 72 = 18 × 4
+$alpha: 36; // 60 = 18 × 3.3333
+$beta: 24; // 48 = 18 × 2.6667
+$gamma: 21; // 36 = 18 × 2
+$delta: 18; // 24 = 18 × 1.3333
+$epsilon: 16; // 21 = 18 × 1.1667
+$zeta: 14; // 18 = 18 × 1
 
 
-// Component sizing
+// COMPONENTS
+// --------------------------------------------------
+
+// Border radius
 // -------------------------
-// Based on 14px font-size and 20px line-height
-
-$fontSizeLarge:         $baseFontSize * 1.25; // ~18px
-$fontSizeSmall:         $baseFontSize * 0.85; // ~12px
-$fontSizeMini:          $baseFontSize * 0.75; // ~11px
-
-$paddingLarge:          11px 19px; // 44px
-$paddingSmall:          2px 10px;  // 26px
-$paddingMini:           0 6px;   // 22px
-
-$baseBorderRadius:      4px;
+$baseBorderRadius:      0;
 $borderRadiusLarge:     6px;
 $borderRadiusSmall:     3px;
 
@@ -74,93 +99,17 @@ $borderRadiusSmall:     3px;
 // Forms
 // -------------------------
 $inputBorderRadius:             $baseBorderRadius;
-$inputColor:                    #555555;
-$inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
-$inputFontSize:                 14px;
 $inputPadding:                  4px 6px;
 
 
-// Links
-// -------------------------
-$linkColor:             $blue;
-$linkColorHover:        $red;
-
-
-// Buttons
-// -------------------------
-$btnBackground:                     $white;
-$btnBackgroundHighlight:            darken($white, 10%);
-$btnBorder:                         #bbb;
-$btnColor:                          $textColor;
-
-$btnPrimaryBackground:              $linkColor;
-$btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%);
-
-$btnInfoBackground:                 #5bc0de;
-$btnInfoBackgroundHighlight:        #2f96b4;
-
-$btnSuccessBackground:              #62c462;
-$btnSuccessBackgroundHighlight:     #51a351;
-
-$btnWarningBackground:              lighten($orange, 15%);
-$btnWarningBackgroundHighlight:     $orange;
-
-$btnDangerBackground:               #ee5f5b;
-$btnDangerBackgroundHighlight:      #bd362f;
-
-$btnInverseBackground:              #444;
-$btnInverseBackgroundHighlight:     $grayDarker;
-
-
-// Alerts
-// -------------------------
-$alertBorder:                       none;
-$alert404Background:                transparent url("images/regence/large-warning.png") no-repeat 0 12px;
-$alert404Color:                     #999;
-$alert404FontSize:                  24px;
-$alert404HeadingColor:              #d06a21;
-$alert404HeadingSize:               36px;
-
-
-// Tables
-// -------------------------
-$tableBackground:                   transparent; // overall background-color
-$tableBackgroundAccent:             #f9f9f9; // for striping
-$tableBackgroundHover:              #f5f5f5; // for hover
-$tableBorder:                       #ddd; // table and cell border
-
-
-// Forms
-// -------------------------
-$inputBackground:               $white;
-$inputBorder:                   #ccc;
-$inputBorderRadius:             $baseBorderRadius;
-$inputDisabledBackground:       $grayLighter;
-$formActionsBackground:         #f5f5f5;
-$inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
-
-
-// Dropdowns
-// -------------------------
-$dropdownBackground:            $white;
-$dropdownBorder:                rgba(0,0,0,.2);
-$dropdownDividerTop:            #e5e5e5;
-$dropdownDividerBottom:         $white;
-$dropdownLinkColor:             $grayDark;
-$dropdownLinkColorHover:        $white;
-$dropdownLinkColorActive:       $white;
-$dropdownLinkBackgroundActive:  $linkColor;
-$dropdownLinkBackgroundHover:   $dropdownLinkBackgroundActive;
-
-
-// Headers
-// -------------------------
-
 // Page header
+// -------------------------
 $pageHeaderBorderBottom:        1px solid $grayLighter;
 $pageHeaderMargin:              $baseLineHeight 0 ($baseLineHeight * 1.5);
 
+
 // Section header
+// -------------------------
 $sectionHeaderBackground:       #EAEFF1;
 $sectionHeaderBorderTop:        1px solid #E0E3E4;
 $sectionHeaderHeadingColor:     $orange;
@@ -168,20 +117,17 @@ $sectionHeaderHeadingColor:     $orange;
 
 // Article
 // -------------------------
-$articleBackground:             lighten($accent, 38%);
-$articleBackgroundBottom:       lighten($articleBackground, 8%);
+$articleBackground:					$white;
+$articleBorder:						lighten($accentLighter, 8%);
 
-$contentBorder:                 lighten($accentLighter, 8%);
-
-$asideHeadingBackground:        #F0F6F9;
-$asideHeadingBorder:            #E5EFF5;
-$asideHeadingColor:             #7D99A8;
-
-$bulletBackground:              $orange;
-
-$blockquoteBackground:          $accentLightest;
-$blockquoteBorder:              $accentLighter;
-
+$asideBackground:					#F7FAFB;
+$asideHeadingBackground:			#F0F6F9;
+$asideHeadingBorder:                #d7d7d7;
+$asideHeadingColor:                 $grayLight;
+$asideHeadingFontSize:              20px;
+$asideLinkFontSize:                 16px;
+$asideLinkColor:                    $grayLight;
+$asideLinkColorHover:               $linkColor;
 
 // Lists
 // -------------------------
@@ -191,31 +137,27 @@ $listIndent:                        $baseLineHeight;
 
 // Personalization Widget
 // -------------------------
-$personalizeBackground:         #8FCCE7;
-$personalizeBackgroundBottom:   darken($personalizeBackground, 8%);
-$personalizeInput:              #4D9EC0;
-$personalizeInputHover:         darken($personalizeInput,4%);
-$personalizeInputActive:        darken($personalizeInput,8%);
+$personalizeBackground:         	#8FCCE7;
+$personalizeBackgroundBottom:   	darken($personalizeBackground, 8%);
+$personalizeInput:              	#4D9EC0;
+$personalizeInputHover:         	darken($personalizeInput,4%);
+$personalizeInputActive:        	darken($personalizeInput,8%);
 
 
 // Navbar
 // -------------------------
-$navbarCollapseWidth:             979px;
-$navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
+$navbarBackgroundHighlight:       	#ffffff;
+$navbarBackground:                	darken($navbarBackgroundHighlight, 5%);
+$navbarBorder:                    	darken($navbarBackground, 12%);
 
-$navbarHeight:                    40px;
-$navbarBackgroundHighlight:       #ffffff;
-$navbarBackground:                darken($navbarBackgroundHighlight, 5%);
-$navbarBorder:                    darken($navbarBackground, 12%);
+$navbarText:                      	$grayDark;
+$navbarLinkColor:                 	$grayDark;
+$navbarLinkColorHover:            	$black;
+$navbarLinkColorActive:           	$grayDarker;
+$navbarLinkBackgroundHover:       	transparent;
+$navbarLinkBackgroundActive:      	darken($navbarBackground, 5%);
 
-$navbarText:                      $grayDark;
-$navbarLinkColor:                 $grayDark;
-$navbarLinkColorHover:            $black;
-$navbarLinkColorActive:           $grayDarker;
-$navbarLinkBackgroundHover:       transparent;
-$navbarLinkBackgroundActive:      darken($navbarBackground, 5%);
-
-$navbarBrandColor:                $navbarLinkColor;
+$navbarBrandColor:                	$navbarLinkColor;
 
 
 // Inverted navbar
@@ -255,22 +197,18 @@ $navMainLinkHeight:             120px;
 $navMainLinkMargin:             0 10px;
 
 
-// Nav - Secondary
+// Nav - Information
 // -------------------------
-$navSecondaryBackground:        #DDE9EF;
-$navSecondaryBottomBackground:  lighten($navSecondaryBackground, 10%);
-$navSecondaryTitleColor:        darken($accent, 5%);
-$navSecondaryLink:              darken($accent, 25%);
-$navSecondaryLinkHover:         darken($accent, 15%);
-$navSecondaryhrBorder:          darken($navSecondaryBackground, 10%);
+$navInformationBackground:        #DDE9EF;
+$navInformationBottomBackground:  lighten($navInformationBackground, 10%);
+$navInformationTitleColor:        darken($accent, 5%);
+$navInformationLink:              darken($accent, 25%);
+$navInformationLinkHover:         darken($accent, 15%);
+$navInformationBorder:            darken($navInformationBackground, 10%);
 
 
-// Nav - Breadcrumb
-// -------------------------
-$breadcrumbBackground:          transparent;
-$breadcrumbMargin:              20px 0 0;
-$breadcrumbPadding:             8px 0;
-$breadcrumbDividerColor:        $gray;
+// LOCATIONS
+// --------------------------------------------------
 
 
 // Top
@@ -286,16 +224,9 @@ $audienceGlyphColor:            $brand;
 $audienceCaretColor:            $brand;
 
 
-// Hero unit
-// -------------------------
-$heroUnitBackground:              $grayLighter;
-$heroUnitHeadingColor:            inherit;
-$heroUnitLeadColor:               inherit;
-
-
 // Contact
 // -------------------------
-$contactInfoBackground:         $wellBackground;
+$contactInfoBackground:         #F5F5F5;
 $contactInfoLink:               $textColor;
 $contactInfoLinkHover:          $textColor;
 $contactPhoneBackground:        #66A131;

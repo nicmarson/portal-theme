@@ -1,0 +1,293 @@
+/*------------------------------------*\
+    $REGENCE
+    $ASURIS
+    $COLOR_SCHEME
+\*------------------------------------*/
+
+// Variables
+@import "variables/regence"; // Load regence colors and styles
+
+
+// --------------------------------------
+// Regence and Asuris theme styles
+// --------------------------------------
+
+.regence,
+.asuris {
+  color: $textColor;
+  font-family: $baseFontFamily;
+  font-size: $baseFontSize;
+  @include css-hyphens(auto);
+  line-height: $baseLineHeight;
+
+
+  // Import theme fonts and colors
+  // --------------------------------------
+  @import "themes/typography";
+
+
+  // Import shared components
+  // --------------------------------------
+  @import "components/navigation";
+  @import "components/article";
+  @import "components/hero";
+  @import "components/message";
+
+
+  // Import shared locations
+  // --------------------------------------
+  @import "locations/top";
+  @import "locations/bottom";
+  @import "locations/contact";
+  @import "locations/error";
+
+
+  // Typography
+  // --------------------------------------
+  h2 {
+    color: $orange;
+  }
+
+
+  // Article sidebar
+  // -------------------------
+  article .sidebar {
+    padding-top: ($gridGutterWidth*2);
+
+    h3 {
+      padding: 8px 15px;
+    }
+  }
+
+  // Article - Left sidebar
+  .article-left-sidebar .sidebar {
+
+    .nav > li > a {
+      font-size: 24px;
+      padding: 12px 15px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+
+  // NAV MAIN
+  // --------------------------------------
+  .nav-main ul li a {
+    @include border-radius(5px);
+  }
+
+
+  // Audience dropdown
+  // -------------------------
+  #set-view-location {    
+    @include box-shadow(#{0 5px 15px rgba(0,0,0,.2) inset, 0 -5px 5px rgba(0,0,0,.05) inset});
+
+    label {
+      color: #FFF;
+      font-family: $sansFontFamilyLight;
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 10px;
+    }
+
+    .form-actions {
+      background-color: transparent;
+      border-top-color: rgba(255,255,255, .5);
+
+      .btn-link {
+        color: #FFF;
+        text-decoration: underline;
+        text-shadow: none;
+      }
+    }
+  }
+}
+
+
+//
+// RESPONSIVE
+// --------------------------------------
+
+
+// Responsive: Large desktop and up
+// --------------------------------------
+@media (min-width: 1200px) {
+
+  .regence,
+  .asuris {
+    font-size: $baseFontSize + 4px;
+    line-height: $baseLineHeight + 4px;
+    
+    @import "responsive/1200px-min";
+
+
+    // Audience dropdown
+    // ---------------------------
+    #set-view-location {
+
+      .glyph-users,
+      .glyph-house {
+        height: 84px;
+        width: 84px;
+      
+        &:before {
+          font-size: 72px;
+          line-height: 84px;
+        }
+      }
+    }
+  }
+}
+
+
+// Responsive: Desktop to large desktop
+// --------------------------------------------------
+@media (min-width: 980px) and (max-width: 1199px) {
+
+  .regence,
+  .asuris {
+    @import "responsive/980px-1199px";
+
+
+    // Audience dropdown
+    // ---------------------------
+    #set-view-location {
+
+      .glyph-users,
+      .glyph-house {
+        height: 84px;
+        width: 84px;
+
+        &:before {
+          font-size: 72px;
+          line-height: 84px;
+        }
+      }
+      
+      .glyph-house {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+// Responsive: Desktops and larger
+// --------------------------------------
+@media (min-width: 980px) {
+
+  .regence,
+  .asuris {
+    font-size: $baseFontSize + 2px;
+    line-height: $baseLineHeight + 2px;
+
+    @import "responsive/980px-min";
+  }
+}
+
+
+// Responsive: Tablet to desktop
+// --------------------------------------
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .regence,
+  .asuris {
+    @import "responsive/768px-979px";
+
+
+    // Audience dropdown
+    // ---------------------------
+    #set-view-location {
+
+      .glyph-users,
+      .glyph-house {
+        height: 74px;
+        width: 74px;
+
+        &:before {
+          font-size: 62px;
+          line-height: 74px;
+        }
+      }
+
+      .glyph-house {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+// Responsive: Tablet to large desktops
+// --------------------------------------
+@media (min-width: 768px) {
+
+  .regence,
+  .asuris {
+    @import "responsive/768px-min";
+
+
+    // Article
+    // --------------------------------------
+    .article-left-sidebar {
+
+      .sidebar {
+        border-right: 1px solid $articleBorder;
+      }
+    }
+
+
+    // Audience dropdown
+    // ---------------------------
+    #set-view-location {
+
+      .glyph-users,
+      .glyph-house {
+        float: left;
+        margin-right: 15px;
+        opacity: .4;
+
+        &:before {
+          color: #FFF;
+          vertical-align: inherit;
+        }
+      }
+    }
+  }
+}
+
+
+// Tablet
+// --------------------------------------
+@media (max-width: 767px) {
+
+  .regence,
+  .asuris {
+    @import "responsive/767px-max";
+  }
+}
+
+
+//
+// MODERNIZR
+// --------------------------------------
+
+
+// Font face
+// -------------------------
+.fontface .regence,
+.fontface .asuris { // If web fonts are supported
+
+  @import "modernizr/font_face";
+}
+
+// Generated content
+// -------------------------
+.generatedcontent .regence,
+.generatedcontent .asuris {
+
+  @import "modernizr/generated_content";
+}

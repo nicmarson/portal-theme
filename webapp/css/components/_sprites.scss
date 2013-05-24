@@ -14,12 +14,14 @@
 }
 
 /* Override Bootstrap styles */
-[class^="glyph-"], [class*=" glyph-"] {
+[class^="glyph-"],
+[class*=" glyph-"] {
   margin-top: 0;
 }
 
 /* Use the following CSS code if you want to have a class per icon */
-[class^="glyph-"]:before, [class*=" glyph-"]:before {
+[class^="glyph-"]:before,
+[class*=" glyph-"]:before {
   font-family: 'icomoon';
   -webkit-font-smoothing: antialiased;
           font-smoothing: antialiased;
@@ -94,6 +96,9 @@
 .glyph-new-tab:before {
   content: "\e001";
 }
+.glyph-house:before {
+  content: "\e002";
+}
 
 
 // Custom Glyphs
@@ -108,4 +113,13 @@
   a:hover {
     text-decoration: none;
   }
+}
+
+
+/* jquery ui states and images */
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
 }

@@ -1,5 +1,5 @@
 <nav class="nav-information">
-    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#nav-information">More information</button> 
+    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#nav-information">More information <b class="caret"></b></button> 
     <div class="row-fluid collapse" id="nav-information">
         <div class="nav-group">
             <h3 class="title">Shop for Health Insurance</h3>

@@ -3,120 +3,6 @@
 // --------------------------------------------------
 
 
-// Global values
-// --------------------------------------------------
-
-
-// Grays
-// -------------------------
-$black:                 #000;
-$grayDarker:            #222;
-$grayDark:              #333;
-$gray:                  #555;
-$grayLight:             #999;
-$grayLighter:           #ddd;
-$white:                 #fff;
-
-
-// Accent colors
-// -------------------------
-$blue:					#076DA5;
-$green:                 #1E9442;
-$red:                   #9d261d;
-$yellow:                #ffc40d;
-$orange:                #B94D00;
-$pink:                  #c3325f;
-$purple:                #916DBD;
-$burgundy:				#791321;
-
-
-// Forms
-// -------------------------
-$inputHeight:                   16px + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
-
-
-// Z-index master list
-// -------------------------
-// Used for a bird's eye view of components dependent on the z-axis
-// Try to avoid customizing these :)
-$zindexDropdown:          1000;
-$zindexPopover:           1010;
-$zindexTooltip:           1030;
-$zindexFixedNavbar:       1030;
-$zindexModalBackdrop:     1040;
-$zindexModal:             1050;
-
-
-// Sprite icons path
-// -------------------------
-$iconSpritePath:          "../images/glyphicons-halflings.png";
-$iconWhiteSpritePath:     "../images/glyphicons-halflings-white.png";
-
-
-// Input placeholder text color
-// -------------------------
-$placeholderText:         $gray;
-
-
-// Hr border color
-// -------------------------
-$hrBorder:                $grayLighter;
-
-
-// Horizontal forms & lists
-// -------------------------
-$horizontalComponentOffset:       180px;
-
-
-// Wells
-// -------------------------
-$wellBackground:                  #f3f3f3;
-
-
-// Pagination
-// -------------------------
-$paginationBackground:                #fff;
-$paginationBorder:                    #ddd;
-$paginationActiveBackground:          #f5f5f5;
-
-
-// Form states and alerts
-// -------------------------
-$warningText:             #c09853;
-$warningBackground:       #fcf8e3;
-$warningBorder:           darken(adjust-hue($warningBackground, -10), 3%);
-
-$errorText:               $red;
-$errorBackground:         #f2dede;
-$errorBorder:             darken(adjust-hue($errorBackground, -10), 3%);
-
-$successText:             #468847;
-$successBackground:       #dff0d8;
-$successBorder:           darken(adjust-hue($successBackground, -10), 5%);
-
-$infoText:                #3a87ad;
-$infoBackground:          #d9edf7;
-$infoBorder:              darken(adjust-hue($infoBackground, -10), 7%);
-
-
-// Tooltips and popovers
-// -------------------------
-$tooltipColor:            #fff;
-$tooltipBackground:       #000;
-$tooltipArrowWidth:       5px;
-$tooltipArrowColor:       $tooltipBackground;
-
-$popoverBackground:       #fff;
-$popoverArrowWidth:       10px;
-$popoverArrowColor:       #fff;
-$popoverTitleBackground:  darken($popoverBackground, 3%);
-
-// Special enhancement for popovers
-$popoverArrowOuterWidth:  $popoverArrowWidth + 1;
-$popoverArrowOuterColor:  rgba(0,0,0,.25);
-
-
-
 // GRID
 // --------------------------------------------------
 
@@ -151,3 +37,168 @@ $fluidGridGutterWidth1200:     percentage($gridGutterWidth1200/$gridRowWidth1200
 // 768px-979px
 $fluidGridColumnWidth768:      percentage($gridColumnWidth768/$gridRowWidth768);
 $fluidGridGutterWidth768:      percentage($gridGutterWidth768/$gridRowWidth768);
+
+
+// COLORS
+// --------------------------------------------------
+
+// Grays
+// -------------------------
+$black:                 #000;
+$grayDarker:            #222;
+$grayDark:              #333;
+$gray:                  #555;
+$grayLight:             #999;
+$grayLighter:           #ddd;
+$white:                 #fff;
+
+// Accent colors
+// -------------------------
+$blue:                  #076DA5;
+$green:                 #1E9442;
+$red:                   #9d261d;
+$yellow:                #ffc40d;
+$orange:                #B94D00;
+$pink:                  #c3325f;
+$purple:                #916DBD;
+$burgundy:              #791321;
+
+
+// BASE COMPONENT COLOR VARIABLES
+// --------------------------------------------------
+
+// Buttons
+// -------------------------
+$btnBackground:                     $white;
+$btnBackgroundHighlight:            darken($white, 10%);
+$btnBorder:                         #bbb;
+
+$btnInfoBackground:                 #5bc0de;
+$btnInfoBackgroundHighlight:        #2f96b4;
+
+$btnSuccessBackground:              #62c462;
+$btnSuccessBackgroundHighlight:     #51a351;
+
+$btnWarningBackground:              lighten($orange, 15%);
+$btnWarningBackgroundHighlight:     $orange;
+
+$btnDangerBackground:               #ee5f5b;
+$btnDangerBackgroundHighlight:      #bd362f;
+
+$btnInverseBackground:              #444;
+$btnInverseBackgroundHighlight:     $grayDarker;
+
+
+// Forms
+// -------------------------
+$inputBackground:               $white;
+$inputDisabledBackground:       $grayLighter;
+$inputBorder:                   #ccc;
+$inputColor:                    #555555;
+$formActionsBackground:         #f5f5f5;
+
+
+// Form states and alerts
+// -------------------------
+$alertBorder:             none;
+
+$warningText:             #c09853;
+$warningBackground:       #fcf8e3;
+$warningBorder:           darken(adjust-hue($warningBackground, -10), 3%);
+
+$errorText:               $red;
+$errorBackground:         #f2dede;
+$errorBorder:             darken(adjust-hue($errorBackground, -10), 3%);
+
+$successText:             #468847;
+$successBackground:       #dff0d8;
+$successBorder:           darken(adjust-hue($successBackground, -10), 5%);
+
+$infoText:                #3a87ad;
+$infoBackground:          #d9edf7;
+$infoBorder:              darken(adjust-hue($infoBackground, -10), 7%);
+
+
+// Tables
+// -------------------------
+$tableBackground:                   transparent; // overall background-color
+$tableBackgroundAccent:             #f9f9f9; // for striping
+$tableBackgroundHover:              #f5f5f5; // for hover
+$tableBorder:                       #ddd; // table and cell border
+
+
+// Dropdowns
+// -------------------------
+$dropdownBackground:            $white;
+$dropdownBorder:                rgba(0,0,0,.2);
+$dropdownDividerTop:            #e5e5e5;
+$dropdownDividerBottom:         $white;
+$dropdownLinkColor:             $grayDark;
+$dropdownLinkColorHover:        $white;
+$dropdownLinkColorActive:       $white;
+
+
+// Hr border color
+// -------------------------
+$hrBorder:                			$grayLighter;
+
+
+// Wells
+// -------------------------
+$wellBackground:                  	#f3f3f3;
+
+
+// TYPOGRAPHY
+// --------------------------------------------------
+
+// TypeScale Unit
+// -------------------------
+$type-scale-unit-value: rem;
+
+// Text Indentation Value
+// -------------------------
+$indent-val: 1.5em;
+
+
+// COMPONENTS
+// --------------------------------------------------
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+$zindexDropdown:          1000;
+$zindexPopover:           1010;
+$zindexTooltip:           1030;
+$zindexFixedNavbar:       1030;
+$zindexModalBackdrop:     1040;
+$zindexModal:             1050;
+
+
+// Horizontal forms & lists
+// -------------------------
+$horizontalComponentOffset:       	180px;
+
+
+// Navbar
+// -------------------------
+$navbarCollapseWidth:             979px;
+$navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
+$navbarHeight:                    40px;
+
+
+// Tooltips and popovers
+// -------------------------
+$tooltipColor:            #fff;
+$tooltipBackground:       #000;
+$tooltipArrowWidth:       5px;
+$tooltipArrowColor:       $tooltipBackground;
+
+$popoverBackground:       #fff;
+$popoverArrowWidth:       10px;
+$popoverArrowColor:       #fff;
+$popoverTitleBackground:  darken($popoverBackground, 3%);
+
+// Special enhancement for popovers
+$popoverArrowOuterWidth:  $popoverArrowWidth + 1;
+$popoverArrowOuterColor:  rgba(0,0,0,.25);

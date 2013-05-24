@@ -7,8 +7,7 @@
     <div class="row-fluid">
         <div class="container">
             <div class="span6">
-                <p>&copy; $dateTool.get('yyyy') Regence BlueCross BlueShield of Oregon. All rights reserved.
-Regence BlueCross BlueShield of Oregon is an Independent Licensee of the Blue Cross and Blue Shield Association.</p>
+                <p>&copy; $dateTool.get('yyyy') #ch_footer_copywrite()</p>
             </div>
             <nav class="span6">
                 <ul class="nav inline" role="navigation">
@@ -21,7 +20,7 @@ Regence BlueCross BlueShield of Oregon is an Independent Licensee of the Blue Cr
                     </li>-->
                     <!--<li><a href="/legal/online-privacy-and-security/">Privacy</a></li>-->
                     <li><a href="/legal/terms-of-use/">Terms of Use</a></li>
-                    <li><a href="javascript:void(0);" onClick="oo_feedback.show()"><span class="icon-feedback" aria-hidden="true"><b></b><i></i></span> Feedback</a></li>
+                    <li><a href="/feedback"><span class="icon-feedback" aria-hidden="true"><b></b><i></i></span> Feedback</a></li>
                     <!--<li><a href="/espanol">Espa&ntilde;ol</a></li>-->
                 </ul>
             </nav>

@@ -1,0 +1,216 @@
+/*------------------------------------*\
+  $THEME
+  $RESPONSIVE
+  $980px-1199px
+\*------------------------------------*/
+
+
+// Hero Units
+// ---------------------------
+.hero-unit {
+  margin-bottom: 30px;
+  padding: 60px;
+
+  h1 {
+    font-size: 72px;
+  }
+
+  p {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+
+// Inverted hero unit
+// ----------------------------/
+.hero-inverted {
+  padding: ($gridGutterWidth*2) 0; // 40px 0
+}
+
+
+// Hero with image background
+// ----------------------------/
+.hero-image {
+
+  .image {
+    min-height: 420px;
+  }
+}
+
+
+// Hero with media boxes
+// -------------------------------
+.hero-media {
+
+  .media {
+
+    p,
+    li {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    .lead {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  .media-heading {
+    font-size: 20px;
+    line-height: 26px;
+
+    small {
+      font-size: 18px;
+    }
+  }
+
+  .media-body,
+  .media-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+// Hero individual
+// ----------------------------/
+#hero-individual {
+
+  .hero-unit {
+    height: 445px;
+  }
+
+  .media {
+    min-height: 150px;
+  }
+
+  #media-shop {
+    height: 320px;
+  }
+}
+
+
+// Hero employer
+// ----------------------------/
+#hero-employer {
+
+  .hero-unit {
+    height: 450px;
+  }
+
+  #media-forms {
+    height: 280px;
+  }
+}
+
+
+// Health Insurance Guide
+// -------------------------------
+#hero-understanding-insurance {
+
+  .hero-unit,
+  .hero-image > .image {
+    height: 410px;
+  }
+
+  .hero-image .hero-inner {
+    bottom: 25px;
+  }
+
+  .media {
+    min-height: 180px;
+  }
+
+  .media-header {
+    min-height: 50px;
+  }
+
+  .search-button {
+    font-size: 30px;
+    height: 59px;
+    padding: 0 16px;
+    right: 2px;
+    top: 2px;
+  }
+
+  .search-input {
+    font-size: 30px;
+    line-height: 36px;
+    padding: 10px 15px 11px;
+  }
+}
+
+
+// Top
+// ---------------------------
+#top {
+
+  .container {
+    width: 940px;
+  }
+}
+
+
+// Audience dropdown
+// ---------------------------
+#set-view-location {
+
+  form {
+    margin: 0 10%;
+    padding-top: 36px;
+  }
+
+  label {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .form-actions {
+    padding-right: 43px;
+  }
+}
+
+
+// Contact Us
+// ---------------------------
+table.contact-info {
+  font-size: 20px;
+  line-height: 16px;
+
+  small {
+    font-size: 14px;
+    line-height: 10px;
+  }
+
+  td.contact-info-glyph {
+    padding: 20px 8px 20px 10px;    
+  }
+  
+  td.contact-info-entry {
+    padding: 20px 8px 20px 5px;
+  }
+}
+
+// Contact Icons
+.contact-info-glyph {
+
+  .glyph-phone,
+  .glyph-email,
+  .glyph-phone:before,
+  .glyph-email:before {
+    font-size: 40px;
+    height: 50px;
+    line-height: 50px;
+    width: 50px; 
+  }
+}
+
+// Google Map
+#map_sidebar {
+  width: 150px;
+}
+#map_canvas {
+  width: 425px;
+}

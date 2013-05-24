@@ -1,0 +1,237 @@
+/*------------------------------------*\
+    $THEME
+    $RESPONSIVE
+    $1200px-min
+\*------------------------------------*/
+
+// Article
+// ---------------------------
+.article-list > li {
+  font-size: 18px;
+}
+
+
+// Hero Units
+// -------------------------------
+.hero-unit {
+
+  h1 {
+    font-size: 72px;
+  }
+  p {
+    font-size: 24px;
+  }
+}
+
+
+// Hero with image background
+// -------------------------------
+.hero-image {
+
+  .image {
+    min-height: 600px;
+  }
+  .caption-title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .caption-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+
+// Hero with media boxes
+// -------------------------------
+.hero-media {
+
+  .media {
+
+    p,
+    li {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    .lead {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  .media-heading {
+    font-size: 22px;
+    line-height: 28px;
+
+    small {
+      font-size: 20px;
+    }
+  }
+
+  .media-body,
+  .media-header {
+    padding: 25px 25px 10px;
+  }
+}
+
+
+// Health Insurance Guide
+// -------------------------------
+#hero-understanding-insurance {
+
+  .hero-unit,
+  .hero-image > .image {
+    height: 455px;
+  }
+
+  .hero-image .hero-inner {
+    bottom: 30px;
+  }
+
+  .media {
+    height: 200px;
+  }
+
+  .media-header {
+    height: 45px;
+  }
+
+  .media-image {
+    background-size: cover;
+    height: 120px;
+  }
+
+  .search-button {
+    height: 65px;
+    padding: 0 20px;
+  }
+
+  .search-input {
+    font-size: 34px;
+    line-height: 40px;
+    padding: 10px 18px 11px;
+  }
+}
+
+
+// Shop For Insurance
+.hero-shopping {
+
+  .image {
+    min-height: 375px;
+  }
+  .nav > li > a {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+
+// MyRegence & MyAsuris
+.hero-myregence {
+
+  .image {
+    min-height: 398px;
+  }
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  p, .btn {
+    font-size: 28px;
+  }
+}
+
+
+// Provider Search
+.hero-find-doctor {
+
+  .image {
+    min-height: 398px;
+  }
+}
+
+
+// Landing - Individual
+#hero-individual {
+
+  .hero-unit {
+    height: 485px;
+  }
+
+  .media {
+    min-height: 170px;
+  }
+
+  #media-shop {
+    height: 360px;
+  }
+}
+
+
+// Contact info
+// ---------------------------
+#top {
+
+  .container {
+    width: 1170px;
+  }
+}
+
+
+// Audience dropdown
+// ---------------------------
+#set-view-location {
+
+  form {
+    margin: 0 15%;
+    padding-top: 48px;
+  }
+  label {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .form-actions {
+    padding-right: 43px;
+  }
+}
+
+
+// Contact info
+// ---------------------------
+table.contact-info {
+  font-size: 24px;
+  line-height: 20px;
+
+  small {
+    font-size: 15px;
+    line-height: 11px;
+  }
+  td.contact-info-glyph {
+    padding: 20px 12px 20px 20px;    
+  }
+  td.contact-info-entry {
+    padding: 20px 12px 20px 5px;
+  }
+}
+
+.contact-info-glyph {
+
+  .glyph-phone,
+  .glyph-email,
+  .glyph-phone:before,
+  .glyph-email:before {
+    font-size: 50px;
+    height: 60px;
+    line-height: 60px;
+    width: 60px;
+  }
+}
+
+// Google Map
+#map_canvas {
+  float: right;
+  width: 580px;
+}

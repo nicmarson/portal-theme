@@ -1,0 +1,215 @@
+/*------------------------------------*\
+    $THEME
+    $RESPONSIVE
+    $768px-min
+\*------------------------------------*/
+
+
+// Thumbnails
+// ---------------------------
+.thumbnail-left {
+
+  .content {
+    float: right;
+  }
+
+  .image {
+    float: left;
+    padding-right: $gridGutterWidth;
+  }
+}
+.thumbnail-right {
+
+  .content {
+    float: left;
+  }
+
+  .image {
+    float: right;
+    padding-left: $gridGutterWidth;
+  }
+}
+
+
+// NAV INFORMATION
+// ---------------------------
+.nav-information {
+
+  .nav-group {
+    float: left;
+    width: 19.9999%;
+  }
+}
+
+
+// NAV NETWORK
+// ---------------------------
+.nav-network {
+  margin-top: 30px;
+
+  li > a {
+    background-color: #F8FAFB;
+    @include box-shadow("0 1px 5px rgba(0,0,0,.1)");
+    display: block;
+    font-family: $sansFontFamily;
+    text-align: center;
+    @include transition(all .2s ease-in-out);
+    vertical-align: middle;
+
+    &:hover {
+      background-color: #F8FAFB;
+      @include box-shadow("0 1px 5px rgba(0,0,0,.5)");
+    }
+  }
+
+  .active > a, 
+  .active > a:hover {
+    background-color: #076DA5;
+  }
+}
+
+
+// ARTICLES
+// --------------------------------------
+article {
+  background: $articleBackground;
+}
+
+.article-left-sidebar {
+
+  .sidebar .nav {
+    text-align: right;
+  }
+}
+
+.article .main-content {
+  padding: $gridGutterWidth $gridGutterWidth ($baseLineHeight*2);
+}
+
+
+// Hero with image background
+// -------------------------------
+.hero-image {
+  padding: 0;
+  position: relative;
+
+  > .image {
+    min-height: 360px;
+  }
+
+  .hero-inner {
+    bottom: 0;
+    left: 20px;
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .caption {
+    background: $white;
+    background: rgba(255,255,255,.8);
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20px;
+    padding: 35px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+  }
+
+  .caption-title small,
+  .caption-text {
+    color: $gray;
+  }
+
+  .caption-title {
+    color: $orange;
+    font-family: $sansFontFamilyLight;
+    margin-bottom: 8px;
+
+    small {
+      color: $gray;
+    }
+  }
+
+  .caption-text {
+    color: $gray;
+    margin-bottom: 0;
+  }
+}
+
+
+// Hero with media boxes
+// -------------------------------
+.hero-media {
+
+  .media {
+    background-color: $white;
+    background-color: rgba(255,255,255,.9);
+    @include border-radius(4px);
+    @include box-shadow("0 1px 5px rgba(0,0,0,.1)");
+    min-height: 130px;
+    @include transition(all .2s ease-in-out);
+
+    &:hover {
+      background-color: $white;
+      @include box-shadow("0 1px 5px rgba(0,0,0,.5)");
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .media-heading {
+      line-height: .85;
+    }
+  }
+}
+
+
+// Health Insurance Guide
+// -------------------------------
+#hero-understanding-insurance {
+  margin-bottom: 100px;
+
+  .hero-image {
+    color: $white;
+
+    .hero-inner {
+      bottom: 20px;
+    }
+  }
+}
+
+
+// Top
+// --------------------------------------
+#top {
+
+  // Nav Shopping
+  .nav .nav-shopping > a {
+    padding-left: 60px;
+    padding-right: 45px;
+  }
+}
+
+
+// Main
+// --------------------------------------
+#main {
+  background: $mainBackground;
+}
+
+
+// Bottom
+// --------------------------------------
+#bottom {
+
+  p {
+    text-align: left;
+  }
+  
+  ul {
+    text-align: right;
+  }
+}

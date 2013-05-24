@@ -1,0 +1,171 @@
+//
+// Custom Mixins
+// --------------------------------------------------
+
+// TYPEPLATE
+// $Context Calculator
+// -------------------------------------//
+
+@function ems($target, $context) {
+  @return ($target/$context)#{em};
+}
+
+
+// $Modular Scale Calculator
+// -------------------------------------//
+// http://thesassway.com/projects/modular-scale
+
+@function modular-scale($scale, $base, $value) {
+  // divide a given font-size by base font-size & return a relative em value
+  @return ($scale/$base)#{$value};
+}
+
+
+// $Measure Margin Calculator
+// -------------------------------------//
+
+@function measure-margin($scale, $measure, $value) {
+  // divide 1 unit of measure by given font-size & return a relative em value
+  @return ($measure/$scale)#{$value};
+}
+
+
+// $Modular Scale
+// -------------------------------------//
+
+@mixin modular-scale($scale, $base, $value) {
+  font-size: $scale#{px};
+  font-size: modular-scale($scale, $base, $value);
+}
+
+
+// $Hypens
+// -------------------------------------//
+//http://trentwalton.com/2011/09/07/css-hyphenation
+
+@mixin css-hyphens($val) {
+  // Accepted values: [ none | manual | auto ]
+  -webkit-hyphens: $val; // Safari 5.1 thru 6, iOS 4.2 thru 6
+  -moz-hyphens: $val; // Firefox 16 thru 20
+  -ms-hyphens: $val; // IE10
+  hyphens: $val; // W3C standard
+}
+
+
+// $Smallcaps
+// -------------------------------------//
+// http://blog.hypsometry.com/articles/true-small-capitals-with-font-face
+// ISSUE #1 : https://github.com/typeplate/typeplate.github.com/issues/1
+
+@mixin smallcaps($color, $font-weight) {
+  // depends on the font family.
+  // some font-families don't support small caps
+  // or don't provide them with their web font.
+  font-variant: small-caps;
+  font-weight: $font-weight;
+  text-transform: lowercase;
+  color: $color;
+}
+
+
+// $Fontsize Adjust
+// -------------------------------------//
+// correct x-height for fallback fonts: requires secret formula
+// yet to be discovered. This is still wacky for support. Use
+// wisely grasshopper.
+
+@mixin font-size-adjust($adjust-value) {
+  // firefox 17+ only (as of Feb. 2013)
+  font-size-adjust: $adjust-value;
+}
+
+
+// $Dropcaps
+// -------------------------------------//
+/**
+ * Dropcap Sass @include
+ * Use the following Sass @include with any selector you feel necessary.
+ *
+  @include dropcap($float: left, $font-size: 4em, $font-family: inherit, $text-indent: 0, $margin: inherit, $padding: inherit, $color: inherit, $lineHeight: 1, $bg: transparent);
+ *
+ * Extend this object into your custom stylesheet.
+ *
+ */
+
+// Include your '@include dropcap()' mixin and pass the following
+// arguments below. Feel free to pass in arguments we've provided.
+// At this time you cannot pass in font-family arguments but you're gonna
+// change that anyway so why not just make that separately in your declaration.
+@mixin dropcap($float: left, $font-size: 4em, $font-family: inherit, $text-indent: 0, $margin: inherit, $padding: inherit, $color: inherit, $lineHeight: 1, $bg: transparent) {
+  &:first-letter {
+    float: $float;
+    margin: $margin;
+    padding: $padding;
+    font-size: $font-size;
+    font-family: $font-family;
+    line-height: $lineHeight;
+    text-indent: $text-indent;
+    background: $bg;
+    color: $color;
+  }
+}
+
+
+// $Definition Lists
+// -------------------------------------//
+// lining
+// http://lea.verou.me/2012/02/flexible-multiline-definition-lists-with-2-lines-of-css
+//
+// dictionary-style
+// http://lea.verou.me/2012/02/flexible-multiline-definition-lists-with-2-lines-of-css
+
+@mixin definition-list-style($style) {
+  // lining style
+  @if $style == lining {
+    dt,
+    dd {
+      display: inline;
+      margin: 0;
+    }
+    dt,
+    dd {
+      & + dt {
+        &:before {
+          content: "\A";
+          white-space: pre;
+        }
+      }
+    }
+    dd {
+      & + dd {
+        &:before {
+          content: ", ";
+        }
+      }
+      &:before {
+          content: ": ";
+          margin-left: -0.2rem; //removes extra space between the dt and the colon
+      }
+    }
+  }
+  // dictionary-style
+  @if $style == dictionary-style {
+    dt {
+      display: inline;
+      counter-reset: definitions;
+      & + dt {
+        &:before {
+          content: ", ";
+          margin-left: -0.2rem; // removes extra space between the dt and the comma
+        }
+      }
+    }
+    dd {
+      display: block;
+      counter-increment: definitions;
+      &:before {
+        content: counter(definitions, decimal) ". ";
+      }
+    }
+  }
+}

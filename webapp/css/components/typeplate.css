@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 +---------------------------------------------------------------------+
 |        _                               _         _                  |
@@ -20,109 +21,130 @@
 @font-face {
   font-family: "Ampersand";
   src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
-  unicode-range: U+0026; }
+  unicode-range: U+0026;
+}
 
 @font-face {
   font-family: "Ampersand";
   src: local("Georgia");
-  unicode-range: U+270C; }
+  unicode-range: U+270C;
+}
 
+/* line 265, typeplate.scss */
 body {
-  word-wrap: break-word; }
+  word-wrap: break-word;
+}
 
+/* line 269, typeplate.scss */
 pre code {
-  word-wrap: normal; }
+  word-wrap: normal;
+}
 
 /**
  * Dropcap Sass @include
  * Use the following Sass @include with any selector you feel necessary.
  *
-	@include dropcap($float: left, $font-size: 4em, $font-family: inherit, $text-indent: 0, $margin: inherit, $padding: inherit, $color: inherit, $lineHeight: 1, $bg: transparent);
+  @include dropcap($float: left, $font-size: 4em, $font-family: inherit, $text-indent: 0, $margin: inherit, $padding: inherit, $color: inherit, $lineHeight: 1, $bg: transparent);
  *
  * Extend this object into your custom stylesheet.
  *
  */
-.drop-cap:first-letter {
-  float: left;
-  margin: inherit;
-  padding: inherit;
-  font-size: 4em;
-  font-family: inherit;
-  line-height: 1;
-  text-indent: 0;
-  background: transparent;
-  color: inherit; }
-
-li {
-  line-height: 1; }
-
+/* line 380, typeplate.scss */
 html {
-  font: normal 112.5%/1.65 serif; }
+  font: normal 112.5%/1.65 serif;
+}
 
+/* line 384, typeplate.scss */
 body {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   -o-hyphens: auto;
-  hyphens: auto; }
+  hyphens: auto;
+  color: #444444;
+}
 
+/* line 400, typeplate.scss */
 h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   line-height: 1;
-  margin-top: 0; }
+  margin-top: 0;
+}
 
+/* line 415, typeplate.scss */
 .tera {
   font-size: 117px;
   font-size: 6.5rem;
-  margin-bottom: 0.25385rem; }
+  margin-bottom: 0.25385rem;
+}
 
+/* line 415, typeplate.scss */
 .giga {
   font-size: 90px;
   font-size: 5rem;
-  margin-bottom: 0.33rem; }
+  margin-bottom: 0.33rem;
+}
 
+/* line 415, typeplate.scss */
 .mega {
   font-size: 72px;
   font-size: 4rem;
-  margin-bottom: 0.4125rem; }
+  margin-bottom: 0.4125rem;
+}
 
+/* line 415, typeplate.scss */
 .alpha, h1 {
   font-size: 60px;
   font-size: 3.33333rem;
-  margin-bottom: 0.495rem; }
+  margin-bottom: 0.495rem;
+}
 
+/* line 415, typeplate.scss */
 .beta, h2 {
   font-size: 48px;
   font-size: 2.66667rem;
-  margin-bottom: 0.61875rem; }
+  margin-bottom: 0.61875rem;
+}
 
+/* line 415, typeplate.scss */
 .gamma, h3 {
   font-size: 36px;
   font-size: 2rem;
-  margin-bottom: 0.825rem; }
+  margin-bottom: 0.825rem;
+}
 
+/* line 415, typeplate.scss */
 .delta, h4 {
   font-size: 24px;
   font-size: 1.33333rem;
-  margin-bottom: 1.2375rem; }
+  margin-bottom: 1.2375rem;
+}
 
+/* line 415, typeplate.scss */
 .epsilon, h5 {
   font-size: 21px;
   font-size: 1.16667rem;
-  margin-bottom: 1.41429rem; }
+  margin-bottom: 1.41429rem;
+}
 
+/* line 415, typeplate.scss */
 .zeta, h6 {
   font-size: 18px;
   font-size: 1rem;
-  margin-bottom: 1.65rem; }
+  margin-bottom: 1.65rem;
+}
 
+/* line 455, typeplate.scss */
 p {
-  margin: 0 0 1.5em; }
-
-.story p + p {
+  margin: 0 0 1.5em;
+}
+/* line 457, typeplate.scss */
+p + p {
   text-indent: 1.5em;
-  margin-top: -1.5em; }
+  margin-top: -1.5em;
+}
 
+/* line 481, typeplate.scss */
 abbr,
 acronym,
 blockquote,
@@ -140,181 +162,219 @@ xmp {
   -moz-hyphens: none;
   -ms-hyphens: none;
   -o-hyphens: none;
-  hyphens: none; }
+  hyphens: none;
+}
 
+/* line 498, typeplate.scss */
 pre code {
   white-space: -moz-pre-wrap;
-  white-space: pre-wrap; }
+  white-space: pre-wrap;
+}
 
+/* line 503, typeplate.scss */
 pre {
-  white-space: pre; }
+  white-space: pre;
+}
 
+/* line 507, typeplate.scss */
 code {
   white-space: pre;
-  font-family: monospace; }
+  font-family: monospace;
+}
 
 /**
  * Abbreviations Markup
  *
-	<abbr title="hyper text markup language">HMTL</abbr>
+  <abbr title="hyper text markup language">HMTL</abbr>
  *
  * Extend this object into your markup.
  *
  */
+/* line 523, typeplate.scss */
 abbr {
   font-variant: small-caps;
   font-weight: 600;
   text-transform: lowercase;
-  color: gray; }
-
+  color: gray;
+}
+/* line 525, typeplate.scss */
 abbr:hover {
-  cursor: help; }
+  cursor: help;
+}
+
+/* line 539, typeplate.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222222;
+}
 
 /**
  * Lining Definition Style Markup
  *
-	<dl class="lining">
-		<dt><b></b></dt>
-		<dd></dd>
-	</dl>
+  <dl class="lining">
+    <dt><b></b></dt>
+    <dd></dd>
+  </dl>
  *
  * Extend this object into your markup.
  *
  */
+/* line 321, typeplate.scss */
 .lining dt,
 .lining dd {
   display: inline;
-  margin: 0; }
-
+  margin: 0;
+}
+/* line 328, typeplate.scss */
 .lining dt + dt:before,
 .lining dd + dt:before {
   content: "\A";
-  white-space: pre; }
-
+  white-space: pre;
+}
+/* line 336, typeplate.scss */
 .lining dd + dd:before {
-  content: ", "; }
-
+  content: ", ";
+}
+/* line 340, typeplate.scss */
 .lining dd:before {
   content: ": ";
-  margin-left: -0.2rem; }
+  margin-left: -0.2rem;
+}
 
 /**
  * Dictionary Definition Style Markup
  *
-	<dl class="dictionary-style">
-		<dt><b></b></dt>
-			<dd></dd>
-	</dl>
+  <dl class="dictionary-style">
+    <dt><b></b></dt>
+      <dd></dd>
+  </dl>
  *
  * Extend this object into your markup.
  *
  */
+/* line 348, typeplate.scss */
 .dictionary-style dt {
   display: inline;
-  counter-reset: definitions; }
-
+  counter-reset: definitions;
+}
+/* line 352, typeplate.scss */
 .dictionary-style dt + dt:before {
   content: ", ";
-  margin-left: -0.2rem; }
-
+  margin-left: -0.2rem;
+}
+/* line 358, typeplate.scss */
 .dictionary-style dd {
   display: block;
-  counter-increment: definitions; }
-
+  counter-increment: definitions;
+}
+/* line 361, typeplate.scss */
 .dictionary-style dd:before {
-  content: counter(definitions, decimal) ". "; }
+  content: counter(definitions, decimal) ". ";
+}
 
 /**
  * Stats Tab Markup
  *
-	<ul class="stats-tabs">
-		<li><a href="#">[value]<b>[name]</b></a></li>
-	</ul>
+  <ul class="stats-tabs">
+    <li><a href="#">[value]<b>[name]</b></a></li>
+  </ul>
  *
  * Extend this object into your markup.
  *
  */
+/* line 589, typeplate.scss */
 .stats-tabs {
-  padding: 0; }
-
+  padding: 0;
+}
+/* line 591, typeplate.scss */
 .stats-tabs li {
   display: inline-block;
   margin: 0 0.625rem 0 0;
   padding: 0 0.625rem 0 0;
-  border-right: 0.125rem solid #cccccc; }
-
+  border-right: 0.125rem solid #cccccc;
+}
+/* line 596, typeplate.scss */
 .stats-tabs li:last-child {
   margin: 0;
   padding: 0;
-  border: none; }
-
+  border: none;
+}
+/* line 601, typeplate.scss */
 .stats-tabs li a {
   display: inline-block;
   font-size: 1.5rem;
-  font-weight: bold; }
-
+  font-weight: bold;
+}
+/* line 605, typeplate.scss */
 .stats-tabs li a b {
   display: block;
   margin: 0.125rem 0 0 0;
   font-size: 0.875rem;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 /**
  * Blockquote Markup
  *
-	<blockquote cite="">
-		<p>&Prime;&Prime;</p>
-		<cite>
-			<small><a href=""></a></small>
-		</cite>
-	</blockquote>
+  <blockquote cite="">
+    <p>&Prime;&Prime;</p>
+    <cite>
+      <small><a href=""></a></small>
+    </cite>
+  </blockquote>
  *
  * Extend this object into your markup.
  *
  */
-blockquote p + p {
-  text-indent: 1.5em; }
-
 /**
  * Pull Quotes Markup
  *
-	<aside class="pull-quote">
-		<blockquote>
-			<p></p>
-		</blockquote>
-	</aside>
+  <aside class="pull-quote">
+    <blockquote>
+      <p></p>
+    </blockquote>
+  </aside>
  *
  * Extend this object into your custom stylesheet.
  *
  */
+/* line 685, typeplate.scss */
 .pull-quote {
   position: relative;
-  padding: 1em; }
-
+  padding: 1em;
+}
+/* line 667, typeplate.scss */
 .pull-quote:before, .pull-quote:after {
   height: 1em;
   opacity: 0.15;
   position: absolute;
-  font-size: 4em; }
-
+  font-size: 4em;
+}
+/* line 673, typeplate.scss */
 .pull-quote:before {
-  content: '"';
+  content: '“';
   top: 0;
-  left: 0; }
-
+  left: 0;
+}
+/* line 678, typeplate.scss */
 .pull-quote:after {
-  content: '"';
+  content: '”';
   bottom: 0;
-  right: 0; }
+  right: 0;
+}
 
 /**
  * Figures Markup
  *
-	<figure>
-		<figcaption>
-			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
-		</figcaption>
-	</figure>
+  <figure>
+    <figcaption>
+      <strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
+    </figcaption>
+  </figure>
  *
  * Extend this object into your markup.
  *
@@ -322,98 +382,15 @@ blockquote p + p {
 /**
  * Footnote Markup : Replace 'X' with your unique number for each footnote
  *
-	<article>
-		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
-		<footer>
-			<ol class="foot-notes">
-				<li id="fn-itemX"><a href="#fn-returnX">?</a></li>
-			</ol>
-		</footer>
-	</article>
+  <article>
+    <p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+    <footer>
+      <ol class="foot-notes">
+        <li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
+      </ol>
+    </footer>
+  </article>
  *
  * Extend this object into your markup.
  *
  */
-/* this resolution has the narrowest 
- * spans per window size, so we'll set
- * the REM smaller
-------------------------- */
-@media (min-width: 768px) and (max-width: 979px) {
-  .drop-cap:first-letter {
-    float: left;
-    margin: inherit;
-    padding: inherit;
-    font-size: 4em;
-    font-family: inherit;
-    line-height: 1;
-    text-indent: 0;
-    background: transparent;
-    color: inherit; }
-
-  html {
-    font: normal 112.5%/1.65 serif; }
-
-  .pull-quote {
-    position: relative;
-    padding: 1em; }
-
-  .pull-quote:before, .pull-quote:after {
-    height: 1em;
-    opacity: 0.15;
-    position: absolute;
-    font-size: 4em; }
-
-  .pull-quote:before {
-    content: '"';
-    top: 0;
-    left: 0; }
-
-  .pull-quote:after {
-    content: '"';
-    bottom: 0;
-    right: 0; }
-
-  .tera {
-    font-size: 117px;
-    font-size: 9.75rem;
-    margin-bottom: 0.16923rem; }
-
-  .giga {
-    font-size: 90px;
-    font-size: 7.5rem;
-    margin-bottom: 0.22rem; }
-
-  .mega {
-    font-size: 72px;
-    font-size: 6rem;
-    margin-bottom: 0.275rem; }
-
-  .alpha, h1 {
-    font-size: 60px;
-    font-size: 5rem;
-    margin-bottom: 0.33rem; }
-
-  .beta, h2 {
-    font-size: 48px;
-    font-size: 4rem;
-    margin-bottom: 0.4125rem; }
-
-  .gamma, h3 {
-    font-size: 36px;
-    font-size: 3rem;
-    margin-bottom: 0.55rem; }
-
-  .delta, h4 {
-    font-size: 24px;
-    font-size: 2rem;
-    margin-bottom: 0.825rem; }
-
-  .epsilon, h5 {
-    font-size: 21px;
-    font-size: 1.75rem;
-    margin-bottom: 0.94286rem; }
-
-  .zeta, h6 {
-    font-size: 18px;
-    font-size: 1.5rem;
-    margin-bottom: 1.1rem; } }

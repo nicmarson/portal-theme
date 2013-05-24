@@ -7,7 +7,7 @@ function WebTrends(){
 	var that=this;
 	// begin: user modifiable
 	this.dcsid="dcsh81aon100004fukdztrefo_8u6y";
-	this.domain="my-devsdc.myregence.com";
+	this.domain="my-devsdc.regence.com";
 	this.timezone=-7;
 	this.enabled=true;
 	this.i18n=false;
@@ -18,7 +18,7 @@ function WebTrends(){
 	this.FPCConfig = {
 		enabled: (this.cookieTypes === "all" || this.cookieTypes == "firstPartyOnly"),
 		name: "WT_FPC",
-		domain: ".myregence.com",
+		domain: ".regence.com",
 		expires: 63113851500
 	};
 	this.TPCConfig = {

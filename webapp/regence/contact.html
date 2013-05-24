@@ -106,6 +106,71 @@
                     <div class="page-header">
                         <h1>Contact Us</h1>
                     </div>
+                    <div>
+                        <div style="display:none" id="_forgotpassword_WAR_forgotpasswordportlet_errorUser" class="_forgotpassword_WAR_forgotpasswordportlet_span_error">
+                            Your user name and birth date do not match our records. Please call Customer Service at (XXX) XXX-XXXX.
+                        </div>
+                        <div style="display:none" id="_forgotpassword_WAR_forgotpasswordportlet_errorMember" class="_forgotpassword_WAR_forgotpasswordportlet_span_error">
+                            Your member ID and birth date do not match our records. Please call Customer Service at (XXX) XXX-XXXX.
+                        </div>
+                        
+                        
+                        
+                        <fieldset id="_forgotpassword_WAR_forgotpasswordportlet_radioOptions">
+                            <legend>Forgot your sign-in information?</legend>
+
+                            <label for="_forgotpassword_WAR_forgotpasswordportlet_radio_forgotPassword" class="radio">
+                                <input type="radio" value="option1" id="_forgotpassword_WAR_forgotpasswordportlet_radio_forgotPassword" name="_forgotpassword_WAR_forgotpasswordportlet_credentialSelected">
+                                I forgot my password or I need to unlock my account
+                            </label>
+                            
+                            <label for="_forgotpassword_WAR_forgotpasswordportlet_radio_forgotUserName" class="radio">
+                                <input type="radio" value="option2" id="_forgotpassword_WAR_forgotpasswordportlet_radio_forgotUserName" name="_forgotpassword_WAR_forgotpasswordportlet_credentialSelected">
+                                I forgot my user name
+                            </label>
+
+                            <label for="_forgotpassword_WAR_forgotpasswordportlet_radio_forgotBoth" class="radio">
+                                <input type="radio" value="option3" id="_forgotpassword_WAR_forgotpasswordportlet_radio_forgotBoth" name="_forgotpassword_WAR_forgotpasswordportlet_credentialSelected">      
+                                I forgot both my user name and password
+                            </label>
+                        </fieldset>
+
+                        <fieldset style="" id="_forgotpassword_WAR_forgotpasswordportlet_credentialSelectedForgotPassword">
+                            <h5>Password retrieval</h5>
+                            <label for="_forgotpassword_WAR_forgotpasswordportlet_userName">User name</label>
+                            <input type="text" placeholder="User name" name="_forgotpassword_WAR_forgotpasswordportlet_userName" id="_forgotpassword_WAR_forgotpasswordportlet_userName">
+                            <span id="_forgotpassword_WAR_forgotpasswordportlet_UserIdDef" class="help-block">User names must be at least 8 characters. They must begin and end with a letter or number and may include only upper and lowercase letters, numbers and nonconsecutive dashes (-) and periods (.).</span>
+                        </fieldset>
+
+                        <div style="display:none" id="_forgotpassword_WAR_forgotpasswordportlet_credentialSelectedForgotUserNameOrBoth">
+                            <label for="_forgotpassword_WAR_forgotpasswordportlet_memberId">Member ID</label>
+                            <input type="text" placeholder="Member ID" name="_forgotpassword_WAR_forgotpasswordportlet_memberId" id="_forgotpassword_WAR_forgotpasswordportlet_memberId"><img height="15" width="30" alt="Image Placeholder" src="/forgot-password-portlet/images/card-small.gif">
+                            <span id="_forgotpassword_WAR_forgotpasswordportlet_memberIdDef" class="help-block">Type your 9-digit member ID.</span>
+                        </div>
+
+                        <div id="_forgotpassword_WAR_forgotpasswordportlet_dobDatePicker" style="">
+                            <label for="date">Birth date</label>
+                            <input type="date" placeholder="year-month-day" form="form" name="date" id="_forgotpassword_WAR_forgotpasswordportlet_dobDate" class="datepicker">
+                            <span id="_forgotpassword_WAR_forgotpasswordportlet_birthdateExample" class="help-block">MM/DD/YYYY (example: 01/31/1955)</span>
+                        </div>
+
+                        <input type="button" disabled="disabled" style="" onclick="forgotPassword('_forgotpassword_WAR_forgotpasswordportlet_', 'https://liferay-int-dev1.regence.com/web/a/forgotpswd?p_p_id=forgotpassword_WAR_forgotpasswordportlet&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_resource_id=forgotPassword&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=column-1&amp;p_p_col_count=1' )" value="Submit" class="btn btn-primary" id="_forgotpassword_WAR_forgotpasswordportlet_input_forgotPassword">   
+                        <input type="button" disabled="disabled" style="display:none" onclick="forgotUsername('_forgotpassword_WAR_forgotpasswordportlet_', 'https://liferay-int-dev1.regence.com/web/a/forgotpswd?p_p_id=forgotpassword_WAR_forgotpasswordportlet&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_resource_id=forgotUserName&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=column-1&amp;p_p_col_count=1')" value="Submit" class="btn btn-primary" id="_forgotpassword_WAR_forgotpasswordportlet_input_forgotUserName">
+                        <input type="button" disabled="disabled" style="display:none" onclick="forgotBoth('_forgotpassword_WAR_forgotpasswordportlet_', 'https://liferay-int-dev1.regence.com/web/a/forgotpswd?p_p_id=forgotpassword_WAR_forgotpasswordportlet&amp;p_p_lifecycle=2&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_resource_id=forgotBoth&amp;p_p_cacheability=cacheLevelPage&amp;p_p_col_id=column-1&amp;p_p_col_count=1')" value="Submit" class="btn btn-primary" id="_forgotpassword_WAR_forgotpasswordportlet_input_forgotBoth"><br>
+                        
+                        <div id="_forgotpassword_WAR_forgotpasswordportlet_forgotPasswordSuccess" style="display:none" class="_forgotpassword_WAR_forgotpasswordportlet_success_msg">We have sent you a temporary password via email. You will be required to reset your password the next time you sign in.<br> Sign in using the link on the top right corner of the website, or click Member page, below.
+                            <div>Member Page Place Holder</div>
+                        </div>
+                        <div id="_forgotpassword_WAR_forgotpasswordportlet_forgotUsernameSuccess" style="display:none" class="_forgotpassword_WAR_forgotpasswordportlet_success_msg">We have sent your user name to you via email. <br>Sign in using the link on the top right corner of the website, or click Member page, below.
+                            <div>Member Page Place Holder</div>
+                        </div>
+                        <div id="_forgotpassword_WAR_forgotpasswordportlet_forgotBothSuccess" style="display:none" class="_forgotpassword_WAR_forgotpasswordportlet_success_msg">We have sent your user name and a temporary password via individual email messages. You will be required to reset your password the next time you sign in. <br> Sign in using the link on the top right corner of the website, or click Member page, below.
+                            <div>Member Page Place Holder</div>
+                        </div>
+                        <div id="_forgotpassword_WAR_forgotpasswordportlet_questions_calls" style="display: none;">
+                            Questions? Call (XXX) XXX-XXXX  Mon.-Fri. 7:00 a.m.-5:00 p.m. PT
+                        </div>
+                    </div>
                     <hgroup>
                         <h2>Customer Service</h2>
                         <p>Help with benefits and account management</p>
@@ -237,7 +302,7 @@
 
             <nav id="navigation" class="nav-main"> <ul> <li class="nav-item nav-3-items lfr-nav-deletable lfr-nav-updateable"> <a href="http://localhost:8080/web/guest/about"> <span> About Us </span> </a> </li> <li class="nav-item nav-3-items lfr-nav-deletable lfr-nav-updateable"> <a href="http://localhost:8080/web/guest/welcome"> <span> Welcome </span> </a> </li> <li class="nav-item nav-3-items lfr-nav-deletable lfr-nav-updateable"> <a href="http://localhost:8080/web/guest/contact"> <span> Contact </span> </a> </li> </ul> </nav>
 
-            <nav class="nav-information"> <button data-target="#nav-information" data-toggle="collapse" class="btn btn-link" type="button">More information</button> <div id="nav-information" class="row-fluid collapse"> <div class="nav-group"> <h3 class="title">Shop for Health Insurance</h3> <ul class="nav unstyled"> <li><a href="#">Individual and families</a></li> <li><a href="#">Through an employer</a></li> <li><a href="#">For Medicare</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">Current Customers</h3> <ul class="nav unstyled"> <li><a href="#">Individual and families</a></li> <li><a href="#">Coverage through an employer</a></li> <li><a href="#">Medicare eligible</a></li> <li><a href="#">myRegence.com</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">Health &amp; Wellness</h3> <ul class="nav unstyled"> <li><a href="#">Treatment Cost Estimates</a></li> <li><a href="#">Prescription Information</a></li> <li><a href="#">Health Insurance Guide</a></li> <li><a href="#">Health &amp; Wellness News</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">About Regence</h3> <ul class="nav unstyled"> <li><a href="#">Non-Profit Health Insurance</a></li> <li><a href="#">Contact Us</a></li> <li><a href="#">Careers</a></li> <li><a href="#">Company News</a></li> <li><a href="#">Legal</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">About Regence</h3> <ul class="nav unstyled"> <li><a href="#">Non-Profit Health Insurance</a></li> <li><a href="#">Contact Us</a></li> <li><a href="#">Careers</a></li> <li><a href="#">Company News</a></li> <li><a href="#">Legal</a></li> </ul> </div> </div> </nav>
+            <nav class="nav-information"> <button data-target="#nav-information" data-toggle="collapse" class="btn btn-link collapsed" type="button">More information</button> <div id="nav-information" class="row-fluid collapse"> <div class="nav-group"> <h3 class="title">Shop for Health Insurance</h3> <ul class="nav unstyled"> <li><a href="#">Individual and families</a></li> <li><a href="#">Through an employer</a></li> <li><a href="#">For Medicare</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">Current Customers</h3> <ul class="nav unstyled"> <li><a href="#">Individual and families</a></li> <li><a href="#">Coverage through an employer</a></li> <li><a href="#">Medicare eligible</a></li> <li><a href="#">myRegence.com</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">Health &amp; Wellness</h3> <ul class="nav unstyled"> <li><a href="#">Treatment Cost Estimates</a></li> <li><a href="#">Prescription Information</a></li> <li><a href="#">Health Insurance Guide</a></li> <li><a href="#">Health &amp; Wellness News</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">About Regence</h3> <ul class="nav unstyled"> <li><a href="#">Non-Profit Health Insurance</a></li> <li><a href="#">Contact Us</a></li> <li><a href="#">Careers</a></li> <li><a href="#">Company News</a></li> <li><a href="#">Legal</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">About Regence</h3> <ul class="nav unstyled"> <li><a href="#">Non-Profit Health Insurance</a></li> <li><a href="#">Contact Us</a></li> <li><a href="#">Careers</a></li> <li><a href="#">Company News</a></li> <li><a href="#">Legal</a></li> </ul> </div> </div> </nav>
 
             <nav class="nav-utility"> <div class="row-fluid"> <ul class="nav nav-pills pull-right"> <li><a href="#about">About Regence</a></li> <li><a href="#">Contact Us</a></li> </ul> </div> </nav>
             

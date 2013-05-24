@@ -1,0 +1,280 @@
+/*------------------------------------*\
+    $COLORS
+    $BACKGROUND
+    $BORDER - COLOR, RADIUS, SIZE
+    $BOX-SHADOW
+    $COLOR
+    $THEME VARIABLES
+\*------------------------------------*/
+
+
+// BASE COMPONENT COLOR VARIABLES
+// --------------------------------------------------
+
+// Buttons
+// -------------------------
+$btnColor:                          $textColor;
+
+$btnPrimaryBackground:              $linkColor;
+$btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%);
+
+
+// Forms
+// -------------------------
+$inputBorderRadius:                 $baseBorderRadius;
+
+
+// Dropdowns
+// -------------------------
+$dropdownLinkBackgroundActive:      $linkColor;
+
+
+// THEME SPECIFIC COLORS
+// --------------------------------------------------
+
+
+// Links
+// -------------------------
+a {
+  color: $linkColor;
+}
+
+a:hover,
+a:focus {
+  color: $linkColorHover;
+}
+
+a:active {
+  background-color: $linkColorHover;
+  color: #FFF;
+}
+
+
+// Buttons
+// -------------------------
+.btn {
+  color: $btnColor;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  &.disabled,
+  &[disabled] {
+    color: $btnColor;
+  }
+}
+
+.btn-flat.btn-primary {
+  background-color: $brand;
+
+  &:hover {
+    background-color: darken($brand, 10%);
+  }
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: #ffffff; // redefined to override theme default
+}
+
+.btn-warning,
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
+  color: #ffffff;
+}
+
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.btn-danger.disabled,
+.btn-danger[disabled] {
+  color: #ffffff;
+}
+
+.btn-success,
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  color: #ffffff;
+}
+
+.btn-info,
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
+  color: #ffffff;
+}
+
+.btn-inverse,
+.btn-inverse:hover,
+.btn-inverse:focus,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse.disabled,
+.btn-inverse[disabled] {
+  color: #ffffff;
+}
+
+.btn-link {
+  color: $linkColor;
+}
+
+.btn-link[disabled]:hover,
+.btn-link[disabled]:focus {
+  color: $textColor;
+}
+
+
+// Headers
+// -------------------------
+
+// Page header
+.page-header {
+  border-bottom: $pageHeaderBorderBottom;
+
+  h1 {
+    color: $brand;
+  }
+}
+
+// Section header
+.section-header {
+  background: $sectionHeaderBackground;
+  border-top: $sectionHeaderBorderTop;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $sectionHeaderHeadingColor;
+  }
+}
+
+
+// Subhead
+// --------------------------------------
+.subhead {
+  border-bottom: 1px solid #ddd;
+
+  h1 {
+    color: #ffffff;
+  }
+  p {
+    color: #ffffff;
+  }
+}
+
+
+// Jumbotron
+// --------------------------------------
+.jumbotron {
+  background: #033048;
+  /* Old browsers */
+  background-color: #916dbd;
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(45deg, #033048, #916dbd);
+  background-image: -webkit-linear-gradient(45deg, #033048, #916dbd);
+  background-image: -o-linear-gradient(45deg, #033048, #916dbd);
+  background-image: linear-gradient(45deg, #033048, #916dbd);
+  color: #FFF;
+}
+
+
+// Forms
+// -------------------------
+select,
+textarea,
+input,
+.uneditable-input {
+  @include border-radius($inputBorderRadius);
+  color: $inputColor;
+}
+
+
+// Alerts
+// -------------------------
+.alert {
+  background-color: #FFF;
+  border: $alertBorder;
+  color: #ca5400;
+}
+
+.warning-text {
+  color: #ca5400;
+}
+
+a.warning-text:hover {
+  background-color: #fcf8e3;
+  color: #ca5400;
+}
+
+
+// Wells
+// -------------------------
+
+// Well large
+.well-large {
+  @include border-radius(8px);
+  @include box-shadow(inset 0 0 8px rgba(0,0,0, .07));
+  color: $grayLight;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $grayLight;
+  }
+}
+
+
+// Dropdown menu
+// -------------------------
+.dropdown-menu {
+  color: $black;
+}
+
+
+// Modals
+// -------------------------
+.modal {
+  color: $gray;
+}
+
+.modal-header h3 {
+  color: $brand;
+}
+
+
+// JQUERY UI
+// --------------------------------------------------
+
+
+// Input range
+// -------------------------
+.input-range .ui-slider-handle {
+  @include buttonBackground($btnPrimaryBackground, $btnPrimaryBackgroundHighlight);
+}
+
+
+// Datepicker
+// -------------------------
+
+.ui-datepicker-prev-hover:after {
+  border-right-color: $orange;
+}
+
+.ui-datepicker-next-hover:after {
+  border-left-color: $orange;
+}
