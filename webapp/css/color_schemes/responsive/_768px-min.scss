@@ -42,33 +42,6 @@
 }
 
 
-// NAV NETWORK
-// ---------------------------
-.nav-network {
-  margin-top: 30px;
-
-  li > a {
-    background-color: #F8FAFB;
-    @include box-shadow("0 1px 5px rgba(0,0,0,.1)");
-    display: block;
-    font-family: $sansFontFamily;
-    text-align: center;
-    @include transition(all .2s ease-in-out);
-    vertical-align: middle;
-
-    &:hover {
-      background-color: #F8FAFB;
-      @include box-shadow("0 1px 5px rgba(0,0,0,.5)");
-    }
-  }
-
-  .active > a, 
-  .active > a:hover {
-    background-color: #076DA5;
-  }
-}
-
-
 // ARTICLES
 // --------------------------------------
 article {
@@ -80,10 +53,6 @@ article {
   .sidebar .nav {
     text-align: right;
   }
-}
-
-.article .main-content {
-  padding: $gridGutterWidth $gridGutterWidth ($baseLineHeight*2);
 }
 
 
@@ -139,6 +108,31 @@ article {
 }
 
 
+// Hero image backgrounds
+// -------------------------------
+.hero-image {
+
+  &#default {
+    background-image: url(images/regence/landings/global/hero-global.jpg);
+  }
+  &#individual {
+    background-image: url(images/regence/landings/individual/hero-individual.jpg);
+  }
+  &#medicare {
+    background-image: url(images/regence/landings/global/hero-global.jpg);
+  }
+  &#employer {
+    background-image: url(images/regence/landings/employer/hero-employer.jpg);
+  }
+  &#producer {
+    background-image: url(images/regence/landings/global/hero-global.jpg);
+  }
+  &#provider {
+    background-image: url(images/regence/landings/global/hero-global.jpg);
+  }
+}
+
+
 // Hero with media boxes
 // -------------------------------
 .hero-media {
@@ -163,6 +157,14 @@ article {
     .media-heading {
       line-height: .85;
     }
+  }
+
+  .media-image {    
+    padding: 15px 0 0 15px;
+  }
+
+  .media-body {
+    padding: 15px 15px 0;
   }
 }
 
@@ -191,13 +193,6 @@ article {
     padding-left: 60px;
     padding-right: 45px;
   }
-}
-
-
-// Main
-// --------------------------------------
-#main {
-  background: $mainBackground;
 }
 
 

@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    $TYPOGRAPHY
+    $SIZING
     $FONT-FAMILY, SIZE, WEIGHT
     $HEIGHT
     $LINE-HEIGHT
@@ -18,104 +18,14 @@ $inputHeight:                   20px;
 $inputPadding:                  4px 6px;
 
 
-// Headings
-// --------------------------------------
-
-// make a multi-dimensional array, where:
-// the first value is the name of the class
-// and the second value is the variable for the size
-$sizes: tera $tera, giga $giga, mega $mega, alpha $alpha, beta $beta, gamma $gamma, delta $delta, epsilon $epsilon, zeta $zeta;
-
-// for each size in the scale, create a class
-@each $size in $sizes {
-  .#{nth($size, 1)} {
-    @include modular-scale(nth($size, 2), $font-base, '#{$type-scale-unit-value}');
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $headingsFontFamily;
-  font-weight: 700;
-}
-
-h1,
-h2,
-h3 {
-  font-family: $headingsFontFamilyAlt;
-  text-shadow: 0 0 1px rgba(0,0,0,.1); // Helps text rendering on Windows
-}
-
-h1 {
-  @extend .alpha;
-  line-height: 1.2;
-
-  small {
-    @extend .delta;
-    line-height: 1.3;
-  }
-}
-
-h2 {
-  @extend .beta;
-  line-height: 1.25;
-
-  small {
-    @extend .zeta;
-    line-height: 1.8;
-  }
-}
-
-h3 {
-  @extend .gamma;
-  line-height: 1.25;
-
-  small {
-    font-size: 14px;
-    font-size: .875rem;
-  }
-}
-
-h4 {
-  @extend .delta;
-  line-height: 1.3;
-
-  small {
-    font-size: 14px;
-    font-size: .875rem;
-  }
-}
-
-h5 {
-  @extend .epsilon;
-  line-height: 1.6;
-}
-
-h6 {
-  @extend .zeta;
-  line-height: 1.8;
-}
-
-
 // Headers
 // -------------------------
-
 .page-header,
 .section-header {
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
   }
-}
-
-// Page header
-.page-header {
-  margin: $pageHeaderMargin;
-  padding: $articleContentPadding;
 }
 
 // Section header

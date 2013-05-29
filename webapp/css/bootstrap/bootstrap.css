@@ -203,23 +203,6 @@ textarea {
     page-break-after: avoid;
   }
 }
-/*body {
-  margin: 0;
-  font-family: Verdana, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #333333;
-  background-color: #ffffff;
-}
-a {
-  color: #076da5;
-  text-decoration: none;
-}
-a:hover,
-a:focus {
-  color: #9d261d;
-  text-decoration: underline;
-}*/
 .img-rounded {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;

@@ -68,24 +68,20 @@ $baseLineHeight:                20px;
 $altFontFamily:                 $serifFontFamily;
 $serif-boolean:                 true !default;
 
-// Heading typography
-// -------------------------
-$headingsFontFamily:            $sansFontFamilyBold; // empty to use BS default, $baseFontFamily
-$headingsFontFamilyAlt:         $sansFontFamilyLight;
-$headingsFontWeight:            normal;    // instead of browser default, bold
-$headingsColor:                 inherit; // empty to use BS default, $textColor
-
 // TypeScale
 // -------------------------
-$tera: 72; // 117 = 18 × 6.5
-$giga: 60; // 90 = 18 × 5
-$mega: 48; // 72 = 18 × 4
-$alpha: 36; // 60 = 18 × 3.3333
-$beta: 24; // 48 = 18 × 2.6667
-$gamma: 21; // 36 = 18 × 2
-$delta: 18; // 24 = 18 × 1.3333
-$epsilon: 16; // 21 = 18 × 1.1667
-$zeta: 14; // 18 = 18 × 1
+// Base size 14
+$tera: 72px; // 72 = 14 × 5.1429
+$giga: 60px; // 60 = 14 × 4.2857
+$mega: 48px; // 48 = 14 × 3.4286
+$alpha: 38px; // 38 = 14 × 2.7143
+$beta: 32px; // 32 = 14 × 2.2857
+$gamma: 24px; // 24 = 14 × 1.7142
+$delta: 20px; // 20 = 14 × 1.4285
+$epsilon: 17px; // 17 = 14 × 1.2143
+$zeta: 14px; // 14 = 14 × 1
+$eta: 12px; // 12 = 14 x .8571
+$theta: 10px; // 10 = 14 x .7143
 
 
 // COMPONENTS
@@ -104,12 +100,6 @@ $inputBorderRadius:             $baseBorderRadius;
 $inputPadding:                  4px 6px;
 
 
-// Page header
-// -------------------------
-$pageHeaderBorderBottom:        2px solid $textColor;
-$pageHeaderMargin:              0 0 30px;
-
-
 // Section header
 // -------------------------
 $sectionHeaderBackground:       #EAEFF1;
@@ -121,12 +111,13 @@ $sectionHeaderHeadingColor:     $orange;
 // -------------------------
 $articleBackground:                 $white;
 $articleBorder:                     lighten($accentLighter, 8%);
-$articleContentPadding: 			0 20px;
+$articleContentPadding: 			inherit;
 
 $asideHeadingBorder:                #d7d7d7;
-$asideHeadingColor:                 $grayLight;
-$asideHeadingFontSize:              18px;
-$asideLinkFontSize:                 18px;
+$asideHeadingColor:                 $textColor;
+$asideHeadingFontFamily: 			$sansFontFamily;
+$asideHeadingFontSize:              $gamma;
+$asideLinkFontSize:                 inherit;
 $asideLinkColor:                    $linkColor;
 $asideLinkColorHover:               $linkColor;
 
@@ -191,10 +182,24 @@ $navInvertedLinkColorHover:     lighten($orange, 40%);
 $navInvertedLinkColorActive:    lighten($orange, 20%);
 
 
+// Nav - Breadcrumb
+// -------------------------
+$breadcrumbBackground:          transparent;
+$breadcrumbFontSize: 			.85rem;
+$breadcrumbMargin:              10px 0 40px;
+$breadcrumbPadding:             8px 0;
+$breadcrumbDividerColor:        $gray;
+
+
 // Nav - Main
 // -------------------------
 $navMainLinkBackground:         $white;
 $navMainLinkBackgroundHover:    $white;
+$navMainLinkBorder:				2px solid $accent;
+$navMainLinkColor: 				$textColor;
+$navMainLinkHoverColor: 		$linkColorHover;
+$navMainLinkFontFamily: 		$sansFontFamilyBold;
+$navMainLinkFontSize: 			1em;
 $navMainLinkHeight:             80px;
 $navMainLinkMargin:             0 10px;
 
@@ -225,7 +230,8 @@ $audienceCaretColor:            $brand;
 
 // Contact
 // -------------------------
-$contactInfoBackground:         #F5F5F5;
+$contactInfoBackground:         none;
+$contactInfoBorderTop:          none;
 $contactInfoLink:               $textColor;
 $contactInfoLinkHover:          $textColor;
 $contactPhoneBackground:        #66A131;

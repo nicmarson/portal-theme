@@ -1,3 +1,59 @@
+// Start WebTrends by Paul Montgomery
+$(document).ready(function() {
+	CambiaAnalytics.gatherUserDataFromJavaLayer();
+});
+var _tag=new WebTrends();
+_tag.dcsGetId();
+_tag.dcsCustom=function() {
+//			// Add custom parameters here.
+//			_tag.DCSext.memberIdFromVelocity="exampleValue";
+};
+var CambiaAnalytics = {
+
+	gatherUserDataFromJavaLayer : function() {
+		var endPoint = $("#pingWebTrends").val();
+		$.ajax({
+			dataType : "json",
+			url : endPoint,
+			contentType : "application/json",
+			success : function(json) {
+				CambiaAnalytics.goodHandshake(json);
+			},
+			error : function(jsonRecieved) {
+				CambiaAnalytics.badHandshake();
+			}
+		});
+	},
+
+	goodHandshake : function( json ) {
+		for ( var key in json ) {  
+			_tag.DCSext[key]=json[key];
+		}
+		CambiaAnalytics.fireNormalWTEvents("goodHandshake");
+	},
+	
+	badHandshake : function() {
+		CambiaAnalytics.fireNormalWTEvents("badHandshake");
+	},
+	
+	fireNormalWTEvents : function( caller ) { 
+		_tag.dcsCollect(); 	
+		//_tag.dcsDebug(  ); 
+	}
+};
+//End WebTrends by Paul Montgomery
+
+
+
+
+
+
+
+
+// KEEPING Commented out code per Tara
+
+
+/*
 // _tag needs to be declared OUTSIDE any containing objs
 var _tag=new WebTrends();
 _tag.dcsGetId();
@@ -8,7 +64,7 @@ _tag.dcsCustom=function() {
 $(document).ready(function() {
 	_tag.dcsCollect(); 		
 });
-
+*/
 // LT IE7 Support
 
 // Icomoon - Font Glyphs

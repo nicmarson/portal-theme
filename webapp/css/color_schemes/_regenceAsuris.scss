@@ -17,13 +17,12 @@
   color: $textColor;
   font-family: $baseFontFamily;
   font-size: $baseFontSize;
-  @include css-hyphens(auto);
   line-height: $baseLineHeight;
 
 
-  // Import theme fonts and colors
+  // Import theme sizing
   // --------------------------------------
-  @import "themes/typography";
+  @import "themes/sizing";
 
 
   // Import shared components
@@ -42,10 +41,62 @@
   @import "locations/error";
 
 
-  // Typography
+  // Headings
   // --------------------------------------
+  // H1 is in the primary color
+  // H2 is in a secondary color
+  // H3 is a medium grey
+
+  h1,
+  h2,
+  h3 {
+    font-family: $sansFontFamilyLight;
+    text-shadow: 0 0 1px rgba(0,0,0,.1); // Helps text rendering on Windows
+  }
+  
   h2 {
     color: $orange;
+  }
+
+  .icon-regence {
+    background-image: url("images/regence/network.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 1px;
+    vertical-align: text-top;
+    width: 50px;
+    @include ie7-restore-right-whitespace();
+  }
+
+  .icon-briefcase {
+    background-position: center 0;
+  }
+
+  .icon-heart {
+    background-position: center -100px;
+  }
+
+  .icon-paper {
+    background-position: center -200px;
+  }
+
+  .icon-puzzle {
+    background-position: center -300px;
+  }
+
+  .icon-bookmark {
+    background-position: center -400px;
+  }
+
+
+  // Page header
+  // -------------------------
+  .page-header {
+    border-bottom: 1px solid $grayLighter;
+    font-family: $sansFontFamily;
+    margin: $baseLineHeight 20px ($baseLineHeight * 1.5);
   }
 
 
@@ -57,35 +108,101 @@
     h3 {
       padding: 8px 15px;
     }
+  }
 
-    .nav > li > a {
-      text-decoration: none;
 
-      &:hover {
-        text-decoration: none;
+  // Article content
+  // -------------------------
+  article .content section,
+  article .content aside,
+  article .content .content-body {
+    padding: $articleContentPadding;
+  }
+
+
+  // Article - Left and Right sidebar
+  // -------------------------
+  .article-left-sidebar,
+  .article-right-sidebar {
+    display: table;
+
+    > .content,
+    > .sidebar {
+      height: 100%;
+      display: table-cell;
+      float: none;
+
+      > .row {
+        margin-left: 0;
       }
     }
 
-    .nav-list {
-      padding-left: 20px;
-      padding-right: 20px;
+    > .span11 {
+      width: 91.5%;
+    }
+
+    > .span10 {
+      width: 83%;
+    }
+
+    > .span9 {
+      width: 75%;
+    }
+
+    > .span8 {
+      width: 66%;
+    }
+
+    > .span7 {
+      width: 57.5%;
+    }
+
+    > .span6 {
+      width: 50%;
+    }
+
+    > .span5 {
+      width: 42.5%;
+    }
+
+    > .span4 {
+      width: 34%;
+    }
+
+    > .span3 {
+      width: 25%;
+    }
+
+    > .span2 {
+      width: 17%;
+    }
+
+    > .span1 {
+      width: 8.5%;
     }
   }
 
   // Article - Left sidebar
+  // -------------------------
   .article-left-sidebar .sidebar {
 
     .nav > li > a {
       font-size: 24px;
       padding: 12px 15px;
+      text-shadow: none;
     }
   }
 
 
-  // NAV MAIN
-  // --------------------------------------
+  // Navigation - Main
+  // ---------------------------
   .nav-main ul li a {
     @include border-radius(5px);
+    @include box-shadow(0 1px 5px rgba(0,0,0, .1));
+
+    &:hover {
+      @include box-shadow(0 1px 5px rgba(0,0,0, .5));
+    }
   }
 
 
@@ -97,8 +214,8 @@
     label {
       color: #FFF;
       font-family: $sansFontFamilyLight;
-      font-size: 24px;
-      line-height: 34px;
+      @extend .beta;
+      line-height: 1.4;
       margin-bottom: 10px;
     }
 
@@ -111,18 +228,6 @@
         text-decoration: underline;
         text-shadow: none;
       }
-    }
-  }
-
-
-  .nav-tabs-centered {
-
-    > li > a {
-      min-height: 48px;
-      padding-left: 6px;
-      padding-right: 6px;
-      text-align: center;
-      width: 6em;
     }
   }
 }
@@ -139,8 +244,8 @@
 
   .regence,
   .asuris {
-    font-size: $baseFontSize + 4px;
-    line-height: $baseLineHeight + 4px;
+    font-size: $baseFontSize + 3px;
+    line-height: $baseLineHeight + 3px;
     
     @import "responsive/1200px-min";
 
@@ -202,8 +307,8 @@
 
   .regence,
   .asuris {
-    font-size: $baseFontSize + 2px;
-    line-height: $baseLineHeight + 2px;
+    font-size: $baseFontSize + 1px;
+    line-height: $baseLineHeight + 1px;
 
     @import "responsive/980px-min";
   }

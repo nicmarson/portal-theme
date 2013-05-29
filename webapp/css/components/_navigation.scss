@@ -1,0 +1,312 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+
+// Buttons
+// -------------------------
+.btn small {
+  display: block;
+}
+
+.btn-flat {
+  background: none;
+  background-color: $grayLight;
+  border: none;
+  @include border-radius(0);
+  @include box-shadow(none);
+}
+
+
+// Navigation
+// -------------------------
+.nav a {
+  @include css-hyphens(none);
+  word-wrap: break-word;
+}
+
+
+// Navigation - Tabs
+// -------------------------
+.nav-tabs {
+
+  a {
+    text-decoration: none;
+  }
+  
+  .btn {
+    margin: 0 6px;
+  }
+}
+
+.nav-tabs-centered {
+
+  > li > a {
+    min-height: 3em;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    width: 7em;
+  }
+}
+
+
+// MAIN
+// ---------------------------
+.nav-main {
+  display: block;
+  width: 100%;
+
+  ul {
+    display: table;
+    list-style-type: none;
+    margin: 30px 0;
+    padding: 0;
+    width: 100%;
+
+    li {
+      display: table-cell;
+
+      a {
+        display: block;
+        text-align: center;
+        @include transition(all 0.2s ease-in-out 0s);
+      }
+      span {
+        display: inline-block;
+        line-height: normal;
+        vertical-align: middle;
+
+        img {
+          display: block;
+          margin: 0 auto 7px;
+        }
+      }
+
+      &.nav-4-items {
+        width: 25%;
+      }
+
+      &.nav-5-items {
+        width: 20%;
+      }
+
+      &.nav-6-items {
+        width: 16.667%;
+      }
+    }
+  }
+}
+
+
+// TREEVIEW
+// ---------------------------
+/* http://acidmartin.wordpress.com/2011/09/26/css3-treevew-no-javascript/ */
+.nav-treeview {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      background: #F5F5F5;
+      padding: 2px 8px;
+    }
+  }
+  
+  input {
+    opacity: 0;
+    position: absolute;
+  }
+
+  input + label + ul li {
+    border-top: 1px dotted $grayLight;
+    padding-left: 22px;
+
+    &:hover {
+      background: $white;
+    }
+  }
+
+  input ~ ul {
+    display: none;
+  }
+
+  a,
+  label,
+  label:before {
+    display: inline-block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+  }
+
+  label,
+  label:before {
+    cursor: pointer;
+  }
+
+  label {
+    margin-top: 0;
+  }
+
+  label:before {
+    content: "\f0c1";
+    font-family: 'icomoon';
+    -webkit-font-smoothing: antialiased;
+            font-smoothing: antialiased;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 2px;
+    margin-top: 5px;
+    speak: none;
+    vertical-align: middle;
+    width: 16px;
+  } 
+
+  label.branch:before {
+    content: "\f07b";
+    margin-right: 4px;
+    margin-top: 2px;
+  }
+
+  input:checked + label.branch:before {
+    content: "\f07c";
+  }
+
+  input:disabled + label {
+    cursor: default;
+    opacity: .6;
+  }
+
+  input:checked:not(:disabled) ~ ul {
+    display: block;
+  }
+}
+
+/* webkit adjacent element selector bugfix */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+  .nav-treeview {
+    -webkit-animation: webkit-adjacent-element-selector-bugfix infinite 1s;
+  }  
+  @-webkit-keyframes webkit-adjacent-element-selector-bugfix {
+
+    from { 
+      padding: 0;
+    } 
+    to { 
+      padding: 0;
+    }
+  }
+}
+
+
+// Google Map
+// ------------------
+#map_container {
+  padding: 20px 0;
+}
+
+#map_sidebar,
+#map_canvas {
+  color: $black;
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#map_canvas {
+  height: 100%;
+  min-height: 450px;
+
+  p, ul, li {
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+
+  .pp-headline-address,
+  .pp-headline-hours {
+    color: $gray;
+    margin-bottom: 1px;
+  }
+
+  .pp-place-title {
+    color: $blue;
+    display: inline;
+    font-size: 123%;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    margin-top: 2px;
+    padding-top: 3px;
+  }
+
+  .res {
+    border-collapse: collapse;
+
+    .popover {
+      border: none;
+      display: block;
+      float: left;
+      margin-left: 2px;
+      margin-top: 10px;
+      padding: 0;
+      position: relative;
+      width: 24px;
+
+      .arrow {
+        border-top-color: $blue;
+        border-width: 10px 5px 2px;
+        left: 50%;
+        margin-left: -5px;
+
+        &:after {
+          border: none;
+          bottom: -1px;
+        }
+      }
+    }
+
+    .popover-content {
+      background: $blue;
+      color: $white;
+      cursor: pointer;
+      height: 22px;
+      line-height: 22px;
+      padding: 5px 2px 2px;
+      text-align: center;
+      width: 20px;
+    }
+
+    .one {
+      clear: left;
+      padding: 0 12px 9px 0;
+    }
+    
+    .vcard {
+      margin-left: 34px;
+      padding: 9px 0 0;
+    }
+
+    .highlightMarker {
+      background: $white;
+      cursor: pointer;
+    
+      &:hover {
+        background: $black;
+      }
+    }
+  }
+}

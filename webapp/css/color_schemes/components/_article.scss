@@ -9,6 +9,7 @@ article .sidebar {
 
   h3 {
     color: $asideHeadingColor;
+    font-family: $asideHeadingFontFamily;
     font-size: $asideHeadingFontSize;
     line-height: 1;
   }
@@ -16,6 +17,9 @@ article .sidebar {
   .nav > li > a {
     color: $asideLinkColor;
     font-size: $asideLinkFontSize;
+    margin-left: -20px;
+    margin-right: -20px;
+    text-decoration: none;
 
     &:hover {
       background: $white;
@@ -30,10 +34,11 @@ article .sidebar {
     color: $asideLinkColorHover;
   }
 
-  .content {
+  .content,
+  .nav-list {
     background: none;
     border: none;
-    padding: 10px 15px;
+    padding: 0 20px;
   }
 }
 
@@ -41,8 +46,13 @@ article .sidebar {
 // Article content
 // -------------------------
 article .content section,
+article .content .media {
+  margin-bottom: 20px;
+}
+
 article .content aside {
-  padding: $articleContentPadding;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 
@@ -50,20 +60,15 @@ article .content aside {
 // -------------------------
 .article-landing {
 
-  h3 {
-    font-size: 28px;
-    line-height: 34px;
-  }
-
   li {
-    font-size: 20px;
+    @extend .zeta;
     line-height: 1;
     margin-bottom: 10px;
   }
 
   .nav > li {
-    font-size: 24px;
-    line-height: 30px;
+    @extend .epsilon;
+    line-height: 1.25;
     margin-bottom: 20px;
 
     > a {
@@ -102,7 +107,7 @@ article .content aside {
 
     .story-headline {
       color: $gray;
-      font-size: 18px;
+      @extend .zeta;
       line-height: 1;
       margin-top: 0;
     }

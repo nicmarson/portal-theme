@@ -23,7 +23,7 @@ $altHeadingColor:       #8599a8;
 // -------------------------
 $bodyBackground:        $white;
 $textColor:             $grayDark;
-$mainBackground:        #EFF5F7;
+$mainBackground:        #daeaf2;
 
 // Links
 // -------------------------
@@ -59,31 +59,11 @@ $scriptFontFamilyBold:          'NinaWeb-Bold', 'Chalkboard', 'ChalkboardSE-Regu
 // Base typography
 // -------------------------
 $weight:                        normal;
-$font-base:                     14;
-$baseFontSize:                  14px;
+$baseFontSize:                  13px;
 $baseFontFamily:                $sansFontFamily;
-$baseLineHeight:                20px;
+$baseLineHeight:                18px;
 $altFontFamily:                 $serifFontFamily;
 $serif-boolean:                 true !default;
-
-// Heading typography
-// -------------------------
-$headingsFontFamily:            inherit; // empty to use BS default, $baseFontFamily
-$headingsFontFamilyAlt:         $sansFontFamilyLight;
-$headingsFontWeight:            normal;    // instead of browser default, bold
-$headingsColor:                 inherit; // empty to use BS default, $textColor
-
-// TypeScale
-// -------------------------
-$tera: 72; // 117 = 18 × 6.5
-$giga: 60; // 90 = 18 × 5
-$mega: 48; // 72 = 18 × 4
-$alpha: 36; // 60 = 18 × 3.3333
-$beta: 24; // 48 = 18 × 2.6667
-$gamma: 21; // 36 = 18 × 2
-$delta: 18; // 24 = 18 × 1.3333
-$epsilon: 16; // 21 = 18 × 1.1667
-$zeta: 14; // 18 = 18 × 1
 
 
 // COMPONENTS
@@ -100,12 +80,6 @@ $borderRadiusSmall:     3px;
 // -------------------------
 $inputBorderRadius:             $baseBorderRadius;
 $inputPadding:                  4px 6px;
-
-
-// Page header
-// -------------------------
-$pageHeaderBorderBottom:        1px solid $grayLighter;
-$pageHeaderMargin:              $baseLineHeight 0 ($baseLineHeight * 1.5);
 
 
 // Section header
@@ -125,6 +99,7 @@ $asideBackground:					#F2F8F9;
 $asideHeadingBackground:			#F0F6F9;
 $asideHeadingBorder:                #D9E6EA;
 $asideHeadingColor:                 #5e7b8c;
+$asideHeadingFontFamily: 			$sansFontFamily;
 $asideHeadingFontSize:              20px;
 $asideLinkFontSize:                 16px;
 $asideLinkColor:                    $grayLight;
@@ -182,6 +157,15 @@ $navbarInverseSearchPlaceholderColor:    #ccc;
 $navbarInverseBrandColor:                $navbarInverseLinkColor;
 
 
+// Nav - Breadcrumb
+// -------------------------
+$breadcrumbBackground:          transparent;
+$breadcrumbFontSize: 			.85rem;
+$breadcrumbMargin:              20px 0 0;
+$breadcrumbPadding:             8px 0;
+$breadcrumbDividerColor:        $gray;
+
+
 // Nav Inverted
 // -------------------------
 $navInvertedText:               $white;
@@ -194,6 +178,11 @@ $navInvertedLinkColorActive:    lighten($orange, 20%);
 // -------------------------
 $navMainLinkBackground:         $white;
 $navMainLinkBackgroundHover:    $white;
+$navMainLinkBorder:				1px solid $accent;
+$navMainLinkColor: 				$linkColor;
+$navMainLinkHoverColor: 		$linkColorHover;
+$navMainLinkFontFamily: 		$sansFontFamily;
+$navMainLinkFontSize: 			16px;
 $navMainLinkHeight:             120px;
 $navMainLinkMargin:             0 10px;
 
@@ -235,6 +224,7 @@ $audienceCaretColor:            $brand;
 // Contact
 // -------------------------
 $contactInfoBackground:         #F5F5F5;
+$contactInfoBorderTop:          1px solid darken($contactInfoBackground, 7%);
 $contactInfoLink:               $textColor;
 $contactInfoLinkHover:          $textColor;
 $contactPhoneBackground:        #66A131;

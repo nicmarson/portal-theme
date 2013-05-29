@@ -16,7 +16,7 @@ This file allows you to override and define new Velocity variables.
 	        	logo-regence-s
 	        #end
 	    #else
-	    	logo-regence-cs logo-regence-cs
+	    	logo-regence-cs
 		#end
     #end
 #end

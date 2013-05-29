@@ -143,18 +143,6 @@ a:active {
 }
 
 
-// Headers
-// -------------------------
-
-// Page header
-.page-header {
-  border-bottom: none; // $pageHeaderBorderBottom
-
-  h1 {
-    color: $brand;
-  }
-}
-
 // Section header
 .section-header {
   background: $sectionHeaderBackground;
@@ -243,16 +231,6 @@ a.warning-text:hover {
 // -------------------------
 .dropdown-menu {
   color: $black;
-}
-
-
-// Navigation - Tabs
-// -------------------------
-.nav-tabs > .active > a,
-.nav-tabs > .active > a:hover,
-.nav-tabs > .active > a:focus {
-  background-color: $tabActiveBackgroundColor;
-  border-color: $tabActiveBorderColor;
 }
 
 

@@ -62,7 +62,9 @@
             #parse ("$full_templates_path/navigation.vm")
 
         #if ($has_navigation || $is_signed_in)
-            #parse ("$full_templates_path/navigation_information.vm")
+        	#if (${ch_audience} != "visitor" && ${ch_brand} != "bridgespan")
+            	#parse ("$full_templates_path/navigation_information.vm")
+        	#end
         #end
             #parse ("$full_templates_path/navigation_utility.vm")
         </div> <!-- /container -->

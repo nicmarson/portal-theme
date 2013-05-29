@@ -15,7 +15,7 @@
                         <span class="brand-region">#ch_region_text()</span>
                     </a>
                 </li>    
-                #if (!${ch_region})
+                #if (!${ch_region} && ${ch_brand} == 'regence')
                 <li class="nav-brand">
                     <a class="brand logo-regence-s" href="$theme_display.getURLHome()">
                         <span class="brand-logo"><span class="hide-text">${ch_brand}</span></span>

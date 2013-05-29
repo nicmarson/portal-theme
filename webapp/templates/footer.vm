@@ -26,4 +26,5 @@
             </nav>
         </div>
     </div>
+    $theme.runtime("webtrendsportlet_WAR_webtrendsportlet")
 </footer>

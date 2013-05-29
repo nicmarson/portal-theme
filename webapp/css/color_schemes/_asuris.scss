@@ -13,7 +13,7 @@
 
 .asuris {
 
-  // Import theme fonts and colors
+  // Import theme colors
   // --------------------------------------
   @import "themes/colors";
   
@@ -23,6 +23,13 @@
   .regence-only,
   .bridge-only {
     display: none;
+  }
+
+
+  // Typography
+  // --------------------------------------
+  h1 {
+    color: $brand;
   }
 
 

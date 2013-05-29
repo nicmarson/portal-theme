@@ -32,75 +32,8 @@ $linkColorHover:        $red;
 $placeholderText:       $gray;
 
 
-// TYPOGRAPHY
-// --------------------------------------------------
-
-// Brand fonts
-// -------------------------
-$sansFontFamily:                "ProximaNova-Regular", Verdana, sans-serif;
-$sansFontFamilyIt:              "ProximaNova-RegularIt", Verdana, sans-serif;
-$sansFontFamilyLight:           "ProximaNova-Light", Verdana, sans-serif;
-$sansFontFamilyLightIt:         "ProximaNova-LightIt", Verdana, sans-serif;
-$sansFontFamilySemibold:        "ProximaNova-Semibold", "Arial Black", sans-serif;
-$sansFontFamilySemiboldIt:      "ProximaNova-SemiboldIt", "Arial Black", sans-serif;
-$sansFontFamilyBold:            "ProximaNova-Bold", "Arial Black", Verdana, sans-serif;
-$sansFontFamilyBoldIt:          "ProximaNova-BoldIt", "Arial Black", sans-serif;
-$sansFontFamilyCond:            "ProximaNovaCond-Regular", Verdana, sans-serif;
-$sansFontFamilyCondSemibold:    "ProximaNovaCond-Semibold", Verdana, sans-serif;
-
-// Alt fonts
-// -------------------------
-$serifFontFamily:               Georgia, "Times New Roman", Times, serif;
-$serifFontFamilyIt:             Georgia, "Times New Roman", Times, serif;
-$monoFontFamily:                Monaco, Menlo, Consolas, "Courier New", monospace;
-$scriptFontFamily:              'NinaWebMedium', 'Chalkboard', 'ChalkboardSE-Regular', cursive;
-$scriptFontFamilyBold:          'NinaWeb-Bold', 'Chalkboard', 'ChalkboardSE-Regular', cursive;
-
-// Base typography
-// -------------------------
-$weight:                        normal;
-$font-base:                     14;
-$baseFontSize:                  14px;
-$baseFontFamily:                $sansFontFamily;
-$baseLineHeight:                20px;
-$altFontFamily:                 $serifFontFamily;
-$serif-boolean:                 true !default;
-
-// Heading typography
-// -------------------------
-$headingsFontFamily:            inherit; // empty to use BS default, $baseFontFamily
-$headingsFontFamilyAlt:         $sansFontFamilyLight;
-$headingsFontWeight:            normal;    // instead of browser default, bold
-$headingsColor:                 inherit; // empty to use BS default, $textColor
-
-// TypeScale
-// -------------------------
-$tera: 117; // 117 = 18 × 6.5
-$giga: 90; // 90 = 18 × 5
-$mega: 72; // 72 = 18 × 4
-$alpha: 60; // 60 = 18 × 3.3333
-$beta: 48; // 48 = 18 × 2.6667
-$gamma: 36; // 36 = 18 × 2
-$delta: 24; // 24 = 18 × 1.3333
-$epsilon: 21; // 21 = 18 × 1.1667
-$zeta: 18; // 18 = 18 × 1
-
-
 // COMPONENTS
 // --------------------------------------------------
-
-// Border radius
-// -------------------------
-$baseBorderRadius:      0;
-$borderRadiusLarge:     6px;
-$borderRadiusSmall:     3px;
-
-
-// Page header
-// -------------------------
-$pageHeaderBorderBottom:        none;
-$pageHeaderMargin:              $baseLineHeight 0 ($baseLineHeight * 1.5);
-
 
 // Section header
 // -------------------------
@@ -113,13 +46,12 @@ $sectionHeaderHeadingColor:     $orange;
 // -------------------------
 $articleBackground:					$white;
 $articleBorder:						lighten($accentLighter, 8%);
+$articleContentPadding: 			0 20px;
 
 $asideBackground:					#F7FAFB;
 $asideHeadingBackground:			#F0F6F9;
 $asideHeadingBorder:                #d7d7d7;
 $asideHeadingColor:                 $grayLight;
-$asideHeadingFontSize:              20px;
-$asideLinkFontSize:                 16px;
 $asideLinkColor:                    $grayLight;
 $asideLinkColorHover:               $linkColor;
 
@@ -179,12 +111,19 @@ $navInvertedLinkColorHover:     lighten($orange, 40%);
 $navInvertedLinkColorActive:    lighten($orange, 20%);
 
 
+// Nav - Breadcrumb
+// -------------------------
+$breadcrumbBackground:          transparent;
+$breadcrumbDividerColor:        $gray;
+
+
 // Nav - Main
 // -------------------------
 $navMainLinkBackground:         $white;
 $navMainLinkBackgroundHover:    $white;
-$navMainLinkHeight:             120px;
-$navMainLinkMargin:             0 10px;
+$navMainLinkBorder:				1px solid $accent;
+$navMainLinkColor: 				$linkColor;
+$navMainLinkHoverColor: 		$linkColorHover;
 
 
 // Nav - Information
@@ -211,7 +150,6 @@ $tabActiveBorderColor: 				#CCC #CCC transparent;
 // Top
 // -------------------------
 $topBackground:                 $white;
-$topHeight:                     80px;
 $topText:                       $gray;
 $topLinkColor:                  $gray;
 $topLinkColorHover:             $white;
@@ -224,6 +162,7 @@ $audienceCaretColor:            $brand;
 // Contact
 // -------------------------
 $contactInfoBackground:         #F5F5F5;
+$contactInfoBorderTop:          1px solid darken($contactInfoBackground, 7%);
 $contactInfoLink:               $textColor;
 $contactInfoLinkHover:          $textColor;
 $contactPhoneBackground:        #66A131;
@@ -234,11 +173,7 @@ $contactEmailBackground:        $purple;
 // -------------------------
 $bottomBackground:              $accent;
 $bottomColor:                   $textColor;
-$bottomFontSize:                13px;
-$bottomLineHeight:              16px;
 $bottomLinkBackground:          transparent;
 $bottomLinkBackgroundHover:     transparent;
 $bottomLinkColor:               $textColor;
 $bottomLinkColorHover:          $textColor;
-
-$feedbackIconMarginTop:         4px;

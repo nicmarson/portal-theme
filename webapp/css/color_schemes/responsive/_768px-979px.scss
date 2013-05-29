@@ -59,29 +59,6 @@
 // -------------------------------
 .hero-media {
 
-  .media {
-
-    p,
-    li {
-      font-size: 12px;
-      line-height: 14px;
-    }
-
-    .lead {
-      font-size: 14px;
-      line-height: 16px;
-    }
-  }
-
-  .media-heading {
-    font-size: 18px;
-    line-height: 24px;
-
-    small {
-      font-size: 16px;
-    }
-  }
-
   .media-body,
   .media-header {
     padding-left: 15px;
@@ -104,6 +81,20 @@
 
   #media-shop {
     height: 340px;
+  }
+}
+
+
+// Hero employer
+// ----------------------------/
+#hero-employer {
+
+  .hero-unit {
+    height: 450px;
+  }
+
+  #media-forms {
+    height: 280px;
   }
 }
 
