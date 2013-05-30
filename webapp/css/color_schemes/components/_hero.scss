@@ -68,6 +68,20 @@
   padding: 0;
   position: relative;
 
+  .caption-title {
+    @extend .alpha;
+    line-height: 1.25;
+
+    small {
+      @extend .beta;
+    }
+  }
+
+  .caption-text {
+    @extend .zeta;
+    line-height: 1.25;
+  }
+
   > .image {
     overflow: hidden;
     z-index: 1;
@@ -108,6 +122,11 @@
       line-height: 1.15;
     }
 
+    .lead {
+      @extend .zeta;
+      line-height: 1.15;
+    }
+
     .cover {
       bottom: 0;
       display: block;
@@ -116,11 +135,6 @@
       right: 0;
       top: 0;
       z-index: 10;
-    }
-
-    .lead {
-      @extend .zeta;
-      line-height: 1.15;
     }
   }
 
@@ -153,6 +167,15 @@
 }
 
 
+// Hero home
+// -------------------------------
+#hero-home .nav-pills li > a {
+  font-family: $sansFontFamilyLight;
+  @extend .beta;
+  line-height: 1.25;
+}
+
+
 // Health Insurance Guide
 // -------------------------------
 #hero-understanding-insurance {
@@ -162,7 +185,9 @@
   }
 
   .search-button {
+    font-size: 30px;
     height: 29px;
+    line-height: 1;
     padding: 0 10px;
     position: absolute;
     right: 3px;
@@ -171,7 +196,8 @@
 
   .search-input {
     font-family: $sansFontFamilyLight;
-    font-size: 20px;
+    @extend .beta;
+    line-height: 1.2;
     height: auto;
 
     &:focus {
@@ -187,6 +213,17 @@
       .glyph-play:before {
         color: $white;
       }    
+    }
+  }
+
+  .media-body {
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    em {
+      color: $accent;
+      font-style: normal;
+      text-transform: uppercase;
     }
   }
 

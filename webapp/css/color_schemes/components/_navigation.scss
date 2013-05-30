@@ -7,7 +7,7 @@
 // -------------------------
 .nav-tabs {
   @include box-shadow(0 20px 10px $tabActiveBackgroundColor);
-  font-size: .85rem;
+  @extend .eta;
 }
 
 .nav-tabs a:hover,
@@ -30,26 +30,17 @@
 
 // Navigation - Main
 // ---------------------------
-.nav-main {
+.nav-main ul li a {
+  background-color: $navMainLinkBackground;
+  border: $navMainLinkBorder;
+  color: $navMainLinkColor;
+  font-family: $navMainLinkFontFamily;
+  height: $navMainLinkHeight;
+  line-height: $navMainLinkHeight;
+  margin: $navMainLinkMargin;
 
-  ul {
-
-    li {
-
-      a {
-        background-color: $navMainLinkBackground;
-        border: $navMainLinkBorder;
-        color: $navMainLinkColor;
-        font-family: $navMainLinkFontFamily;
-        height: $navMainLinkHeight;
-        line-height: $navMainLinkHeight;
-        margin: $navMainLinkMargin;
-
-        &:hover {
-          color: $linkColorHover;
-        }
-      }
-    }
+  &:hover {
+    color: $linkColorHover;
   }
 }
 
@@ -70,8 +61,8 @@
 
 .nav-inverted.nav-pills > .active > a,
 .nav-inverted.nav-pills > .active > a:hover {
-  color: $linkColor;
   background-color: $white;
+  color: $linkColor;
 }
 
 
@@ -82,7 +73,7 @@
   padding: $gridGutterWidth 0 0;
 
   .btn {
-    font-size: 16px;
+    @extend .epsilon;
     padding-left: 0px;
 
     &:hover {
@@ -111,7 +102,7 @@
   }
   
   .nav.unstyled {
-    font-size: 12px;
+    @extend .eta;
 
     li {
       margin-bottom: 6px;
@@ -129,11 +120,10 @@
 
   .title {
     color: $navInformationTitleColor;
-    font: 16px $sansFontFamily;
+    font-family: $sansFontFamily;
+    @extend .epsilon;
   }
 }
-
-
 
 
 // Navigation - Utility
@@ -145,7 +135,7 @@
 
     a {
       font-family: $sansFontFamily;
-      font-size: 16px;
+      @extend .epsilon;
 
       &:hover {
         background: $white;
@@ -161,7 +151,7 @@
   margin-top: 20px;
 
   > li {
-    font-size: 16px;
+    @extend .epsilon;
 
     > a {
       border-top: 1px solid #DDDFE0;

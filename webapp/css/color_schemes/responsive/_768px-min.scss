@@ -153,10 +153,6 @@ article {
     p {
       margin-bottom: 15px;
     }
-
-    .media-heading {
-      line-height: .85;
-    }
   }
 
   .media-image {    
@@ -165,6 +161,40 @@ article {
 
   .media-body {
     padding: 15px 15px 0;
+  }
+}
+
+
+// Hero home
+// ----------------------------/
+#hero-home {
+
+  .nav-pills {
+
+    li {
+      width: 20%;
+    }
+
+    li > a {
+      background-color: $white;
+      @include box-shadow("0 1px 5px rgba(0,0,0,.1)");
+      display: block;
+      margin: 0 10px;
+      padding: 45px 0;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .active > a, 
+    .active > a:hover {
+      background-color: #076DA5;
+      @include box-shadow("0 2px 4px rgba(0,0,0,.2) inset, 0 2px 4px rgba(255,255,255,.8)");
+    }
+
+    .tab-individual a,
+    .tab-medicare a {
+      padding: 30px 0;
+    }
   }
 }
 
@@ -187,24 +217,59 @@ article {
 // Top
 // --------------------------------------
 #top {
+  border-bottom: 1px solid $topLinkBorder;
 
-  // Nav Shopping
-  .nav .nav-shopping > a {
-    padding-left: 60px;
-    padding-right: 45px;
+  .container {
+    border-bottom: none;
+  }
+
+  .nav .nav-brand .brand {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .nav .nav-search {
+    width: auto;
+
+    form {
+      border-top: none;
+    }
+  }
+  
+  .nav .nav-shopping {
+    clear: none;
+    float: right;
+    width: auto;
+
+    > a {
+      border-left: none;
+      border-top: none;
+      padding-left: 60px;
+      padding-right: 45px;
+    }
   }
 }
 
 
 // Bottom
 // --------------------------------------
-#bottom {
-
-  p {
-    text-align: left;
-  }
+#bottom p {
+  text-align: left;
+}
   
-  ul {
-    text-align: right;
-  }
+#bottom ul {
+  text-align: right;
+}
+
+
+// Contact Us
+// ----------
+
+// Google Map
+#map_sidebar {
+  float: left;
+}
+
+#map_canvas {
+  float: right;
 }

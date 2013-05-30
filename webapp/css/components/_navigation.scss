@@ -15,39 +15,26 @@
   border: none;
   @include border-radius(0);
   @include box-shadow(none);
-}
-
-
-// Navigation
-// -------------------------
-.nav a {
-  @include css-hyphens(none);
-  word-wrap: break-word;
+  text-shadow: none;
 }
 
 
 // Navigation - Tabs
 // -------------------------
-.nav-tabs {
-
-  a {
-    text-decoration: none;
-  }
-  
-  .btn {
-    margin: 0 6px;
-  }
+.nav-tabs a {
+  text-decoration: none;
 }
 
-.nav-tabs-centered {
+.nav-tabs .btn {
+  margin: 0 6px;
+}
 
-  > li > a {
-    min-height: 3em;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
-    width: 7em;
-  }
+.nav-tabs-centered > li > a {
+  min-height: 3em;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  width: 7em;
 }
 
 
@@ -72,6 +59,7 @@
         text-align: center;
         @include transition(all 0.2s ease-in-out 0s);
       }
+
       span {
         display: inline-block;
         line-height: normal;

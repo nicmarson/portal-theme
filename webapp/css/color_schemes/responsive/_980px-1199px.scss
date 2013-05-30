@@ -47,15 +47,15 @@
 #hero-individual {
 
   .hero-unit {
-    height: 445px;
+    height: 450px;
   }
 
   .media {
-    min-height: 150px;
+    min-height: 135px;
   }
 
   #media-shop {
-    height: 320px;
+    height: 290px;
   }
 }
 
@@ -96,7 +96,6 @@
   }
 
   .search-button {
-    font-size: 30px;
     height: 59px;
     padding: 0 16px;
     right: 2px;
@@ -104,8 +103,6 @@
   }
 
   .search-input {
-    font-size: 30px;
-    line-height: 36px;
     padding: 10px 15px 11px;
   }
 }
@@ -130,11 +127,6 @@
     padding-top: 36px;
   }
 
-  label {
-    font-size: 24px;
-    line-height: 34px;
-  }
-
   .form-actions {
     padding-right: 43px;
   }
@@ -144,13 +136,6 @@
 // Contact Us
 // ---------------------------
 table.contact-info {
-  font-size: 20px;
-  line-height: 16px;
-
-  small {
-    font-size: 14px;
-    line-height: 10px;
-  }
 
   td.contact-info-glyph {
     padding: 20px 8px 20px 10px;    
@@ -161,24 +146,11 @@ table.contact-info {
   }
 }
 
-// Contact Icons
-.contact-info-glyph {
-
-  .glyph-phone,
-  .glyph-email,
-  .glyph-phone:before,
-  .glyph-email:before {
-    font-size: 40px;
-    height: 50px;
-    line-height: 50px;
-    width: 50px; 
-  }
-}
-
 // Google Map
 #map_sidebar {
   width: 150px;
 }
+
 #map_canvas {
   width: 425px;
 }

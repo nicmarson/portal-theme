@@ -45,6 +45,10 @@ article .sidebar {
 
 // Article content
 // -------------------------
+article .content {
+  @include css-hyphens(auto);
+}
+
 article .content section,
 article .content .media {
   margin-bottom: 20px;
@@ -97,7 +101,7 @@ article .content aside {
     }
 
     .abstract {
-      font-size: 12px;
+      @extend .eta;
     }
 
     .image {

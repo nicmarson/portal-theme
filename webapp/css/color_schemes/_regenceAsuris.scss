@@ -91,6 +91,23 @@
   }
 
 
+  // Navigation
+  // -------------------------
+  .nav-pills > li > a:hover,
+  .nav-articles > li > a:hover {
+    background-color: $white;
+  }
+
+  .nav-main ul li a {
+    @include border-radius(5px);
+    @include box-shadow(0 1px 5px rgba(0,0,0, .1));
+
+    &:hover {
+      @include box-shadow(0 1px 5px rgba(0,0,0, .5));
+    }
+  }
+
+
   // Page header
   // -------------------------
   .page-header {
@@ -115,7 +132,7 @@
   // -------------------------
   article .content section,
   article .content aside,
-  article .content .content-body {
+  article .content .page-body {
     padding: $articleContentPadding;
   }
 
@@ -187,21 +204,9 @@
   .article-left-sidebar .sidebar {
 
     .nav > li > a {
-      font-size: 24px;
+      @extend .beta;
       padding: 12px 15px;
       text-shadow: none;
-    }
-  }
-
-
-  // Navigation - Main
-  // ---------------------------
-  .nav-main ul li a {
-    @include border-radius(5px);
-    @include box-shadow(0 1px 5px rgba(0,0,0, .1));
-
-    &:hover {
-      @include box-shadow(0 1px 5px rgba(0,0,0, .5));
     }
   }
 
@@ -230,6 +235,53 @@
       }
     }
   }
+
+
+  // Contact page
+  // -------------------------
+  .contact-info-glyph {
+
+    .caret {
+      border-color: transparent;
+      border-top-width:   8px;
+      border-right-width: 8px;
+      border-left-width:  8px;
+      position: absolute;
+      right: -8px;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 3;
+
+        background: $contactInfoBackground;
+        @include border-radius(8px);
+        height: 16px;
+        right: -16px;
+        width: 16px;
+      }
+    }
+
+    .glyph-phone .caret {
+      border-bottom: 8px solid $contactPhoneBackground;
+      border-top: 0 solid transparent;
+      bottom: 0;
+
+      &:after {
+        bottom: -7px;
+      }
+    }
+
+    .glyph-email .caret {
+      border-top-color: $contactEmailBackground;
+      top: 0;
+
+      &:after {
+        top: -7px;
+      }
+    }
+  }
 }
 
 
@@ -245,7 +297,7 @@
   .regence,
   .asuris {
     font-size: $baseFontSize + 3px;
-    line-height: $baseLineHeight + 3px;
+    line-height: $baseLineHeight + 4px;
     
     @import "responsive/1200px-min";
 
@@ -265,6 +317,22 @@
         }
       }
     }
+
+
+    // Contact info glyphs
+    // ---------------------------
+    .contact-info-glyph {
+
+      .glyph-phone,
+      .glyph-email,
+      .glyph-phone:before,
+      .glyph-email:before {
+        font-size: 50px;
+        height: 60px;
+        line-height: 60px;
+        width: 60px;
+      }
+    }
   }
 }
 
@@ -275,6 +343,9 @@
 
   .regence,
   .asuris {
+    font-size: $baseFontSize + 1px;
+    line-height: $baseLineHeight + 2px;
+
     @import "responsive/980px-1199px";
 
 
@@ -297,20 +368,22 @@
         margin-right: 0;
       }
     }
-  }
-}
 
 
-// Responsive: Desktops and larger
-// --------------------------------------
-@media (min-width: 980px) {
+    // Contact Icons
+    // ---------------------------
+    .contact-info-glyph {
 
-  .regence,
-  .asuris {
-    font-size: $baseFontSize + 1px;
-    line-height: $baseLineHeight + 1px;
-
-    @import "responsive/980px-min";
+      .glyph-phone,
+      .glyph-email,
+      .glyph-phone:before,
+      .glyph-email:before {
+        font-size: 40px;
+        height: 50px;
+        line-height: 50px;
+        width: 50px; 
+      }
+    }
   }
 }
 

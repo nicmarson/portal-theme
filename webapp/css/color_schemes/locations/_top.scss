@@ -193,12 +193,12 @@
 
     .shopping-label {
       display: block;
-      font-size: 16px;
-      line-height: 16px;
+      @extend .epsilon;
+      line-height: 1;
 
       small {
         display: block;
-        font-size: 13px;
+        font-size: inherit;
       }
     }
   }
@@ -362,6 +362,11 @@
   form {
     margin: 0 20px;
     padding-top: 20px;
+  }
+
+  label {
+    @extend .gamma;
+    line-height: 1.5556;
   }
 
   .form-actions {

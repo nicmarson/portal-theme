@@ -51,100 +51,6 @@
   }
 
 
-  // Typography
-  // --------------------------------------
-
-
-  // Headings
-  // --------------------------------------
-  .tera {
-    font-size: $tera;
-    font-size: 5.1429rem;
-  }
-
-  .giga {
-    font-size: $giga;
-    font-size: 4.2857rem;
-  }
-
-  .mega {
-    font-size: $mega;
-    font-size: 3.4286rem;
-  }
-
-  .alpha,
-  h1 {
-    font-size: $alpha;
-    font-size: 2.7143rem;
-    line-height: 1.25;
-
-    small {
-      @extend .gamma;
-      line-height: 1.3;
-    }
-  }
-
-  .beta,
-  h2 {
-    font-size: $beta;
-    font-size: 2.2857rem;
-    line-height: 1.25;
-
-    small {
-      @extend .delta;
-      line-height: 1.8;
-    }
-  }
-
-  .gamma,
-  h3 {
-    font-size: $epsilon;
-    font-size: 1.7142rem;
-    line-height: 1.25;
-
-    small {
-      @extend .zeta;
-      font-size: .875rem;
-    }
-  }
-
-  .delta,
-  h4 {
-    font-size: $delta;
-    font-size: 1.4285rem;
-    line-height: 1.3;
-
-    small {
-      @extend .zeta;
-      font-size: .875rem;
-    }
-  }
-
-  .epsilon,
-  h5 {
-    font-size: $epsilon;
-    font-size: 1.2143rem;
-    line-height: 1.6;
-  }
-
-  .zeta,
-  h6 {
-    @extend .zeta;
-    font-size: 1rem;
-    line-height: 1.8;
-  }
-
-  .eta {
-    font-size: $eta;
-    font-size: .8571rem;
-  }
-
-  .theta {
-    font-size: $theta;
-    font-size: .7143rem;
-  }
-
-
   // Placeholder
   // -------------------------
   // Placeholder text gets special styles because when browsers invalidate entire lines if it doesn't understand a selector
@@ -208,7 +114,7 @@
     h3 {
       border: none;
       color: $grayLight;
-      font-size: 18px;
+      @extend .gamma;
       margin: 0;
       padding: 12px 15px;
     }
@@ -254,9 +160,8 @@
     button[type="submit"] {
       @extend .btn-primary;
       @extend .btn-flat;
-      font-size: 16px;
+      @extend .epsilon;
       padding: 6px 18px;
-      text-shadow: none;
       text-transform: uppercase;
     }
 
@@ -300,8 +205,8 @@
     }
 
     .title {
-      font-size: 24px;
-      line-height: 64px;
+      @extend .beta;
+      line-height: 2.6667;
 
       [class^="icon-"],
       [class*=" icon-"] {
@@ -340,6 +245,55 @@
       background-position: 0 -500px;
     }
   }
+
+
+  // Hero welcome
+  // -------------------------------
+  #hero-welcome .hero-unit {
+
+    .form-signIn {
+      font-family: $sansFontFamilyLight;
+
+      h2 {
+        color: $textColor;
+        font-family: $sansFontFamilySemibold;
+        @extend .gamma;
+        margin-bottom: 20px;
+      }
+
+      input {
+        padding-bottom: 2px;
+        padding-top: 2px;
+        width: 146px;
+      }
+
+      label {
+        color: $textColor;
+        text-align: left;
+        width: 80px;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      .btn {
+        float: right;
+        font-family: $sansFontFamilyCond;
+        @extend .epsilon;
+        padding: 5px 16px;
+        text-transform: uppercase;
+      }
+
+      .control-group {
+        margin-bottom: 10px;
+      }
+
+      .controls {
+        margin-left: 90px;
+      }
+    }
+  }
 }
 
 
@@ -355,7 +309,7 @@
 @media (min-width: 1200px) {
 
   .bridge {
-    font-size: $baseFontSize + 4px;
+    font-size: $baseFontSize + 3px;
     line-height: $baseLineHeight + 4px;
 
     @import "responsive/1200px-min";
@@ -368,20 +322,10 @@
 @media (min-width: 980px) and (max-width: 1199px) {
 
   .bridge {
-    font-size: $baseFontSize + 2px;
+    font-size: $baseFontSize + 1px;
     line-height: $baseLineHeight + 2px;
 
     @import "responsive/980px-1199px";
-  }
-}
-
-
-// Desktops and larger
-// --------------------------------------
-@media (min-width: 980px) {
-
-  .bridge {
-    @import "responsive/980px-min";
   }
 }
 
@@ -421,6 +365,9 @@
       }
     }
 
+
+    // Hero welcome
+    // -------------------------------
     #hero-welcome .hero-unit {
       background-image: url(images/bridge/hero-welcome.png);
       @include background-size(cover);
@@ -437,52 +384,20 @@
         position: absolute;
         text-transform: uppercase;
       }
+
       .form-signIn {
         background-color: $white;
         @include border-bottom-right-radius(10px);
         @include border-top-left-radius(10px);
-        font-family: $sansFontFamilyLight;
         padding: 20px 30px;
         margin-top: 20px;
         width: 250px;
-
-        h2 {
-          color: $textColor;
-          font-family: $sansFontFamilySemibold;
-          font-size: 24px;
-          margin-bottom: 20px;
-        }
-        input {
-          padding-bottom: 2px;
-          padding-top: 2px;
-          width: 146px;
-        }
-        label {
-          color: $textColor;
-          text-align: left;
-          width: 80px;
-        }
-        p {
-          font-size: 14px;
-          line-height: 20px;
-          margin-bottom: 10px;
-        }
-        .btn {
-          float: right;
-          font-family: $sansFontFamilyCond;
-          font-size: 16px;
-          padding: 5px 16px;
-          text-transform: uppercase;
-        }
-        .control-group {
-          margin-bottom: 10px;
-        }
-        .controls {
-          margin-left: 90px;
-        }
       }
     }
 
+
+    // Hero individual
+    // -------------------------------
     #hero-individual {
 
       .media {
