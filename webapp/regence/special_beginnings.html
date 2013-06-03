@@ -1,0 +1,857 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Regence</title>
+    <meta name="description" content="Regence portal pages">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="http://fnt.webink.com/wfs/webink.css/?project=AEC37CF0-6B2D-450D-9777-5062C06CCACA&fonts=58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,1366810A-C17C-C074-FF25-E81320293740:f=ProximaNovaCond-Semibold,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,FF4969BA-A10C-C1F1-4CAE-97A4557D103C:f=ProximaNovaCond-Regular,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/cambia.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script type="text/javascript" src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script>
+        // set options for html5shiv
+        if(!window.html5){ window.html5 = {}; }
+        window.html5.shivMethods = false;
+    </script>
+    <script src="../js/webshim/extras/modernizr-custom.js"></script>
+    <script src="../js/webshim/polyfiller.js"></script>
+    <script src="../js/webshim/webshim.js"></script>
+
+    <link rel="shortcut icon" href="../images/favicon.ico">
+</head>
+
+<body class="regence yui3-skin-sam controls-visible guest-site signed-out public-page site">
+    
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav role="banner" itemprop="WPHeader" id="top" class="wp-header clearfix">
+        <div class="container">
+            <ul class="nav visuallyhidden">
+                <li><a href="#hero">Skip to Content</a></li>
+                <li><a href="#nav">Skip to Navigation</a></li>
+                <li><a href="/medicare">Return to Homepage</a></li>
+            </ul>
+            <div class="clearfix">
+                <ul itemtype="http://schema.org/Organization" itemscope="" class="nav">
+                    <li class="nav-brand">
+                        <a href="index.html" class="brand logo-regence-cs regence-only">
+                            <span class="brand-logo"><span class="hide-text">Regence</span></span>
+                            <span class="brand-region">BlueCross BlueShield of Oregon</span>
+                        </a>
+                    </li>
+                    <li class="nav-login"><a href="/c/portal/login?p_l_id=10507">Sign in</a></li>
+                    <li class="nav-shopping">
+                        <a class="toggle shopping-toggle-button" data-toggle="collapse" data-target="#set-view-location" href="#">Visitor
+                        <small></small><span class="glyph-users hidden-phone" aria-hidden="true"></span><b class="caret"></b></a>
+                    </li>
+                    <li class="nav-search">
+                        <form role="search" id="search" name="header-search" method="get" action="http://www.regence.com/about/search.jsp" class="form-search">
+                            <label class="hide" for="searchQuery">Search</label>
+                            <input type="text" class="input-medium search-query" placeholder="Search" name="searchQuery" id="searchQuery">
+                            <button class="btn btn-link" type="submit"><span aria-hidden="true" class="glyph-search"></span><span class="visuallyhidden">Go</span></button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="set-view-location" class="collapse out">
+        <div class="container">
+            <form>
+                <div class="row-fluid">
+                    <div class="span6">
+                        <i class="hidden-phone glyph-users"></i>
+                        <label>Change audience</label>
+                        <select>
+                            <option>Individuals & Families</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="span6">
+                        <i class="hidden-phone icon-location icon-white"></i>
+                        <label>Change location</label>
+                        <input type="text" placeholder="Postal code">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-link">Cancel</button>
+                    <button type="submit" class="btn">Update</button>
+                </div>
+            </form>
+        </div>
+    </header>
+    
+    <div id="main" role="main">
+        <div class="container">
+            <article class="article-left-sidebar row-fluid">
+                <aside class="span3 sidebar">
+                    <nav>
+                        <ul class="nav nav-list">
+                            <li class="active"><a href="">Special Beginnings<sup>&reg;</sup></a></li>
+                            <li><a href="">Employee Choice</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+                <div class="content main-content span9">
+                    <script type="text/javascript" src="../js/forms/specialbeginnings.js"></script>
+                    <div class="page-header">
+                      <h1>Special Beginnings<sup>&reg;</sup></h1>
+                    </div>
+                    <div class="page-body">
+
+                        <form action="/forms/send" class="email-form multi_part_form" id="specialBeginnings" method="post">
+
+                            <divid="framesContainer">
+                                <!-- Start Part 1 -->
+                                <div class="frame" title="Your Details">
+                                  <div class="form-body">
+                                    <h2>Your Details</h2>
+                                    <div class="well well-small">
+                                      <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#details-eligibility"><span class="caret"></span> Confirming Your Eligibility</button>           
+                                      <div id="details-eligibility" class="collapse">
+                                        <p>You can confirm your eligibility for the Special Beginnings program by sending a secure email or calling 1 (888) 569-2229 during regular business hours, Monday through Friday, 9 a.m. &#8211;5 p.m. Pacific time. We will respond by the end of the next business day.</p>
+                                        <p>Please complete this questionnaire, answering honestly and to the best of your abilities. The information you provide is confidential and will not affect your health benefits, but your honest answers will help us support you during your pregnancy.</p>
+                                      </div>
+                                    </div>
+                                    <fieldset class="glyph glyph-user-details">
+                                      <label for="firstName">First Name</label>
+                                      <input type="text" required="required" id="firstName" name="firstName" placeholder="Example: Jane"/>
+                                      <label for="lastName">Last Name</label>
+                                      <input type="text" required="required" id="lastName" name="lastName" placeholder="Example: Doe"/>
+                                      <label for="birthDate">Date of Birth</label>
+                                      <input pattern="(?:(?:0[1-9]|1[0-2])[\/\\-. ]?(?:0[1-9]|[12][0-9])|(?:(?:0[13-9]|1[0-2])[\/\\-. ]?30)|(?:(?:0[13578]|1[02])[\/\\-. ]?31))[\/\\-. ]?(?:19|20)[0-9]{2}" id="birthDate" name="birthDate" placeholder="01/01/1980"/><span class="help-overlay icon-calendar"></span>           
+                                      <label for="insuranceID">Health Insurance ID#</label>
+                                      <input type="text" required="required" id="insuranceID" name="insuranceID" placeholder="Example: AB123456-78"/>
+                                      <label for="height">Height</label>
+                                      <input type="text" required="required" id="height" name="height" placeholder="Example: 5ft 8in"/>
+                                      <label for="preWeight">Pre-Pregnancy Weight</label>
+                                      <input type="text" required="required" id="preWeight" name="preWeight" placeholder="Example: 120lbs"/>
+                                      <label for="bloodRH" class="control-label">Is your blood type RH negative?</label>
+                                      <select type="text" required="required" id="bloodRH" name="bloodRH">
+                                        <option value="">SELECT
+                                        <option value="yes">Yes
+                                        <option value="no">No
+                                      </select>
+                                    </fieldset>
+                                    <h2>Your Prenatal Care Provider</h2>
+                                    <fieldset class="glyph glyph-care-provider">
+                                      <label for="providerName">Provider's Name</label>
+                                      <input type="text" id="firstName" name="firstName"/>
+                                      <label for="providerAddress">Provider's Address</label>
+                                      <input type="text" id="providerAddress" name="providerAddress" placeholder="Example: 123 Main St."/>
+                                      <label for="providerCity">City</label>
+                                      <input type="text" id="providerCity" name="providerCity" placeholder="Example: Seattle"/>
+                                      <label for="providerState">State</label>
+                                      <select type="text" id="providerState" name="providerState">
+                                        <option value="">SELECT
+                                        <option value="AL">Alabama
+                                        <option value="AK">Alaska
+                                        <option value="AZ">Arizona
+                                        <option value="AR">Arkansas
+                                        <option value="CA">California
+                                        <option value="CO">Colorado
+                                        <option value="CT">Connecticut
+                                        <option value="DE">Delaware
+                                        <option value="FL">Florida
+                                        <option value="GA">Georgia
+                                        <option value="HI">Hawaii
+                                        <option value="ID">Idaho
+                                        <option value="IL">Illinois
+                                        <option value="IN">Indiana
+                                        <option value="IA">Iowa
+                                        <option value="KS">Kansas
+                                        <option value="KY">Kentucky
+                                        <option value="LA">Louisiana
+                                        <option value="ME">Maine
+                                        <option value="MD">Maryland
+                                        <option value="MA">Massachusetts
+                                        <option value="MI">Michigan
+                                        <option value="MN">Minnesota
+                                        <option value="MS">Mississippi
+                                        <option value="MO">Missouri
+                                        <option value="MT">Montana
+                                        <option value="NE">Nebraska
+                                        <option value="NV">Nevada
+                                        <option value="NH">New Hampshire
+                                        <option value="NJ">New Jersey
+                                        <option value="NM">New Mexico
+                                        <option value="NY">New York
+                                        <option value="NC">North Carolina
+                                        <option value="ND">North Dakota
+                                        <option value="OH">Ohio
+                                        <option value="OK">Oklahoma
+                                        <option value="OR">Oregon
+                                        <option value="PA">Pennsylvania
+                                        <option value="RI">Rhode Island
+                                        <option value="SC">South Carolina
+                                        <option value="SD">South Dakota
+                                        <option value="TN">Tennessee
+                                        <option value="TX">Texas
+                                        <option value="UT">Utah
+                                        <option value="VT">Vermont
+                                        <option value="VA">Virginia
+                                        <option value="WA">Washington
+                                        <option value="DC">Washington D.C.
+                                        <option value="WV">West Virginia
+                                        <option value="WI">Wisconsin
+                                        <option value="WY">Wyoming
+                                      </select>
+                                      <label for="providerZip">Zip</label>
+                                      <input type="text" required="required" pattern="(\d{5}([\-]\d{4})?)" id="providerZip" name="providerZip" placeholder="Example: 97124"/>
+                                      <label for="providerPhone">Phone</label>
+                                      <input type="text" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" id="providerPhone" name="providerPhone" placeholder="503-555-1234"/>
+                                      <label for="providerDate">Date of Your First Visit</label>
+                                      <input type="date" pattern="(?:(?:0[1-9]|1[0-2])[\/\\-. ]?(?:0[1-9]|[12][0-9])|(?:(?:0[13-9]|1[0-2])[\/\\-. ]?30)|(?:(?:0[13578]|1[02])[\/\\-. ]?31))[\/\\-. ]?(?:19|20)[0-9]{2}" id="providerDate" name="providerDate"/><span class="help-overlay icon-calendar"></span>
+                                    </fieldset>
+                                  </div>
+                                </div>
+                                <!-- End Part 1 -->
+
+
+
+
+                                <!-- Start Part 2 -->
+                                <div class="frame" title="Pregnancy History">
+                                  <div class="form-body">
+                                    <h2>Pregnancy History</h2>
+                                    <div class="well well-small">
+                                      <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#history-eligibility"><span class="caret"></span> Confirming Your Eligibility</button>           
+                                      <div id="history-eligibility" class="collapse">
+                                        <p>You can confirm your eligibility for the Special Beginnings program by sending a secure email or calling 1 (888) 569-2229 during regular business hours, Monday through Friday, 9 a.m. &#8211;5 p.m. Pacific time. We will respond by the end of the next business day.</p>
+                                        <p>Please complete this questionnaire, answering honestly and to the best of your abilities. The information you provide is confidential and will not affect your health benefits, but your honest answers will help us support you during your pregnancy.</p>
+                                      </div>
+                                    </div>
+                                    <fieldset class="glyph glyph-pregnancy">            
+                                      <label for="expectedDate">When is your baby due?</label>
+                                      <input type="date" pattern="(?:(?:0[1-9]|1[0-2])[\/\\-. ]?(?:0[1-9]|[12][0-9])|(?:(?:0[13-9]|1[0-2])[\/\\-. ]?30)|(?:(?:0[13578]|1[02])[\/\\-. ]?31))[\/\\-. ]?(?:19|20)[0-9]{2}" id="dueDate" name="dueDate"/><span class="help-overlay icon-calendar"></span>
+                                      <label for="expectedQuantity">How many babies are you expecting?</label>
+                                      <input type="text" class="input-mini" id="expectedQuantity" name="expectedQuantity"/>
+                                      <p class="lead">Have you had problems with any of the following during your current or previous pregnancy?<br/>
+                                        <small>Please check the appropriate box(es)</small></p>
+                                      <table class="table">
+                                        <tbody>
+                                          <tr>
+                                            <th>Current</th>
+                                            <th>Previous</th>
+                                            <th>&nbsp;</th>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>Cerclage (cervix was stitched closed)</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>Gestational diabetes (diabetes only during your pregnancy)</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>Group B Strep infection</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>High blood pressure (toxemia, pre-eclampsia, or pregnancy induced hypertension)</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>Kidney or bladder infections</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>Oligohydramnios (too little fluid surrounding the baby)</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>Persistent vomiting</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>Placenta previa (placenta lies low in the uterus, partially or completely covering the cervix)</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>Polyhydramnios (too much fluid surrounding the baby)</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>Premature rupture of membranes</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>Preterm labor (labor starts before the 37th week of pregnancy)</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>Vaginal bleeding</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <p class="lead">List Your Pregnancies</p>
+                                      <table class="table table-condensed">
+                                        <tbody>
+                                          <tr>
+                                            <th>&nbsp;</th>
+                                            <th><label for="pregnancyDate">Date</label></th>
+                                            <th><label for="pregnancyDuration">Duration <small>(weeks)</small></label></th>
+                                            <th><label for="pregnancyType">Pregnancy Type</label></th>
+                                            <th><label for="pregnancyWeight">Baby's Weight</label></th>
+                                            <th><label for="pregnancyGender">Baby's Gender</label></th>
+                                          </tr>
+                                          <tr data-clone-target="cloneMe">
+                                            <td><button class="btn btn-small btn-danger cloneClose hide" id="cloneClose">X</button></td>                
+                                            <td><input type="date" pattern="(?:(?:0[1-9]|1[0-2])[\/\\-. ]?(?:0[1-9]|[12][0-9])|(?:(?:0[13-9]|1[0-2])[\/\\-. ]?30)|(?:(?:0[13578]|1[02])[\/\\-. ]?31))[\/\\-. ]?(?:19|20)[0-9]{2}" class="input-small" id="pregnancyDate" name="pregnancyDate"/><span class="help-overlay icon-calendar"></span></td>
+                                            <td><input type="text" class="input-small" id="pregnancyDuration" name="pregnancyDuration"/></td>
+                                            <td>
+                                              <select type="text" class="input-medium" id="pregnancyType" name="pregnancyType">
+                                                <option value="">SELECT
+                                                <option value="yes">Yes
+                                                <option value="no">No
+                                              </select>
+                                            </td>
+                                            <td><input type="text" class="input-small" id="pregnancyWeight" name="pregnancyWeight" placeholder="6lbs 2oz"/></td>
+                                            <td>
+                                              <select type="text" class="input-medium" id="pregnancyGender" name="pregnancyGender">
+                                                <option value="">SELECT
+                                                <option value="female">Female
+                                                <option value="male">Male
+                                              </select>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>&nbsp;</td>
+                                            <td colspan="5"><span id="cloneElement" style="cursor:pointer;" data-clone="cloneMe"><a>+ Add Another Pregnancy</a></span></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </fieldset>
+                                  </div>
+                                </div>
+                                <!-- End Part 2 -->
+
+
+
+
+                                <!-- Start Part 3 -->
+                                <div class="frame" title="Medical History">
+                                  <div class="form-body">
+                                    <h2>Your Medical History</h2>
+                                    <div class="well well-small">
+                                      <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#medical-eligibility"><span class="caret"></span> Confirming Your Eligibility</button>           
+                                      <div id="medical-eligibility" class="collapse">
+                                        <p>You can confirm your eligibility for the Special Beginnings program by sending a secure email or calling 1 (888) 569-2229 during regular business hours, Monday through Friday, 9 a.m. &#8211;5 p.m. Pacific time. We will respond by the end of the next business day.</p>
+                                        <p>Please complete this questionnaire, answering honestly and to the best of your abilities. The information you provide is confidential and will not affect your health benefits, but your honest answers will help us support you during your pregnancy.</p>
+                                      </div>
+                                    </div>
+                                    <fieldset class="glyph glyph-medical-history">
+                                      <legend>Diet and Exercise</legend>
+                                      <p class="lead">How many servings of each food group do you eat during an average day?</p>
+                                      <div class="row-fluid">
+                                        <div class="span4">
+                                          <label for="grainsQuantity">Breads/Cereals</label>
+                                          <input type="text" class="input-small" id="grainsQuantity" name="grainsQuantity"/>
+                                        </div>
+                                        <div class="span4">
+                                          <label for="fatsQuantity">Fats/Oils</label>
+                                          <input type="text" class="input-small" id="fatsQuantity" name="fatsQuantity"/>
+                                        </div>
+                                      </div>
+                                      <div class="row-fluid">
+                                        <div class="span4">
+                                          <label for="proteinQuantity">Meat/Proteins</label>
+                                          <input type="text" class="input-small" id="proteinQuantity" name="proteinQuantity"/>
+                                        </div>
+                                        <div class="span4">
+                                          <label for="fluidsQuantity">Fluids (8oz cups)</label>
+                                          <input type="text" class="input-small" id="fluidsQuantity" name="fluidsQuantity"/>
+                                        </div>
+                                      </div>
+                                      <div class="row-fluid">
+                                        <div class="span4">
+                                          <label for="vegQuantity">Vegetables</label>
+                                          <input type="text" class="input-small" id="vegQuantity" name="vegQuantity"/>
+                                        </div>
+                                        <div class="span4">
+                                          <label for="dairyQuantity">Milk/Dairy</label>
+                                          <input type="text" class="input-small" id="dairyQuantity" name="dairyQuantity"/>
+                                        </div>
+                                      </div>
+                                      <div class="row-fluid">
+                                        <div class="span4">
+                                          <label for="fruitsQuantity">Fruits</label>
+                                          <input type="text" class="input-small" id="fruitsQuantity" name="fruitsQuantity"/>
+                                        </div>
+                                      </div>
+                                      <p class="lead">Do you exercise on a regular basis?</p>
+                                      <label class="radio">
+                                        <input type="radio" name="regularExercise" id="regularExercise" value="yes" checked>
+                                        Yes
+                                      </label>
+                                      <label class="radio">
+                                        <input type="radio" name="regularExercise" id="regularExercise" value="no">
+                                        No
+                                      </label>
+                                      <label for="exerciseQuantity">If yes, how often?</label>
+                                      <input type="text" id="exerciseQuantity" name="exerciseQuantity" placeholder="Example: 3 times a week"/>
+                                      <label for="exerciseType">Type of exercise?</label>
+                                      <input type="text" id="exerciseType" name="exerciseType" placeholder="Example: cardio"/>
+                                  
+                                      <legend>Family and Medical History</legend>
+                                      <label class="lead" for="historyDES">Did your mother take Diethylstilbestrol (DES) while she was pregnant with you?<br/>
+                                        <small>DES was used until 1971 to prevent miscarriages.</small></label>
+                                      <select type="text" id="historyDES" name="historyDES">
+                                        <option value="">SELECT
+                                        <option value="yes">Yes
+                                        <option value="no">No
+                                      </select>
+                                      <label class="lead" for="geneticDisease">Do you, the father of your baby, or any of your children have a history of any genetic disease?<br/>
+                                        <small>Examples include Down Syndrome, spinal cord defects, hemophilia, muscular dystrophy, etc.</small></label>
+                                      <label class="radio">
+                                        <input type="radio" name="geneticDisease" id="geneticDisease" value="yes" checked>
+                                        Yes
+                                      </label>
+                                      <div class="offset1">
+                                        <label for="geneticCondition">List the condition</label>
+                                        <input type="text" id="geneticCondition" name="geneticCondition" placeholder="Example: hemophilia"/>
+                                        <p class="lead">Who has this condition?</p>
+                                        <label class="radio">
+                                          <input type="radio" name="geneticSource" id="geneticSource" value="mother">
+                                          You
+                                        </label>
+                                        <label class="radio">
+                                          <input type="radio" name="geneticSource" id="geneticSource" value="father">
+                                          Baby's Father
+                                        </label>
+                                        <label class="radio">
+                                          <input type="radio" name="geneticSource" id="geneticSource" value="child">
+                                          Your child
+                                        </label>
+                                      </div>
+                                      <label class="radio">
+                                        <input type="radio" name="geneticDisease" id="geneticDisease" value="no">
+                                        No
+                                      </label>
+                                      <label class="radio">
+                                        <input type="radio" name="geneticDisease" id="geneticDisease" value="dontknow">
+                                        No
+                                      </label>
+                                    </fieldset>
+                                  </div>
+                                </div>
+                                <!-- End Part 3 -->
+
+
+
+
+                                <!-- Start Part 4 -->
+                                <div class="frame" title="More Medical History">
+                                  <div class="form-body">
+                                    <h2>Your Medical History</h2>
+                                    <div class="well well-small">
+                                      <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#medical-eligibility"><span class="caret"></span> Confirming Your Eligibility</button>           
+                                      <div id="medical-eligibility" class="collapse">
+                                        <p>You can confirm your eligibility for the Special Beginnings program by sending a secure email or calling 1 (888) 569-2229 during regular business hours, Monday through Friday, 9 a.m. &#8211;5 p.m. Pacific time. We will respond by the end of the next business day.</p>
+                                        <p>Please complete this questionnaire, answering honestly and to the best of your abilities. The information you provide is confidential and will not affect your health benefits, but your honest answers will help us support you during your pregnancy.</p>
+                                      </div>
+                                    </div>
+                                    <fieldset class="glyph glyph-medical-history">
+                                      <label class="lead">Do you have a history of any of the following when you're not pregnant?<br/>
+                                        <small>Check all that apply.</small></label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Allergies
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Anemia
+                                      </label>
+                                      <div class="offset1">
+                                        <label for="anemiaTreatment">Anemia Treatment</label>
+                                        <input type="text" class="span5" id="anemiaTreatment" name="anemiaTreatment"/>
+                                      </div>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Asthma
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Depression/Anxiety
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Diabetes
+                                      </label>
+                                      <div class="offset1">
+                                        <label class="radio">
+                                          <input type="radio" name="optionsRadios" id="diabetesTypeOne" value="diabetesTypeOne">
+                                          Type I
+                                        </label>
+                                        <label class="radio">
+                                          <input type="radio" name="optionsRadios" id="diabetesTypeTwo" value="diabetesTypeTwo">
+                                          Type II
+                                        </label>
+                                      </div>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Eating Disorder
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Heart Disease
+                                      </label>
+                                      <div class="offset1">
+                                        <label for="heartDiseaseTreatment">If treated, please list treatment</label>
+                                        <input type="text" class="span5" id="heartDiseaseTreatment" name="heartDiseaseTreatment"/>
+                                      </div>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Hepatitis
+                                      </label>
+                                      <div class="offset1">
+                                        <label for="hepatitisTreatment">If treated, please list treatment</label>
+                                        <select type="select" class="span5" id="hepatitisTreatment" name="hepatitisTreatment">
+                                          <option value="">SELECT
+                                          <option value="a">A
+                                          <option value="b">B
+                                          <option value="c">C
+                                        </select>
+                                      </div>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Herpes
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        High Blood Pressure
+                                      </label>
+                                      <div class="offset1">
+                                        <label for="normalBloodPressure">What is your normal blood pressure?</label>
+                                        <input type="text" class="span5" id="normalBloodPressure" name="normalBloodPressure" placeholder="Example: 117 over 67"/>
+                                      </div>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        HIV positive
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Hospitalized for mental health condition
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Infertility
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Lupus
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Multiple Sclerosis
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Phlebitis (blood clots in your legs)
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Seizure disorder (treatment)
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Sexually transmitted disease
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Surgery
+                                      </label>
+                                      <div class="offset1">
+                                        <label for="normalBloodPressure">List surgeries</label>
+                                        <input type="text" class="span5" id="surgeries" name="surgeries"/>
+                                        <span class="help-block">(separate entries with commas)</span>
+                                      </div>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Uterine fibroids and/or abnormalities
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Other
+                                      </label>
+                                      <div class="offset1">
+                                        <textarea rows="3" class="span5" id="otherMedicalHistory" name="otherMedicalHistory"></textarea>
+                                      </div>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        None of the above
+                                      </label>
+                                      <label>What medications do you regularly use?</label>
+                                      <textarea rows="6" class="span6" id="regularMedications" name="regularMedications">Include prescriptions, herbal/homeopathic treatments, over-the-counter medications such as Tylenol®, antihistamines, and vitamins including prenatal vitamins. Separate entries with commas.</textarea>
+                                      <p class="lead">Have you had chicken pox or the vaccine for chicken pox?<p>
+                                      <label class="radio">
+                                        <input type="radio" name="chickenPox" id="chickenPoxYes" value="chickenPoxYes">
+                                        Yes
+                                      </label>
+                                      <label class="radio">
+                                        <input type="radio" name="chickenPox" id="chickenPoxNo" value="chickenPoxNo">
+                                        No
+                                      </label>
+                                    </fieldset>
+                                  </div>
+                                </div>
+                                <!-- End Part 4 -->
+
+
+
+
+                                <!-- Start Part 5 -->
+                                <div class="frame" title="Finish">
+                                  <div class="form-body">
+                                    <h2>Your Medical History</h2>
+                                    <div class="well well-small">
+                                      <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#medical-eligibility"><span class="caret"></span> Confirming Your Eligibility</button>           
+                                      <div id="medical-eligibility" class="collapse">
+                                        <p>You can confirm your eligibility for the Special Beginnings program by sending a secure email or calling 1 (888) 569-2229 during regular business hours, Monday through Friday, 9 a.m. &#8211;5 p.m. Pacific time. We will respond by the end of the next business day.</p>
+                                        <p>Please complete this questionnaire, answering honestly and to the best of your abilities. The information you provide is confidential and will not affect your health benefits, but your honest answers will help us support you during your pregnancy.</p>
+                                      </div>
+                                    </div>
+                                    <fieldset class="glyph glyph-care-provider">
+                                      <legend>Alcohol and Drug Use</legend>
+                                      <p class="lead">Do you smoke?</p>
+                                      <label class="radio">
+                                        <input type="radio" name="smoke" id="smokeYes" value="smokeYes">
+                                        Yes
+                                      </label>
+                                      <div class="offset1">
+                                        <label class="radio">
+                                          <input type="radio" name="optionsRadios" id="diabetesTypeOne" value="diabetesTypeOne">
+                                          Less than 1 pack/day
+                                        </label>
+                                        <label class="radio">
+                                          <input type="radio" name="optionsRadios" id="diabetesTypeTwo" value="diabetesTypeTwo">
+                                          More than 1 pack/day
+                                        </label>
+                                      </div>
+                                      <label class="radio">
+                                        <input type="radio" name="smoke" id="smokeNo" value="smokeNo">
+                                        No
+                                      </label>
+                                      <label class="radio">
+                                        <input type="radio" name="smoke" id="smokeSecondhand" value="smokeSecondhand">
+                                        Someone else in my household smokes
+                                      </label>
+                                      <label>Since you've known you were pregnant, how many alcoholic beverages do you drink each week?</label>
+                                      <select type="select" class="span6" id="hepatitisTreatment" name="hepatitisTreatment">
+                                        <option value="">SELECT
+                                        <option value="a">A
+                                        <option value="b">B
+                                        <option value="c">C
+                                      </select>
+                                      <p class="lead">Since you've known you were pregnant, have you used any recreational drugs?</p>
+                                      <label class="radio">
+                                        <input type="radio" name="smoke" id="smokeYes" value="smokeYes">
+                                        Yes
+                                      </label>
+                                      <div class="offset1">
+                                        <label for="normalBloodPressure">Please list drug types</label>
+                                        <input type="text" class="span5" id="normalBloodPressure" name="normalBloodPressure" placeholder="Example: cocaine"/>
+                                        <span class="help-block">(separate entries with commas)</span>
+                                      </div>
+                                      <label class="radio">
+                                        <input type="radio" name="smoke" id="smokeNo" value="smokeNo">
+                                        No
+                                      </label>
+                                      <legend>Abuse and Stress</legend>
+                                      <p class="lead">During the past year have you suffered any kind of abuse?<br/>
+                                        <small>Abuse during pregnancy carries a higher risk of prematurity and is more common than most people realize. Abuse is defined as being hit, slapped, kicked, forced to have sex, or otherwise physically hurt by anyone.</small></p>
+                                      <label class="radio">
+                                        <input type="radio" name="smoke" id="smokeYes" value="smokeYes">
+                                        Yes
+                                      </label>
+                                      <label class="radio">
+                                        <input type="radio" name="smoke" id="smokeNo" value="smokeNo">
+                                        No
+                                      </label>
+                                      <label class="lead">On a scale from 1 to 10, rate your overall stress level<br/>
+                                        <small>1 is the lowest and 10 is the highest.</small></label>
+                                      <select type="select" class="span2" id="hepatitisTreatment" name="hepatitisTreatment">
+                                        <option value="">SELECT
+                                        <option value="a">A
+                                        <option value="b">B
+                                        <option value="c">C
+                                      </select>
+                                      <legend>Social Environment</legend>
+                                      <p class="lead">Which of the following best describes your current support system?<br/>
+                                        <small>(check all that apply)</small></p>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Spouse/Partner
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Family
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Friends
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Other
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Club/Organization
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        Church
+                                      </label>
+                                      <label class="checkbox">
+                                        <input type="checkbox" value="">
+                                        None
+                                      </label>
+                                      <label for="maritalStatus">What is your marital status?</label>
+                                      <select type="select" id="maritalStatus" name="maritalStatus">
+                                        <option value="">SELECT
+                                        <option value="a">A
+                                        <option value="b">B
+                                        <option value="c">C
+                                      </select>
+                                      <label for="ethnicOrigin">What is your ethnic origin?</label>
+                                      <select type="select" id="ethnicOrigin" name="ethnicOrigin">
+                                        <option value="">SELECT
+                                        <option value="a">A
+                                        <option value="b">B
+                                        <option value="c">C
+                                      </select>
+                                      <label for="otherEthnicOrigin">If other, please specify</label>
+                                      <input type="text" id="otherEthnicOrigin" name="otherEthnicOrigin"/>
+                                      <label for="educationLevel">What is the highest level of education you have completed?</label>
+                                      <select type="select" id="educationLevel" name="educationLevel">
+                                        <option value="">SELECT
+                                        <option value="a">A
+                                        <option value="b">B
+                                        <option value="c">C
+                                      </select>
+                                      <p class="lead">Are you currently employed?</p>
+                                      <label class="radio">
+                                        <input type="radio" name="currentlyEmployed" id="currentlyEmployed" value="currentlyEmployedYes">
+                                        Yes
+                                      </label>
+                                      <div class="offset1">
+                                        <label for="hoursEmployed">How many hours per week?</label>
+                                        <input type="text" class="span1" id="hoursEmployed" name="hoursEmployed"/>
+                                      </div>
+                                      <label class="radio">
+                                        <input type="radio" name="currentlyEmployed" id="smokeNo" value="currentlyEmployedNo">
+                                        No
+                                      </label>
+                                    </fieldset>
+                                    <h2>Preferred Method of Contact</h2>
+                                    <fieldset class="glyph glyph-contact-method">
+                                      <label for="contactMethod">What is the best way for us to reach you for follow-up?</label>
+                                      <select type="select" id="contactMethod" name="contactMethod">
+                                        <option value="">SELECT
+                                        <option value="a">A
+                                        <option value="b">B
+                                        <option value="c">C
+                                      </select>
+                                      <br/>
+                                      <br/>
+                                      <br/>
+                                      <br/>
+                                    </fieldset>
+                                  </div>
+                                </div>
+                                <!-- End Part 5 -->
+                            </div>
+                        </form>
+                    </div> <!-- .page-body -->
+                </div> <!-- .content -->
+            </article>
+
+            <nav id="navigation" class="nav-main"> <ul> <li class="nav-item nav-3-items lfr-nav-deletable lfr-nav-updateable"> <a href="http://localhost:8080/web/guest/about"> <span> About Us </span> </a> </li> <li class="nav-item nav-3-items lfr-nav-deletable lfr-nav-updateable"> <a href="http://localhost:8080/web/guest/welcome"> <span> Welcome </span> </a> </li> <li class="nav-item nav-3-items lfr-nav-deletable lfr-nav-updateable"> <a href="http://localhost:8080/web/guest/contact"> <span> Contact </span> </a> </li> </ul> </nav>
+
+            <nav class="nav-information"> <button data-target="#nav-information" data-toggle="collapse" class="btn btn-link collapsed" type="button">More information</button> <div id="nav-information" class="row-fluid collapse"> <div class="nav-group"> <h3 class="title">Shop for Health Insurance</h3> <ul class="nav unstyled"> <li><a href="#">Individual and families</a></li> <li><a href="#">Through an employer</a></li> <li><a href="#">For Medicare</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">Current Customers</h3> <ul class="nav unstyled"> <li><a href="#">Individual and families</a></li> <li><a href="#">Coverage through an employer</a></li> <li><a href="#">Medicare eligible</a></li> <li><a href="#">myRegence.com</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">Health &amp; Wellness</h3> <ul class="nav unstyled"> <li><a href="#">Treatment Cost Estimates</a></li> <li><a href="#">Prescription Information</a></li> <li><a href="#">Health Insurance Guide</a></li> <li><a href="#">Health &amp; Wellness News</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">About Regence</h3> <ul class="nav unstyled"> <li><a href="#">Non-Profit Health Insurance</a></li> <li><a href="#">Contact Us</a></li> <li><a href="#">Careers</a></li> <li><a href="#">Company News</a></li> <li><a href="#">Legal</a></li> </ul> </div> <div class="nav-group"> <h3 class="title">About Regence</h3> <ul class="nav unstyled"> <li><a href="#">Non-Profit Health Insurance</a></li> <li><a href="#">Contact Us</a></li> <li><a href="#">Careers</a></li> <li><a href="#">Company News</a></li> <li><a href="#">Legal</a></li> </ul> </div> </div> </nav>
+
+            <nav class="nav-utility"> <div class="row-fluid"> <ul class="nav nav-pills pull-right"> <li><a href="#about">About Regence</a></li> <li><a href="#">Contact Us</a></li> </ul> </div> </nav>
+            
+        </div> <!-- /container -->
+    </div> <!-- /main -->
+    
+    <footer itemprop="WPFooter" role="contentinfo" id="bottom" class="wp-footer"> <div class="row-fluid"> <div class="container"> <div class="span6"> <p>&copy; 2013 Liferay</p> </div> <nav class="span6"> <ul role="navigation" class="nav inline"> <li> <a rel="nofollow" href="/c/portal/logout">Sign Out</a> </li> <li><a href="/legal/online-privacy-and-security/">Privacy</a></li> <li><a href="/legal/terms-of-use/">Terms of Use</a></li> <li><a onclick="oo_feedback.show()" href="javascript:void(0);"><span aria-hidden="true" class="icon-feedback"><b></b><i></i></span> Feedback</a></li> <li><a href="/espanol">Español</a></li> </ul> </nav> </div> </div> </footer>
+
+    <!-- Individual Modal -->
+    <div id="individualModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="individualModalLabel" aria-hidden="true">
+        <form class="form-horizontal form-verify-location">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 id="individualModalLabel">Welcome</h3>
+            </div>
+            <div class="modal-body">
+                <p class="lead">Please tell us your location so that we can personalize the website.</p>
+                <div class="control-group">
+                    <label class="control-label" for="inputZIP">ZIP Code</label>
+                    <div class="controls">
+                        <input type="text" id="inputZIP" placeholder="97201">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                <a href="individual.html" class="btn btn-primary">Continue</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Employer Modal -->
+    <div id="employerModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="employerModalLabel" aria-hidden="true">
+        <form class="form-horizontal form-verify-location">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 id="employerModalLabel">Welcome</h3>
+            </div>
+            <div class="modal-body">
+                <p class="lead">Please tell us your location so that we can personalize the website.</p>
+                <div class="control-group">
+                    <label class="control-label" for="inputZIP">ZIP Code</label>
+                    <div class="controls">
+                        <input type="text" id="inputZIP" placeholder="97201">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                <a href="employer.html" class="btn btn-primary">Continue</a>
+            </div>
+        </form>
+    </div>
+    
+    <script type="text/javascript" src="../js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/plugins.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+
+</body>
+</html>

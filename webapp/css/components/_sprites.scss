@@ -123,3 +123,41 @@
   overflow: hidden;
   background-repeat: no-repeat;
 }
+
+
+
+// Responsive: Tablet to large desktops
+// --------------------------------------
+@media (min-width: 768px) {
+
+  // Fieldset Glyphs
+  // ---------------
+  fieldset.glyph {
+    padding-left: 110px;
+    position: relative;
+
+    // Inline Icons
+    [class^="icon-"] {
+      left: 0;
+      position: absolute;
+      top: 8px;
+    }
+
+    // Background Icons
+    &.glyph-user-details {
+      background: url("images/forms/glyph-user-details.png") no-repeat 0 4px;
+    }
+    &.glyph-care-provider {
+      background: url("images/forms/glyph-care-provider.png") no-repeat 0 4px;
+    }
+    &.glyph-pregnancy {
+      background: url("images/forms/glyph-pregnancy.png") no-repeat 0 4px;
+    }
+    &.glyph-medical-history {
+      background: url("images/forms/glyph-medical-history.png") no-repeat 0 4px;
+    }
+    &.glyph-contact-method {
+      background: url("images/forms/glyph-contact-method.png") no-repeat 0 4px;
+    }
+  }
+}
