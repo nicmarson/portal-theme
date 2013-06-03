@@ -68,30 +68,22 @@ $baseLineHeight:                20px;
 $altFontFamily:                 $serifFontFamily;
 $serif-boolean:                 true !default;
 
-// TypeScale
+
+// Icons
 // -------------------------
-// Base size 14
-$tera: 72px; // 72 = 14 × 5.1429
-$giga: 60px; // 60 = 14 × 4.2857
-$mega: 48px; // 48 = 14 × 3.4286
-$alpha: 38px; // 38 = 14 × 2.7143
-$beta: 32px; // 32 = 14 × 2.2857
-$gamma: 24px; // 24 = 14 × 1.7142
-$delta: 20px; // 20 = 14 × 1.4285
-$epsilon: 17px; // 17 = 14 × 1.2143
-$zeta: 14px; // 14 = 14 × 1
-$eta: 12px; // 12 = 14 x .8571
-$theta: 10px; // 10 = 14 x .7143
+$bridgeIcons:            url(images/bridge/bridge-icons.png);
 
-
-// COMPONENTS
-// --------------------------------------------------
 
 // Border radius
 // -------------------------
 $baseBorderRadius:      0;
 $borderRadiusLarge:     6px;
 $borderRadiusSmall:     3px;
+
+
+
+// COMPONENTS
+// --------------------------------------------------
 
 
 // Forms
@@ -111,13 +103,10 @@ $sectionHeaderHeadingColor:     $orange;
 // -------------------------
 $articleBackground:                 $white;
 $articleBorder:                     lighten($accentLighter, 8%);
-$articleContentPadding: 			inherit;
 
 $asideHeadingBorder:                #d7d7d7;
 $asideHeadingColor:                 $textColor;
 $asideHeadingFontFamily: 			$sansFontFamily;
-$asideHeadingFontSize:              $gamma;
-$asideLinkFontSize:                 inherit;
 $asideLinkColor:                    $linkColor;
 $asideLinkColorHover:               $linkColor;
 
@@ -228,16 +217,6 @@ $audienceGlyphColor:            $accent;
 $audienceCaretColor:            $brand;
 
 
-// Contact
-// -------------------------
-$contactInfoBackground:         none;
-$contactInfoBorderTop:          none;
-$contactInfoLink:               $textColor;
-$contactInfoLinkHover:          $textColor;
-$contactPhoneBackground:        #66A131;
-$contactEmailBackground:        $purple;
-
-
 // Bottom
 // -------------------------
 $bottomBackground:              $accent url(images/bridge/footerBackground.png);
@@ -250,3 +229,13 @@ $bottomLinkColor:               $white;
 $bottomLinkColorHover:          $white;
 
 $feedbackIconMarginTop:         5px;
+
+
+// Contact
+// -------------------------
+$contactInfoBackground:         none;
+$contactInfoBorderTop:          none;
+$contactInfoLink:               $textColor;
+$contactInfoLinkHover:          $textColor;
+$contactPhoneBackground:        $white;
+$contactEmailBackground:        $white;

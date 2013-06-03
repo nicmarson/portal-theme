@@ -10,13 +10,13 @@ article .sidebar {
   h3 {
     color: $asideHeadingColor;
     font-family: $asideHeadingFontFamily;
-    font-size: $asideHeadingFontSize;
+    @extend .gamma;
     line-height: 1;
   }
 
   .nav > li > a {
     color: $asideLinkColor;
-    font-size: $asideLinkFontSize;
+    @extend .epsilon;
     margin-left: -20px;
     margin-right: -20px;
     text-decoration: none;
@@ -24,7 +24,6 @@ article .sidebar {
     &:hover {
       background: $white;
       color: $asideLinkColorHover;
-      text-decoration: underline;
     }
   }
 
@@ -45,10 +44,6 @@ article .sidebar {
 
 // Article content
 // -------------------------
-article .content {
-  @include css-hyphens(auto);
-}
-
 article .content section,
 article .content .media {
   margin-bottom: 20px;
@@ -62,7 +57,7 @@ article .content aside {
 
 // Article - Landing
 // -------------------------
-.article-landing {
+.article-landing .hero-unit {
 
   li {
     @extend .zeta;

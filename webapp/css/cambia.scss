@@ -70,6 +70,13 @@ a:focus {
 }
 
 
+// Article content
+// -------------------------
+article p {
+  @include css-hyphens(auto);
+}
+
+
 // Typography
 // --------------------------------------
 .tera {
@@ -98,7 +105,7 @@ a:focus {
 }
 
 .gamma {
-  font-size: $epsilon;
+  font-size: $gamma;
   font-size: 1.125rem;
 }
 
@@ -148,7 +155,7 @@ h2 {
 }
 
 h3 {
-  @extend .epsilon;
+  @extend .gamma;
   line-height: 1.25;
 
   small {
@@ -175,6 +182,186 @@ h5 {
 h6 {
   @extend .zeta;
   line-height: 1.8;
+}
+
+hgroup {
+  margin-bottom: 20px;
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
+}
+
+
+// $Smallcaps
+// -------------------------------------//
+/**
+ * Abbreviations Markup
+ *
+  <abbr title="hyper text markup language">HMTL</abbr>
+ *
+ * Extend this object into your markup.
+ *
+ */
+abbr {
+  @include smallcaps(gray, 600);
+  &:hover {
+    cursor: help;
+  }
+}
+
+
+// $Definition Lists
+// -------------------------------------//
+/**
+ * Lining Definition Style Markup
+ *
+  <dl class="lining">
+    <dt><b></b></dt>
+    <dd></dd>
+  </dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+.lining {
+  @include definition-list-style(lining);
+}
+
+/**
+ * Dictionary Definition Style Markup
+ *
+  <dl class="dictionary-style">
+    <dt><b></b></dt>
+      <dd></dd>
+  </dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+.dictionary-style {
+  @include definition-list-style(dictionary-style);
+}
+
+
+// $Stats Tabs
+// -------------------------------------//
+
+$stats-font-size: 1.5rem;
+$stats-list-margin: 0 0.625rem 0 0;
+$stats-list-padding: 0 0.625rem 0 0;
+$stats-item-font-size: 0.875rem;
+$stats-item-margin: 0.125rem 0 0 0;
+$stats-border-style: 0.125rem solid #ccc;
+
+/**
+ * Stats Tab Markup
+ *
+  <ul class="stats-tabs">
+    <li><a href="#">[value]<b>[name]</b></a></li>
+  </ul>
+ *
+ * Extend this object into your markup.
+ *
+ */
+.stats-tabs {
+  padding: 0;
+  li {
+    display: inline-block;
+    margin: $stats-list-margin;
+    padding: $stats-list-padding;
+    border-right: $stats-border-style;
+    &:last-child {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+    a {
+      display: inline-block;
+      font-size: $stats-font-size;
+      font-weight: bold;
+      b {
+        display: block;
+        margin: $stats-item-margin;
+        font-size: $stats-item-font-size;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+
+// $Blockquote Cites
+// -------------------------------------//
+/**
+ * Blockquote Markup
+ *
+  <blockquote cite="">
+    <p>&Prime;&Prime;</p>
+    <cite>
+      <small><a href=""></a></small>
+    </cite>
+  </blockquote>
+ *
+ * Extend this object into your markup.
+ *
+ */
+
+@mixin cite-style($display:block, $text-align:right, $font-size: .875em) {
+  display: $display;
+  font-size: $font-size;
+  text-align: $text-align;
+}
+
+%cite {
+  @include cite-style;
+}
+
+
+// $Pull Quotes
+// -------------------------------------//
+// http://24ways.org/2005/swooshy-curly-quotes-without-images
+//
+// http://todomvc.com - Thanks sindresorhus!
+// https://github.com/typeplate/typeplate.github.com/issues/49
+
+/**
+ * Pull Quotes Markup
+ *
+  <aside class="pull-quote">
+    <blockquote>
+      <p></p>
+    </blockquote>
+  </aside>
+ *
+ * Extend this object into your custom stylesheet.
+ *
+ */
+
+@mixin pull-quotes($font-size, $opacity) {
+  position: relative;
+  padding: ems($font-size, $font-size);
+  &:before,
+  &:after {
+    height: ems($font-size, $font-size);
+    opacity: $opacity;
+    position: absolute;
+    font-size: $font-size;
+  }
+  &:before {
+    content: '“';
+    top:  0;
+    left: 0;
+  }
+  &:after {
+    content: '”';
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.pull-quote {
+  @include pull-quotes(4em, .15);
 }
 
 

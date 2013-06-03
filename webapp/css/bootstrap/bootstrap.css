@@ -203,23 +203,22 @@ textarea {
     page-break-after: avoid;
   }
 }
-.row {
-  margin-left: -20px;
+.row,
+.row-fluid {
+  width: 100%;
   *zoom: 1;
 }
 .row:before,
-.row:after {
+.row:after,
+.row-fluid:before,
+.row-fluid:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.row:after {
+.row:after,
+.row-fluid:after {
   clear: both;
-}
-[class*="span"] {
-  float: left;
-  min-height: 1px;
-  margin-left: 20px;
 }
 .container,
 .navbar-static-top .container,
@@ -227,18 +226,10 @@ textarea {
 .navbar-fixed-bottom .container {
   width: 940px;
 }
-.row-fluid {
-  width: 100%;
-  *zoom: 1;
-}
-.row-fluid:before,
-.row-fluid:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.row-fluid:after {
-  clear: both;
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
 }
 .row-fluid [class*="span"] {
   display: block;
@@ -247,7 +238,6 @@ textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  float: left;
   margin-left: 2.127659574468085%;
   *margin-left: 2.074468085106383%;
 }

@@ -36,18 +36,59 @@
   // --------------------------------------
   @import "locations/top";
   @import "locations/bottom";
-  @import "locations/contact";
   @import "locations/error";
 
 
   // Bridge only styles
   // --------------------------------------
+  .bridge-icons {
+    background-image: $bridgeIcons;
+    height: 64px;
+    line-height: 64px;
+    width: 64px;
+  }
+  
+  .icon-phone {
+    background-position: 0 0;
+  }
+
+  .icon-messages {
+    background-position: 0 -100px;
+  }
+
+  .icon-premium {
+    background-position: 0 -200px;
+  }
+
+  .icon-statements {
+    background-position: 0 -300px;
+  }
+
+  .icon-benefits {
+    background-position: 0 -400px;
+  }
+
+  .icon-account {
+    background-position: 0 -500px;
+  }
+
+  .icon-email {
+    background-position: 0 -600px;
+  }
+
 
   // Theme utilities
   // --------------------------------------
   .asuris-only,
   .regence-only {
     display: none;
+  }
+
+
+  // Typography
+  // --------------------------------------
+  article h2 {
+    color: $brand;
   }
 
 
@@ -87,7 +128,7 @@
 
 
   // Page header
-  // -------------------------
+  // --------------------------------------
   .page-header {
     border-bottom: 2px solid $textColor;
     font-family: $sansFontFamilyBold;
@@ -97,7 +138,7 @@
 
 
   // Article sidebar
-  // -------------------------
+  // --------------------------------------
   article .sidebar {
 
     h3 {
@@ -124,6 +165,10 @@
       margin-left: 0;
       margin-right: 0;
       padding: 12px 15px;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     .nav-list {
@@ -133,7 +178,7 @@
 
 
   // NAV MAIN
-  // ----------------
+  // --------------------------------------
   .nav-main ul li a {
     @include border-bottom-right-radius(10px);
     @include border-top-left-radius(10px);
@@ -208,47 +253,18 @@
       @extend .beta;
       line-height: 2.6667;
 
-      [class^="icon-"],
-      [class*=" icon-"] {
-        background-image: url("images/bridge/dashboard.png");
-        height: 64px;
+      .bridge-icons {
         left: 0;
-        line-height: 64px;
         margin-top: 0;
         position: absolute;
         top: 0;
-        width: 64px;
       }
-    }
-
-    .icon-claims {
-      background-position: 0 0;
-    }
-
-    .icon-messages {
-      background-position: 0 -100px;
-    }
-
-    .icon-premium {
-      background-position: 0 -200px;
-    }
-
-    .icon-statements {
-      background-position: 0 -300px;
-    }
-
-    .icon-benefits {
-      background-position: 0 -400px;
-    }
-
-    .icon-account {
-      background-position: 0 -500px;
     }
   }
 
 
   // Hero welcome
-  // -------------------------------
+  // --------------------------------------
   #hero-welcome .hero-unit {
 
     .form-signIn {
@@ -294,18 +310,55 @@
       }
     }
   }
+
+
+  // Contact info
+  // --------------------------------------
+  table.contact-info {
+    @extend .beta;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+
+    .contact-info-extra {
+      line-height: .75;
+    }
+
+    a {
+      color: $textColor;
+    }
+
+    small {
+      @extend .eta;
+      line-height: 1;
+    }
+
+    .bridge-icons {
+      margin-top: 0;
+    }
+
+    td.contact-info-glyph {
+      padding-bottom: 30px;
+      padding-right: 10px;
+    }
+
+    td.contact-info-entry {
+      padding-bottom: 30px;
+      padding-right: 40px;
+    }
+  }
 }
 
 
 
 //
 // RESPONSIVE
-// --------------------------------------
+// --------------------------------------------------
 
 
 //
 // Custom: Large desktop and up
-// --------------------------------------------------
+// --------------------------------------
 @media (min-width: 1200px) {
 
   .bridge {
@@ -318,7 +371,7 @@
 
 
 // Responsive: Desktop to large desktop
-// --------------------------------------------------
+// --------------------------------------
 @media (min-width: 980px) and (max-width: 1199px) {
 
   .bridge {
@@ -367,7 +420,7 @@
 
 
     // Hero welcome
-    // -------------------------------
+    // --------------------------------------
     #hero-welcome .hero-unit {
       background-image: url(images/bridge/hero-welcome.png);
       @include background-size(cover);
@@ -397,7 +450,7 @@
 
 
     // Hero individual
-    // -------------------------------
+    // --------------------------------------
     #hero-individual {
 
       .media {
@@ -432,7 +485,7 @@
 }
 
 // Generated content
-// -------------------------
+// --------------------------------------
 .generatedcontent .bridge {
 
   @import "modernizr/generated_content";

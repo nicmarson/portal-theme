@@ -30,6 +30,16 @@
 }
 
 
+// Hero home
+// ----------------------------/
+#hero-home {
+
+  .hero-unit {
+    height: 360px;
+  }
+}
+
+
 // Hero individual
 // -------------------------------
 #hero-individual {
@@ -120,13 +130,6 @@
 }
 
 
-// Contact info
-// -------------------------------
-#top .container {
-  width: 1170px;
-}
-
-
 // Audience dropdown
 // -------------------------------
 #set-view-location {
@@ -142,17 +145,12 @@
 }
 
 
-// Contact info
+// Top
 // -------------------------------
-table.contact-info {
-
-  td.contact-info-glyph {
-    padding: 20px 12px 20px 20px;    
-  }
-  td.contact-info-entry {
-    padding: 20px 12px 20px 5px;
-  }
+#top .container {
+  width: 1170px;
 }
+
 
 // Google Map
 #map_canvas {

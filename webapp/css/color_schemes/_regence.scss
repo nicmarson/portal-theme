@@ -28,19 +28,15 @@
 
   // Typography
   // --------------------------------------
-  h1 {
+  article h1 {
     color: $brand;
   }
 
 
   // Article content
   // -------------------------
-  article {
-
-    h3,
-    .gamma {
-      color: $orange;
-    }
+  article h3 {
+    color: $orange;
   }
 
 

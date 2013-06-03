@@ -66,6 +66,11 @@ $altFontFamily:                 $serifFontFamily;
 $serif-boolean:                 true !default;
 
 
+// Icons
+// -------------------------
+$regenceIcons:            url(images/regence/regence-icons.png);
+
+
 // COMPONENTS
 // --------------------------------------------------
 
@@ -93,15 +98,14 @@ $sectionHeaderHeadingColor:     $orange;
 // -------------------------
 $articleBackground:					$white;
 $articleBorder:						lighten($accentLighter, 8%);
-$articleContentPadding: 			0 20px;
+$articleContentPaddingLeft: 		20px;
+$articleContentPaddingRight: 		20px;
 
 $asideBackground:					#F2F8F9;
 $asideHeadingBackground:			#F0F6F9;
 $asideHeadingBorder:                #D9E6EA;
 $asideHeadingColor:                 #5e7b8c;
 $asideHeadingFontFamily: 			$sansFontFamily;
-$asideHeadingFontSize:              20px;
-$asideLinkFontSize:                 16px;
 $asideLinkColor:                    $grayLight;
 $asideLinkColorHover:               $linkColor;
 
@@ -227,6 +231,7 @@ $contactInfoBackground:         #F5F5F5;
 $contactInfoBorderTop:          1px solid darken($contactInfoBackground, 7%);
 $contactInfoLink:               $textColor;
 $contactInfoLinkHover:          $textColor;
+$contactGlyphColor:             $contactInfoBackground;
 $contactPhoneBackground:        #66A131;
 $contactEmailBackground:        $purple;
 

@@ -31,15 +31,15 @@ This file allows you to override and define new Velocity variables.
     	#if(!$ch_region)
     		Oregon and Utah
         #elseif($ch_region == "or")
-        	Regence BlueCross BlueShield of Oregon
+        	BlueCross BlueShield of Oregon
         #elseif($ch_region == "ut")
-        	Regence BlueCross BlueShield of Utah
+        	BlueCross BlueShield of Utah
         #elseif($ch_region == "wa")
-        	Regence BlueShield
+        	BlueShield
         #elseif($ch_region == "ww")
-        	Regence BlueShield of Washington
+        	BlueShield select counties of Washington
         #elseif($ch_region == "id")
-        	Regence BlueShield of Idaho
+        	BlueShield of Idaho
         #end
     #end
 #end
@@ -96,10 +96,8 @@ This file allows you to override and define new Velocity variables.
         	Regence BlueCross BlueShield of Oregon. All rights reserved. Regence BlueCross BlueShield of Oregon is an Independent Licensee of the Blue Cross and Blue Shield Association.
         #elseif($ch_region == "ut")
         	Regence BlueCross BlueShield of Utah. All rights reserved. Regence BlueCross BlueShield of Utah is an Independent Licensee of the Blue Cross and Blue Shield Association.
-        #elseif($ch_region == "wa")
-        	Regence BlueShield. All rights reserved. Regence BlueShield of Washington is an Independent Licensee of the Blue Cross and Blue Shield Association.
         #elseif($ch_region == "ww")
-        	Regence BlueShield of Washington. All rights reserved. Regence BlueShield of Washington is an Independent Licensee of the Blue Cross and Blue Shield Association.
+        	Regence BlueShield. All rights reserved. Regence BlueShield serves select counties in the state of Washington and is an Independent Licensee of the Blue Cross and Blue Shield Association.
         #elseif($ch_region == "id")
         	Regence BlueShield of Idaho. All rights reserved. Regence BlueShield of Idaho is an Independent Licensee of the Blue Cross and Blue Shield Association.
         #end
